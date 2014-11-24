@@ -42,6 +42,9 @@ filetype plugin indent on      " activates indenting for files
 
 let g:netrw_liststyle=3
 
+" gitgutter background color
+highlight clear SignColumn
+
 " Ctrl-P
 let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
 
