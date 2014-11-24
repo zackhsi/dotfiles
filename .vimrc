@@ -40,8 +40,7 @@ colorscheme solarized
 
 filetype plugin indent on      " activates indenting for files
 
-:command NT NERDTreeToggle " remaps :NT to :NERDTree
-let NERDTreeIgnore = ['\.pyc$']
+let g:netrw_liststyle=3
 
 " Ctrl-P
 let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
