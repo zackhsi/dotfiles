@@ -40,7 +40,8 @@ colorscheme solarized
 
 filetype plugin indent on      " activates indenting for files
 
-let g:netrw_liststyle=3
+:command NT NERDTreeToggle " remaps :NT to :NERDTree
+let NERDTreeIgnore = ['\.pyc$']
 
 " gitgutter background color
 highlight clear SignColumn
