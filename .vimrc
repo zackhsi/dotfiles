@@ -51,3 +51,6 @@ let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
 
 " ctags
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" fugitive
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
