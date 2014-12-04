@@ -24,26 +24,54 @@ set guioptions-=L
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
 
+" activates indenting for files
+filetype plugin indent on
+
 " easy window navigation
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
-call pathogen#infect()  " pathogen
-call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 
-" Solarized stuff
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+
+" Code Navigation
+Plug 'rking/ag.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+
+" autocompletion / snippets
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" Vim enhancements
+Plug 'scrooloose/syntastic'
+Plug 'tomtom/tcomment_vim'
+
+" Appearance
+Plug 'altercation/vim-colors-solarized'
+
+call plug#end()
+
+
+" Solarized
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
 
-filetype plugin indent on      " activates indenting for files
 
+" NERDTree
 :command NT NERDTreeToggle " remaps :NT to :NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
-" gitgutter background color
+" gitgutter
 highlight clear SignColumn
 
 " Ctrl-P
