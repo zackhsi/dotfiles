@@ -70,6 +70,7 @@ export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
