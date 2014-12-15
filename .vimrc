@@ -68,7 +68,8 @@ colorscheme solarized
 
 
 " NERDTree
-:command NT NERDTreeToggle " remaps :NT to :NERDTree
+:command NT NERDTreeToggle
+:command NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
 
 " gitgutter
