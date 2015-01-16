@@ -58,8 +58,9 @@ Plug 'tomtom/tcomment_vim'
 " Appearance
 Plug 'altercation/vim-colors-solarized'
 
-" AngularJS
+" Language specific
 Plug 'burnettk/vim-angular'
+Plug 'evidens/vim-twig'
 
 call plug#end()
 
