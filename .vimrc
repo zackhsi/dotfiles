@@ -64,6 +64,7 @@ Plug 'burnettk/vim-angular'
 Plug 'evidens/vim-twig'
 Plug 'klen/python-mode'
 Plug 'fatih/vim-go'
+Plug 'saltstack/salt-vim'
 
 call plug#end()
 
