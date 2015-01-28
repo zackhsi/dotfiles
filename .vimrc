@@ -63,6 +63,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'burnettk/vim-angular'
 Plug 'evidens/vim-twig'
 Plug 'klen/python-mode'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
