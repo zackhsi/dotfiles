@@ -62,6 +62,7 @@ Plug 'altercation/vim-colors-solarized'
 " Language specific
 Plug 'burnettk/vim-angular'
 Plug 'evidens/vim-twig'
+Plug 'klen/python-mode'
 
 call plug#end()
 
@@ -70,7 +71,6 @@ call plug#end()
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
-
 
 " NERDTree
 :command NT NERDTreeToggle
@@ -89,3 +89,8 @@ map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+" pymode
+let g:pymode_folding = 0
+let g:pymode_rope = 0
+let g:pymode_lint_checkers = ['flake8']
