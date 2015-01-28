@@ -15,6 +15,7 @@ set ru                  " shows ruler for cursor
 set sc                  " showcmd shows incomplete commands
 set foldmethod=manual   " set a foldmethod
 set splitright          " all vertical splits open to the right
+set colorcolumn=120
 
 " MacVim
 set guifont=Inconsolata-dz
