@@ -47,6 +47,7 @@ Plug 'scrooloose/nerdtree'
 
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Raimondi/delimitMate'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -63,6 +64,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'burnettk/vim-angular'
 Plug 'evidens/vim-twig'
 Plug 'klen/python-mode'
+Plug 'fisadev/vim-isort'
 Plug 'fatih/vim-go'
 Plug 'saltstack/salt-vim'
 
@@ -95,4 +97,4 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " pymode
 let g:pymode_folding = 0
 let g:pymode_rope = 0
-let g:pymode_lint_checkers = ['flake8']
+let g:pymode_lint_checkers = ['flake8', 'mccabe']
