@@ -47,7 +47,7 @@ Plug 'scrooloose/nerdtree'
 
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 
 " Git
 Plug 'tpope/vim-fugitive'
