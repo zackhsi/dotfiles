@@ -56,6 +56,7 @@ Plug 'airblade/vim-gitgutter'
 " Vim enhancements
 Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
+Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
 Plug 'altercation/vim-colors-solarized'
