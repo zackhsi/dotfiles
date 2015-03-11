@@ -82,6 +82,10 @@ colorscheme solarized
 :command NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
 
+" Remap tcomment toggle
+nmap <D-/> gcc
+vmap <D-/> gcc
+
 " gitgutter
 highlight clear SignColumn
 
