@@ -49,6 +49,7 @@ Plug 'kshenoy/vim-signature'
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 " Git
 Plug 'tpope/vim-fugitive'
