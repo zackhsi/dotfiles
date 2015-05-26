@@ -18,7 +18,7 @@ set splitright          " all vertical splits open to the right
 set colorcolumn=120
 
 " MacVim
-set guifont=Inconsolata-dz
+set guifont=Inconsolata-dz:h13
 set guioptions-=r
 set guioptions-=L
 
