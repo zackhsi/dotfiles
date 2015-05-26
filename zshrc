@@ -8,9 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gbc="git branch | grep -v -e 'master' -e 'release' | xargs git branch -d"
+alias mux=tmuxinator
 
 alias dev="~/workspace/devbox"
 alias ats="~/workspace/lyftangel"
@@ -55,7 +54,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vagrant brew jsontools mongodb history-substring-search)
+plugins=(git vagrant brew jsontools mongodb history-substring-search tmux tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
