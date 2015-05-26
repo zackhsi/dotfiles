@@ -10,7 +10,7 @@ alias ats="~/workspace/lyftangel"
 alias api="~/workspace/instant-server"
 alias ios="~/workspace/instant-ios"
 alias green="~/workspace/green"
-alias lyftcom="~/workspace/lyft.com"
+alias www2="~/workspace/lyft.com"
 alias mock="~/workspace/mock-lyft-api"
 alias mocks="~/workspace/mocks"
 
