@@ -62,6 +62,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
 Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
 
 " Language specific
 Plug 'burnettk/vim-angular'
@@ -73,6 +74,12 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
+""""""""""""""""""""""""""""""
+" airline
+""""""""""""""""""""""""""""""
+let g:airline_theme             = 'powerlineish'
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
 
 " Solarized
 let g:solarized_termtrans = 1
