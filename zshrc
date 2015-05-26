@@ -12,6 +12,15 @@ ZSH_THEME="robbyrussell"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gbc="git branch | grep -v -e 'master' -e 'release' | xargs git branch -d"
 
+alias dev="~/workspace/devbox"
+alias ats="~/workspace/lyftangel"
+alias api="~/workspace/instant-server"
+alias ios="~/workspace/instant-ios"
+alias green="~/workspace/green"
+alias lyftcom="~/workspace/lyft.com"
+alias mock="~/workspace/mock-lyft-api"
+alias mocks="~/workspace/mocks"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
