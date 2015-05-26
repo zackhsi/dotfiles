@@ -20,6 +20,8 @@ alias lyftcom="~/workspace/lyft.com"
 alias mock="~/workspace/mock-lyft-api"
 alias mocks="~/workspace/mocks"
 
+ZSH_TMUX_AUTOSTART="true"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
