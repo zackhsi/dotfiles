@@ -23,7 +23,7 @@ ZSH_TMUX_AUTOSTART="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git vagrant brew jsontools mongodb history-substring-search tmux tmuxinator)
+plugins=(git vagrant brew jsontools mongodb history-substring-search tmux tmuxinator hub)
 
 source $ZSH/oh-my-zsh.sh
 
