@@ -6,7 +6,7 @@ alias gbc="git branch | grep -v -e 'master' -e 'release' | xargs git branch -d"
 alias mux=tmuxinator
 
 alias dev="~/workspace/devbox"
-alias ats="~/workspace/lyftangel"
+alias ats="~/workspace/ats"
 alias api="~/workspace/instant-server"
 alias ios="~/workspace/instant-ios"
 alias green="~/workspace/green"
