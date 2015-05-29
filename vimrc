@@ -62,6 +62,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
 Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'bling/vim-airline'
 
 " Language specific
@@ -85,6 +86,7 @@ let g:airline_enable_syntastic  = 1
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
+" colorscheme Tomorrow-Night-Eighties
 
 " NERDTree
 :command NT NERDTreeToggle
