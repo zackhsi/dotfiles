@@ -73,6 +73,9 @@ Plug 'fisadev/vim-isort'
 Plug 'fatih/vim-go'
 Plug 'saltstack/salt-vim'
 
+" tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 """"""""""""""""""""""""""""""
