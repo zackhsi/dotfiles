@@ -83,6 +83,9 @@ call plug#end()
 " airline
 """"""""""""""""""""""""""""""
 let g:airline_theme                        = 'powerlineish'
+let g:airline_left_sep                     = ''
+let g:airline_right_sep                    = ''
+let g:airline_section_z                    = ''
 let g:airline#extensions#branch#enabled    = 1
 let g:airline#extensions#syntastic#enabled = 1
 
