@@ -13,6 +13,7 @@ alias green="~/workspace/green"
 alias www2="~/workspace/lyft.com"
 alias mock="~/workspace/mock-lyft-api"
 alias mocks="~/workspace/mocks"
+alias dot="~/homespace/dotfiles"
 
 # tmux
 ZSH_TMUX_AUTOSTART="true"
