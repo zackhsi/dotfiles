@@ -35,6 +35,16 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+" Leader
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>     " <Space>w = save file
+vmap <Leader>y "+y            " Copy & paste to system clipboard with <Space>p and <Space>y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
