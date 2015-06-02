@@ -16,6 +16,7 @@ set sc                  " showcmd shows incomplete commands
 set foldmethod=manual   " set a foldmethod
 set splitright          " all vertical splits open to the right
 set colorcolumn=120
+set autoread
 
 " MacVim
 set guifont=Inconsolata-dz:h13
