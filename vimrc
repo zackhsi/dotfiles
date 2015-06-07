@@ -140,7 +140,11 @@ else
 endif
 
 " ctags
+command! -nargs=1 Silent
+            \ | execute ':silent !'.<q-args>
+            \ | execute ':redraw!'
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>zz
+map <Leader>c :Silent ctags -R . > /dev/null 2>&1 &<CR>
 
 " fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
