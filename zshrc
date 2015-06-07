@@ -15,6 +15,7 @@ alias mock="~/workspace/mock-lyft-api"
 alias mocks="~/workspace/mocks"
 alias dot="~/homespace/dotfiles"
 alias readonlymongo="~/workspace/readonlymongo"
+alias venmo="~/homespace/venmo"
 
 # tmux
 ZSH_TMUX_AUTOSTART="true"
