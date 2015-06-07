@@ -1,22 +1,23 @@
-set nocp                " set nocompatible
-set laststatus=2        " grey status bar at the bottom
-syntax enable           " syntax highlighting
-set ai                  " auto indenting
-set nu                  " line numbers
-set ic                  " case insensitive search
-set scs                 " smart case search
-set hlsearch 		    " highlight what you search for
-set incsearch 		    " type-ahead-find
-set expandtab		    " use spaces instead of tabs
-set smarttab		    " be smart when using tabs
-set shiftwidth=4	    " 1 tab == 2 spaces
-set tabstop=4		    " 1 tab == 2 spaces
-set ru                  " shows ruler for cursor
-set sc                  " showcmd shows incomplete commands
-set foldmethod=manual   " set a foldmethod
-set splitright          " all vertical splits open to the right
+set nocp                       " set nocompatible
+set laststatus=2               " grey status bar at the bottom
+syntax enable                  " syntax highlighting
+set ai                         " auto indenting
+set nu                         " line numbers
+set ic                         " case insensitive search
+set scs                        " smart case search
+set hlsearch 		           " highlight what you search for
+set incsearch 		           " type-ahead-find
+set expandtab		           " use spaces instead of tabs
+set smarttab		           " be smart when using tabs
+set shiftwidth=4	           " 1 tab == 2 spaces
+set tabstop=4		           " 1 tab == 2 spaces
+set ru                         " shows ruler for cursor
+set sc                         " showcmd shows incomplete commands
+set foldmethod=manual          " set a foldmethod
+set splitright                 " all vertical splits open to the right
 set colorcolumn=120
 set autoread
+set backspace=indent,eol,start " backspace over everything in insert mode"
 
 " MacVim
 set guifont=Inconsolata-dz:h13
