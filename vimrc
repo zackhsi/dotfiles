@@ -85,6 +85,7 @@ Plug 'klen/python-mode'
 Plug 'fisadev/vim-isort'
 Plug 'fatih/vim-go'
 Plug 'saltstack/salt-vim'
+Plug 'keith/swift.vim'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
