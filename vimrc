@@ -38,8 +38,9 @@ map <C-l> <C-w>l
 
 " Leader
 let mapleader = "\<Space>"
-nnoremap <Leader>w :w<CR>     " <Space>w = save file
-vmap <Leader>y "+y            " Copy & paste to system clipboard with <Space>p and <Space>y
+nnoremap <Leader>w :w<CR>         " <Space>w = save file
+nmap <Leader>t :TagbarToggle<CR>  " Toggle Tagba"
+vmap <Leader>y "+y                " Copy & paste to system clipboard with <Space>p and <Space>y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
@@ -57,6 +58,7 @@ Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'kshenoy/vim-signature'
+Plug 'majutsushi/tagbar'
 
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
