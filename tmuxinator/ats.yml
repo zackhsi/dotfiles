@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ats.yml
+
+name: ats
+root: ~/workspace/ats
+
+windows:
+  - editor: vim
+  - devbox:
+      layout: even-horizontal
+      panes:
+        - dev && ./service ssh ats
+        -

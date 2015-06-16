@@ -1,0 +1,10 @@
+name: mock
+root: ~/workspace/mock-lyft-api
+
+windows:
+  - mock-api:
+      layout: tiled
+      panes:
+        - ngrok -subdomain apizhsi 3000
+        - foreman start -f Procfile.dev
+        - ngrok -subdomain atszhsi 3100
