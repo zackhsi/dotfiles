@@ -5,17 +5,18 @@ ZSH_THEME="robbyrussell"
 alias gbc="git branch | grep -v -e 'master' -e 'release' | xargs git branch -d"
 alias mux=tmuxinator
 
-alias dev="~/workspace/devbox"
-alias ats="~/workspace/ats"
 alias api="~/workspace/instant-server"
-alias ios="~/workspace/instant-ios"
+alias ats="~/workspace/ats"
+alias dev="~/workspace/devbox"
+alias dot="~/homespace/dotfiles"
 alias green="~/workspace/green"
-alias www2="~/workspace/lyft.com"
+alias ios="~/workspace/instant-ios"
 alias mock="~/workspace/mock-lyft-api"
 alias mocks="~/workspace/mocks"
-alias dot="~/homespace/dotfiles"
+alias ops="~/workspace/ops"
 alias readonlymongo="~/workspace/readonlymongo"
 alias venmo="~/homespace/venmo"
+alias www2="~/workspace/lyft.com"
 
 # Uncomment following line if you want to  shown in the command execution time stamp 
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
