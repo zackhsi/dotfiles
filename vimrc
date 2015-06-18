@@ -88,6 +88,7 @@ Plug 'fisadev/vim-isort'
 Plug 'fatih/vim-go'
 Plug 'saltstack/salt-vim'
 Plug 'keith/swift.vim'
+Plug 'mitsuhiko/vim-jinja'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
