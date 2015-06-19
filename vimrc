@@ -73,7 +73,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'terryma/vim-expand-region'
 
 " Appearance
 Plug 'altercation/vim-colors-solarized'
@@ -108,10 +107,6 @@ let g:airline#extensions#tabline#enabled      = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 let g:airline#extensions#syntastic#enabled    = 1
-
-" expand region with v and shrink with <C-v>
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
 
 " Solarized
 let g:solarized_termtrans = 1
