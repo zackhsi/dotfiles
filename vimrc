@@ -92,6 +92,7 @@ Plug 'mitsuhiko/vim-jinja'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 call plug#end()
 
