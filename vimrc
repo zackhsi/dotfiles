@@ -93,6 +93,7 @@ Plug 'mitsuhiko/vim-jinja'
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'sjl/vitality.vim'
 
 call plug#end()
 
