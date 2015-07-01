@@ -78,8 +78,8 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
 Plug 'altercation/vim-colors-solarized'
-Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'bling/vim-airline'
+Plug 'chriskempson/base16-vim'
 
 " Language specific
 Plug 'burnettk/vim-angular'
@@ -101,7 +101,7 @@ call plug#end()
 """"""""""""""""""""""""""""""
 " airline
 """"""""""""""""""""""""""""""
-let g:airline_theme                           = 'powerlineish'
+let g:airline_theme                           = 'base16'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
@@ -110,11 +110,10 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 let g:airline#extensions#syntastic#enabled    = 1
 
-" Solarized
-let g:solarized_termtrans = 1
+" Colorscheme
+let base16colorspace=256
 set background=dark
-colorscheme solarized
-" colorscheme Tomorrow-Night-Eighties
+colorscheme base16-tomorrow
 
 " NERDTree
 :command NT NERDTreeToggle
