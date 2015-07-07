@@ -1,3 +1,5 @@
+set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
+set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
 set nocp                       " set nocompatible
 set laststatus=2               " grey status bar at the bottom
 syntax enable                  " syntax highlighting
