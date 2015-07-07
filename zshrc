@@ -2,7 +2,6 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Aliases
-alias gbc="git branch | grep -v -e 'master' -e 'release' | xargs git branch -d"
 alias mux=tmuxinator
 
 alias api="~/workspace/instant-server"
