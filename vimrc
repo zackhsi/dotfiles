@@ -77,7 +77,6 @@ Plug 'tomtom/tcomment_vim'
 Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
-Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 
