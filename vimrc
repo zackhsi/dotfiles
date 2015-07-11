@@ -119,7 +119,7 @@ colorscheme base16-tomorrow
 :command NT NERDTreeToggle
 :command NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
-let g:NERDTreeDirArrows=0
+" let g:NERDTreeDirArrows=0
 
 " Remap tcomment toggle
 nmap <D-/> gcc
