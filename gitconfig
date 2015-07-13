@@ -1,0 +1,7 @@
+[user]
+	email = zhsi@lyft.com
+	name = Zack Hsi
+[core]
+	excludesfile = ~/.gitignore
+[push]
+	default = matching
