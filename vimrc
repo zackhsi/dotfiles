@@ -66,6 +66,7 @@ Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " Git
 Plug 'tpope/vim-fugitive'
