@@ -17,7 +17,7 @@ set ru                         " shows ruler for cursor
 set sc                         " showcmd shows incomplete commands
 set foldmethod=manual          " set a foldmethod
 set splitright                 " all vertical splits open to the right
-set colorcolumn=100
+set colorcolumn=80
 set autoread
 set backspace=indent,eol,start " backspace over everything in insert mode"
 
