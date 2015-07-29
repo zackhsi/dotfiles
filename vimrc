@@ -19,6 +19,7 @@ set foldmethod=manual          " set a foldmethod
 set splitright                 " all vertical splits open to the right
 set splitbelow                 " all horizontal splits open to the bottom
 set colorcolumn=80
+set cursorline
 set autoread
 set backspace=indent,eol,start " backspace over everything in insert mode"
 set mouse=a                    " enable mouse
