@@ -1,29 +1,37 @@
-set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
-set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
-set nocp                       " set nocompatible
-set laststatus=2               " grey status bar at the bottom
-syntax enable                  " syntax highlighting
 set ai                         " auto indenting
-set nu                         " line numbers
-set ic                         " case insensitive search
-set scs                        " smart case search
-set hlsearch 		           " highlight what you search for
-set incsearch 		           " type-ahead-find
-set expandtab		           " use spaces instead of tabs
-set smarttab		           " be smart when using tabs
-set shiftwidth=4	           " 1 tab == 2 spaces
-set tabstop=4		           " 1 tab == 2 spaces
-set ru                         " shows ruler for cursor
-set sc                         " showcmd shows incomplete commands
-set foldmethod=manual          " set a foldmethod
-set splitright                 " all vertical splits open to the right
-set splitbelow                 " all horizontal splits open to the bottom
-set colorcolumn=80
-set cursorline
-set autoread
+set autoread                   " reread file on focus
 set backspace=indent,eol,start " backspace over everything in insert mode"
+set colorcolumn=80             " line length matters
+set cursorline                 " backlight for current line
+set foldmethod=manual          " set a foldmethod
+set laststatus=2               " grey status bar at the bottom
+set number                     " line numbers
+set showcmd                    " show incomplete commands
+
+set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
+set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
+
+set hlsearch 		           " highlight what you search for
+set ic                         " case insensitive search
+set incsearch 		           " type-ahead-find
+set scs                        " smart case search
+
+set expandtab		           " use spaces instead of tabs
+set shiftwidth=4	           " 1 tab == 2 spaces
+set smarttab		           " be smart when using tabs
+set tabstop=4		           " 1 tab == 2 spaces
+
+set splitbelow                 " all horizontal splits open to the bottom
+set splitright                 " all vertical splits open to the right
+
 set mouse=a                    " enable mouse
 set ttymouse=xterm2            " more mouse
+
+set nobackup                   " no backup files
+set noswapfile                 " no swap files
+set nowritebackup              " only in case you don't want a backup file while editing
+
+syntax enable                  " syntax highlighting
 
 " MacVim
 set guifont=Inconsolata-dz:h13
@@ -123,7 +131,6 @@ colorscheme base16-tomorrow
 :command NT NERDTreeToggle
 :command NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
-" let g:NERDTreeDirArrows=0
 
 " Remap tcomment toggle
 nmap <D-/> gcc
