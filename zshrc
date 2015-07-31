@@ -25,7 +25,15 @@ alias www2="~/workspace/lyft.com"
 HIST_STAMPS="mm/dd/yyyy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git vagrant brew jsontools mongodb history-substring-search tmux tmuxinator hub)
+plugins=(
+  brew
+  git
+  history-substring-search
+  jira
+  tmux
+  tmuxinator
+  vagrant
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,6 +42,9 @@ export EDITOR='vim'
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 export TERM=xterm-256color
+
+# JIRA
+JIRA_URL=https://lyftme.atlassian.net
 
 # Base16 Shell
 if [ ! -d ~/.config/base16-shell ]; then
