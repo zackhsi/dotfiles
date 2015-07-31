@@ -43,6 +43,8 @@ vnorem // y/<c-r>"<cr>
 
 " activates indenting for files
 filetype plugin indent on
+autocmd Filetype bash setlocal ts=2 sts=2 sw=2
+autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
 " easy window navigation
 map <C-j> <C-w>j
