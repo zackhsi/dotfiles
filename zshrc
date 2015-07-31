@@ -45,6 +45,7 @@ export TERM=xterm-256color
 
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
+JIRA_DASHBOARD="true"
 
 # Base16 Shell
 if [ ! -d ~/.config/base16-shell ]; then
