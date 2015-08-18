@@ -1,3 +1,5 @@
+let mapleader = "\<Space>"     " Use space as leader
+
 set ai                         " auto indenting
 set autoread                   " reread file on focus
 set backspace=indent,eol,start " backspace over everything in insert mode"
@@ -6,6 +8,7 @@ set cursorline                 " backlight for current line
 set foldmethod=manual          " set a foldmethod
 set laststatus=2               " grey status bar at the bottom
 set number                     " line numbers
+set pastetoggle=<Leader>p      " toggle paste mode
 set showcmd                    " show incomplete commands
 
 set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
@@ -38,6 +41,10 @@ set guifont=Inconsolata-dz:h13
 set guioptions-=r
 set guioptions-=L
 
+" Leader
+nmap <Leader>t :TagbarToggle<CR>  " Toggle Tagbar
+vmap <Leader>y "+y                " Copy to system clipboard with leader + y
+
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
 
@@ -51,18 +58,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
-
-" Leader
-let mapleader = "\<Space>"
-nnoremap <Leader>w :w<CR>         " <Space>w = save file
-nmap <Leader>t :TagbarToggle<CR>  " Toggle Tagba"
-vmap <Leader>y "+y                " Copy & paste to system clipboard with <Space>p and <Space>y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
