@@ -1,25 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-# Aliases
-alias mux=tmuxinator
-
-alias api="~/workspace/instant-server"
-alias ats="~/workspace/ats"
-alias dev="~/workspace/devbox"
-alias dot="~/homespace/dotfiles"
-alias fireman="~/workspace/fireman"
-alias green="~/workspace/green"
-alias home="~/homespace"
-alias ios="~/workspace/Lyft-iOS"
-alias mock="~/workspace/mock-lyft-api"
-alias mocks="~/workspace/mocks"
-alias ops="~/workspace/ops"
-alias orca="~/workspace/ops/orca"
-alias readonlymongo="~/workspace/readonlymongo"
-alias venmo="~/homespace/venmo"
-alias work="~/workspace"
-alias www2="~/workspace/lyft.com"
+source ~/.aliases
 
 # Uncomment following line if you want to  shown in the command execution time stamp 
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
