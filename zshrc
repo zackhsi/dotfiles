@@ -38,28 +38,4 @@ fi
 BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-# zsh-autosuggestions
-if [ ! -d ~/.zsh/zsh-autosuggestions ]; then
-    git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-fi
-if [ ! -d ~/.zsh/zsh-syntax-highlighting ]; then
-    git clone git://github.com/jimmijj/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
-fi
-
-# Load zsh-syntax-highlighting.
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Load zsh-autosuggestions.
-source ~/.zsh/zsh-autosuggestions/autosuggestions.zsh
-
-# Enable autosuggestions automatically.
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-
-zmodload zsh/terminfo # zsh substring history with up/down/p/n
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey '^P' history-substring-search-up
-bindkey '^N' history-substring-search-down
+source ~/.zsh_autosuggestions
