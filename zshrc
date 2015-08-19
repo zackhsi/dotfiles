@@ -38,13 +38,6 @@ fi
 BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-# Android
-export ANDROID_HOME='/Applications/Android Studio.app/sdk'
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-### Heroku toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # zsh-autosuggestions
 if [ ! -d ~/.zsh/zsh-autosuggestions ]; then
     git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
