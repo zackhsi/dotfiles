@@ -1,0 +1,5 @@
+export PATH="/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin"
+export EDITOR='vim'
+export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
+export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
+export TERM=xterm-256color
