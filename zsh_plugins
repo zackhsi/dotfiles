@@ -10,4 +10,4 @@ plugins=(
 )
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
-JIRA_DASHBOARD="true"
+JIRA_DEFAULT_ACTION="dashboard"
