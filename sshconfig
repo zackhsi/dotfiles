@@ -1,0 +1,27 @@
+Host gateway.ln
+    Hostname gateway.lyft.net
+    ProxyCommand none
+    GatewayPorts yes
+
+Host *-prod
+    Hostname %huction-iad.lyft.net
+
+# EC2 Instance ID
+Host i-*
+    Hostname %h.lyft.net
+ 
+Host *.lyft.me *.lm *.lyft.net *.ln *-prod i-*
+    ProxyCommand ssh gateway.ln "proxy-ec2 %h"
+    User zhsi
+    # For increased security, consider setting ForwardAgent to no
+    # and use the -A flag to set agent forwarding on a per connection basis
+    # when access to the local ssh agent is actually needed
+    # (eg when pushing to github).
+    ForwardAgent yes
+ 
+Host *
+    KeepAlive yes
+    ServerAliveInterval 60
+    GSSAPIAuthentication no
+    ForwardAgent no
+    ForwardX11 no

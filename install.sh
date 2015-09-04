@@ -9,6 +9,8 @@ do
         link_to=~/.$file
         if [[ "$file" == "flake8" ]]; then
             link_to=~/.config/flake8
+        elif [[ "$file" == "sshconfig" ]]; then
+            link_to=~/.ssh/config
         fi
 
         if [ ! -L $link_to ]; then
