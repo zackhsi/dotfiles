@@ -99,6 +99,7 @@ Plug 'fatih/vim-go'
 Plug 'saltstack/salt-vim'
 Plug 'keith/swift.vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'stephpy/vim-yaml'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
