@@ -156,10 +156,10 @@ let g:pymode_lint_checkers = ['flake8', 'mccabe']
 """"""""""""""""""""""""""""""
 " FZF
 """"""""""""""""""""""""""""""
-map <Leader><Leader> :FZF <CR>
+map <silent> <Leader><Leader> :silent FZF <CR>
 
 " Search word under cursor by using Ag | leader + a
-noremap <silent> <leader>a :Ag <C-r>=expand('<cword>')<CR><CR>
+noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
 
 function! BufList()
     redir => ls
@@ -172,7 +172,7 @@ function! BufOpen(e)
     execute 'buffer '. matchstr(a:e, '^[ 0-9]*')
 endfunction
 
-nnoremap <silent> <Leader><Enter> :call fzf#run({
+nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 \   'source':      reverse(BufList()),
 \   'sink':        function('BufOpen'),
 \   'options':     '+m',
