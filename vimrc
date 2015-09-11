@@ -153,8 +153,13 @@ let g:pymode_rope = 1
 let g:pymode_rope_completion = 0
 let g:pymode_lint_checkers = ['flake8', 'mccabe']
 
+""""""""""""""""""""""""""""""
 " FZF
+""""""""""""""""""""""""""""""
 map <Leader><Leader> :FZF <CR>
+
+" Search word under cursor by using Ag | leader + a
+noremap <silent> <leader>a :Ag <C-r>=expand('<cword>')<CR><CR>
 
 function! BufList()
     redir => ls
