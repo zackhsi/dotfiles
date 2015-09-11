@@ -65,11 +65,11 @@ map <C-l> <C-w>l
 call plug#begin('~/.vim/plugged')
 
 " Code Navigation
-Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'kshenoy/vim-signature'
 Plug 'majutsushi/tagbar'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf.vim'
 
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
@@ -137,21 +137,6 @@ vmap <D-/> gcc
 " gitgutter
 highlight clear SignColumn
 
-" Ctrl-P
-let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
-let g:ctrlp_custom_ignore = '\.pyc'
-let g:ctrlp_extensions = ['line', 'buffertag', 'tag']
-if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
-
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-else
-    let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-    let g:ctrlp_prompt_mappings = {
-                \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
-                \ }
-endif
-
 " ctags
 command! -nargs=1 Silent
             \ | execute ':silent !'.<q-args>
@@ -167,3 +152,6 @@ let g:pymode_folding = 0
 let g:pymode_rope = 1
 let g:pymode_rope_completion = 0
 let g:pymode_lint_checkers = ['flake8', 'mccabe']
+
+" FZF
+map <Leader><Leader> :FZF <CR>
