@@ -2,7 +2,6 @@
 plugins=(
   brew
   git
-  history-substring-search
   jira
   tmux
   tmuxinator
