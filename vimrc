@@ -42,7 +42,6 @@ set guioptions-=r
 set guioptions-=L
 
 " Leader
-nmap <Leader>t :TagbarToggle<CR>  " Toggle Tagbar
 vmap <Leader>y "+y                " Copy to system clipboard with leader + y
 
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
@@ -67,7 +66,6 @@ call plug#begin('~/.vim/plugged')
 " Code Navigation
 Plug 'scrooloose/nerdtree'
 Plug 'kshenoy/vim-signature'
-Plug 'majutsushi/tagbar'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 
@@ -160,6 +158,9 @@ map <silent> <Leader><Leader> :silent FZF <CR>
 
 " Search word under cursor by using Ag | leader + a
 noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
+
+" Search tags in buffer by using leader + t
+noremap <silent> <leader>t :silent BTags<CR>
 
 function! BufList()
     redir => ls
