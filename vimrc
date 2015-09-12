@@ -159,6 +159,9 @@ map <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor by using Ag | leader + a
 noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
 
+" Search tags in buffer by using leader + h
+noremap <silent> <leader>h :silent History<CR>
+
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
 
