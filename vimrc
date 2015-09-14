@@ -42,7 +42,7 @@ set guioptions-=r
 set guioptions-=L
 
 " Leader
-vmap <Leader>y "+y                " Copy to system clipboard with leader + y
+vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
 
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
@@ -128,10 +128,6 @@ colorscheme base16-tomorrow
 :command NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
 
-" Remap tcomment toggle
-nmap <D-/> gcc
-vmap <D-/> gcc
-
 " gitgutter
 highlight clear SignColumn
 
@@ -154,7 +150,7 @@ let g:pymode_lint_checkers = ['flake8', 'mccabe']
 """"""""""""""""""""""""""""""
 " FZF
 """"""""""""""""""""""""""""""
-map <silent> <Leader><Leader> :silent FZF <CR>
+noremap <silent> <Leader><Leader> :silent FZF <CR>
 
 " Search word under cursor by using Ag | leader + a
 noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
