@@ -161,6 +161,9 @@ noremap <silent> <leader>h :silent History<CR>
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
 
+" Search tags in buffer by using leader + T
+noremap <silent> <leader>T :silent Tags<CR>
+
 function! BufList()
     redir => ls
     silent ls
