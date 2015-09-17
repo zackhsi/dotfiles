@@ -8,7 +8,6 @@ set cursorline                 " backlight for current line
 set foldmethod=manual          " set a foldmethod
 set laststatus=2               " grey status bar at the bottom
 set number                     " line numbers
-set pastetoggle=<Leader>p      " toggle paste mode
 set showcmd                    " show incomplete commands
 
 set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
@@ -43,6 +42,7 @@ set guioptions-=L
 
 " Leader
 vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
+noremap <leader>p :set paste!<CR>  " Toggle paste mode
 
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
