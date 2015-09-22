@@ -1,4 +1,8 @@
-IGNORED_FILES=(tags $0)
+IGNORED_FILES=(
+  tags
+  $0
+  com.googlecode.iterm2.plist
+)
 
 for file in *
 do
