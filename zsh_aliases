@@ -16,7 +16,11 @@ alias readonlymongo="~/workspace/readonlymongo"
 alias venmo="~/homespace/venmo"
 alias work="~/workspace"
 alias www2="~/workspace/lyft.com"
-alias f="cd ~/workspace/ops/hacktools/ && ./fab.sh"
+
+# Fabric
+function f() {
+  (cd ~/workspace/ops/hacktools/ && ./fab.sh $@)
+}
 
 # Start screen saver
 alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
