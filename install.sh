@@ -1,7 +1,10 @@
 IGNORED_FILES=(
-  tags
   $0
+  Brewfile
   com.googlecode.iterm2.plist
+  requirements.in
+  requirements.txt
+  tags
 )
 
 for file in *
