@@ -1,0 +1,11 @@
+# This file contains top-level dependencies.
+# 
+# To add new dependency, add it to this list then run:
+#   pip-compile > requirements.txt
+#   pip-sync
+
+flake8
+isort
+pip-tools
+requests
+speedtest-cli
