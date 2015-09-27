@@ -5,6 +5,7 @@
 #   pip-sync
 
 flake8
+ipython
 isort
 pip-tools
 requests
