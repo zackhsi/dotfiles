@@ -9,3 +9,4 @@ isort
 pip-tools
 requests
 speedtest-cli
+virtualenv
