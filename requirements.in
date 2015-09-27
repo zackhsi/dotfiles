@@ -1,7 +1,7 @@
 # This file contains top-level dependencies.
 # 
 # To add new dependency, add it to this list then run:
-#   pip-compile > requirements.txt
+#   pip-compile
 #   pip-sync
 
 flake8
