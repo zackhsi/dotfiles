@@ -1,6 +1,7 @@
 IGNORED_FILES=(
   $0
   Brewfile
+  Makefile
   com.googlecode.iterm2.plist
   requirements.in
   requirements.txt
