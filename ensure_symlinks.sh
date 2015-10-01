@@ -10,10 +10,8 @@ IGNORED_FILES=(
 
 for file in *
 do
-    link_from=$(pwd)/$file
-    if [[ "${IGNORED_FILES[@]}" =~ "${file} " || "${IGNORED_FILES[${#IGNORED_FILES[@]}-1]}" == "${file}" ]]; then
-        echo "Ignoring $file..."
-    else
+    if ! [[ "${IGNORED_FILES[@]}" =~ "${file} " || "${IGNORED_FILES[${#IGNORED_FILES[@]}-1]}" == "${file}" ]]; then
+        link_from=$(pwd)/$file
         link_to=~/.$file
         if [[ "$file" == "flake8" ]]; then
             link_to=~/.config/flake8
