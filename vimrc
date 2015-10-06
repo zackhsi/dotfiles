@@ -8,7 +8,7 @@ set cursorline                 " backlight for current line
 set foldmethod=manual          " set a foldmethod
 set laststatus=2               " grey status bar at the bottom
 set number                     " line numbers
-set scrolloff=5                " Always shows five lines of vertical context around the cursor
+set scrolloff=2                " Always shows two lines of vertical context around the cursor
 set showcmd                    " show incomplete commands
 
 set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
