@@ -14,15 +14,16 @@ ipython-genutils==0.1.0   # via traitlets
 ipython==4.0.0
 isort==4.2.2
 mccabe==0.3.1             # via flake8
-path.py==8.1.1            # via pickleshare
+path.py==8.1.2            # via pickleshare
 pep8==1.5.7               # via flake8
-pexpect==3.3              # via ipython
+pexpect==4.0.1            # via ipython
 pickleshare==0.5          # via ipython
-pip-tools==1.1.4
+pip-tools==1.1.6
+ptyprocess==0.5           # via pexpect
 pyflakes==0.8.1           # via flake8
-requests==2.7.0
+requests==2.8.1
 simplegeneric==0.8.1      # via ipython
-six==1.9.0                # via pip-tools
+six==1.10.0               # via pip-tools
 speedtest-cli==0.3.4
 traitlets==4.0.0          # via ipython
 virtualenv==13.1.2
