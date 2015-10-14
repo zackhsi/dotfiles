@@ -9,5 +9,6 @@ ipython
 isort
 pip-tools
 requests
+saws
 speedtest-cli
 virtualenv
