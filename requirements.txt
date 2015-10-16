@@ -5,8 +5,8 @@
 #    pip-compile requirements.in
 #
 appnope==0.1.0            # via ipython
-awscli==1.8.12            # via saws
-botocore==1.2.10          # via awscli
+awscli==1.8.13            # via saws
+botocore==1.2.11          # via awscli
 click==5.1                # via pip-tools, saws
 colorama==0.3.3           # via awscli
 configobj==5.0.6          # via saws
