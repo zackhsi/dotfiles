@@ -15,20 +15,18 @@ docutils==0.12            # via awscli, botocore
 enum34==1.0.4             # via saws
 first==2.0.1              # via pip-tools
 flake8==2.4.1
-fuzzyfinder==1.0.0        # via saws
 gnureadline==6.3.3        # via ipython
 ipython-genutils==0.1.0   # via traitlets
 ipython==4.0.0
 isort==4.2.2
 jmespath==0.9.0           # via botocore
 mccabe==0.3.1             # via flake8
-ordereddict==1.1          # via saws
 path.py==8.1.2            # via pickleshare
 pep8==1.5.7               # via flake8
 pexpect==4.0.1            # via ipython
 pickleshare==0.5          # via ipython
 pip-tools==1.1.6
-prompt-toolkit==0.50      # via saws
+prompt-toolkit==0.52      # via saws
 ptyprocess==0.5           # via pexpect
 pyasn1==0.1.9             # via rsa
 pyflakes==0.8.1           # via flake8
@@ -36,7 +34,7 @@ pygments==2.0.2           # via prompt-toolkit, saws
 python-dateutil==2.4.2    # via botocore
 requests==2.8.1
 rsa==3.2                  # via awscli
-saws==0.2.1
+saws==0.3.2
 simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via configobj, pip-tools, prompt-toolkit, python-dateutil, saws
 speedtest-cli==0.3.4

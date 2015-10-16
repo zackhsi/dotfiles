@@ -7,7 +7,7 @@ ensure_symlinks:
 
 .PHONY: install  # Install packages via pip and brew
 install:
-	pip-sync
+	sudo pip-sync
 	brew bundle cleanup --force
 	brew bundle check || brew bundle
 
