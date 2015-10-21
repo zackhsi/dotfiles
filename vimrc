@@ -162,14 +162,14 @@ noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor by using Ag | leader + a
 noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
 
-" Search tags in buffer by using leader + h
-noremap <silent> <leader>h :silent History<CR>
-
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
 
-" Search tags in buffer by using leader + T
+" Search all tags by using leader + T
 noremap <silent> <leader>T :silent Tags<CR>
+
+" Search marks by using leader + m
+noremap <silent> <leader>m :silent Marks<CR>
 
 function! BufList()
     redir => ls
