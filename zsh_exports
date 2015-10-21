@@ -1,4 +1,4 @@
-export PATH="/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin"
+export PATH="/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin"
 export EDITOR='vim'
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
