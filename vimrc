@@ -4,7 +4,6 @@ set ai                         " auto indenting
 set autoread                   " reread file on focus
 set backspace=indent,eol,start " backspace over everything in insert mode"
 set colorcolumn=80             " line length matters
-set cursorline                 " backlight for current line
 set foldmethod=manual          " set a foldmethod
 set laststatus=2               " grey status bar at the bottom
 set number                     " line numbers
@@ -35,6 +34,12 @@ set noswapfile                 " no swap files
 set nowritebackup              " only in case you don't want a backup file while editing
 
 syntax enable                  " syntax highlighting
+
+augroup CursorLineOnlyInActiveWindow
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+augroup END
 
 " MacVim
 set guifont=Inconsolata-dz:h13
