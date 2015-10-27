@@ -24,3 +24,10 @@ function f() {
 
 # Start screen saver
 alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+# Open panes ssh'd into production ASG
+function ssh_asg() {
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
+    | xargs -I % tmux split-window "tmux select-layout tiled && ssh -oStrictHostKeyChecking=no %"
+}
