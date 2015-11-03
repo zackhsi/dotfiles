@@ -17,25 +17,31 @@ function f() {
 # Start screen saver
 alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
-function term() {
+###############################################################################
+# AWS
+###############################################################################
+
+# Instance functions
+function instance_term() {
   aws ec2 stop-instances --instance-ids $@
 }
-
-function force_term() {
+function instance_term_force() {
   aws ec2 stop-instances --instance-ids $@ --force
 }
 
-# Open panes ssh'd into production ASG
+# ASG functions
 function asg_ssh() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
     | xargs -I % tmux split-window "tmux select-layout tiled && ssh -oStrictHostKeyChecking=no %"
 }
-
 function asg_term_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --should-decrement-desired-capacity
 }
-
 function asg_term_no_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --no-should-decrement-desired-capacity
+}
+function asg_ls() {
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId"
 }
