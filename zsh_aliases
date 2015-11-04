@@ -9,13 +9,27 @@ alias dev="~/workspace/devbox"
 alias fire="~/workspace/fireman"
 alias o="~/workspace/ops"
 
+# Start screen saver
+alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+###############################################################################
 # Fabric
+###############################################################################
 function f() {
   (cd ~/workspace/ops/hacktools/ && ./fab.sh $@)
 }
-
-# Start screen saver
-alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+function fssh() {
+  (cd ~/workspace/ops/hacktools/ && ./fssh $@)
+}
+PATH=$PATH:~/bin
+if [ ! -d ~/bin ]; then
+  echo "Creating ~/bin directory"
+  mkdir ~/bin
+fi
+if [ ! -L ~/bin/fab ]; then
+  echo "Linking fab tool"
+  ln -s ~/workspace/ops/hacktools/fab.sh ~/bin/fab
+fi
 
 ###############################################################################
 # AWS
