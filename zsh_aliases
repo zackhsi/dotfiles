@@ -1,5 +1,13 @@
-alias mux=tmuxinator
+###############################################################################
+# Git
+###############################################################################
+alias pr="hub pull-request"
+alias gbc="git branch | xargs git branch -d"
 
+
+###############################################################################
+# Directories
+###############################################################################
 alias home="~/homespace"
 alias dot="~/homespace/dotfiles"
 
@@ -9,8 +17,6 @@ alias dev="~/workspace/devbox"
 alias fire="~/workspace/fireman"
 alias o="~/workspace/ops"
 
-# Start screen saver
-alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 ###############################################################################
 # Fabric
