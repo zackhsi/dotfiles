@@ -20,7 +20,7 @@ brew 'libyaml'
 brew 'readline'
 brew 'sqlite'
 brew 'python'
-brew 'macvim', args: ['override-system-vim']
+brew 'macvim', args: ['with-override-system-vim']
 brew 'mercurial'
 brew 'mongodb'
 brew 'postgresql'

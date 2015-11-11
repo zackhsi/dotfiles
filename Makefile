@@ -12,8 +12,8 @@ pip:
 
 .PHONY: homebrew
 homebrew:
-	brew doctor
 	brew update
+	brew doctor
 	brew bundle cleanup --force
 	brew bundle check || brew bundle
 	brew bundle dump --force
