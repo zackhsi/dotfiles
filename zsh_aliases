@@ -8,7 +8,7 @@ PATH=/usr/local/sbin:$PATH
 # Git
 ###############################################################################
 alias pr="hub pull-request"
-alias gbc="git branch | xargs git branch -d"
+alias gbc="git branch | grep -v master | xargs git branch -d"
 
 
 ###############################################################################
