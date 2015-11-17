@@ -56,8 +56,8 @@ vnorem // y/<c-r>"<cr>
 " activates indenting for files
 filetype plugin indent on
 autocmd Filetype bash setlocal ts=2 sts=2 sw=2
-autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 autocmd Filetype sh setlocal ts=2 sts=2 sw=2
+autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
 " easy window navigation
 map <C-j> <C-w>j
@@ -95,16 +95,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 
-" Language specific
+" Languages (non-Python)
+Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'burnettk/vim-angular'
-Plug 'evidens/vim-twig'
+Plug 'fatih/vim-go'
+Plug 'keith/swift.vim'
+Plug 'saltstack/salt-vim'
+Plug 'stephpy/vim-yaml'
+
+" Python
 Plug 'klen/python-mode'
 Plug 'fisadev/vim-isort'
-Plug 'fatih/vim-go'
-Plug 'saltstack/salt-vim'
-Plug 'keith/swift.vim'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'stephpy/vim-yaml'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
