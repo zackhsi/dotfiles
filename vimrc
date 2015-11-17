@@ -56,6 +56,7 @@ vnorem // y/<c-r>"<cr>
 " activates indenting for files
 filetype plugin indent on
 autocmd Filetype bash setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype sh setlocal ts=2 sts=2 sw=2
 autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
@@ -100,6 +101,7 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'burnettk/vim-angular'
 Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'saltstack/salt-vim'
 Plug 'stephpy/vim-yaml'
 
