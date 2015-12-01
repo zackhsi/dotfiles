@@ -99,6 +99,7 @@ Plug 'chriskempson/base16-vim'
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'burnettk/vim-angular'
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
