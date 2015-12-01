@@ -2,4 +2,5 @@ export EDITOR='vim'
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 export TERM=xterm-256color
+export PAGER="less -IM"
 [ -n "$TMUX"  ] && export TERM=screen-256color
