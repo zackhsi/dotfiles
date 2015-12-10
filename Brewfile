@@ -23,6 +23,7 @@ brew 'python'
 brew 'macvim', args: ['with-override-system-vim']
 brew 'mercurial'
 brew 'mongodb'
+brew 'node'
 brew 'postgresql'
 brew 'reattach-to-user-namespace'
 brew 'zeromq'
