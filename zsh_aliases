@@ -72,3 +72,7 @@ function asg_ls() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId"
 }
+function asg_ll() {
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+    | jq ".AutoScalingGroups[0].Instances | .[]"
+}
