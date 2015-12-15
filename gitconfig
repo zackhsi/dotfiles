@@ -4,4 +4,4 @@
 [core]
 	excludesfile = ~/.gitignore
 [push]
-	default = simple
+	default = current
