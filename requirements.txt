@@ -10,7 +10,7 @@ botocore==1.3.12          # via awscli
 click==6.2                # via pip-tools, saws
 colorama==0.3.3           # via awscli
 configobj==5.0.6          # via saws
-decorator==4.0.5          # via ipython, traitlets
+decorator==4.0.6          # via ipython, traitlets
 docutils==0.12            # via awscli, botocore
 enum34==1.1.1             # via saws
 first==2.0.1              # via pip-tools
@@ -25,14 +25,14 @@ path.py==8.1.2            # via pickleshare
 pep8==1.5.7               # via flake8
 pexpect==4.0.1            # via ipython
 pickleshare==0.5          # via ipython
-pip-tools==1.3.0
+pip-tools==1.4.2
 prompt-toolkit==0.52      # via saws
 ptyprocess==0.5           # via pexpect
 pyasn1==0.1.9             # via rsa
 pyflakes==1.0.0           # via flake8
 pygments==2.0.2           # via prompt-toolkit, saws
 python-dateutil==2.4.2    # via botocore
-requests==2.8.1
+requests==2.9.0
 rsa==3.2.3                # via awscli
 saws==0.4.0
 simplegeneric==0.8.1      # via ipython
