@@ -131,7 +131,11 @@ let g:airline#extensions#syntastic#enabled    = 1
 
 " Colorscheme
 let base16colorspace=256
-set background=dark
+if $BACKGROUND == 'light'
+    set background=light
+else
+    set background=dark
+endif
 colorscheme base16-tomorrow
 
 " NERDTree

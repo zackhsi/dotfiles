@@ -1,6 +1,10 @@
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_THEME="robbyrussell"
+export HIST_STAMPS="mm/dd/yyyy"
 export EDITOR='vim'
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 export TERM=xterm-256color
 export PAGER="less -IM"
+export BACKGROUND=light
 [ -n "$TMUX"  ] && export TERM=screen-256color
