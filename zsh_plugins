@@ -3,6 +3,7 @@ plugins=(
   brew
   docker
   git
+  hub
   jira
   pip
   thefuck
