@@ -8,7 +8,7 @@ ensure_symlinks:
 .PHONY: pip
 pip:
 	pip-compile requirements.in
-	sudo pip-sync
+	pip-sync
 
 .PHONY: homebrew
 homebrew:
