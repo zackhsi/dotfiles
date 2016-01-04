@@ -4,11 +4,11 @@
 #   pip-compile
 #   pip-sync
 
+aws-shell
 flake8
 ipython
 isort
 pip-tools
 requests
-saws
 speedtest-cli
 virtualenv
