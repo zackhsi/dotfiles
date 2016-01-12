@@ -7,4 +7,4 @@ source ~/.zsh_fzf
 
 PROJECT_DIR=/Users/zackhsi/workspace/devbox
 export PATH=$PROJECT_DIR/.bin:$PATH
-[[ $(docker-machine status devbox) == "Running"  ]] && eval $(docker-machine env devbox)
+which docker-machine > /dev/null && [[ $(docker-machine status devbox) == "Running"  ]] && eval $(docker-machine env devbox)
