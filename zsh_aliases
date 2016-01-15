@@ -67,7 +67,7 @@ function instance_term_force() {
 
 # ASG functions
 function asg_ssh() {
-  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
     | xargs -I % tmux split-window "tmux select-layout tiled && ssh -oStrictHostKeyChecking=no %"
 }
@@ -78,10 +78,10 @@ function asg_term_no_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --no-should-decrement-desired-capacity
 }
 function asg_ls() {
-  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId"
 }
 function asg_ll() {
-  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1-production-iad" \
+  aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[]"
 }
