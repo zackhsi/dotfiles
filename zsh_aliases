@@ -23,12 +23,12 @@ alias gbc="git branch | grep -v master | xargs git branch -d"
 ###############################################################################
 # Directories
 ###############################################################################
-alias home="~/homespace"
+alias h="~/homespace"
+alias w="~/workspace"
+alias s="~/source"
 alias dot="~/homespace/dotfiles"
 
-alias work="~/workspace"
-alias api="~/workspace/instant-server"
-alias dev="~/workspace/devbox"
+alias d="~/workspace/devbox"
 alias fire="~/workspace/fireman"
 alias o="~/workspace/ops"
 
