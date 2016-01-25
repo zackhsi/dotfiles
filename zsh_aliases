@@ -57,12 +57,15 @@ fi
 # AWS
 ###############################################################################
 
-# Instance functions
-function instance_term() {
-  aws ec2 stop-instances --instance-ids $@
-}
-function instance_term_force() {
-  aws ec2 stop-instances --instance-ids $@ --force
+# term i-d2609352
+# term -f i-d2609352
+function term() {
+  if [[ $1 == "-f" ]]; then
+    shift
+    aws ec2 stop-instances --instance-ids $@ --force
+  else
+    aws ec2 stop-instances --instance-ids $@
+  fi
 }
 
 # ASG functions
