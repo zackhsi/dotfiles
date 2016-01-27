@@ -161,7 +161,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 let g:pymode_folding = 0
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
-let g:pymode_lint_checkers = ['flake8', 'mccabe']
+let g:pymode_lint_checkers = ['flake8']
 
 """"""""""""""""""""""""""""""
 " FZF
