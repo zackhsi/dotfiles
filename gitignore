@@ -3,3 +3,4 @@
 .ropeproject
 tags
 venv
+.DS_Store
