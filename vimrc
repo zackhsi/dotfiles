@@ -60,6 +60,9 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype sh setlocal ts=2 sts=2 sw=2
 autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
+" detect ini files
+au BufNewFile,BufRead *.ini,*.conf setf dosini
+
 " easy window navigation
 map <C-j> <C-w>j
 map <C-k> <C-w>k
