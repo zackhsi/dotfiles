@@ -3,7 +3,7 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setting ag as the default source for fzf
-export FZF_DEFAULT_COMMAND='ag -l -g ""'
+export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
 #   - Bypass fuzzy finder if there's only one match (--select-1)
