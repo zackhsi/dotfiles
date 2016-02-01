@@ -11,6 +11,9 @@ function venv() {
   virtualenv venv
   source venv/bin/activate
 }
+function pyc() {
+  find . -name "*.pyc" -delete
+}
 
 
 ###############################################################################
