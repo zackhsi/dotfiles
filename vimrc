@@ -98,6 +98,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Appearance
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 
 " Languages (non-Python)
