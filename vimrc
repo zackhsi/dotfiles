@@ -169,6 +169,12 @@ let g:pymode_lint_checkers = ['flake8']
 """"""""""""""""""""""""""""""
 " FZF
 """"""""""""""""""""""""""""""
+" Redefine :Ag command
+autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag
+            \ (<q-args>,
+            \ '--skip-vcs-ignores',
+            \ fzf#vim#default_layout)
+
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 
 " Search word under cursor by using Ag | leader + a
