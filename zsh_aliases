@@ -76,6 +76,22 @@ function term() {
   fi
 }
 
+function describe() {
+  xargs -P 50 -I % aws ec2 describe-instances --instance-ids %
+}
+
+function summarize() {
+  jq '.Reservations[0].Instances[0].InstanceId, .Reservations[0].Instances[0].State.Name, .Reservations[0].Instances[0].InstanceType'
+}
+
+function itype() {
+  jq '.Reservations[0].Instances[0].InstanceType'
+}
+
+function state() {
+  jq '.Reservations[0].Instances[0].State.Name'
+}
+
 # ASG functions
 function asg_ssh() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
