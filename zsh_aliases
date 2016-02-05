@@ -39,6 +39,11 @@ alias o="~/workspace/ops"
 ###############################################################################
 # Fabric
 ###############################################################################
+function mfa() {
+  pushd ~/workspace/ops/orca/ > /dev/null
+  source mfa.sh --role admin
+  popd > /dev/null
+}
 function f() {
   (cd ~/workspace/ops/hacktools/ && ./fab.sh $@)
 }
