@@ -27,28 +27,27 @@ alias gbc="git branch | grep -v master | xargs git branch -d"
 # Directories
 ###############################################################################
 alias h="~/homespace"
-alias w="~/workspace"
-alias s="~/source"
+alias s="$SRC"
 alias dot="~/homespace/dotfiles"
 
-alias d="~/workspace/devbox"
-alias fire="~/workspace/fireman"
-alias o="~/workspace/ops"
+alias d="$SRC/devbox"
+alias fire="$SRC/fireman"
+alias o="$SRC/ops"
 
 
 ###############################################################################
 # Fabric
 ###############################################################################
 function mfa() {
-  pushd ~/workspace/ops/orca/ > /dev/null
+  pushd $SRC/ops/orca/ > /dev/null
   source mfa.sh --role admin
   popd > /dev/null
 }
 function f() {
-  (cd ~/workspace/ops/hacktools/ && ./fab.sh $@)
+  (cd $SRC/ops/hacktools/ && ./fab.sh $@)
 }
 function fssh() {
-  (cd ~/workspace/ops/hacktools/ && ./fssh $@)
+  (cd $SRC/ops/hacktools/ && ./fssh $@)
 }
 PATH=$PATH:~/bin
 if [ ! -d ~/bin ]; then
@@ -57,7 +56,7 @@ if [ ! -d ~/bin ]; then
 fi
 if [ ! -L ~/bin/fab ]; then
   echo "Linking fab tool"
-  ln -s ~/workspace/ops/hacktools/fab.sh ~/bin/fab
+  ln -s $SRC/ops/hacktools/fab.sh ~/bin/fab
 fi
 
 
