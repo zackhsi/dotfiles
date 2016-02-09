@@ -106,9 +106,11 @@ function asg_term_no_decrement() {
 }
 function asg_ls() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
-    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId"
+    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
+    | sort
 }
 function asg_ll() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
-    | jq ".AutoScalingGroups[0].Instances | .[]"
+    | jq ".AutoScalingGroups[0].Instances | .[]" \
+    | sort
 }
