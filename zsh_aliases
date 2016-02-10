@@ -80,7 +80,7 @@ function describe() {
 }
 
 function summarize() {
-  jq '.Reservations[0].Instances[0].InstanceId, .Reservations[0].Instances[0].State.Name, .Reservations[0].Instances[0].InstanceType'
+  jq '.Reservations[0].Instances[0]' | jq '.InstanceId, .State.Name, .InstanceType'
 }
 
 function itype() {
