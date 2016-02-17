@@ -1223,7 +1223,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>322</string>
+		<string>307</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -1237,13 +1237,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>323 1257 445 77 -585 900 2560 1440 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>283 1840 606 456 -570 900 2560 1417 </string>
+	<string>269 412 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 61 1131 816 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>445 1150 650 527 -570 900 2560 1417 </string>
+	<string>0 350 665 527 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>246 52 650 527 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
@@ -2620,7 +2620,7 @@
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>NoSyncLastTipTime</key>
-	<real>474156852.59785402</real>
+	<real>476661415.65490699</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2684,6 +2684,22 @@
 		<string>0047</string>
 		<string>0048</string>
 		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>NoSyncWarnAboutAmbiguousWidth</key>
 	<true/>
@@ -2737,7 +2753,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-10T22:14:11Z</date>
+	<date>2016-02-16T18:04:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -2755,7 +2771,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160108-nightly</string>
+	<string>2.9.20160216-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
