@@ -12,3 +12,6 @@
 	show = diff-so-fancy | less --tabs=1,5
 [diff]
 	algorithm = patience
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
