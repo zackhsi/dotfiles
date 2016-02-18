@@ -85,6 +85,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'ludovicchabant/vim-gutentags'
 
 " Git
 Plug 'tpope/vim-fugitive'
