@@ -11,4 +11,5 @@ isort
 pip-tools
 requests
 speedtest-cli
+venmo
 virtualenv

@@ -41,6 +41,7 @@ simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via configobj, pip-tools, prompt-toolkit, python-dateutil
 speedtest-cli==0.3.4
 traitlets==4.1.0          # via ipython
+venmo==0.3.6
 virtualenv==14.0.6
 wcwidth==0.1.6            # via prompt-toolkit
 
