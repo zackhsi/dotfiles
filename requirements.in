@@ -1,14 +1,7 @@
-# This file contains top-level dependencies.
-# 
-# To add new dependency, add it to this list then run:
-#   pip-compile
-#   pip-sync
-
 aws-shell
 flake8
 ipython
 isort
-pip-tools
 requests
 speedtest-cli
 venmo

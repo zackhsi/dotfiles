@@ -1,13 +1,14 @@
-all: ensure_symlinks pip homebrew ## Make it all!
+all: ensure_symlinks pip brew ## Make it all!
 
 ensure_symlinks: ## Symlink files to where they belong
 	./ensure_symlinks.sh
 
 pip: ## Ensure only pip packages in requirements.in are installed
-	pip-compile requirements.in
-	pip-sync
+	pip freeze | xargs pip uninstall -y -q
+	pip install -r requirements.in --upgrade -q
+	pip freeze -r requirements.in > requirements.txt
 
-homebrew: ## Ensure only formulas in Brewfile are installed
+brew: ## Ensure only formulas in Brewfile are installed
 	brew update
 	brew doctor
 	brew bundle cleanup --force
