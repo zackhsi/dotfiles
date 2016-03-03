@@ -30,9 +30,15 @@ alias h="~/homespace"
 alias s="$SRC"
 alias dot="~/homespace/dotfiles"
 
-alias d="$SRC/devbox"
+alias dev="$SRC/devbox"
 alias fire="$SRC/fireman"
 alias o="$SRC/ops"
+
+
+###############################################################################
+# Docker
+###############################################################################
+alias d="docker"
 
 
 ###############################################################################
