@@ -1,5 +1,5 @@
 Host kegbot
-    Hostname ec2-52-91-120-98.compute-1.amazonaws.com
+    Hostname ec2-52-2-157-54.compute-1.amazonaws.com
     User ubuntu
 
 Host gateway.ln
