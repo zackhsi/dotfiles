@@ -1,6 +1,7 @@
 Host kegbot
     Hostname ec2-52-2-157-54.compute-1.amazonaws.com
     User ubuntu
+    StrictHostKeyChecking no
 
 Host gateway.ln
     Hostname gateway.lyft.net
