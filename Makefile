@@ -1,4 +1,4 @@
-all: ensure_symlinks pip brew ## Make it all!
+all: brew ensure_symlinks pip ## Make it all!
 
 ensure_symlinks: ## Symlink files to where they belong
 	./ensure_symlinks.sh
