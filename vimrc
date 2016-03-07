@@ -117,6 +117,7 @@ Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'saltstack/salt-vim'
 Plug 'stephpy/vim-yaml'
+Plug 'evanmiller/nginx-vim-syntax'
 
 " Python
 Plug 'klen/python-mode'
