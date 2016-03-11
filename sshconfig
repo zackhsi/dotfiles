@@ -44,7 +44,7 @@ Host *
     UseRoaming no
 # begin dlite
 Host local.docker
-  HostName 192.168.64.7
+  HostName 192.168.64.8
   IdentityFile /Users/zackhsi/.dlite/docker
   User docker
   StrictHostKeyChecking no
