@@ -1,2 +1,4 @@
 bind main B !git rebase -i %(commit)
 bind main ! !git revert %(commit)
+
+set main-view = line-number:no,interval=5 id:yes,color=no date:default author:full commit-title:yes,graph=v2,refs=yes

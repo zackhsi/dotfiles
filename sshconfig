@@ -3,6 +3,11 @@ Host kegbot
     User ubuntu
     StrictHostKeyChecking no
 
+Host zackhsi
+    Hostname ec2-52-72-77-107.compute-1.amazonaws.com
+    User ubuntu
+    StrictHostKeyChecking no
+
 Host gateway.ln
     Hostname gateway.lyft.net
     ProxyCommand none
@@ -37,3 +42,10 @@ Host *
     ForwardAgent no
     ForwardX11 no
     UseRoaming no
+# begin dlite
+Host local.docker
+  HostName 192.168.64.7
+  IdentityFile /Users/zackhsi/.dlite/docker
+  User docker
+  StrictHostKeyChecking no
+# end dlite

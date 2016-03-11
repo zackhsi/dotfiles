@@ -31,6 +31,7 @@ alias s="$SRC"
 alias dot="~/homespace/dotfiles"
 
 alias dev="$SRC/devbox"
+alias b="$SRC/beta"
 alias fire="$SRC/fireman"
 alias o="$SRC/ops"
 

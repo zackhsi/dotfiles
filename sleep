@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-
-/usr/local/bin/dlite stop
+#!/bin/sh
+# dlite stop
