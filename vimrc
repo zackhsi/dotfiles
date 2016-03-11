@@ -69,6 +69,9 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+" A little hack to redraw the cursor when exiting insert mode.
+" Places the cursor at the character from which we exited insert mode.
+inoremap <silent> <Esc> <Esc>`^
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
