@@ -24,6 +24,10 @@ set smarttab		           " be smart when using tabs
 set tabstop=4		           " 1 tab == 2 spaces
 
 set splitbelow                 " all horizontal splits open to the bottom
+set ru                  " shows ruler for cursor
+set sc                  " showcmd shows incomplete commands
+set foldmethod=syntax   " set a foldmethod
+set foldnestmax=1
 set splitright                 " all vertical splits open to the right
 
 set mouse=a                    " enable mouse
@@ -43,6 +47,7 @@ augroup END
 
 " MacVim
 set guifont=Inconsolata-dz:h13
+"remove all scroll bars
 set guioptions-=r
 set guioptions-=L
 
@@ -69,6 +74,20 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" But I like navigating in insert mode
+inoremap <C-h> <C-o>h
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-l> <C-o>l
+
+" A little hack to redraw the cursor when exiting insert mode.
+" Places the cursor at the character from which we exited insert mode.
+inoremap <silent> <Esc> <Esc>`^
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -93,6 +112,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets' " snippet library
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -118,6 +139,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'saltstack/salt-vim'
 Plug 'stephpy/vim-yaml'
 Plug 'evanmiller/nginx-vim-syntax'
+" Man page navigation
+"Plug 'bruno-/vim-man'
 
 " Python
 Plug 'klen/python-mode'
@@ -175,6 +198,13 @@ let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 let g:pymode_lint_checkers = ['flake8']
 
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<S-Enter>"
+"let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpForwardTrigger="<C-k>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpBackwardTrigger="<C-j>"
+
 """"""""""""""""""""""""""""""
 " FZF
 """"""""""""""""""""""""""""""
@@ -186,8 +216,14 @@ autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 
-" Search word under cursor by using Ag | leader + a
-noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+" Create Blank Newlines and stay in Normal mode
+nnoremap <leader>j o<Esc>
+nnoremap <leader>k O<Esc>
+
+" Ctrl-Space will toggle folds!
+nnoremap <C-Space> za
 
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
@@ -215,3 +251,66 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 \   'options':     '+m',
 \   'tmux_height': '40%'
 \ })<CR>
+" Remap ;w to escape in insert mode.
+inoremap ;; ;<Esc>:w<Enter>
+inoremap ;w <Esc>:w<Enter>
+
+" Swap ; and :  Convenient.
+nnoremap ; :
+nnoremap : ;
+
+" Clear the highlighting
+nnoremap <Esc> <Esc>:noh<Enter>
+
+
+" remember things yanked in a special register, so we can delete at will
+" without concerns
+nnoremap <Leader>p "0p
+nnoremap <Leader>P "0P
+
+" often I want to find the next _
+onoremap W f_
+nnoremap W f_l
+onoremap E t_
+nnoremap E lt_
+onoremap B T_
+nnoremap B hT_
+
+" In my mind, p means parentheses
+onoremap p i(
+
+" Usually, when making the header file, I want to just copy the original file,
+" and append a ; to the end of each declaration and delete the body of the
+" (folded) function. This automatically does just that.
+nmap <Leader>h A;<Esc>jddj
+
+" Make Y like D and every other cap command
+nnoremap Y y$
+
+" Next Tab
+nnoremap <silent> <C-Right> :tabnext<CR>
+
+" Previous Tab
+nnoremap <silent> <C-Left> :tabprevious<CR>
+
+" Edit vimrc \ev
+nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
+
+" ctags
+nnoremap <C-\> :vsp <Enter>:exec("tag ".expand("<cword>"))<Enter>zz
+
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+map N Nzz
+map n nzz
+
+" Make it so there are always several lines visible above and below the cursor
+set scrolloff=10
+
+" Properly display man pages
+" ==========================
+runtime ftplugin/man.vim
+if has("gui_running")
+	nnoremap K :<C-U>exe "Man" v:count "<C-R><C-W>"<CR>
+endif
+
