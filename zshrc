@@ -5,6 +5,5 @@ source ~/.zsh_aliases
 source ~/.zsh_colorscheme
 source ~/.zsh_fzf
 
-# Devbox Beta
-PROJECT_DIR=/Users/zackhsi/src/beta
-export PATH=$PROJECT_DIR/.bin:$PATH
+# Devbox
+source ~/.devbox/path
