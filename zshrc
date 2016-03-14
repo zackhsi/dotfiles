@@ -7,3 +7,4 @@ source ~/.zsh_fzf
 
 # Devbox
 source ~/.devbox/path
+source ~/.devbox/ip
