@@ -2,6 +2,7 @@
 
 IGNORED_FILES=(
   $0
+  README.md
   Brewfile
   Makefile
   com.googlecode.iterm2.plist
