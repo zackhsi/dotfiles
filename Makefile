@@ -15,10 +15,6 @@ brew: ## Ensure only formulas in Brewfile are installed
 	brew bundle check || brew bundle
 	brew bundle dump --force
 
-sleepwatcher: ## Link sleepwatcher user launch agent
-	[[ -L ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist  ]] || ln -sfv /usr/local/Cellar/sleepwatcher/2.2/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents
-	launchctl list | grep -q sleepwatcher || launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist
-
 .DEFAULT_GOAL := help
 .PHONY: help
 help:
