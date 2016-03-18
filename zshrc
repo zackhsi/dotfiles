@@ -6,5 +6,5 @@ source ~/.zsh_colorscheme
 source ~/.zsh_fzf
 
 # Devbox
-source ~/.devbox/path
-source ~/.devbox/ip
+PROJECT_DIR=$(awk -F "=" '/project_dir/ {print $2}' ~/.devbox | tr -d " ")
+export PATH=$PROJECT_DIR/.bin:$PATH
