@@ -63,6 +63,9 @@ autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 " detect ini files
 au BufNewFile,BufRead *.ini,*.conf setf dosini
 
+" vagrantfile syntax highlighting
+au BufNewFile,BufRead Vagrantfile set filetype=ruby
+
 " easy window navigation
 map <C-j> <C-w>j
 map <C-k> <C-w>k
