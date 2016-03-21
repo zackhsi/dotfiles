@@ -48,7 +48,6 @@ set guioptions-=L
 
 " Leader
 vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
-noremap <leader>p :set paste!<CR>  " Toggle paste mode
 
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
@@ -105,6 +104,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-unimpaired'
 
 " Appearance
 Plug 'bling/vim-airline'
@@ -144,6 +144,9 @@ let g:airline#extensions#tabline#enabled      = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 let g:airline#extensions#syntastic#enabled    = 1
+
+" Syntastic
+let g:syntastic_always_populate_loc_list = 1
 
 " Colorscheme
 let base16colorspace=256
