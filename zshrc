@@ -5,6 +5,11 @@ source ~/.zsh_aliases
 source ~/.zsh_colorscheme
 source ~/.zsh_fzf
 
+# Tmux Plugin Manager
+if [ ! -d ~/.tmux/plugins/tpm ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
+fi
+
 # Devbox
 PROJECT_DIR=$(awk -F "=" '/project_dir/ {print $2}' ~/.devbox | tr -d " ")
 export PATH=$PROJECT_DIR/.bin:$PATH
