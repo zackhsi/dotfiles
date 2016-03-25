@@ -83,3 +83,6 @@ export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 fi
+
+# Devbox
+export DOCKER_HOST="tcp://$(awk -F "=" '/ip_address/ {print $2}' ~/.devbox | tr -d " "):2375"
