@@ -16,6 +16,12 @@ plugins=(
   vagrant
 )
 
+# GNU Coreutils
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
 ###############################################################################
 # Pretty colors
 ###############################################################################
@@ -66,10 +72,6 @@ source ~/.zsh_aliases
 JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
 
-# GNU Coreutils
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 # Homebrew
 PATH=/usr/local/sbin:$PATH
 
@@ -81,6 +83,3 @@ export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 fi
-
-# Finally, source it
-source $ZSH/oh-my-zsh.sh
