@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -e
+
+PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+TEMPDIR=$(mktemp -d /tmp/XXXXXXXX)
+mkdir -p "$TEMPDIR/etc/salt"
+touch "$TEMPDIR/etc/salt/minion_id"
+mkdir -p "$TEMPDIR/var/log/salt"
+touch "$TEMPDIR/var/log/salt/minion"
+
+cat << EOF > $TEMPDIR/minion
+root_dir: $TEMPDIR/
+pki_dir: $TEMPDIR/pki/minion
+cachedir: $TEMPDIR/cache/minion
+file_client: local
+local: true
+file_roots:
+  base:
+    - $PWD/salt
+    - $PWD
+pillar_roots:
+  base:
+    - $PWD/salt/pillar
+EOF
+
+salt-call --retcode-passthrough -c "$TEMPDIR" state.highstate
+
+rm -rf "$TEMPDIR"

@@ -1,7 +1,7 @@
-all: ensure_symlinks brew pip ## Make it all!
+all: files brew pip ## Make it all!
 
-ensure_symlinks: ## Symlink files to where they belong
-	./ensure_symlinks.sh
+files: ## Ensure files are up to date
+	./install
 
 pip: ## Ensure only pip packages in requirements.in are installed
 	pip freeze | xargs pip uninstall -y -q
