@@ -155,7 +155,7 @@ if $BACKGROUND == 'light'
 else
     set background=dark
 endif
-colorscheme base16-tomorrow
+colorscheme base16-eighties
 
 " NERDTree
 :command NT NERDTreeToggle
