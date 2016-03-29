@@ -17,12 +17,10 @@ local: true
 file_roots:
   base:
     - $PWD/salt
-    - $PWD
+    - $PWD/sources
 pillar_roots:
   base:
     - $PWD/salt/pillar
 EOF
 
-salt-call --retcode-passthrough -c "$TEMPDIR" state.highstate
-
-rm -rf "$TEMPDIR"
+salt-call --retcode-passthrough -c "$TEMPDIR" state.highstate "$@"
