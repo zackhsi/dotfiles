@@ -28,6 +28,7 @@ bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^B' backward-char
 bindkey '^F' forward-char
+bindkey '^D' delete-char
 
 ###############################################################################
 # Pretty colors
