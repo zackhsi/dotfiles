@@ -1,7 +1,7 @@
 all: files brew pip ## Make it all!
 
 files: ## Ensure files are up to date
-	./install
+	./run_salt
 
 pip: ## Ensure only pip packages in requirements.in are installed
 	pip freeze | xargs pip uninstall -y -q

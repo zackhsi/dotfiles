@@ -1,9 +1,19 @@
 {% for name, source in {
+  '~/.gitconfig': 'gitconfig',
+  '~/.gitignore': 'gitignore',
+}.iteritems() %}
+Ensure {{ name }} is managed from {{ source }}:
+  file.managed:
+    - name: {{ name }}
+    - source: salt://{{ source }}
+    - makedirs: True
+    - template: jinja
+{% endfor %}
+
+{% for name, source in {
   '~/.agignore': 'agignore',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
-  '~/.gitconfig': 'gitconfig',
-  '~/.gitignore': 'gitignore',
   '~/.isort.cfg': 'isort.cfg',
   '~/.ssh/config': 'sshconfig',
   '~/.tigrc': 'tigrc',
@@ -14,9 +24,11 @@
   '~/.zsh_aliases': 'zsh_aliases',
   '~/.zshrc': 'zshrc',
 }.iteritems() %}
-Ensure {{ name }} is managed from {{ source }}:
-  file.managed:
+Ensure {{ name }} is symlinked to from {{ source }}:
+  file.symlink:
     - name: {{ name }}
-    - source: salt://{{ source }}
-    - template: jinja
+    - target: {{ salt['environ.get']('SOURCES') }}/{{ source }}
+    - user: {{ salt['environ.get']('ME') }}
+    - backupname: {{ name }}.bak
+    - makedirs: True
 {% endfor %}

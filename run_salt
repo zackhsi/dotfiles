@@ -2,6 +2,9 @@
 set -e
 
 PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export SOURCES=$PWD/sources
+export ME=$USER
+
 TEMPDIR=$(mktemp -d /tmp/XXXXXXXX)
 mkdir -p "$TEMPDIR/etc/salt"
 touch "$TEMPDIR/etc/salt/minion_id"
@@ -23,4 +26,11 @@ pillar_roots:
     - $PWD/salt/pillar
 EOF
 
-salt-call --retcode-passthrough -c "$TEMPDIR" state.highstate "$@"
+command="$1"
+if [ -n "$command" ]; then
+  shift
+else
+  command=state.highstate
+fi
+
+salt-call --retcode-passthrough -c "$TEMPDIR" "$command" "$@"
