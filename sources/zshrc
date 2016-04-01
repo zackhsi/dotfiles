@@ -30,6 +30,8 @@ bindkey '^B' backward-char
 bindkey '^F' forward-char
 bindkey '^D' delete-char
 bindkey '^W' backward-delete-word
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
 
 ###############################################################################
 # Pretty colors
