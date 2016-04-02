@@ -1243,7 +1243,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 61 1131 816 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 350 650 527 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>246 52 650 527 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
@@ -1872,7 +1872,7 @@
 			<key>Use Bold Font</key>
 			<false/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -2508,7 +2508,7 @@
 			<key>Use Bold Font</key>
 			<false/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
