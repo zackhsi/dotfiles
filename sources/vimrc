@@ -110,6 +110,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
@@ -149,13 +150,14 @@ let g:airline#extensions#syntastic#enabled    = 1
 let g:syntastic_always_populate_loc_list = 1
 
 " Colorscheme
-let base16colorspace=256
 if $BACKGROUND == 'light'
     set background=light
+    colorscheme solarized
 else
     set background=dark
+    let base16colorspace=256
+    colorscheme base16-eighties
 endif
-colorscheme base16-eighties
 
 " NERDTree
 :command NT NERDTreeToggle
