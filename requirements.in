@@ -2,6 +2,7 @@ aws-shell
 flake8
 ipython
 isort
+neovim
 requests
 speedtest-cli
 venmo

@@ -26,8 +26,10 @@ set tabstop=4		           " 1 tab == 2 spaces
 set splitbelow                 " all horizontal splits open to the bottom
 set splitright                 " all vertical splits open to the right
 
-set mouse=a                    " enable mouse
-set ttymouse=xterm2            " more mouse
+if !has('nvim')
+    set mouse=a                    " enable mouse
+    set ttymouse=xterm2            " more mouse
+endif
 
 set nobackup                   " no backup files
 set noswapfile                 " no swap files

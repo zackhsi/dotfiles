@@ -32,3 +32,15 @@ Ensure {{ name }} is symlinked to from {{ source }}:
     - backupname: {{ name }}.bak
     - makedirs: True
 {% endfor %}
+
+Ensure neovim config is linked:
+  file.symlink:
+    - name: ~/.config/nvim
+    - target: /Users/{{ salt['environ.get']('ME') }}/.vim
+    - user: {{ salt['environ.get']('ME') }}
+
+Ensure neovimrc is linked:
+  file.symlink:
+    - name: ~/.config/nvim/init.vim
+    - target: {{ salt['environ.get']('SOURCES') }}/vimrc
+    - user: {{ salt['environ.get']('ME') }}
