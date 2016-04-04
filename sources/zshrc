@@ -83,6 +83,9 @@ source ~/.zsh_aliases
 # Misc
 ###############################################################################
 
+# thefuck
+alias fk=fuck
+
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
