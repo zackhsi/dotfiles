@@ -68,10 +68,14 @@ au BufNewFile,BufRead *.ini,*.conf setf dosini
 au BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 " easy window navigation
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-h> <C-w>h
-map <C-l> <C-w>l
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+if has('nvim')
+    nmap <BS> <C-W>h
+else
+    nmap <C-h> <C-w>h
+endif
+nmap <C-l> <C-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
