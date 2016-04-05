@@ -10,7 +10,7 @@ pip: ## Ensure only pip packages in requirements.in are installed
 
 brew: ## Ensure only formulas in Brewfile are installed
 	brew update
-	brew doctor
+	brew doctor || true
 	brew bundle cleanup --force
 	brew bundle check || brew bundle
 	brew bundle dump --force

@@ -1,7 +1,7 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/core'
 tap 'homebrew/versions'
-brew 'awscli'
 brew 'cmake'
 brew 'xz'
 brew 'coreutils'
