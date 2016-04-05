@@ -25,6 +25,7 @@ brew 'sqlite'
 brew 'python'
 brew 'macvim', args: ['with-override-system-vim']
 brew 'mercurial'
+brew 'neovim'
 brew 'mongodb'
 brew 'node'
 brew 'postgresql'
