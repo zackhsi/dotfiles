@@ -1,3 +1,6 @@
+{% set user = salt['environ.get']('ME') %}
+{% set pwd = salt['environ.get']('DIR') %}
+
 {% for name, source in {
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
@@ -27,8 +30,8 @@ Ensure {{ name }} is managed from {{ source }}:
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
     - name: {{ name }}
-    - target: {{ salt['environ.get']('SOURCES') }}/{{ source }}
-    - user: {{ salt['environ.get']('ME') }}
+    - target: {{ pwd }}/sources/{{ source }}
+    - user: {{ user }}
     - backupname: {{ name }}.bak
     - makedirs: True
 {% endfor %}
@@ -36,11 +39,11 @@ Ensure {{ name }} is symlinked to from {{ source }}:
 Ensure neovim config is linked:
   file.symlink:
     - name: ~/.config/nvim
-    - target: /Users/{{ salt['environ.get']('ME') }}/.vim
-    - user: {{ salt['environ.get']('ME') }}
+    - target: /Users/{{ user }}/.vim
+    - user: {{ user }}
 
 Ensure neovimrc is linked:
   file.symlink:
     - name: ~/.config/nvim/init.vim
-    - target: {{ salt['environ.get']('SOURCES') }}/vimrc
-    - user: {{ salt['environ.get']('ME') }}
+    - target: {{ pwd }}/sources/vimrc
+    - user: {{ user }}

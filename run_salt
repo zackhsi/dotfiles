@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export SOURCES=$PWD/sources
 export ME=$USER
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DIR
 
 TEMPDIR=$(mktemp -d /tmp/XXXXXXXX)
 mkdir -p "$TEMPDIR/etc/salt"
@@ -19,11 +19,11 @@ file_client: local
 local: true
 file_roots:
   base:
-    - $PWD/salt
-    - $PWD/sources
+    - $DIR/salt
+    - $DIR/sources
 pillar_roots:
   base:
-    - $PWD/salt/pillar
+    - $DIR/salt/pillar
 EOF
 
 command="$1"
