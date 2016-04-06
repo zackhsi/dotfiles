@@ -72,7 +72,7 @@ au BufNewFile,BufRead Vagrantfile set filetype=ruby
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 if has('nvim')
-    nmap <BS> <C-W>h
+    nmap <BS> :<C-u>TmuxNavigateLeft<CR>
 else
     nmap <C-h> <C-w>h
 endif
