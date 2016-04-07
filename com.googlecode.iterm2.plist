@@ -10,7 +10,7 @@
 	<integer>1</integer>
 	<key>Custom Color Presets</key>
 	<dict>
-		<key>One Dark</key>
+		<key>onedark</key>
 		<dict>
 			<key>Ansi 0 Color</key>
 			<dict>
@@ -351,7 +351,7 @@
 				<real>0.17642644047737122</real>
 			</dict>
 		</dict>
-		<key>base16-eighties.dark.256</key>
+		<key>base16</key>
 		<dict>
 			<key>Ansi 0 Color</key>
 			<dict>
