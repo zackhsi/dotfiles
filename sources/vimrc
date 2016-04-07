@@ -117,6 +117,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
 Plug 'altercation/vim-colors-solarized'
 
 " Languages (non-Python)
@@ -157,13 +158,16 @@ let g:airline#extensions#syntastic#enabled    = 1
 let g:syntastic_always_populate_loc_list = 1
 
 " Colorscheme
-if $BACKGROUND == 'light'
+if $COLORSCHEME == 'solarized'
     set background=light
     colorscheme solarized
-else
+elseif $COLORSCHEME == 'base16'
     set background=dark
     let base16colorspace=256
     colorscheme base16-eighties
+elseif $COLORSCHEME == 'onedark'
+    let g:onedark_termcolors=16
+    colorscheme onedark
 endif
 
 " NERDTree
