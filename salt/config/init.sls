@@ -2,21 +2,11 @@
 {% set pwd = salt['environ.get']('DIR') %}
 
 {% for name, source in {
-  '~/.gitconfig': 'gitconfig',
-  '~/.gitignore': 'gitignore',
-}.iteritems() %}
-Ensure {{ name }} is managed from {{ source }}:
-  file.managed:
-    - name: {{ name }}
-    - source: salt://{{ source }}
-    - makedirs: True
-    - template: jinja
-{% endfor %}
-
-{% for name, source in {
   '~/.agignore': 'agignore',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
+  '~/.gitconfig': 'gitconfig',
+  '~/.gitignore': 'gitignore',
   '~/.isort.cfg': 'isort.cfg',
   '~/.ssh/config': 'sshconfig',
   '~/.tigrc': 'tigrc',
@@ -32,7 +22,7 @@ Ensure {{ name }} is symlinked to from {{ source }}:
     - name: {{ name }}
     - target: {{ pwd }}/sources/{{ source }}
     - user: {{ user }}
-    - backupname: {{ name }}.bak
+    - force: True
     - makedirs: True
 {% endfor %}
 
