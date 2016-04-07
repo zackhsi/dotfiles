@@ -8,12 +8,8 @@ pip: ## Ensure only pip packages in requirements.in are installed
 	pip install -r requirements.in --upgrade -q
 	pip freeze -r requirements.in > requirements.txt
 
-brew: ## Ensure only formulas in Brewfile are installed
-	brew update
-	brew doctor || true
-	brew bundle cleanup --force
-	brew bundle check || brew bundle
-	brew bundle dump --force
+brew: ## Install formulas in Brewfile
+	./homebrew
 
 .DEFAULT_GOAL := help
 .PHONY: help
