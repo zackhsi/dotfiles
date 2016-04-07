@@ -158,7 +158,7 @@ let g:airline#extensions#syntastic#enabled    = 1
 let g:syntastic_always_populate_loc_list = 1
 
 " Colorscheme
-if $COLORSCHEME == 'solarized'
+if $COLORSCHEME == 'solarized-light'
     set background=light
     colorscheme solarized
 elseif $COLORSCHEME == 'base16'

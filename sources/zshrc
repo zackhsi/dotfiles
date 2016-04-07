@@ -38,7 +38,7 @@ bindkey '^E' end-of-line
 ###############################################################################
 
 # export COLORSCHEME=base16
-# export COLORSCHEME=solarized
+# export COLORSCHEME=solarized-light
 export COLORSCHEME=onedark
 
 # base16 is special
