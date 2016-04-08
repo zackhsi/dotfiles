@@ -1,17 +1,24 @@
 let mapleader = "\<Space>"     " Use space as leader
 
-set ai                         " auto indenting
-set autoread                   " reread file on focus
-set backspace=indent,eol,start " backspace over everything in insert mode"
+" Legacy settings
+if !has('nvim')
+    set ai                         " auto indenting
+    set autoread                   " reread file on focus
+    set backspace=indent,eol,start " backspace over everything in insert mode"
+    set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
+    set laststatus=2               " grey status bar at the bottom
+    set mouse=a                    " enable mouse
+    set smarttab		           " be smart when using tabs
+    set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
+    set ttymouse=xterm2            " more mouse
+    syntax enable                  " syntax highlighting
+endif
+
 set colorcolumn=80             " line length matters
 set foldmethod=manual          " set a foldmethod
-set laststatus=2               " grey status bar at the bottom
 set number                     " line numbers
 set scrolloff=2                " Always shows two lines of vertical context around the cursor
 set showcmd                    " show incomplete commands
-
-set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
-set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
 
 set hlsearch 		           " highlight what you search for
 set ic                         " case insensitive search
@@ -20,22 +27,15 @@ set scs                        " smart case search
 
 set expandtab		           " use spaces instead of tabs
 set shiftwidth=4	           " 1 tab == 2 spaces
-set smarttab		           " be smart when using tabs
 set tabstop=4		           " 1 tab == 2 spaces
 
 set splitbelow                 " all horizontal splits open to the bottom
 set splitright                 " all vertical splits open to the right
 
-if !has('nvim')
-    set mouse=a                    " enable mouse
-    set ttymouse=xterm2            " more mouse
-endif
-
 set nobackup                   " no backup files
 set noswapfile                 " no swap files
 set nowritebackup              " only in case you don't want a backup file while editing
 
-syntax enable                  " syntax highlighting
 
 augroup CursorLineOnlyInActiveWindow
   autocmd!
