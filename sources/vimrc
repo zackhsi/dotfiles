@@ -166,7 +166,6 @@ elseif $COLORSCHEME == 'base16'
     let base16colorspace=256
     colorscheme base16-eighties
 elseif $COLORSCHEME == 'onedark'
-    let g:onedark_termcolors=16
     colorscheme onedark
 endif
 
@@ -201,8 +200,9 @@ let g:pymode_lint_checkers = ['flake8']
 " Redefine :Ag command
 autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag(<q-args>,
             \ '--skip-vcs-ignores',
-            \ fzf#vim#default_layout,
-            \ )
+            \ {
+            \   'down': '40%',
+            \ })
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 

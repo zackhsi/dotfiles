@@ -1,24 +1,23 @@
-tap neovim/neovim
+tap neovim/homebrew-neovim
 install coreutils
 install ctags
 install diff-so-fancy
+install docker
 install git
 install go
-install docker
 install htop
+install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
 install hub
 install jq
-install python
 install macvim --with-override-system-vim
 install neovim --HEAD
-install neovim
+install python
 install reattach-to-user-namespace
 install saltstack
 install shellcheck
 install the_silver_searcher
 install thefuck
 install tig
-install tmux
 install tree
 install urlview
 install watch
