@@ -202,6 +202,7 @@ autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag(<q-args>,
             \ '--skip-vcs-ignores',
             \ {
             \   'down': '40%',
+            \   'options': '--color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254,info:254,prompt:37,spinner:108,pointer:235,marker:235',
             \ })
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
