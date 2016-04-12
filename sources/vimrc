@@ -40,6 +40,7 @@ set nowritebackup              " only in case you don't want a backup file while
 augroup CursorLineOnlyInActiveWindow
   autocmd!
   autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr guifg=#E5C07B
   autocmd WinLeave * setlocal nocursorline
 augroup END
 
