@@ -11,6 +11,9 @@ pip: ## Ensure only pip packages in requirements.in are installed
 brew: ## Install formulas in Brewfile
 	./homebrew
 
+npm_freeze: ## Freeze node packages into Nodefile
+	npm ls -g --depth=0 > Nodefile
+
 .DEFAULT_GOAL := help
 .PHONY: help
 help:
