@@ -40,7 +40,7 @@ set nowritebackup              " only in case you don't want a backup file while
 augroup CursorLineOnlyInActiveWindow
   autocmd!
   autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr guifg=#E5C07B
+  autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr ctermfg=Yellow guifg=#E5C07B
   autocmd WinLeave * setlocal nocursorline
 augroup END
 
@@ -168,6 +168,7 @@ elseif $COLORSCHEME == 'base16'
     let base16colorspace=256
     colorscheme base16-eighties
 elseif $COLORSCHEME == 'onedark'
+    let g:onedark_termcolors=16
     colorscheme onedark
 endif
 
@@ -204,7 +205,6 @@ autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag(<q-args>,
             \ '--skip-vcs-ignores',
             \ {
             \   'down': '40%',
-            \   'options': '--color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254,info:254,prompt:37,spinner:108,pointer:235,marker:235',
             \ })
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
