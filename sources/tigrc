@@ -7,7 +7,7 @@ set main-view = line-number:no,interval=5 id:yes,color=no date:default author:fu
 # *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
 
 # general
-color   default                 15      235
+color   default                 7       0
 color   cursor                  81      241
 color   title-focus             242     221
 color   title-blur              242     221
