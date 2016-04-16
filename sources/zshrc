@@ -96,6 +96,9 @@ alias n=nvim
 # thefuck
 alias fk=fuck
 
+# shellcheck
+export SHELLCHECK_OPTS="-e SC1091"
+
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
