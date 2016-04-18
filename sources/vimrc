@@ -135,6 +135,7 @@ Plug 'evanmiller/nginx-vim-syntax'
 
 " Python
 Plug 'klen/python-mode'
+Plug 'heavenshell/vim-pydocstring'
 Plug 'fisadev/vim-isort'
 
 " tmux
@@ -171,6 +172,9 @@ elseif $COLORSCHEME == 'onedark'
     let g:onedark_termcolors=16
     colorscheme onedark
 endif
+
+" vim-pydocstring
+nmap <silent> <Leader>d <Plug>(pydocstring)
 
 " NERDTree
 :command NT NERDTreeToggle
