@@ -3,8 +3,7 @@ all: files brew pip ## Make it all!
 files: ## Ensure files are up to date
 	./manage
 
-pip: ## Ensure only pip packages in requirements.in are installed
-	pip freeze | xargs pip uninstall -y -q
+pip: ## Ensure pip packages in requirements.in are installed
 	pip install -r requirements.in --upgrade -q
 	pip freeze -r requirements.in > requirements.txt
 
