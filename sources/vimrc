@@ -96,6 +96,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'kshenoy/vim-signature'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
+Plug 'majutsushi/tagbar'
 
 " autocompletion / snippets
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
@@ -175,6 +176,9 @@ endif
 
 " vim-pydocstring
 nmap <silent> <Leader>d <Plug>(pydocstring)
+
+" tagbar
+:command TT TagbarToggle
 
 " NERDTree
 :command NT NERDTreeToggle
