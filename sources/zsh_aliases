@@ -33,6 +33,7 @@ alias o="$SRC/ops"
 ###############################################################################
 # Fabric
 ###############################################################################
+export CACHE_EC2_INSTANCES=1
 function mfa() {
   pushd $SRC/ops/orca/ > /dev/null
   source mfa.sh --role admin
