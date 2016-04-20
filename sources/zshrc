@@ -91,7 +91,9 @@ source ~/.zsh_aliases
 ###############################################################################
 
 # nvim
-alias n=nvim
+alias v=nvim
+alias vi=nvim
+alias vim=nvim
 
 # thefuck
 alias fk=fuck
