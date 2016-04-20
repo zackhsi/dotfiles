@@ -33,8 +33,8 @@ color   graph-commit            226     default
 # Diff   colors
 color   diff_add                10      default
 color   diff_add2               10      default
-color   diff_del                196     default
-color   diff_del2               196     default
+color   diff_del                1       default
+color   diff_del2               1       default
 color   diff-header             221     default
 color   diff-index              81      default
 color   diff-chunk              213     default
