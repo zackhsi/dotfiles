@@ -39,9 +39,9 @@ set nowritebackup              " only in case you don't want a backup file while
 
 augroup CursorLineOnlyInActiveWindow
   autocmd!
-  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr ctermfg=221 guifg=#E5C07B
-  autocmd WinLeave * setlocal nocursorline
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline relativenumber
+  autocmd WinLeave * setlocal nocursorline norelativenumber
 augroup END
 
 " MacVim
