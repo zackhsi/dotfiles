@@ -1761,7 +1761,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/zackhsi</string>
+			<string>/Users/zhsi</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -2491,7 +2491,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/zackhsi</string>
+			<string>/Users/zhsi</string>
 		</dict>
 	</array>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
@@ -2624,7 +2624,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/zackhsi/homespace/dotfiles</string>
+	<string>/Users/zhsi/homespace/dotfiles</string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
