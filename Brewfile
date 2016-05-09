@@ -9,7 +9,6 @@ install htop
 install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
 install hub
 install jq
-install macvim --with-override-system-vim
 install neovim --HEAD
 install python
 install reattach-to-user-namespace
