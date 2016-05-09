@@ -7,6 +7,9 @@ pip: ## Ensure pip packages in requirements.in are installed
 	pip install -r requirements.in --upgrade -q
 	pip freeze -r requirements.in > requirements.txt
 
+pip_clean: ## Uninstall all pip modules
+	pip freeze | xargs pip uninstall -y -q
+
 brew: ## Install formulas in Brewfile
 	./homebrew
 
