@@ -2,4 +2,4 @@
 ignore = E402
 format = default
 max-line-length = 79
-builtins = __salt__,__opts__,__context__
+builtins = __salt__,__opts__,__context__,__grains__
