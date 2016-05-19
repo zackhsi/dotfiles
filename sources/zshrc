@@ -50,8 +50,6 @@ if [ $COLORSCHEME = "base16" ]; then
   [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 fi
 
-echo -e "\033]50;SetProfile=$COLORSCHEME\a"
-
 if [ -n "$TMUX" ]; then
   export TERM=screen-256color
 else
