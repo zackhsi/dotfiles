@@ -101,6 +101,11 @@ alias fk=fuck
 # shellcheck
 export SHELLCHECK_OPTS="-e SC1091"
 
+# ssh
+if ! ssh-add -l > /dev/null; then
+  ssh-add 2>/dev/null
+fi
+
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
