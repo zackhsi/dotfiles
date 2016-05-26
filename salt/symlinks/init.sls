@@ -1,6 +1,6 @@
 {% set pwd = salt['environ.get']('DIR') %}
 {% set src = salt['environ.get']('SRC') %}
-{% set user = salt['environ.get']('ME') %}
+{% set user = salt['environ.get']('USER') %}
 
 {% for name, source in {
   '~/.agignore': 'agignore',
