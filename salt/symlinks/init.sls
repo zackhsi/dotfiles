@@ -1,8 +1,10 @@
-{% set user = salt['environ.get']('ME') %}
 {% set pwd = salt['environ.get']('DIR') %}
+{% set src = salt['environ.get']('SRC') %}
+{% set user = salt['environ.get']('ME') %}
 
 {% for name, source in {
   '~/.agignore': 'agignore',
+  src ~ '/profile/.bash_profile': 'bash_profile',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',

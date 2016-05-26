@@ -1,0 +1,4 @@
+# Source service_venv if it exists
+if command -v service_venv > /dev/null; then
+  . service_venv
+fi
