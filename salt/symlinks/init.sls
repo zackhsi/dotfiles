@@ -4,9 +4,9 @@
 
 {% for name, source in {
   '~/.agignore': 'agignore',
-  src ~ '/profile/.bash_profile': 'bash_profile',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
+  '~/.docker/config.json': 'docker_config.json',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
   '~/.isort.cfg': 'isort.cfg',
@@ -18,6 +18,7 @@
   '~/.xvimrc': 'xvimrc',
   '~/.zsh_aliases': 'zsh_aliases',
   '~/.zshrc': 'zshrc',
+  src ~ '/profile/.bash_profile': 'bash_profile',
 }.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
