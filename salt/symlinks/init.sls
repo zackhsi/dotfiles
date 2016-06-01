@@ -40,3 +40,15 @@ Ensure neovimrc is linked:
     - name: ~/.config/nvim/init.vim
     - target: {{ pwd }}/sources/vimrc
     - user: {{ user }}
+
+{% for bin in [
+  'imgcat',
+] %}
+Ensure {{ bin }} is linked to /usr/local/bin:
+  file.symlink:
+    - name: /usr/local/bin/{{ bin }}
+    - target: {{ pwd }}/bin/{{ bin }}
+    - user: {{ user }}
+    - group: admin
+    - force: True
+{% endfor %}
