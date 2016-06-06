@@ -1,4 +1,5 @@
 /usr/local/lib
+├── json-diff@0.3.1
 ├── jsonlint@1.6.2
 └── npm@3.8.6
 
