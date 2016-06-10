@@ -2,11 +2,11 @@
 {% set src = salt['environ.get']('SRC') %}
 {% set user = salt['environ.get']('USER') %}
 
+# Symlinks
 {% for name, source in {
   '~/.agignore': 'agignore',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
-  '~/.docker/config.json': 'docker_config.json',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
   '~/.isort.cfg': 'isort.cfg',
@@ -22,6 +22,19 @@
 }.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
+    - name: {{ name }}
+    - target: {{ pwd }}/sources/{{ source }}
+    - user: {{ user }}
+    - force: True
+    - makedirs: True
+{% endfor %}
+
+# Files
+{% for name, source in {
+  '~/.docker/config.json': 'docker_config.json',
+}.iteritems() %}
+Ensure {{ name }} is managed:
+  file.managed:
     - name: {{ name }}
     - target: {{ pwd }}/sources/{{ source }}
     - user: {{ user }}
