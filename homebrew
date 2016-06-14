@@ -9,6 +9,9 @@ main() {
 
   installed=$(brew list | tr " " "\n")
   while read -r line; do
+    if [ -z "$line" ] || [[ $line =~ ^#.* ]]; then
+      continue
+    fi
     read -r -a args <<< "$line"
     if [ "${args[0]}" == install ]; then
       formula=${args[1]}

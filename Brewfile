@@ -1,22 +1,48 @@
+# neovim head
 tap neovim/homebrew-neovim
-install coreutils
-install ctags
-install diff-so-fancy
-install docker
-install git
-install go
-install htop
-install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
-install hub
-install jq
 install neovim --HEAD
-install python
-install reattach-to-user-namespace
+
+# vim
+install ctags
+
+# battery command
+tap Goles/battery
+install battery
+
+# devops
 install saltstack
-install shellcheck
+
+# tmux
+install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
+install reattach-to-user-namespace
+
+# hax
+install htop
+install jq
 install the_silver_searcher
 install thefuck
-install tig
 install tree
-install urlview
 install watch
+
+# linux
+install coreutils
+
+# vim
+
+# git
+install diff-so-fancy
+install git
+install hub
+install tig
+
+# docker
+install docker
+
+# python
+install python
+
+# go
+install go
+
+# bash
+install shellcheck
