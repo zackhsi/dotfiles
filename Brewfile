@@ -26,8 +26,7 @@ install watch
 
 # linux
 install coreutils
-
-# vim
+install pstree
 
 # git
 install diff-so-fancy
