@@ -122,8 +122,8 @@ fi
 
 # Devbox
 alias c=control
-if [ -f ~/.devbox ]; then
-  PROJECT_DIR=$(awk -F "=" '/project_dir/ {print $2}' ~/.devbox | tr -d " ")
-  export PATH=$PROJECT_DIR/.bin:$PATH
-fi
 export DOCKER_HOST="tcp://127.0.0.1:2375"
+if [ -f ~/.devbox/profile ]
+then
+  source ~/.devbox/profile
+fi
