@@ -18,7 +18,6 @@
   '~/.xvimrc': 'xvimrc',
   '~/.zsh_aliases': 'zsh_aliases',
   '~/.zshrc': 'zshrc',
-  src ~ '/profile/.bash_profile': 'bash_profile',
 }.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
@@ -32,11 +31,12 @@ Ensure {{ name }} is symlinked to from {{ source }}:
 # Files
 {% for name, source in {
   '~/.docker/config.json': 'docker_config.json',
+  src ~ '/profile/.bash_profile': 'bash_profile',
 }.iteritems() %}
 Ensure {{ name }} is managed:
   file.managed:
     - name: {{ name }}
-    - target: {{ pwd }}/sources/{{ source }}
+    - source: {{ pwd }}/sources/{{ source }}
     - user: {{ user }}
     - force: True
     - makedirs: True
