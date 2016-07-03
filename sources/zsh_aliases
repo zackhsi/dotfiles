@@ -15,6 +15,7 @@ function pyc() {
 ###############################################################################
 alias pr="hub pull-request"
 alias gbc="git branch | grep -v master | xargs git branch -d"
+alias grev='git rev-parse HEAD'
 
 
 ###############################################################################
