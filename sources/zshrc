@@ -37,18 +37,8 @@ bindkey '^E' end-of-line
 # Pretty colors
 ###############################################################################
 
-# export COLORSCHEME=base16
 # export COLORSCHEME=solarized-light
 export COLORSCHEME=onedark
-
-# base16 is special
-if [ $COLORSCHEME = "base16" ]; then
-  if [ ! -d ~/.config/base16-shell ]; then
-    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-  fi
-  BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
-  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-fi
 
 if [ -n "$TMUX" ]; then
   export TERM=screen-256color
@@ -60,7 +50,6 @@ fi
 # Exports
 ###############################################################################
 
-# export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export EDITOR='nvim'
 export PAGER="less -IM"
 
@@ -123,7 +112,6 @@ fi
 # Devbox
 alias c=control
 export DOCKER_HOST="tcp://127.0.0.1:2375"
-if [ -f ~/.devbox/profile ]
-then
+if [ -f ~/.devbox/profile ]; then
   source ~/.devbox/profile
 fi
