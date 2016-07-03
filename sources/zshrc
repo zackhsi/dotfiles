@@ -2,7 +2,7 @@
 # ZSH
 ###############################################################################
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="kolo"
+export ZSH_THEME=""
 export HIST_STAMPS="mm/dd/yyyy"
 plugins=(
   brew
@@ -21,6 +21,7 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_theme.zsh
 
 # vi mode
 bindkey -v

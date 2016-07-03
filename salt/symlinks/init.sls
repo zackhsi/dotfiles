@@ -17,6 +17,7 @@
   '~/.vimrc': 'vimrc',
   '~/.xvimrc': 'xvimrc',
   '~/.zsh_aliases': 'zsh_aliases',
+  '~/.zsh_theme.zsh': 'zsh_theme.zsh',
   '~/.zshrc': 'zshrc',
 }.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
