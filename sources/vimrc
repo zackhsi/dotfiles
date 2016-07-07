@@ -59,9 +59,11 @@ vnorem // y/<c-r>"<cr>
 filetype plugin indent on
 autocmd Filetype bash setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype sh setlocal ts=2 sts=2 sw=2
-autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype sh setlocal ts=2 sts=2 sw=2
+autocmd Filetype vim setlocal ts=2 sts=2 sw=2
+autocmd Filetype xml setlocal ts=2 sts=2 sw=2
+autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
 " detect ini files
 au BufNewFile,BufRead *.ini,*.conf setf dosini
