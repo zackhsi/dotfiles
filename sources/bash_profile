@@ -16,5 +16,6 @@ if command -v service_venv > /dev/null; then
   . service_venv
 fi
 
-alias ll="ls -l"
+alias ls="ls --color=tty"
+alias ll="ls -lh"
 alias -- -='cd -'
