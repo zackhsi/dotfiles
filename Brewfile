@@ -45,3 +45,6 @@ install go
 
 # bash
 install shellcheck
+
+# asciinema
+install asciinema
