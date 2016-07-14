@@ -8,19 +8,16 @@ Host zackhsi
     User ubuntu
     StrictHostKeyChecking no
 
-Host gateway.ln
+Host gateway.ln gateway.lyft.net
     Hostname gateway.lyft.net
     ProxyCommand none
     GatewayPorts yes
-
-Host *-prod
-    Hostname %huction-iad.lyft.net
 
 # EC2 Instance ID
 Host i-*
     Hostname %h.lyft.net
 
-Host gateway-sfo.ln
+Host gateway-sfo.ln gateway-sfo.lyft.net
     ProxyCommand none
     Hostname gateway-sfo.lyft.net
     GatewayPorts yes
