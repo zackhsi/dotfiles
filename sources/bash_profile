@@ -24,3 +24,6 @@ fi
 alias ls="ls --color=tty"
 alias ll="ls -lh"
 alias -- -='cd -'
+
+# Do not exit interactive shell on errors
+set +e
