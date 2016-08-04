@@ -140,6 +140,7 @@ Plug 'stephpy/vim-yaml'
 Plug 'evanmiller/nginx-vim-syntax'
 
 " Python
+Plug 'klen/python-mode'
 Plug 'heavenshell/vim-pydocstring'
 Plug 'fisadev/vim-isort'
 
@@ -177,6 +178,13 @@ elseif $COLORSCHEME == 'onedark'
     let g:onedark_termcolors=16
     colorscheme onedark
 endif
+
+" pymode
+let g:pymode_folding = 0
+let g:pymode_motion = 0
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
+let g:pymode_lint_checkers = ['flake8']
 
 " vim-pydocstring
 nmap <silent> <Leader>d <Plug>(pydocstring)
