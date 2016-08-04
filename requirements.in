@@ -4,6 +4,7 @@ haxor-news
 ipython
 isort
 neovim
+pylint
 requests
 speedtest-cli
 venmo
