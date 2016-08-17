@@ -165,6 +165,7 @@ let g:airline#extensions#syntastic#enabled    = 1
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_python_checkers=['flake8']
 
 " Colorscheme
 if $COLORSCHEME == 'solarized-light'
