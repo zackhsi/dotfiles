@@ -48,3 +48,6 @@ install shellcheck
 
 # asciinema
 install asciinema
+
+# ngrep
+install ngrep
