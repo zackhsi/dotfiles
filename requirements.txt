@@ -1,23 +1,22 @@
 aws-shell==0.1.1
-flake8==3.0.3
+flake8==3.0.4
 haxor-news==0.4.1
-ipython==5.0.0
+ipython==5.1.0
 isort==4.2.5
 neovim==0.1.9
 pylint==1.6.4
-requests==2.10.0
+requests==2.11.1
 speedtest-cli==0.3.4
 -e git+git@github.com:zackhsi/venmo.git@f2f2b69aa82541a9b0b5833e934367cd0354dc58#egg=venmo
-virtualenv==15.0.2
+virtualenv==15.0.3
 ## The following requirements were added by pip freeze:
 appnope==0.1.0
 astroid==1.4.8
--e git+git@github.com:lyft/aws-mfa.git@ec515bc104d207d598bcabf9b224f1e1b72df823#egg=aws_mfa
-awscli==1.10.52
+awscli==1.10.65
 backports.functools-lru-cache==1.2.1
 backports.shutil-get-terminal-size==1.0.0
 boto3==1.4.0
-botocore==1.4.30
+botocore==1.4.42
 click==6.6
 colorama==0.3.7
 configobj==5.0.6
@@ -32,13 +31,13 @@ ipython-genutils==0.1.0
 jmespath==0.9.0
 lazy-object-proxy==1.2.2
 mccabe==0.5.2
-mercurial==3.8.4
+mercurial==3.9
 msgpack-python==0.4.8
 pathlib2==2.1.0
 pep8==1.7.0
-pexpect==4.2.0
-pickleshare==0.7.3
-prompt-toolkit==1.0.5
+pexpect==4.2.1
+pickleshare==0.7.4
+prompt-toolkit==1.0.7
 psutil==4.3.0
 ptyprocess==0.5.1
 pyasn1==0.1.9
@@ -48,10 +47,10 @@ Pygments==2.1.3
 python-dateutil==2.5.3
 PyYAML==3.11
 rsa==3.4.2
-s3transfer==0.1.1
+s3transfer==0.1.4
 simplegeneric==0.8.1
 six==1.10.0
-traitlets==4.2.2
+traitlets==4.3.0
 trollius==2.1
 vboxapi==1.0
 vprof==0.31
