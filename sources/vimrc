@@ -4,37 +4,37 @@ let mapleader = "\<Space>"     " Use space as leader
 if !has('nvim')
     set ai                         " auto indenting
     set autoread                   " reread file on focus
-    set backspace=indent,eol,start " backspace over everything in insert mode"
+    set backspace=indent,eol,start " backspace over everything in insert mode
     set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
     set laststatus=2               " grey status bar at the bottom
     set mouse=a                    " enable mouse
-    set smarttab		           " be smart when using tabs
+    set smarttab                   " be smart when using tabs
     set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
     set ttymouse=xterm2            " more mouse
     syntax enable                  " syntax highlighting
 endif
 
-set colorcolumn=80             " line length matters
-set foldmethod=manual          " set a foldmethod
-set number                     " line numbers
-set scrolloff=2                " Always shows two lines of vertical context around the cursor
-set showcmd                    " show incomplete commands
+set colorcolumn=80                 " line length matters
+set foldmethod=manual              " set a foldmethod
+set number                         " line numbers
+set scrolloff=2                    " Always shows two lines of vertical context around the cursor
+set showcmd                        " show incomplete commands
 
-set hlsearch 		           " highlight what you search for
-set ic                         " case insensitive search
-set incsearch 		           " type-ahead-find
-set scs                        " smart case search
+set hlsearch                       " highlight what you search for
+set ic                             " case insensitive search
+set incsearch                      " type-ahead-find
+set scs                            " smart case search
 
-set expandtab		           " use spaces instead of tabs
-set shiftwidth=4	           " 1 tab == 2 spaces
-set tabstop=4		           " 1 tab == 2 spaces
+set expandtab                      " use spaces instead of tabs
+set shiftwidth=4                   " 1 tab == 2 spaces
+set tabstop=4                      " 1 tab == 2 spaces
 
-set splitbelow                 " all horizontal splits open to the bottom
-set splitright                 " all vertical splits open to the right
+set splitbelow                     " all horizontal splits open to the bottom
+set splitright                     " all vertical splits open to the right
 
-set nobackup                   " no backup files
-set noswapfile                 " no swap files
-set nowritebackup              " only in case you don't want a backup file while editing
+set nobackup                       " no backup files
+set noswapfile                     " no swap files
+set nowritebackup                  " only in case you don't want a backup file while editing
 
 
 augroup CursorLineOnlyInActiveWindow
@@ -119,6 +119,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-unimpaired'
+Plug 'godlygeek/tabular'
 
 " Appearance
 Plug 'bling/vim-airline'
