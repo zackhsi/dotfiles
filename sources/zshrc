@@ -132,3 +132,5 @@ export DOCKER_HOST="tcp://127.0.0.1:2375"
 if [ -f ~/.devbox/profile ]; then
   source ~/.devbox/profile
 fi
+
+source '/Users/zhsi/src/blessclient/lyftprofile' # bless ssh alias
