@@ -126,6 +126,18 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 fi
 
+# tmux
+unalias ta
+ta() {
+  session=$1
+  if [ -z $session ]; then
+    echo "attach: option requires an argument -- t"
+    echo "usage: attach-session [-dEr] [-c working-directory] [-t target-session]"
+    return 1
+  fi
+  tmux attach -t "$session" -d
+}
+
 # Devbox
 alias c=control
 export DOCKER_HOST="tcp://127.0.0.1:2375"
