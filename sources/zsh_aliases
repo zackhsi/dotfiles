@@ -43,9 +43,13 @@ alias o="$SRC/ops"
 ###############################################################################
 export CACHE_EC2_INSTANCES=1
 function mfa() {
+  dirs_start=$(dirs)
   pushd $SRC/ops/orca/ > /dev/null
+  dirs_end=$(dirs)
   source mfa.sh --role admin
-  popd > /dev/null
+  if [[ "$dirs_start" != "$dirs_end" ]]; then
+    popd > /dev/null
+  fi
 }
 function f() {
   (cd $SRC/ops/hacktools/ && ./fab.sh $@)
