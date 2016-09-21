@@ -137,6 +137,7 @@ ta() {
   fi
   tmux attach -t "$session" -d
 }
+export EVENT_NOKQUEUE=1
 
 # Devbox
 alias c=control
