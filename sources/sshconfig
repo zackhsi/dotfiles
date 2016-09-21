@@ -38,4 +38,3 @@ Host *
     GSSAPIAuthentication no
     ForwardAgent no
     ForwardX11 no
-    UseRoaming no
