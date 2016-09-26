@@ -1,6 +1,7 @@
 aws-shell
 flake8
 haxor-news
+httpstat
 ipython
 isort
 neovim
