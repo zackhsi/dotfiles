@@ -10,6 +10,7 @@
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
   '~/.isort.cfg': 'isort.cfg',
+  '~/.pylintrc': 'pylintrc',
   '~/.ssh/config': 'sshconfig',
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
