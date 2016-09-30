@@ -108,7 +108,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'fntlnz/atags.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -201,11 +201,13 @@ let NERDTreeShowHidden=1
 highlight clear SignColumn
 
 " ctags
-command! -nargs=1 Silent
-            \ | execute ':silent !'.<q-args>
-            \ | execute ':redraw!'
-map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>zz
-map <Leader>c :Silent ctags -R . > /dev/null 2>&1 &<CR>
+autocmd BufWritePost,BufEnter * call atags#generate()
+let g:atags_build_commands_list = [
+      \ 'git rev-parse --is-inside-work-tree &> /dev/null || exit 0',
+      \ 'ag -g "" | ctags -L - --fields=+l -f tags.tmp',
+      \ 'awk "length($0) < 400" tags.tmp > tags',
+      \ 'rm tags.tmp'
+      \ ]
 
 " fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
