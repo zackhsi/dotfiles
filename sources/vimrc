@@ -202,6 +202,9 @@ highlight clear SignColumn
 
 " ctags
 autocmd BufWritePost,BufEnter * call atags#generate()
+function! Null()
+endfunction
+let g:atags_on_generate_stdout = 'Null'
 let g:atags_build_commands_list = [
       \ 'git rev-parse --is-inside-work-tree &> /dev/null || exit 0',
       \ 'ag -g "" | ctags -L - --fields=+l -f tags.tmp',
