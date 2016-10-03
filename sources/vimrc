@@ -36,7 +36,6 @@ set nobackup                       " no backup files
 set noswapfile                     " no swap files
 set nowritebackup                  " only in case you don't want a backup file while editing
 
-
 augroup CursorLineOnlyInActiveWindow
   autocmd!
   autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr ctermfg=221 guifg=#E5C07B
@@ -108,7 +107,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'fntlnz/atags.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -199,18 +198,6 @@ let NERDTreeShowHidden=1
 
 " gitgutter
 highlight clear SignColumn
-
-" ctags
-autocmd BufWritePost,BufEnter * call atags#generate()
-function! Null()
-endfunction
-let g:atags_on_generate_stdout = 'Null'
-let g:atags_build_commands_list = [
-      \ 'git rev-parse --is-inside-work-tree &> /dev/null || exit 0',
-      \ 'ag -g "" | ctags -L - --fields=+l -f tags.tmp',
-      \ 'awk "length($0) < 400" tags.tmp > tags',
-      \ 'rm -f tags.tmp'
-      \ ]
 
 " fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
