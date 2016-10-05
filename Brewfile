@@ -2,6 +2,7 @@
 install asciinema
 
 # bash
+install bash
 install shellcheck
 
 # battery command
