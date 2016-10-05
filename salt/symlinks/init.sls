@@ -33,7 +33,7 @@ Ensure {{ name }} is symlinked to from {{ source }}:
 # Files
 {% for name, source in {
   '~/.docker/config.json': 'docker_config.json',
-  src ~ '/profile/.bash_profile': 'bash_profile',
+  src ~ '/profile/.bash_profile': 'devbox_bash_profile',
 }.iteritems() %}
 Ensure {{ name }} is managed:
   file.managed:
