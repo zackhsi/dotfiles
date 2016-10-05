@@ -3,7 +3,7 @@
 {% set user = salt['environ.get']('USER') %}
 
 # Symlinks
-{% for name, source in {
+{% set links = {
   '~/.agignore': 'agignore',
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
@@ -22,7 +22,12 @@
   '~/.zsh_aliases': 'zsh_aliases',
   '~/.zsh_theme.zsh': 'zsh_theme.zsh',
   '~/.zshrc': 'zshrc',
-}.iteritems() %}
+} %}
+{% set bashrc = {
+  '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
+} %}
+{% do links.update(bashrc) %}
+{% for name, source in links.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
     - name: {{ name }}
