@@ -1,9 +1,8 @@
-# neovim head
-tap neovim/homebrew-neovim
-install neovim --HEAD
+# asciinema
+install asciinema
 
-# vim
-install ctags
+# bash
+install shellcheck
 
 # battery command
 tap Goles/battery
@@ -12,9 +11,17 @@ install battery
 # devops
 install saltstack
 
-# tmux
-install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
-install reattach-to-user-namespace
+# docker
+install docker
+
+# git
+install diff-so-fancy
+install git
+install hub
+install tig
+
+# go
+install go
 
 # hax
 install htop
@@ -28,26 +35,19 @@ install watch
 install coreutils
 install pstree
 
-# git
-install diff-so-fancy
-install git
-install hub
-install tig
+# neovim head
+tap neovim/homebrew-neovim
+install neovim --HEAD
 
-# docker
-install docker
+# ngrep
+install ngrep
 
 # python
 install python
 
-# go
-install go
+# tmux
+install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
+install reattach-to-user-namespace
 
-# bash
-install shellcheck
-
-# asciinema
-install asciinema
-
-# ngrep
-install ngrep
+# vim
+install ctags
