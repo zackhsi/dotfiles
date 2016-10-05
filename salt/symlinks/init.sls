@@ -5,6 +5,8 @@
 # Symlinks
 {% for name, source in {
   '~/.agignore': 'agignore',
+  '~/.bash_profile': 'bash_profile',
+  '~/.bashrc': 'bashrc',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
