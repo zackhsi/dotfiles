@@ -14,6 +14,11 @@ alias h="cd ~/homespace"
 alias o="cd $SRC/ops"
 alias s="cd $SRC"
 
+# ls
+alias l="ls -lah"
+alias la="ls -lAh"
+alias ll="ls -lh"
+
 # Editor
 export EDITOR='nvim'
 
