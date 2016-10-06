@@ -7,6 +7,13 @@ export SRC=$HOME/src
 alias c=control
 export DOCKER_HOST="tcp://127.0.0.1:2375"
 
+# Directories
+alias dev="cd $SRC/devbox"
+alias dot="cd ~/homespace/dotfiles"
+alias h="cd ~/homespace"
+alias o="cd $SRC/ops"
+alias s="cd $SRC"
+
 # Editor
 export EDITOR='nvim'
 
@@ -15,6 +22,7 @@ export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 
 # Git
 alias g='git'
+alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gc!='git commit -v --amend'
 alias gc='git commit -v'
 alias gca!='git commit -v -a --amend'
@@ -29,8 +37,11 @@ alias gl='git pull'
 alias glg='git log --stat'
 alias glg='git log --stat'
 alias gp='git push'
+alias grev='git rev-parse HEAD'
 alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
+# Git(hub)
+alias pr="hub pull-request"
 
 # Golang
 export GOPATH=$HOME/golang
@@ -46,6 +57,9 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
+
+# OSX
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
 # Pager
 export PAGER="less -IM"

@@ -13,29 +13,10 @@ pyc() {
 ###############################################################################
 # Git
 ###############################################################################
-alias pr="hub pull-request"
-alias gbc="git branch | grep -v master | xargs git branch -d"
-alias grev='git rev-parse HEAD'
 # Clone Lyft repo
 cl() {
   hub clone lyft/$@
 }
-
-
-###############################################################################
-# OSX
-###############################################################################
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
-
-###############################################################################
-# Directories
-###############################################################################
-alias h="cd ~/homespace"
-alias s="cd $SRC"
-alias dot="cd ~/homespace/dotfiles"
-
-alias dev="cd $SRC/devbox"
-alias o="cd $SRC/ops"
 
 
 ###############################################################################
