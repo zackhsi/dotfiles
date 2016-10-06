@@ -162,17 +162,8 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 
 " Colorscheme
-if $COLORSCHEME == 'solarized-light'
-    set background=light
-    colorscheme solarized
-elseif $COLORSCHEME == 'base16'
-    set background=dark
-    let base16colorspace=256
-    colorscheme base16-eighties
-elseif $COLORSCHEME == 'onedark'
-    let g:onedark_termcolors=16
-    colorscheme onedark
-endif
+let g:onedark_termcolors=16
+colorscheme onedark
 
 " Neomake
 autocmd BufWritePost,BufEnter * Neomake

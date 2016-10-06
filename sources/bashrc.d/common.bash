@@ -1,6 +1,5 @@
 # Common zsh/bash configuration
 
-export COLORSCHEME=onedark
 export EDITOR='nvim'
 export PAGER="less -IM"
 
