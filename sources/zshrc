@@ -37,7 +37,7 @@ source ~/.bashrc.d/common.bash
 # Aliases/functions
 ###############################################################################
 
-source ~/.bashrc.d/aliases.bash
+source ~/.bashrc.d/functions.bash
 
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
