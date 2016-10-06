@@ -87,4 +87,8 @@ for sh in "$HOME"/.bashrc.d/*.bash ; do
 done
 unset -v sh
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 source '/Users/zhsi/src/blessclient/lyftprofile' # bless ssh alias

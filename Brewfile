@@ -3,6 +3,7 @@ install asciinema
 
 # bash
 install bash
+install bash-completion
 install shellcheck
 
 # battery command
