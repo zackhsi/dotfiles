@@ -25,6 +25,7 @@
 } %}
 {% set bashrc = {
   '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
+  '~/.bashrc.d/common.bash': 'bashrc.d/common.bash',
 } %}
 {% do links.update(bashrc) %}
 {% for name, source in links.iteritems() %}

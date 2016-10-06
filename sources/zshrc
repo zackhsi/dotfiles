@@ -7,12 +7,10 @@ export HIST_STAMPS="mm/dd/yyyy"
 plugins=(
   brew
   docker
-  git
   hub
   jira
   pip
   thefuck
-  tmux
   vagrant
 )
 
@@ -35,6 +33,11 @@ bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 
 ###############################################################################
+# Common         
+###############################################################################
+source ~/.bashrc.d/common.bash
+
+###############################################################################
 # Pretty colors
 ###############################################################################
 
@@ -50,16 +53,6 @@ fi
 ###############################################################################
 # Exports
 ###############################################################################
-
-export EDITOR='nvim'
-export PAGER="less -IM"
-
-# Search
-export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
-export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
-
-# Code
-export SRC=$HOME/src
 
 # Golang
 export GOPATH=$HOME/golang
