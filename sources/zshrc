@@ -57,12 +57,8 @@ source ~/.bashrc.d/aliases.bash
 JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
 
-# Homebrew
-PATH=/usr/local/sbin:$PATH
-
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 
 # Tmux Plugin Manager
 if [ ! -d ~/.tmux/plugins/tpm ]; then

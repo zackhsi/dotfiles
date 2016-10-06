@@ -11,6 +11,9 @@ export SRC=$HOME/src
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 
+# FZF
+export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
+
 # Git aliases
 alias g='git'
 alias gc!='git commit -v --amend'
