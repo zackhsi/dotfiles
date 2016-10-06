@@ -18,6 +18,7 @@ alias s="cd $SRC"
 alias l="ls -lah"
 alias la="ls -lAh"
 alias ll="ls -lh"
+alias ls="ls --color=tty"
 
 # Editor
 export EDITOR='nvim'
@@ -68,6 +69,7 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 
 # Pager
 export PAGER="less -IM"
+export LESS="-R"
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1
