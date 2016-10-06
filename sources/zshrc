@@ -14,10 +14,6 @@ plugins=(
   vagrant
 )
 
-# GNU Coreutils
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_theme.zsh
 
@@ -42,66 +38,20 @@ source ~/.bashrc.d/common.bash
 ###############################################################################
 
 # export COLORSCHEME=solarized-light
-export COLORSCHEME=onedark
-
-if [ -n "$TMUX" ]; then
-  export TERM=screen-256color
-else
-  export TERM=xterm-256color
-fi
 
 ###############################################################################
 # Exports
 ###############################################################################
 
-# Golang
-export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-
-# Python
-export PYTHONDONTWRITEBYTECODE=1
-
 ###############################################################################
 # Aliases/functions
 ###############################################################################
 
-source ~/.zsh_aliases
-
-# https://news.ycombinator.com/item?id=12296000
-man() {
-  env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;35m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
-    man "$@"
-}
-
+source ~/.bashrc.d/aliases.bash
 
 ###############################################################################
 # Misc
 ###############################################################################
-
-# nvim
-alias v=nvim
-alias vi=nvim
-alias vim=nvim
-
-# thefuck
-alias fk=fuck
-
-# shellcheck
-export SHELLCHECK_OPTS="-e SC1091"
-
-# ssh
-if ! ssh-add -l > /dev/null; then
-  ssh-add 2>/dev/null
-fi
 
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net

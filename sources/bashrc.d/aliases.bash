@@ -30,19 +30,19 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 ###############################################################################
 # Directories
 ###############################################################################
-alias h="~/homespace"
-alias s="$SRC"
-alias dot="~/homespace/dotfiles"
+alias h="cd ~/homespace"
+alias s="cd $SRC"
+alias dot="cd ~/homespace/dotfiles"
 
-alias dev="$SRC/devbox"
-alias o="$SRC/ops"
+alias dev="cd $SRC/devbox"
+alias o="cd $SRC/ops"
 
 
 ###############################################################################
 # Fabric
 ###############################################################################
 export CACHE_EC2_INSTANCES=1
-function mfa() {
+mfa() {
   dirs_start=$(dirs)
   pushd $SRC/ops/orca/ > /dev/null
   dirs_end=$(dirs)
@@ -51,22 +51,10 @@ function mfa() {
     popd > /dev/null
   fi
 }
-function f() {
+f() {
   (cd $SRC/ops/hacktools/ && ./fab.sh $@)
 }
-function fssh() {
-  (cd $SRC/ops/hacktools/ && ./fssh $@)
-}
 PATH=$PATH:~/bin
-if [ ! -d ~/bin ]; then
-  echo "Creating ~/bin directory"
-  mkdir ~/bin
-fi
-if [ ! -L ~/bin/fab ]; then
-  echo "Linking fab tool"
-  ln -s $SRC/ops/hacktools/fab.sh ~/bin/fab
-fi
-
 
 ###############################################################################
 # AWS
@@ -74,7 +62,7 @@ fi
 
 # term i-d2609352
 # term -f i-d2609352
-function term() {
+term() {
   if [[ $1 == "-f" ]]; then
     shift
     aws ec2 stop-instances --instance-ids $@ --force
@@ -83,41 +71,54 @@ function term() {
   fi
 }
 
-function describe() {
+describe() {
   xargs -P 50 -I % aws ec2 describe-instances --instance-ids %
 }
 
-function summarize() {
+summarize() {
   jq '.Reservations[0].Instances[0]' | jq '.InstanceId, .State.Name, .InstanceType'
 }
 
-function itype() {
+itype() {
   jq '.Reservations[0].Instances[0].InstanceType'
 }
 
-function state() {
+state() {
   jq '.Reservations[0].Instances[0].State.Name'
 }
 
 # ASG functions
-function asg_ssh() {
+asg_ssh() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
     | xargs -I % tmux split-window "tmux select-layout tiled && ssh -oStrictHostKeyChecking=no %"
 }
-function asg_term_decrement() {
+asg_term_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --should-decrement-desired-capacity
 }
-function asg_term_no_decrement() {
+asg_term_no_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --no-should-decrement-desired-capacity
 }
-function asg_ls() {
+asg_ls() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
     | sort
 }
-function asg_ll() {
+asg_ll() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[]" \
     | sort
+}
+
+# https://news.ycombinator.com/item?id=12296000
+man() {
+  env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;35m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    man "$@"
 }
