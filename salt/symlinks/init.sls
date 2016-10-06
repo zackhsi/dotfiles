@@ -19,7 +19,6 @@
   '~/.tmux.reset.conf': 'tmux.reset.conf',
   '~/.vimrc': 'vimrc',
   '~/.xvimrc': 'xvimrc',
-  '~/.zsh_aliases': 'zsh_aliases',
   '~/.zsh_theme.zsh': 'zsh_theme.zsh',
   '~/.zshrc': 'zshrc',
 } %}
