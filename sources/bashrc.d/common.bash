@@ -4,6 +4,12 @@ export COLORSCHEME=onedark
 export EDITOR='nvim'
 export PAGER="less -IM"
 
+if [ -n "$TMUX" ]; then
+  export TERM=screen-256color
+else
+  export TERM=xterm-256color
+fi
+
 # Code
 export SRC=$HOME/src
 
