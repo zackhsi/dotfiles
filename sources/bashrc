@@ -92,3 +92,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 source '/Users/zhsi/src/blessclient/lyftprofile' # bless ssh alias
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
