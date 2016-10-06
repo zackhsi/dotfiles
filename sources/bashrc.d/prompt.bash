@@ -1,4 +1,4 @@
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWCOLORHINTS=true
-PS1='\W$(__git_ps1 " (%s)") ❯ '
+PS1='\[\033[35m\]\W\[\033[32m\]$(__git_ps1 " (%s)")\[\033[34m\] ❯ \[\033[0m\]'
