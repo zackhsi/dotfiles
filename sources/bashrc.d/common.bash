@@ -68,3 +68,6 @@ if ! ssh-add -l > /dev/null; then
   ssh-add 2>/dev/null
 fi
 
+# Devbox
+alias c=control
+export DOCKER_HOST="tcp://127.0.0.1:2375"
