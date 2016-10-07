@@ -76,6 +76,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# thefuck
+eval $(thefuck --alias)
+
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
