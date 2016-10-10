@@ -65,6 +65,19 @@ if ((BASH_VERSINFO[0] >= 4)) ; then
     ((BASH_VERSINFO[1] >= 3)) && shopt -s direxpand
 fi
 
+# vi mode
+set -o vi
+bind '"\C-p": previous-history'
+bind '"\C-n": next-history'
+bind '"\C-b": backward-char'
+bind '"\C-f": forward-char'
+bind '"\eb": backward-word'
+bind '"\ef": forward-word'
+bind '"\C-d": delete-char'
+bind '"^W": backward-kill-word'
+bind '"\C-a": beginning-of-line'
+bind '"\C-e": end-of-line'
+
 # Load startup files in ~/.bashrc.d
 for sh in "$HOME"/.bashrc.d/*.bash ; do
     [[ -e $sh ]] && source "$sh"
