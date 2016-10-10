@@ -29,6 +29,7 @@ export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 
 # Git
 alias g='git'
+alias gb='git branch'
 alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gc!='git commit -v --amend'
 alias gc='git commit -v'
