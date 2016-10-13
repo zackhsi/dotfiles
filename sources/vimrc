@@ -168,6 +168,17 @@ colorscheme onedark
 " Neomake
 autocmd BufWritePost,BufEnter * Neomake
 
+function! neomake#makers#ft#python#mypy() abort
+    return {
+        \ 'args': ['--silent-imports', '--py2'],
+        \ 'errorformat':
+            \ '%E%f:%l: error: %m,' .
+            \ '%W%f:%l: warning: %m,' .
+            \ '%I%f:%l: note: %m',
+        \ }
+endfunction
+let g:neomake_python_enabled_makers = ['python', 'flake8', 'pylint', 'mypy']
+
 " pymode
 let g:pymode_folding = 0
 let g:pymode_motion = 0
