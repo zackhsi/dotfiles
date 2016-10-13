@@ -1,2 +1,3 @@
 mypy-lang==0.4.5
+typed-ast==0.6.1
 ## The following requirements were added by pip freeze:
