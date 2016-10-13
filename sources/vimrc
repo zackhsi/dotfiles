@@ -170,7 +170,7 @@ autocmd BufWritePost,BufEnter * Neomake
 
 function! neomake#makers#ft#python#mypy() abort
     return {
-        \ 'args': ['--silent-imports', '--py2', '--fast-parser'],
+        \ 'args': ['--silent-imports', '--py2', '--fast-parser', '--incremental'],
         \ 'errorformat':
             \ '%E%f:%l: error: %m,' .
             \ '%W%f:%l: warning: %m,' .
