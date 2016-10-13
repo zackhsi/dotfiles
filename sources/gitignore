@@ -1,9 +1,9 @@
+*.bak
 *.pyc
 *.swp
-*.bak
+.DS_Store
 .ropeproject
 tags
 tags.lock
 tags.temp
 venv
-.DS_Store
