@@ -65,6 +65,11 @@ if ((BASH_VERSINFO[0] >= 4)) ; then
     ((BASH_VERSINFO[1] >= 3)) && shopt -s direxpand
 fi
 
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # vi mode
 set -o vi
 bind '"\C-p": previous-history'
@@ -83,11 +88,6 @@ for sh in "$HOME"/.bashrc.d/*.bash ; do
     [[ -e $sh ]] && source "$sh"
 done
 unset -v sh
-
-# Bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
 
 # thefuck
 eval $(thefuck --alias)

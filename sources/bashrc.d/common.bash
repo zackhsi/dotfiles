@@ -29,6 +29,7 @@ export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 
 # Git
 alias g='git'
+__git_complete g __git_main
 alias gb='git branch'
 alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gc!='git commit -v --amend'
@@ -38,12 +39,13 @@ alias gca='git commit -v -a'
 alias gcan!='git commit -v -a --no-edit --amend'
 alias gcm='git checkout master'
 alias gco='git checkout'
+__git_complete gco _git_checkout
 alias gd='git diff'
 alias gdw='git diff --word-diff'
 alias gl='git pull'
 alias gl='git pull'
 alias glg='git log --stat'
-alias glg='git log --stat'
+__git_complete glg _git_log
 alias gp='git push'
 alias grbm='git rebase master'
 alias grev='git rev-parse HEAD'
