@@ -23,9 +23,10 @@
   '~/.zshrc': 'zshrc',
 } %}
 {% set bashrc = {
-  '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
   '~/.bashrc.d/common.bash': 'bashrc.d/common.bash',
   '~/.bashrc.d/functions.bash': 'bashrc.d/functions.bash',
+  '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
+  '~/.bashrc.d/tmux_completion.bash': 'bashrc.d/tmux_completion.bash',
 } %}
 {% do links.update(bashrc) %}
 {% for name, source in links.iteritems() %}
