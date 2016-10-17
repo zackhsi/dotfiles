@@ -27,6 +27,7 @@
   '~/.bashrc.d/functions.bash': 'bashrc.d/functions.bash',
   '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
   '~/.bashrc.d/tmux_completion.bash': 'bashrc.d/tmux_completion.bash',
+  '~/.bashrc.d/docker_completion.bash': 'bashrc.d/docker_completion.bash',
 } %}
 {% do links.update(bashrc) %}
 {% for name, source in links.iteritems() %}
