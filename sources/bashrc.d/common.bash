@@ -37,6 +37,9 @@ export PATH=$PATH:$GOROOT/bin
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# Homebrew
+PATH="/usr/local/sbin:$PATH"
+
 # Hub
 alias pr="hub pull-request"
 

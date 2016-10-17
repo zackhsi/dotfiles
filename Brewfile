@@ -37,6 +37,9 @@ install watch
 install coreutils
 install pstree
 
+# mtr
+install mtr
+
 # neovim head
 tap neovim/homebrew-neovim
 install neovim --HEAD
