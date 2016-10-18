@@ -1,4 +1,5 @@
-_docker() {
+have docker &&
+_control() {
     COMPREPLY=()
     local cur prev opts cword
     _get_comp_words_by_ref cur prev words cword
@@ -9,5 +10,5 @@ _docker() {
         return 0
       fi
     fi
-}
-complete -F _docker docker control c
+} &&
+complete -F _control control c

@@ -72,6 +72,7 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+export BASH_COMPLETION_DIR # Give salt access
 
 # vi mode
 set -o vi

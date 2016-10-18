@@ -1,3 +1,4 @@
+have tmux &&
 _tmux_sessions() 
 {
     COMPREPLY=()
@@ -8,5 +9,5 @@ _tmux_sessions()
       COMPREPLY=( $(compgen -W "${sessions}" -- ${cur}) )
       return 0
     fi
-}
+} &&
 complete -F _tmux_sessions ta tad tkss
