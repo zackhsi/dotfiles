@@ -13,6 +13,9 @@ HISTCONTROL=ignoreboth
 # Keep the times of the commands in history
 HISTTIMEFORMAT='%F %T  '
 
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 # Use a more compact format for the time builtin's output
 TIMEFORMAT='real:%lR user:%lU sys:%lS'
 

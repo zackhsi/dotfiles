@@ -41,4 +41,4 @@ __set_bash_prompt()
 
 # This tells bash to reinterpret PS1 after every command, which we
 # need because __git_ps1 will return different text and colors
-PROMPT_COMMAND=__set_bash_prompt
+PROMPT_COMMAND="__set_bash_prompt; $PROMPT_COMMAND"
