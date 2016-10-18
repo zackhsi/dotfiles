@@ -42,7 +42,7 @@ EOF
       COMPREPLY=( $(compgen -W "${commands}" -- ${cur}) )
       return 0
     elif [[ $cword -eq 2 ]]; then
-      if [[ "$prev" == "kill" ]]; then
+      if [[ "$prev" =~ kill|enter ]]; then
         running_containers=$(docker ps --format "{{.Names}}")
         COMPREPLY=( $(compgen -W "${running_containers}" -- ${cur}) )
         return 0
