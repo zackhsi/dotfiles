@@ -177,14 +177,14 @@ function! neomake#makers#ft#python#mypy() abort
             \ '%I%f:%l: note: %m',
         \ }
 endfunction
-let g:neomake_python_enabled_makers = ['python', 'flake8', 'pylint', 'mypy']
+let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
 
 " pymode
 let g:pymode_folding = 0
 let g:pymode_motion = 0
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
-let g:pymode_lint_checkers = ['flake8']
+let g:pymode_lint = 0
 
 " vim-pydocstring
 nmap <silent> <Leader>d <Plug>(pydocstring)
