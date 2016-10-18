@@ -73,6 +73,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 export BASH_COMPLETION_DIR # Give salt access
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
 
 # vi mode
 set -o vi
