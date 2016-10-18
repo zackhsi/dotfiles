@@ -107,6 +107,7 @@ eval $(thefuck --alias)
 alias g='git'
 __git_complete g __git_main
 alias gb='git branch'
+__git_complete gb _git_branch
 alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gc!='git commit -v --amend'
 alias gc='git commit -v'
