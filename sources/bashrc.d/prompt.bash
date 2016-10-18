@@ -35,6 +35,11 @@ __set_bash_prompt()
     PostGitPS1+="$Red"' ❯ '"$None"
   fi
 
+  # Virtualenv
+  if [ -n "$VIRTUAL_ENV" ]; then
+    PostGitPS1+="($(basename $VIRTUAL_ENV)) "
+  fi
+
   # Set PS1 from $PreGitPS1 + <git-status> + $PostGitPS1
   __git_ps1 "$PreGitPS1" "$PostGitPS1" ' (%s)'
 }
