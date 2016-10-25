@@ -111,6 +111,7 @@ __git_complete gb _git_branch
 alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gc!='git commit -v --amend'
 alias gc='git commit -v'
+alias gcount='git shortlog -sn'
 alias gca!='git commit -v -a --amend'
 alias gca='git commit -v -a'
 alias gcan!='git commit -v -a --no-edit --amend'
