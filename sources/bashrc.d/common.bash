@@ -53,7 +53,6 @@ alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 
 # Pager
 export PAGER="less -IM"
-export LESS="-R"
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1
