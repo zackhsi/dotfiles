@@ -8,8 +8,8 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [pager]
-	diff = diff-so-fancy | less --tabs=1,5
-	show = diff-so-fancy | less --tabs=1,5
+	diff = diff-so-fancy
+	show = diff-so-fancy
 [diff]
 	algorithm = patience
 	compactionHeuristic = true
