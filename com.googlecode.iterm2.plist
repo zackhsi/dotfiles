@@ -984,9 +984,9 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
+	<string>~/.vim/plugged/vim-wwdc16-theme</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{1440, 873}</string>
+	<string>{1069, 657}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1018,17 +1018,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>323 1257 445 77 -585 900 2560 1440 </string>
+	<string>572 399 445 77 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 412 606 456 0 0 1440 877 </string>
+	<string>269 413 606 456 0 0 1440 878 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 61 1131 816 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 401 730 477 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>246 52 650 527 0 0 1440 877 </string>
+	<string>0 28 1434 846 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>720 14 714 427 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510_selection</key>
@@ -1689,7 +1691,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata-dz 14</string>
+			<string>UbuntuMono-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2419,7 +2421,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata-dz 12</string>
+			<string>UbuntuMono-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2494,6 +2496,8 @@
 			<string>/Users/zhsi</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -2502,6 +2506,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
 	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>1D4BBC1E-F98D-4F63-9480-B80214094394</string>
 	<key>NoSyncLastTipTime</key>
 	<real>476661415.65490699</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2632,11 +2638,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=8</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-07T22:41:25Z</date>
+	<date>2016-11-08T17:30:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -2654,7 +2660,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160405-nightly</string>
+	<string>3.0.20160620-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
