@@ -991,7 +991,6 @@
 		<string>12</string>
 		<string>13</string>
 		<string>14</string>
-		<string>15</string>
 		<string>16</string>
 		<string>17</string>
 		<string>18</string>
@@ -1003,6 +1002,7 @@
 		<string>96</string>
 		<string>144</string>
 		<string>288</string>
+		<string>15</string>
 	</array>
 	<key>NSFontPanelSizeSliderParams</key>
 	<string>2 0 100</string>
@@ -1041,7 +1041,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1150 1014 445 77 -570 900 2560 1440 </string>
+	<string>618 1284 445 77 -570 900 2560 1440 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>283 1841 606 456 -570 900 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -1051,7 +1051,7 @@
 	<key>NSWindow Frame com.apple.typography_panel_UbuntuMono-Regular</key>
 	<string>-91 1433 260 246 -570 900 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-570 1855 730 452 -570 900 2560 1418 </string>
+	<string>-570 1819 730 477 -570 900 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 28 1434 846 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1716,7 +1716,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>UbuntuMono-Regular 18</string>
+			<string>UbuntuMono-Regular 17</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
