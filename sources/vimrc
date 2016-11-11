@@ -63,6 +63,9 @@ autocmd Filetype vim setlocal ts=2 sts=2 sw=2
 autocmd Filetype xml setlocal ts=2 sts=2 sw=2
 autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
+" detect tmux.conf, must be before *.conf
+au BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
+
 " detect ini files
 au BufNewFile,BufRead *.ini,*.conf setf dosini
 
@@ -142,6 +145,7 @@ Plug 'saltstack/salt-vim'
 Plug 'stephpy/vim-yaml'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'keith/tmux.vim'
 
 " Python
 Plug 'klen/python-mode'
