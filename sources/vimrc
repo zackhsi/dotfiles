@@ -141,6 +141,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'saltstack/salt-vim'
 Plug 'stephpy/vim-yaml'
 Plug 'evanmiller/nginx-vim-syntax'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Python
 Plug 'klen/python-mode'
