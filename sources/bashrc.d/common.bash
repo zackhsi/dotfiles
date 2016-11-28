@@ -64,11 +64,6 @@ export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 # Shellcheck
 export SHELLCHECK_OPTS="-e SC1091"
 
-# ssh
-if ! ssh-add -l > /dev/null; then
-  ssh-add 2>/dev/null
-fi
-
 # TERM
 if [ -n "$TMUX" ]; then
   export TERM=screen-256color
