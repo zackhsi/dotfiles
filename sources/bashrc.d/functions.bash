@@ -24,13 +24,7 @@ cl() {
 ###############################################################################
 export CACHE_EC2_INSTANCES=1
 mfa() {
-  dirs_start=$(dirs)
-  pushd $SRC/ops/orca/ > /dev/null
-  dirs_end=$(dirs)
-  source mfa.sh --role admin
-  if [[ "$dirs_start" != "$dirs_end" ]]; then
-    popd > /dev/null
-  fi
+  ~/src/awsaccess/awsaccess.sh --role admin
 }
 f() {
   (cd $SRC/ops/hacktools/ && ./fab.sh $@)
