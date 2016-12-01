@@ -1,3 +1,5 @@
-mypy-lang==0.4.5
+mypy-lang==0.4.6
 typed-ast==0.6.1
 ## The following requirements were added by pip freeze:
+click==6.6
+requests==2.12.1
