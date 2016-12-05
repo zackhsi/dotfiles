@@ -38,3 +38,5 @@ Host *
     GSSAPIAuthentication no
     ForwardAgent no
     ForwardX11 no
+
+# vi: ft=sshconfig
