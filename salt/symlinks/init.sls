@@ -31,6 +31,7 @@
 {% set bash_completion = {
   salt['environ.get']('BASH_COMPLETION_DIR') ~ '/tmux.bash': 'bash_completion/tmux.bash',
   salt['environ.get']('BASH_COMPLETION_DIR') ~ '/control.bash': 'bash_completion/control.bash',
+  salt['environ.get']('BASH_COMPLETION_DIR') ~ '/devbox.bash': 'bash_completion/devbox.bash',
 } %}
 {% do links.update(bash_completion) %}
 {% for name, source in links.iteritems() %}
