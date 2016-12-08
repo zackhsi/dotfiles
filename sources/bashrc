@@ -4,8 +4,9 @@ case $- in
     *) return ;;
 esac
 
-# Keep around 32K lines of history in file
-HISTFILESIZE=$((1 << 15))
+# Keep around INFINITE lines of history in file
+export HISTFILESIZE=""
+export HISTSIZE=""
 
 # Ignore duplicate commands and whitespace in history
 HISTCONTROL=ignoreboth
