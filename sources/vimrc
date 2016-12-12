@@ -131,8 +131,8 @@ Plug 'godlygeek/tabular'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'rakr/vim-one'
 
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
@@ -162,7 +162,7 @@ call plug#end()
 """"""""""""""""""""""""""""""
 " airline
 """"""""""""""""""""""""""""""
-let g:airline_theme                           = 'one'
+let g:airline_theme                           = 'onedark'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
@@ -171,11 +171,8 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 
 " Colorscheme
-colorscheme one
-set background=dark
-if has("termguicolors")
-  set termguicolors
-endif
+let g:onedark_termcolors=16
+colorscheme onedark
 
 " Neomake
 autocmd BufWritePost,BufEnter * Neomake
