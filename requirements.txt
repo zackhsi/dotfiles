@@ -13,21 +13,21 @@ virtualenv==15.1.0
 ## The following requirements were added by pip freeze:
 appnope==0.1.0
 astroid==1.4.8
-awscli==1.11.25
+awscli==1.11.28
 backports.functools-lru-cache==1.3
 backports.shutil-get-terminal-size==1.0.0
 boto3==1.4.2
-botocore==1.4.82
+botocore==1.4.85
 click==6.6
 colorama==0.3.7
 configobj==5.0.6
 configparser==3.5.0
 decorator==4.0.10
-docutils==0.12
+docutils==0.13.1
 enum34==1.1.6
 futures==3.0.5
 gnureadline==6.3.3
-greenlet==0.4.10
+greenlet==0.4.11
 ipython-genutils==0.1.0
 jmespath==0.9.0
 lazy-object-proxy==1.2.2
