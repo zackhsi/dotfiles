@@ -179,6 +179,8 @@ endif
 
 " Neomake
 autocmd BufWritePost,BufEnter * Neomake
+highlight NeomakeErrorMsg ctermfg=227 ctermbg=237
+let g:neomake_warning_sign={'text': '⚠', 'texthl': 'NeomakeErrorMsg'}
 
 function! neomake#makers#ft#python#mypy() abort
     return {
