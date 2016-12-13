@@ -1,4 +1,4 @@
-all: files brew pip pip3 ## Make it all!
+all: files brew pip pip3 tmux_plugins ## Make it all!
 
 files: ## Ensure files are up to date
 	./manage
@@ -22,6 +22,10 @@ brew: ## Install formulas in Brewfile
 
 npm_freeze: ## Freeze node packages into Nodefile
 	npm ls -g --depth=0 > Nodefile
+
+tmux_plugins: ## Install and update tmux plugins
+	~/.tmux/plugins/tpm/bin/install_plugins
+	~/.tmux/plugins/tpm/bin/update_plugins all
 
 .DEFAULT_GOAL := help
 .PHONY: help
