@@ -17,6 +17,9 @@ pip3: ## Ensure pip3 packages in requirements.in are installed
 pip3_clean: ## Uninstall all pip3 modules
 	pip3 freeze | xargs pip3 uninstall -y -q
 
+cargo: ## Install crates in Cargofile
+	./rustcargo
+
 brew: ## Install formulas in Brewfile
 	./homebrew
 

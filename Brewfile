@@ -50,6 +50,9 @@ install ngrep
 # python
 install python
 
+# rust
+install rust
+
 # tmux
 install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
 install reattach-to-user-namespace

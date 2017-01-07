@@ -147,6 +147,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'keith/tmux.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
 
 " Python
 Plug 'klen/python-mode'
@@ -198,6 +201,10 @@ let g:pymode_lint = 0
 
 " vim-pydocstring
 nmap <silent> <Leader>d <Plug>(pydocstring)
+
+" rust
+let g:rustfmt_autosave = 1
+let g:racer_experimental_completer = 1
 
 " tagbar
 :command TT TagbarToggle
