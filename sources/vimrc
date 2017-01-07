@@ -16,6 +16,7 @@ endif
 
 set colorcolumn=80                 " line length matters
 set foldmethod=manual              " set a foldmethod
+set hidden
 set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
