@@ -8,8 +8,8 @@ esac
 export HISTFILESIZE=""
 export HISTSIZE=""
 
-# Ignore duplicate commands and whitespace in history
-HISTCONTROL=ignoreboth
+# Erase duplicate commands and whitespace in history
+export HISTCONTROL=ignoreboth:erasedups
 
 # Keep the times of the commands in history
 HISTTIMEFORMAT='%F %T  '
