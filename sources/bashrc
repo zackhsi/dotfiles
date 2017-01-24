@@ -127,6 +127,8 @@ alias gl='git pull'
 alias glg='git log --stat'
 __git_complete glg _git_log
 alias gp='git push'
+alias grba='git rebase --abort'
+alias grbc='git rebase --continue'
 alias grbm='git rebase master'
 alias grev='git rev-parse HEAD'
 alias gst='git status'
