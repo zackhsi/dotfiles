@@ -10,3 +10,4 @@ requests
 speedtest-cli
 venmo
 virtualenv
+yapf

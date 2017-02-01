@@ -1,0 +1,4 @@
+[style]
+DEDENT_CLOSING_BRACKETS = true
+
+# vim: set ft=dosini:

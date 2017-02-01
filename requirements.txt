@@ -2,7 +2,7 @@ aws-shell==0.1.1
 flake8==3.2.1
 haxor-news==0.4.1
 httpstat==1.2.1
-ipython==5.2.0
+ipython==5.2.1
 isort==4.2.5
 neovim==0.1.13
 pylint==1.6.5
@@ -10,6 +10,7 @@ requests==2.13.0
 speedtest-cli==1.0.2
 -e git+https://github.com/Homebrew/brew.git@06fe347de97975dc01e726f87bf07a56a6fb713e#egg=venmo
 virtualenv==15.1.0
+yapf==0.15.2
 ## The following requirements were added by pip freeze:
 appdirs==1.4.0
 appnope==0.1.0
@@ -52,7 +53,7 @@ pyparsing==2.1.10
 python-dateutil==2.6.0
 PyYAML==3.12
 rsa==3.4.2
--e git+git@github.com:lyft/rtfmbot.git@1ed52067ff43f399924711018865ed52d4c27982#egg=rtfmbot
+-e git+git@github.com:lyft/rtfmbot.git@ba62173bfa814fc46e2e2c7f7734ea9657a339e5#egg=rtfmbot
 s3transfer==0.1.10
 scandir==1.4
 simplegeneric==0.8.1
