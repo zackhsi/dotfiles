@@ -6,6 +6,7 @@ ipython
 isort
 neovim
 pylint
+pytest
 requests
 speedtest-cli
 venmo
