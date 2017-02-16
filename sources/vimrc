@@ -138,7 +138,7 @@ Plug 'altercation/vim-colors-solarized'
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'burnettk/vim-angular'
-Plug 'ekalinin/Dockerfile.vim'
+Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
