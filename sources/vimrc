@@ -130,7 +130,6 @@ Plug 'godlygeek/tabular'
 
 " Appearance
 Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'altercation/vim-colors-solarized'
