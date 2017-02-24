@@ -190,6 +190,7 @@ function! neomake#makers#ft#python#mypy() abort
         \ }
 endfunction
 let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
+let g:neomake_highlight_columns = 0
 
 " pymode
 let g:pymode_folding = 0
