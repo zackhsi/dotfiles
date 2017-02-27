@@ -1,14 +1,10 @@
 aws-shell
 flake8
-haxor-news
-httpstat
 ipython
 isort
-neovim
 pylint
 pytest
 requests
 speedtest-cli
 venmo
 virtualenv
-yapf
