@@ -42,7 +42,7 @@ install mtr
 
 # neovim head
 tap neovim/homebrew-neovim
-install neovim --HEAD
+install neovim
 
 # ngrep
 install ngrep

@@ -1,3 +1,6 @@
 mypy-lang==0.4.6
-typed-ast==1.0.0
+neovim==0.1.13
+typed-ast==1.0.1
 ## The following requirements were added by pip freeze:
+greenlet==0.4.12
+msgpack-python==0.4.8
