@@ -8,7 +8,6 @@
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
   '~/.config/flake8': 'flake8',
-  ' ~/.config/yapf/style': 'style.yapf',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
