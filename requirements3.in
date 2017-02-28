@@ -1,3 +1,4 @@
+isort
 mypy-lang
 neovim
 typed-ast
