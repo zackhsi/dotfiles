@@ -77,11 +77,7 @@ au BufNewFile,BufRead Vagrantfile set filetype=ruby
 " easy window navigation
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
-if has('nvim')
-    nmap <BS> :<C-u>TmuxNavigateLeft<CR>
-else
-    nmap <C-h> <C-w>h
-endif
+nmap <C-h> :<C-u>TmuxNavigateLeft<CR>
 nmap <C-l> <C-w>l
 
 " move by screen lines
