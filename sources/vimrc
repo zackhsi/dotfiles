@@ -210,6 +210,8 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 let g:deoplete#sources#jedi#show_docstring = 1
+" New line when the typed word matches the suggestion exactly and I hit enter.
+inoremap <silent><expr><CR> pumvisible() ? deoplete#mappings#close_popup()."\<CR>" : "\<CR>"
 " Close preview window upon completion.
 autocmd CompleteDone * pclose!
 
