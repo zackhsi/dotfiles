@@ -251,6 +251,15 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+function! s:fzf_statusline()
+  " Override statusline as you like
+  highlight fzf1 ctermfg=yellow ctermbg=black
+  highlight fzf2 ctermfg=yellow ctermbg=black
+  highlight fzf3 ctermfg=yellow ctermbg=black
+  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
+endfunction
+
+autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 " Redefine :Ag command
 autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag(<q-args>,
