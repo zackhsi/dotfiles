@@ -108,7 +108,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
 
 " autocompletion / snippets
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
