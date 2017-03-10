@@ -121,6 +121,7 @@ alias gcm='git checkout master'
 alias gco='git checkout'
 __git_complete gco _git_checkout
 alias gd='git diff'
+__git_complete gd _git_diff
 alias gds='git diff --staged'
 alias gdw='git diff --word-diff'
 alias gl='git pull'
