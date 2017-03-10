@@ -101,61 +101,60 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Code Navigation
-Plug 'scrooloose/nerdtree'
-Plug 'kshenoy/vim-signature'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
+Plug 'kshenoy/vim-signature'
 Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
 
 " autocompletion / snippets
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 
 " Git
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Vim enhancements
-Plug 'neomake/neomake'
-Plug 'tomtom/tcomment_vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-unimpaired'
 Plug 'godlygeek/tabular'
+Plug 'neomake/neomake'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-unimpaired'
 
-" Appearance
+" Appearance Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'chriskempson/base16-vim'
 Plug 'joshdick/onedark.vim'
-Plug 'altercation/vim-colors-solarized'
 
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'burnettk/vim-angular'
+Plug 'cespare/vim-toml'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plug 'evanmiller/nginx-vim-syntax'
 Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'saltstack/salt-vim'
-Plug 'evanmiller/nginx-vim-syntax'
-Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'keith/tmux.vim'
-Plug 'rust-lang/rust.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'pangloss/vim-javascript'
 Plug 'racer-rust/vim-racer'
-Plug 'cespare/vim-toml'
+Plug 'rust-lang/rust.vim'
+Plug 'saltstack/salt-vim'
 
 " Python
-Plug 'zchee/deoplete-jedi'
-Plug 'klen/python-mode'
-Plug 'heavenshell/vim-pydocstring'
 Plug 'fisadev/vim-isort'
+Plug 'heavenshell/vim-pydocstring'
+Plug 'klen/python-mode'
+Plug 'zchee/deoplete-jedi'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'sjl/vitality.vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 call plug#end()
 
