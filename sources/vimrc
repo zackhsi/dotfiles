@@ -284,6 +284,9 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 \   'tmux_height': '40%'
 \ })<CR>
 
+" Gutentags.
+noremap <Leader>c :GutentagsUpdate!<CR>
+
 " http://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
