@@ -27,6 +27,7 @@ export EDITOR='nvim'
 # FZF
 export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
 export FZF_DEFAULT_OPTS='--color 16'
+export FZF_CTRL_R_OPTS='--sort'
 
 # Golang
 export GOPATH=$HOME/golang
