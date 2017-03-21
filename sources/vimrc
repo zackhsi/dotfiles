@@ -14,7 +14,7 @@ if !has('nvim')
     syntax enable                  " syntax highlighting
 endif
 
-set colorcolumn=80                 " line length matters
+set colorcolumn=79
 set foldmethod=manual              " set a foldmethod
 set hidden
 set number                         " line numbers
