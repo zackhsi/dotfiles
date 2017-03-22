@@ -17,6 +17,7 @@ Host *.lyft.net *.ln
     ProxyCommand ssh gateway.ln "proxy-ec2 %h"
     User zhsi
     ForwardAgent yes
+    StrictHostKeyChecking no
 
 Host *
     KeepAlive yes
