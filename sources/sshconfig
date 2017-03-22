@@ -1,21 +1,7 @@
-Host kegbot
-    Hostname ec2-52-2-157-54.compute-1.amazonaws.com
-    User ubuntu
-    StrictHostKeyChecking no
-
-Host zackhsi
-    Hostname ec2-52-72-77-107.compute-1.amazonaws.com
-    User ubuntu
-    StrictHostKeyChecking no
-
 Host gateway.ln gateway.lyft.net
     Hostname gateway.lyft.net
     ProxyCommand none
     GatewayPorts yes
-
-# EC2 Instance ID
-Host i-*
-    Hostname %h.lyft.net
 
 Host gateway-sfo.ln gateway-sfo.lyft.net
     ProxyCommand none
@@ -27,7 +13,7 @@ Host *sfo*.lyft.net *sfo*.ln
     User zhsi
     ForwardAgent yes
 
-Host *.lyft.me *.lm *.lyft.net *.ln *-prod i-*
+Host *.lyft.net *.ln
     ProxyCommand ssh gateway.ln "proxy-ec2 %h"
     User zhsi
     ForwardAgent yes
