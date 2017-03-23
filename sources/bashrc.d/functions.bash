@@ -27,7 +27,7 @@ mfa() {
   ~/src/awsaccess/awsaccess.sh --role admin
 }
 f() {
-  (cd $SRC/ops/hacktools/ && ./fab.sh $@)
+  (cd $SRC/hacktools/ && ./fab.sh $@)
 }
 
 ###############################################################################
