@@ -59,3 +59,6 @@ install reattach-to-user-namespace
 
 # vim
 install ctags
+
+# yarn
+install yarn
