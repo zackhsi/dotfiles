@@ -139,6 +139,7 @@ Plug 'evanmiller/nginx-vim-syntax'
 Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
+Plug 'mxw/vim-jsx'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'pangloss/vim-javascript'
 Plug 'racer-rust/vim-racer'
@@ -287,6 +288,9 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 
 " Gutentags.
 noremap <Leader>c :GutentagsUpdate!<CR>
+
+" JSX.
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " http://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
 highlight ExtraWhitespace ctermbg=red guibg=red
