@@ -55,7 +55,7 @@ vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
 " slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
 
-" activates indenting for files
+" Indentation
 filetype plugin indent on
 autocmd Filetype bash setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
