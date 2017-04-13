@@ -30,9 +30,9 @@ __set_bash_prompt()
   fi
 
   if [[ $exit == 0 ]]; then
-    PostGitPS1+="$Blu"' ❯ '"$None"
+    PostGitPS1+="$Blu"' $ '"$None"
   else
-    PostGitPS1+="$Red"' ❯ '"$None"
+    PostGitPS1+="$Red"' $ '"$None"
   fi
 
   # Virtualenv
