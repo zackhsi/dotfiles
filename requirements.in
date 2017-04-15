@@ -1,7 +1,9 @@
 aws-shell
+boto
 flake8
 ipython
 isort
+pip-tools
 pylint
 pytest
 requests

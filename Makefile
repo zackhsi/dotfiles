@@ -4,8 +4,8 @@ files: ## Ensure files are up to date
 	./manage
 
 pip: ## Ensure pip packages in requirements.in are installed
-	pip install -r requirements.in --upgrade -q
-	pip freeze -r requirements.in > requirements.txt
+	pip-compile --output-file requirements.txt requirements.in
+	pip-sync requirements.txt
 
 pip_clean: ## Uninstall all pip modules
 	pip freeze | xargs pip uninstall -y -q
