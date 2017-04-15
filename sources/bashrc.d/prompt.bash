@@ -24,6 +24,11 @@ __set_bash_prompt()
 
   PreGitPS1+="$Mag\W$None"
 
+  # Virtualenv
+  if [ -n "$VIRTUAL_ENV" ]; then
+    PostGitPS1+=" ($(basename $VIRTUAL_ENV))"
+  fi
+
   # Highlight non-standard exit codes
   if [[ $exit != 0 ]]; then
     PostGitPS1=" $Red[$exit]"
@@ -33,11 +38,6 @@ __set_bash_prompt()
     PostGitPS1+="$Blu"' $ '"$None"
   else
     PostGitPS1+="$Red"' $ '"$None"
-  fi
-
-  # Virtualenv
-  if [ -n "$VIRTUAL_ENV" ]; then
-    PostGitPS1+="($(basename $VIRTUAL_ENV)) "
   fi
 
   # Set PS1 from $PreGitPS1 + <git-status> + $PostGitPS1
