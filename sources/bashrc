@@ -92,12 +92,6 @@ bind '"^W": backward-kill-word'
 bind '"\C-a": beginning-of-line'
 bind '"\C-e": end-of-line'
 
-# Load startup files in ~/.bashrc.d
-for sh in "$HOME"/.bashrc.d/*.bash ; do
-    [[ -e $sh ]] && source "$sh"
-done
-unset -v sh
-
 # thefuck
 eval $(thefuck --alias)
 
@@ -139,3 +133,9 @@ alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
 source '/Users/zhsi/src/blessclient/lyftprofile' # bless ssh alias
+
+# Load startup files in ~/.bashrc.d
+for sh in "$HOME"/.bashrc.d/*.bash ; do
+    [[ -e $sh ]] && source "$sh"
+done
+unset -v sh
