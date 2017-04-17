@@ -47,6 +47,9 @@ install neovim
 # ngrep
 install ngrep
 
+# pyenv
+install pyenv
+
 # python
 install python
 
