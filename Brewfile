@@ -49,6 +49,7 @@ install ngrep
 
 # pyenv
 install pyenv
+install pyenv-virtualenv
 
 # python
 install python
