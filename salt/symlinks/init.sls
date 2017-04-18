@@ -5,6 +5,8 @@
 # Symlinks
 {% set links = {
   '~/.agignore': 'agignore',
+  '~/.bash_completion': 'bash_completion',
+  '~/.bash_completion.d': 'bash_completion.d',
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
   '~/.bashrc.d': 'bashrc.d',
