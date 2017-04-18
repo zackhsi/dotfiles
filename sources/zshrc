@@ -31,13 +31,13 @@ bindkey '^E' end-of-line
 ###############################################################################
 # Common         
 ###############################################################################
-source ~/.bashrc.d/common.bash
+source ~/.bashrc.d/1-common.bash
 
 ###############################################################################
 # Aliases/functions
 ###############################################################################
 
-source ~/.bashrc.d/functions.bash
+source ~/.bashrc.d/1-functions.bash
 
 # JIRA
 JIRA_URL=https://lyftme.atlassian.net
