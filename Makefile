@@ -1,4 +1,4 @@
-all: files brew pip pip3 tmux_plugins ## Make it all!
+all: files brew pip pip3 pip3.4 tmux_plugins ## Make it all!
 
 files: ## Ensure files are up to date
 	./manage
@@ -16,6 +16,9 @@ pip3: ## Ensure pip3 packages in requirements.in are installed
 
 pip3_clean: ## Uninstall all pip3 modules
 	pip3 freeze | xargs pip3 uninstall -y -q
+
+pip3.4: ## Ensure pip 3.4 requirements are installed
+	PYENV_VERSION=3.4.3 pip install -r requirements3.4.in
 
 cargo: ## Install crates in Cargofile
 	./rustcargo
