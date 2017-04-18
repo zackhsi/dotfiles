@@ -1,5 +1,6 @@
 *.pyc
-tags
-venv
-test_venv
+__pycache__
 node_modules
+tags
+test_venv
+venv
