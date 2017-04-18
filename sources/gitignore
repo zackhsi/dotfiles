@@ -3,6 +3,7 @@
 *.swp
 .DS_Store
 .mypy_cache
+.python-version
 .ropeproject
 tags
 tags.lock
