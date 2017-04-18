@@ -7,6 +7,7 @@
   '~/.agignore': 'agignore',
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
+  '~/.bashrc.d': 'bashrc.d',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
@@ -22,12 +23,6 @@
   '~/.zsh_theme.zsh': 'zsh_theme.zsh',
   '~/.zshrc': 'zshrc',
 } %}
-{% set bashrc = {
-  '~/.bashrc.d/common.bash': 'bashrc.d/common.bash',
-  '~/.bashrc.d/functions.bash': 'bashrc.d/functions.bash',
-  '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
-} %}
-{% do links.update(bashrc) %}
 
 # Bash completion.
 {% for completion in salt['file.find'](path='sources/bash_completion', name='*.bash') %}
