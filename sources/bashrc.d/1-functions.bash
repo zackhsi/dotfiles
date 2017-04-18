@@ -24,7 +24,8 @@ cl() {
 ###############################################################################
 export CACHE_EC2_INSTANCES=1
 mfa() {
-  ~/src/awsaccess/awsaccess.sh --role admin
+  source ~/src/awsaccess/awsaccess2.sh
+  awsaccess role admin
 }
 f() {
   (cd $SRC/hacktools/ && ./fab.sh $@)
