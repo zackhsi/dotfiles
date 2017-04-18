@@ -28,12 +28,15 @@
   '~/.bashrc.d/prompt.bash': 'bashrc.d/prompt.bash',
 } %}
 {% do links.update(bashrc) %}
-{% set bash_completion = {
-  salt['environ.get']('BASH_COMPLETION_DIR') ~ '/tmux.bash': 'bash_completion/tmux.bash',
-  salt['environ.get']('BASH_COMPLETION_DIR') ~ '/control.bash': 'bash_completion/control.bash',
-  salt['environ.get']('BASH_COMPLETION_DIR') ~ '/devbox.bash': 'bash_completion/devbox.bash',
-} %}
-{% do links.update(bash_completion) %}
+
+# Bash completion.
+{% for completion in salt['file.find'](path='sources/bash_completion', name='*.bash') %}
+{% set basename = completion.split('/')[-1] %}
+{% do links.update({
+  salt['environ.get']('BASH_COMPLETION_DIR') ~ '/' ~ basename: 'bash_completion/' ~ basename
+}) %}
+{% endfor %}
+
 {% for name, source in links.iteritems() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
