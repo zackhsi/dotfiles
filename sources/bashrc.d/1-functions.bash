@@ -65,8 +65,9 @@ state() {
 # ASG functions
 asg_ssh() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
-    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
-    | xargs -I % tmux split-window "tmux select-layout tiled && ssh -oStrictHostKeyChecking=no %"
+    | jq -r ".AutoScalingGroups[0].Instances | .[].InstanceId" \
+    | cut -d- -f2 \
+    | xargs -I % tmux split-window "tmux select-layout tiled && $(alias ssh | cut -d= -f2) -oStrictHostKeyChecking=no %.ln"
 }
 asg_term_decrement() {
   aws autoscaling terminate-instance-in-auto-scaling-group --instance-id $1 --should-decrement-desired-capacity
