@@ -1,3 +1,6 @@
+# aerial
+cask install aerial
+
 # asciinema
 install asciinema
 
