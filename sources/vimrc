@@ -291,6 +291,7 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 
 " Gutentags.
 noremap <Leader>c :GutentagsUpdate!<CR>
+let g:gutentags_generate_on_empty_buffer = 1
 
 " JSX.
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
