@@ -7,7 +7,6 @@ if !has('nvim')
     set backspace=indent,eol,start " backspace over everything in insert mode
     set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
     set laststatus=2               " grey status bar at the bottom
-    set mouse=a                    " enable mouse
     set smarttab                   " be smart when using tabs
     set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
     set ttymouse=xterm2            " more mouse
@@ -17,6 +16,7 @@ endif
 set colorcolumn=80                 " line length matters
 set foldmethod=manual              " set a foldmethod
 set hidden
+set mouse=a                        " enable mouse
 set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
