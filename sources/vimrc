@@ -120,6 +120,7 @@ Plug 'tpope/vim-surround'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Vim enhancements
 Plug 'godlygeek/tabular'
