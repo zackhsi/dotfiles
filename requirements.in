@@ -3,6 +3,7 @@ boto
 flake8
 ipython
 isort
+neovim
 pip-tools
 pylint
 pytest

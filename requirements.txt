@@ -23,13 +23,16 @@ editdistance==0.3.1       # via pylint
 enum34==1.1.6             # via astroid, flake8, traitlets
 first==2.0.1              # via pip-tools
 flake8==3.3.0
-futures==3.1.1            # via s3transfer
+futures==3.1.1            # via s3transfer, trollius
+greenlet==0.4.12          # via neovim
 ipython-genutils==0.2.0   # via traitlets
 ipython==5.3.0
 isort==4.2.5
 jmespath==0.9.2           # via boto3, botocore
 lazy-object-proxy==1.2.2  # via astroid
 mccabe==0.6.1             # via flake8, pylint
+msgpack-python==0.4.8     # via neovim
+neovim==0.1.13
 pathlib2==2.2.1           # via ipython, pickleshare
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
@@ -51,9 +54,10 @@ s3transfer==0.1.10        # via awscli, boto3
 scandir==1.5              # via pathlib2
 simplegeneric==0.8.1      # via ipython
 singledispatch==3.4.0.3   # via astroid, pylint
-six==1.10.0               # via astroid, configobj, pathlib2, pip-tools, prompt-toolkit, pylint, python-dateutil, singledispatch, traitlets
+six==1.10.0               # via astroid, configobj, pathlib2, pip-tools, prompt-toolkit, pylint, python-dateutil, singledispatch, traitlets, trollius
 speedtest-cli==1.0.4
 traitlets==4.3.2          # via ipython
+trollius==2.1             # via neovim
 venmo==0.8.0
 virtualenv==15.1.0
 wcwidth==0.1.7            # via prompt-toolkit
