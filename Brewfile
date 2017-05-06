@@ -1,71 +1,71 @@
-# aerial
-cask install aerial
+# Aerial.
+cask 'aerial'
 
-# asciinema
-install asciinema
+# Ag.
+brew 'the_silver_searcher'
 
-# bash
-install bash
-install bash-completion
-install shellcheck
+# Bash.
+brew 'bash'
+brew 'bash-completion'
+brew 'shellcheck'
 
-# battery command
-tap Goles/battery
-install battery
+# Battery.
+tap 'Goles/battery'
+brew 'battery'
 
-# devops
-install saltstack
+# Docker.
+brew 'docker'
 
-# docker
-install docker
+# Fuck.
+brew 'thefuck'
 
-# git
-install diff-so-fancy
-install git
-install hub
-install tig
+# Git.
+brew 'diff-so-fancy'
+brew 'git'
+brew 'hub'
+brew 'tig'
 
-# go
-install go
+# Golang.
+brew 'go'
 
-# hax
-install htop
-install jq
-install the_silver_searcher
-install thefuck
-install tree
-install watch
+# Htop.
+brew 'htop'
 
-# linux
-install coreutils
-install pstree
+# Jq.
+brew 'jq'
 
-# mtr
-install mtr
+# Linux.
+brew 'coreutils'
+brew 'pstree'
 
-# neovim head
-tap neovim/homebrew-neovim
-install neovim
+# MTR.
+brew 'mtr'
 
-# ngrep
-install ngrep
+# Neovim.
+tap 'neovim/homebrew-neovim'
+brew 'neovim'
+brew 'ctags'
 
-# pyenv
-install pyenv
-install pyenv-virtualenv
+# Pyenv.
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 
-# python
-install python
+# Python
+brew 'python'
+brew 'python3'
 
-# rust
-install rust
+# Saltstack.
+brew 'saltstack'
 
-# tmux
-install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
-install reattach-to-user-namespace
+# Tmux.
+brew 'tmux'
+brew 'reattach-to-user-namespace'
 
-# vim
-install ctags
+# Tree.
+brew 'tree'
 
-# yarn
-install yarn
+# Watch.
+brew 'watch'
+
+# Yarn.
+brew 'yarn'
