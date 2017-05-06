@@ -64,6 +64,9 @@ brew 'reattach-to-user-namespace'
 # Tree.
 brew 'tree'
 
+# Urlview.
+brew 'urlview'
+
 # Watch.
 brew 'watch'
 
