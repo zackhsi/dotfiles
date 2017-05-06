@@ -136,6 +136,7 @@ Plug 'joshdick/onedark.vim'
 
 " Languages (non-Python)
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'bfontaine/Brewfile.vim'
 Plug 'burnettk/vim-angular'
 Plug 'cespare/vim-toml'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
