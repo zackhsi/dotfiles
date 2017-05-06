@@ -24,7 +24,7 @@ cargo: ## Install crates in Cargofile
 	./rustcargo
 
 brew: ## Install formulas in Brewfile
-	./homebrew
+	brew bundle
 
 npm_freeze: ## Freeze node packages into Nodefile
 	npm ls -g --depth=0 > Nodefile
