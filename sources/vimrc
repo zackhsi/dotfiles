@@ -44,11 +44,6 @@ augroup CursorLineOnlyInActiveWindow
   autocmd WinLeave * setlocal nocursorline
 augroup END
 
-" MacVim
-set guifont=Inconsolata-dz:h13
-set guioptions-=r
-set guioptions-=L
-
 " Leader
 vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
 
