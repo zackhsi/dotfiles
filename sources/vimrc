@@ -1,6 +1,6 @@
-let mapleader = "\<Space>"     " Use space as leader
+let mapleader = "\<Space>"         " Use space as leader
 
-" Legacy settings
+" Legacy settings.
 if !has('nvim')
     set ai                         " auto indenting
     set autoread                   " reread file on focus
@@ -37,6 +37,7 @@ set nobackup                       " no backup files
 set noswapfile                     " no swap files
 set nowritebackup                  " only in case you don't want a backup file while editing
 
+" Restrict CursorLine to active window.
 augroup CursorLineOnlyInActiveWindow
   autocmd!
   autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr ctermfg=221 guifg=#E5C07B
@@ -44,13 +45,14 @@ augroup CursorLineOnlyInActiveWindow
   autocmd WinLeave * setlocal nocursorline
 augroup END
 
-" Leader
-vnoremap <Leader>y "+y         " Copy to system clipboard with leader + y
+" Copy to system clipboard.
+vnoremap <Leader>y "+y
 
-" slash-slash to search for visual selection, h/t http://vim.wikia.com/wiki/Search_for_visually_selected_text
+" Double slash to search for visual selection.
+" http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
 
-" Indentation
+" Indentation.
 filetype plugin indent on
 autocmd Filetype bash setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
@@ -60,37 +62,37 @@ autocmd Filetype xml setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
 autocmd Filetype zsh setlocal ts=2 sts=2 sw=2
 
-" Python 79 lines
+" Python 79 lines.
 autocmd Filetype python setlocal textwidth=79
 
-" detect tmux.conf, must be before *.conf
+" Detect tmux.conf, must be before *.conf.
 au BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 
-" detect ini files
+" Detect ini files.
 au BufNewFile,BufRead *.ini,*.conf setf dosini
 
-" vagrantfile syntax highlighting
+" Vagrantfile syntax highlighting.
 au BufNewFile,BufRead Vagrantfile set filetype=ruby
 
-" easy window navigation
+" Window navigation.
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> :<C-u>TmuxNavigateLeft<CR>
 nmap <C-l> <C-w>l
 
-" move by screen lines
+" Move by screen lines.
 noremap j gj
 noremap k gk
 
-" filter command history
+" Filter command history.
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" PLUGINS
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Bootstrap vim-plug
+" Bootstrap vim-plug.
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
                 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -98,70 +100,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 
-" Code Navigation
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-Plug 'junegunn/fzf.vim'
-Plug 'kshenoy/vim-signature'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/nerdtree'
-
-" autocompletion / snippets
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'jiangmiao/auto-pairs'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-
-" Git
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-
-" Vim enhancements
-Plug 'godlygeek/tabular'
-Plug 'neomake/neomake'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-unimpaired'
-
-" Appearance Plug 'altercation/vim-colors-solarized'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Airline.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'bling/vim-airline'
-Plug 'chriskempson/base16-vim'
-Plug 'joshdick/onedark.vim'
-
-" Languages (non-Python)
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'bfontaine/Brewfile.vim'
-Plug 'burnettk/vim-angular'
-Plug 'cespare/vim-toml'
-Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plug 'evanmiller/nginx-vim-syntax'
-Plug 'fatih/vim-go'
-Plug 'keith/swift.vim'
-Plug 'keith/tmux.vim'
-Plug 'mxw/vim-jsx'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'pangloss/vim-javascript'
-Plug 'racer-rust/vim-racer'
-Plug 'rust-lang/rust.vim'
-Plug 'saltstack/salt-vim'
-
-" Python
-Plug 'fisadev/vim-isort'
-Plug 'heavenshell/vim-pydocstring'
-Plug 'klen/python-mode'
-Plug 'zchee/deoplete-jedi'
-
-" tmux
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'sjl/vitality.vim'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-
-call plug#end()
-
-""""""""""""""""""""""""""""""
-" airline
-""""""""""""""""""""""""""""""
 let g:airline_theme                           = 'onedark'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
@@ -170,39 +112,16 @@ let g:airline#extensions#tabline#enabled      = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 
-" Colorscheme
-let g:onedark_termcolors=16
-colorscheme onedark
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto pairs.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'jiangmiao/auto-pairs'
 
-" Neomake
-autocmd BufWritePost,BufEnter * Neomake
-
-function! neomake#makers#ft#python#mypy() abort
-    return {
-        \ 'args': ['--silent-imports', '--py2', '--fast-parser', '--incremental'],
-        \ 'errorformat':
-            \ '%E%f:%l: error: %m,' .
-            \ '%W%f:%l: warning: %m,' .
-            \ '%I%f:%l: note: %m',
-        \ }
-endfunction
-let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
-let g:neomake_highlight_columns = 0
-
-" pymode
-let g:pymode_folding = 0
-let g:pymode_lint = 0
-let g:pymode_motion = 0
-let g:pymode_options_colorcolumn = 0
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
-
-" vim-pydocstring
-nmap <silent> <Leader>d <Plug>(pydocstring)
-
-""""""""""""""""""""""""""""""
-" deoplete
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Deoplete.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 let g:deoplete#enable_at_startup = 1
 let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -215,28 +134,18 @@ inoremap <silent><expr><CR> pumvisible() ? deoplete#mappings#close_popup()."\<CR
 " Close preview window upon completion.
 autocmd CompleteDone * pclose!
 
-" rust
-let g:rustfmt_autosave = 1
-let g:racer_experimental_completer = 1
-
-" tagbar
-:command TT TagbarToggle
-
-" NERDTree
-:command NT NERDTreeToggle
-:command NTF NERDTreeFind
-let NERDTreeIgnore = ['\.pyc$']
-let NERDTreeShowHidden=1
-
-" gitgutter
-highlight clear SignColumn
-
-" fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
-""""""""""""""""""""""""""""""
-" FZF
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FZF.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf.vim'
 
 " Set fzf statusline color
 function! s:fzf_statusline()
@@ -255,7 +164,6 @@ autocmd VimEnter * command! -nargs=* Ag call fzf#vim#ag(<q-args>,
             \ })
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
-
 " Search word under cursor by using Ag | leader + a
 noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
 
@@ -286,13 +194,134 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 \   'tmux_height': '40%'
 \ })<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Git gutter.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'airblade/vim-gitgutter'
+highlight clear SignColumn
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gutentags.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'ludovicchabant/vim-gutentags'
 noremap <Leader>c :GutentagsUpdate!<CR>
 let g:gutentags_generate_on_empty_buffer = 1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSX.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Multiple cursors.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'terryma/vim-multiple-cursors'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Neomake.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'neomake/neomake'
+autocmd BufWritePost,BufEnter * Neomake
+
+let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
+let g:neomake_highlight_columns = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'scrooloose/nerdtree'
+:command NT NERDTreeToggle
+:command NTF NERDTreeFind
+let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeShowHidden=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Onedark.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'joshdick/onedark.vim'
+let g:onedark_termcolors=16
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Python.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'klen/python-mode'
+let g:pymode_folding = 0
+let g:pymode_lint = 0
+let g:pymode_motion = 0
+let g:pymode_options_colorcolumn = 0
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
+
+Plug 'fisadev/vim-isort'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Repeat.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tpope/vim-repeat'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rust.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rust.vim'
+let g:rustfmt_autosave = 1
+let g:racer_experimental_completer = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Surround.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tpope/vim-surround'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tabular.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'godlygeek/tabular'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tagbar.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'majutsushi/tagbar'
+:command TT TagbarToggle
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tmux.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'sjl/vitality.vim'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tcomment.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tomtom/tcomment_vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Unimpaired.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tpope/vim-unimpaired'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Languages (non-Python).
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'bfontaine/Brewfile.vim'
+Plug 'burnettk/vim-angular'
+Plug 'cespare/vim-toml'
+Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plug 'evanmiller/nginx-vim-syntax'
+Plug 'fatih/vim-go'
+Plug 'keith/swift.vim'
+Plug 'keith/tmux.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'pangloss/vim-javascript'
+Plug 'saltstack/salt-vim'
+
+call plug#end()
+
+colorscheme onedark
+
+" Highlight trailing whitespace red. Must  be last.
 " http://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
