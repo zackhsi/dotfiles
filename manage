@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -e
 
+# Install salt from source.
+if ! command -v salt-call > /dev/null; then
+  salt_dir=~/oss/salt
+  if ! [ -d $salt_dir ]; then
+    git clone git@github.com:saltstack/salt.git $salt_dir
+  fi
+  pip install -e $salt_dir
+fi
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export DIR
 
@@ -14,6 +23,7 @@ cat << EOF > $TEMPDIR/minion
 root_dir: $TEMPDIR/
 pki_dir: $TEMPDIR/pki/minion
 cachedir: $TEMPDIR/cache/minion
+log_level: info
 file_client: local
 local: true
 file_roots:
