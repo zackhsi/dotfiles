@@ -31,7 +31,7 @@ __set_bash_prompt()
 
   # Highlight non-standard exit codes
   if [[ $exit != 0 ]]; then
-    PostGitPS1=" $Red[$exit]"
+    PostGitPS1+=" $Red[$exit]"
   fi
 
   if [[ $exit == 0 ]]; then
