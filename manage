@@ -10,29 +10,29 @@ if ! command -v salt-call > /dev/null; then
   pip install -e $salt_dir
 fi
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export DIR
+# Own /etc/salt.
+owner="$(stat -c '%U' /etc/salt)"
+if [[ "$owner" != "$USER" ]]; then
+  echo "Chowning /etc/salt..."
+  sudo chown -vR $USER /etc/salt
+fi
 
-TEMPDIR=$(mktemp -d /tmp/XXXXXXXX)
-mkdir -p "$TEMPDIR/etc/salt"
-touch "$TEMPDIR/etc/salt/minion_id"
-mkdir -p "$TEMPDIR/var/log/salt"
-touch "$TEMPDIR/var/log/salt/minion"
-
-cat << EOF > $TEMPDIR/minion
-root_dir: $TEMPDIR/
-pki_dir: $TEMPDIR/pki/minion
-cachedir: $TEMPDIR/cache/minion
+# Configure salt
+mkdir -p /etc/salt
+cat << EOF > /etc/salt/minion
+root_dir: /etc/salt/
+pki_dir: /etc/salt/pki/minion
+cachedir: /etc/salt/cache/minion
 log_level: info
 file_client: local
 local: true
 file_roots:
   base:
-    - $DIR/salt
-    - $DIR/sources
+    - /Users/$USER/homespace/dotfiles/salt
+    - /Users/$USER/homespace/dotfiles/sources
 pillar_roots:
   base:
-    - $DIR/salt/pillar
+    - /Users/$USER/homespace/dotfiles/salt/pillar
 EOF
 
 command="$1"
@@ -42,4 +42,7 @@ else
   command=state.highstate
 fi
 
-salt-call --retcode-passthrough -c "$TEMPDIR" "$command" "$@"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DIR
+
+salt-call --retcode-passthrough "$command" "$@"
