@@ -25,6 +25,7 @@ mkdir -p /etc/salt
 cat << EOF > /etc/salt/minion
 root_dir: /etc/salt/
 log_level: info
+minion_id_caching: False
 file_client: local
 local: true
 file_roots:
