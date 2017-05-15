@@ -1,6 +1,9 @@
-{% set pwd = salt['environ.get']('DIR') %}
 {% set src = salt['environ.get']('SRC') %}
 {% set user = salt['environ.get']('USER') %}
+
+{% set file_root = salt['config.get']('file_roots')['base'][0] %}
+{% set dotfiles = salt['file.dirname'](file_root) %}
+{% set sources_dir = dotfiles ~ '/' ~ 'sources' %}
 
 # Symlinks
 {% set links = {
@@ -38,7 +41,7 @@
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
     - name: {{ name }}
-    - target: {{ pwd }}/sources/{{ source }}
+    - target: {{ sources_dir }}/{{ source }}
     - user: {{ user }}
     - force: True
     - makedirs: True
@@ -52,7 +55,7 @@ Ensure {{ name }} is symlinked to from {{ source }}:
 Ensure {{ name }} is managed:
   file.managed:
     - name: {{ name }}
-    - source: {{ pwd }}/sources/{{ source }}
+    - source: {{ sources_dir }}/{{ source }}
     - user: {{ user }}
     - force: True
     - makedirs: True
@@ -67,5 +70,5 @@ Ensure neovim config is linked:
 Ensure neovimrc is linked:
   file.symlink:
     - name: ~/.config/nvim/init.vim
-    - target: {{ pwd }}/sources/vimrc
+    - target: {{ sources_dir }}/vimrc
     - user: {{ user }}
