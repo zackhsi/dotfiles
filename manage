@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DIR
+
 # Install salt from source.
 if ! command -v salt-call > /dev/null; then
   salt_dir=~/oss/salt
@@ -21,18 +24,16 @@ fi
 mkdir -p /etc/salt
 cat << EOF > /etc/salt/minion
 root_dir: /etc/salt/
-pki_dir: /etc/salt/pki/minion
-cachedir: /etc/salt/cache/minion
 log_level: info
 file_client: local
 local: true
 file_roots:
   base:
-    - /Users/$USER/homespace/dotfiles/salt
-    - /Users/$USER/homespace/dotfiles/sources
+    - $DIR/salt
+    - $DIR/sources
 pillar_roots:
   base:
-    - /Users/$USER/homespace/dotfiles/salt/pillar
+    - $DIR/salt/pillar
 EOF
 
 command="$1"
@@ -41,8 +42,5 @@ if [ -n "$command" ]; then
 else
   command=state.highstate
 fi
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export DIR
 
 salt-call --retcode-passthrough "$command" "$@"
