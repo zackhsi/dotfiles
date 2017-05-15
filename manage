@@ -17,7 +17,7 @@ fi
 owner="$(stat -c '%U' /etc/salt)"
 if [[ "$owner" != "$USER" ]]; then
   echo "Chowning /etc/salt..."
-  sudo chown -vR $USER /etc/salt
+  sudo chown -vR "$USER" /etc/salt
 fi
 
 # Configure salt
