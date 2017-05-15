@@ -31,7 +31,6 @@ local: true
 file_roots:
   base:
     - $DIR/salt
-    - $DIR/sources
 pillar_roots:
   base:
     - $DIR/salt/pillar
