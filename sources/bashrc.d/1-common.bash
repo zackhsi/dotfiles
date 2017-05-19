@@ -13,6 +13,7 @@ alias dev="cd $SRC/devbox"
 alias dot="cd ~/homespace/dotfiles"
 alias h="cd ~/homespace"
 alias o="cd $SRC/ops"
+alias oss="cd ~/oss"
 alias s="cd $SRC"
 
 # ls
