@@ -224,6 +224,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'neomake/neomake'
 autocmd BufWritePost,BufEnter * Neomake
 
+let g:neomake_java_enabled_makers = []
 let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
 let g:neomake_highlight_columns = 0
 
