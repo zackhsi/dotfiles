@@ -54,9 +54,6 @@ brew 'pyenv-virtualenv'
 brew 'python'
 brew 'python3'
 
-# Saltstack.
-brew 'saltstack'
-
 # Tmux.
 brew 'tmux'
 brew 'reattach-to-user-namespace'
