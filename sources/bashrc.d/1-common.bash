@@ -71,11 +71,7 @@ export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 export SHELLCHECK_OPTS="-e SC1091"
 
 # TERM
-if [ -n "$TMUX" ]; then
-  export TERM=screen-256color
-else
-  export TERM=xterm-256color
-fi
+export TERM=xterm-256color-italic
 
 # thefuck
 alias fk=fuck
