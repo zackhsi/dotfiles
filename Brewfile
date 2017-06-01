@@ -21,6 +21,7 @@ brew 'thefuck'
 
 # Git.
 brew 'diff-so-fancy'
+brew 'gist'
 brew 'git'
 brew 'hub'
 brew 'tig'
