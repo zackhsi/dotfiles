@@ -1,3 +1,5 @@
+# vi: ft=sshconfig
+
 Host gateway.ln gateway.lyft.net
     Hostname gateway.lyft.net
     ProxyCommand none
@@ -26,4 +28,9 @@ Host *
     ForwardAgent no
     ForwardX11 no
 
-# vi: ft=sshconfig
+
+# BLESS Client 2.0.1
+Match exec "env | grep -q BLESS_COMPLETE || /Users/zhsi/src/blessclient/bless --gui --host '%h'"
+	IdentityFile ~/.ssh/blessid
+	UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 /Users/zhsi/src/blessclient/lyft_known_hosts
+# ---End BLESS Client---

@@ -1,8 +1,8 @@
+# vi: set ft=sh:
+
 if [ -f ~/.bashrc ]; then
   # shellcheck source=/Users/zhsi/.bashrc
   . ~/.bashrc
 fi
 
 source '/Users/zhsi/src/blessclient/lyftprofile' # bless ssh alias
-
-# vi: set ft=sh:
