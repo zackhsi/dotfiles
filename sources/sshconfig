@@ -28,7 +28,6 @@ Host *
     ForwardAgent no
     ForwardX11 no
 
-
 # BLESS Client 2.0.1
 Match exec "env | grep -q BLESS_COMPLETE || /Users/zhsi/src/blessclient/bless --gui --host '%h'"
 	IdentityFile ~/.ssh/blessid
