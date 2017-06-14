@@ -71,7 +71,7 @@ if ((BASH_VERSINFO[0] >= 4)) ; then
     ((BASH_VERSINFO[1] >= 3)) && shopt -s direxpand
 fi
 
-# Bash completion
+# Bash completion.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
@@ -79,7 +79,7 @@ export BASH_COMPLETION_DIR # Give salt access
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
-# vi mode
+# vi mode.
 set -o vi
 bind '"\C-p": previous-history'
 bind '"\C-n": next-history'
@@ -92,13 +92,13 @@ bind '"^W": backward-kill-word'
 bind '"\C-a": beginning-of-line'
 bind '"\C-e": end-of-line'
 
-# thefuck
+# thefuck.
 eval $(thefuck --alias)
 
-# FZF
+# FZF.
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Git
+# Git.
 alias g='git'
 __git_complete g __git_main
 alias gb='git branch'
@@ -132,8 +132,10 @@ alias grev='git rev-parse HEAD'
 alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
+# Tig.
+alias tst='tig status'
 
-# Load startup files in ~/.bashrc.d
+# Load startup files in ~/.bashrc.d.
 for sh in "$HOME"/.bashrc.d/*.bash ; do
     [[ -e $sh ]] && source "$sh"
 done
