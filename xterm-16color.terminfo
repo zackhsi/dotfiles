@@ -1,0 +1,5 @@
+# A xterm-16color based TERMINFO that adds the escape sequences for italic.
+# tic -x xterm-16color.terminfo
+xterm-16color|xterm with 16 colors and italic,
+  sitm=\E[3m, ritm=\E[23m,
+  use=xterm-16color,
