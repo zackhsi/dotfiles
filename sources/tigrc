@@ -1,8 +1,13 @@
 # vi: set ft=conf
 
+# Cursor line.
 color cursor            magenta   default   underline
+# Focused pane.
 color title-focus       yellow    default
+# Unfocused panes.
 color title-blur        white     default
+# Commit SHA.
+color id                yellow    default
 
 # Include SHA in main view.
 set main-view = line-number:no,interval=5 id:yes,color=no date:default author:full commit-title:yes,graph=v2,refs=yes
