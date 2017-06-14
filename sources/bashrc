@@ -134,6 +134,7 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 
 # Tig.
 alias tst='tig status'
+stty dsusp undef  # Scroll up with <C-y> https://github.com/jonas/tig/issues/214.
 
 # Load startup files in ~/.bashrc.d.
 for sh in "$HOME"/.bashrc.d/*.bash ; do
