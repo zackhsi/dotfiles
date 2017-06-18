@@ -1,20 +1,36 @@
+# vi: set ft=conf
+
 [user]
-	email = zackhsi@gmail.com
-	name = Zack Hsi
+email = zackhsi@gmail.com
+name = Zack Hsi
+
 [core]
-	excludesfile = ~/.gitignore
+excludesfile = ~/.gitignore
+
 [push]
-	default = simple
+default = simple
+
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+insteadOf = https://github.com/
+
 [pager]
-	diff = diff-so-fancy
-	show = diff-so-fancy
+diff = diff-so-fancy
+show = diff-so-fancy
+
 [diff]
-	algorithm = patience
-	compactionHeuristic = true
+tool = icdiff
+algorithm = patience
+compactionHeuristic = true
+
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
+meta = yellow bold
+frag = magenta bold
+
 [credential]
-	helper = osxkeychain
+helper = osxkeychain
+
+[difftool]
+prompt = false
+
+[difftool "icdiff"]
+cmd = icdiff --line-numbers $LOCAL $REMOTE

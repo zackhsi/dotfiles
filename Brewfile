@@ -24,6 +24,7 @@ brew 'diff-so-fancy'
 brew 'gist'
 brew 'git'
 brew 'hub'
+brew 'icdiff'
 brew 'tig'
 
 # Golang.
