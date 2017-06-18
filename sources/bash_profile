@@ -1,4 +1,4 @@
-# vi: set ft=sh:
+# vi: ft=sh
 
 if [ -f ~/.bashrc ]; then
   # shellcheck source=/Users/zhsi/.bashrc

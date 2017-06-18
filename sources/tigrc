@@ -1,4 +1,4 @@
-# vi: set ft=conf
+# vi: ft=conf
 
 # Cursor line.
 color cursor            magenta default underline

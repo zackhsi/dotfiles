@@ -1,4 +1,4 @@
-# vi: set ft=conf
+# vi: ft=dosini
 
 [user]
 email = zackhsi@gmail.com
