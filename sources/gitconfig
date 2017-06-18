@@ -34,3 +34,6 @@ prompt = false
 
 [difftool "icdiff"]
 cmd = icdiff --line-numbers $LOCAL $REMOTE
+
+[alias]
+showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
