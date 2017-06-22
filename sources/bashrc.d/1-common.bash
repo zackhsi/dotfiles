@@ -15,6 +15,7 @@ alias h="cd ~/homespace"
 alias o="cd $SRC/ops"
 alias oss="cd ~/oss"
 alias s="cd $SRC"
+alias sim="cd $SRC/simulatedrides"
 
 # ls
 alias l="ls -lah"
