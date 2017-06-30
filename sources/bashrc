@@ -138,6 +138,10 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 alias tst='tig status'
 stty dsusp undef  # Scroll up with <C-y> https://github.com/jonas/tig/issues/214.
 
+# Vim. Must be exported before FZF configuration.
+export BACKGROUND=dark
+# export BACKGROUND=light
+
 # Load startup files in ~/.bashrc.d.
 for sh in "$HOME"/.bashrc.d/*.bash ; do
     [[ -e $sh ]] && source "$sh"
