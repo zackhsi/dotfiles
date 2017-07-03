@@ -116,6 +116,7 @@ alias gco='git checkout'
 __git_complete gco _git_checkout
 alias gd='git diff'
 __git_complete gd _git_diff
+alias gdm='git diff master'
 alias gds='git diff --staged'
 alias gdt='git difftool'
 __git_complete gdt _git_diff
