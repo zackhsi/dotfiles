@@ -342,7 +342,7 @@ endif
 " Italic comments.
 highlight Comment cterm=italic
 
-" Highlight trailing whitespace red. Must be last.
+" Highlight trailing whitespace red. Must be after colorscheme.
 " http://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
