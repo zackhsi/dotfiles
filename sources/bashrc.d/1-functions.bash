@@ -18,6 +18,11 @@ cl() {
   hub clone lyft/$@
 }
 
+p() {
+  git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
+  hub pull-request
+}
+
 
 ###############################################################################
 # Fabric
