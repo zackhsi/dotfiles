@@ -18,9 +18,18 @@ cl() {
   hub clone lyft/$@
 }
 
+# Push branch, create pull request, browse.
 p() {
-  git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
-  hub pull-request
+  branch_name=$(git rev-parse --abbrev-ref HEAD)
+  base_commit=$(git merge-base master "$branch_name")
+  num_commits=$(git rev-list --count "$base_commit".."$branch_name")
+  git push --set-upstream origin "$branch_name"
+  if [[ "$num_commits" == "1" ]]; then
+    message=$(git log --format=%B -n1 "$branch_name")
+    hub pull-request --browse -m "$message" "$@"
+  else
+    hub pull-request --browse "$@"
+  fi
 }
 
 
