@@ -1,4 +1,4 @@
-all: files brew pip pip3 pip3.4 tmux_plugins ## Make it all!
+all: files brew pip pip3 tmux_plugins ## Make it all!
 
 files: ## Ensure files are up to date
 	./manage
