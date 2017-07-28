@@ -11,8 +11,8 @@ pip_clean: ## Uninstall all pip modules
 	pip2 freeze | xargs pip2 uninstall -y -q
 
 pip3: ## Ensure pip3 packages in requirements.in are installed
-	pip3 install -r requirements3.in --upgrade -q
-	pip3 freeze -r requirements3.in > requirements3.txt
+	python3.6 -m piptools compile --output-file requirements3.txt requirements3.in
+	pip3 install -r requirements3.txt
 
 pip3_clean: ## Uninstall all pip3 modules
 	pip3 freeze | xargs pip3 uninstall -y -q
