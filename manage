@@ -9,7 +9,7 @@ if ! command -v salt-call > /dev/null; then
   if ! [ -d $salt_dir ]; then
     git clone git@github.com:saltstack/salt.git $salt_dir
   fi
-  pip install -e $salt_dir
+  pip2 install -e $salt_dir
 fi
 
 # Own /etc/salt.

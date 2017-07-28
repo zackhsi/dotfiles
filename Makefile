@@ -4,11 +4,11 @@ files: ## Ensure files are up to date
 	./manage
 
 pip: ## Ensure pip packages in requirements.in are installed
-	pip-compile --output-file requirements.txt requirements.in
-	pip-sync requirements.txt
+	python2.7 -m piptools compile --output-file requirements.txt requirements.in
+	pip2 install -r requirements.txt
 
 pip_clean: ## Uninstall all pip modules
-	pip freeze | xargs pip uninstall -y -q
+	pip2 freeze | xargs pip2 uninstall -y -q
 
 pip3: ## Ensure pip3 packages in requirements.in are installed
 	pip3 install -r requirements3.in --upgrade -q
@@ -16,9 +16,6 @@ pip3: ## Ensure pip3 packages in requirements.in are installed
 
 pip3_clean: ## Uninstall all pip3 modules
 	pip3 freeze | xargs pip3 uninstall -y -q
-
-pip3.4: ## Ensure pip 3.4 requirements are installed
-	PYENV_VERSION=3.4.3 pip install -r requirements3.4.in
 
 cargo: ## Install crates in Cargofile
 	./rustcargo
