@@ -5,6 +5,10 @@ venv() {
   virtualenv venv
   source venv/bin/activate
 }
+venv3() {
+  python3 -m venv venv
+  source venv/bin/activate
+}
 pyc() {
   find . -name "*.pyc" -delete
 }
