@@ -1,6 +1,6 @@
+-e git+git://github.com/python/mypy.git#egg=mypy
 flake8
 isort
-mypy-lang
 neovim
 pylint
 typed-ast

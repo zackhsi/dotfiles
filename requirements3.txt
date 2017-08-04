@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file requirements3.txt requirements3.in
 #
+-e git+git://github.com/python/mypy.git#egg=mypy
 astroid==1.5.3            # via pylint
 flake8==3.4.1
 greenlet==0.4.12          # via neovim
@@ -11,7 +12,6 @@ isort==4.2.15
 lazy-object-proxy==1.3.1  # via astroid
 mccabe==0.6.1             # via flake8, pylint
 msgpack-python==0.4.8     # via neovim
-mypy-lang==0.4.6
 neovim==0.1.13
 pycodestyle==2.3.1        # via flake8
 pyflakes==1.5.0           # via flake8
