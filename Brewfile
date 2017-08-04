@@ -57,7 +57,6 @@ brew 'pyenv-virtualenv'
 
 # Python
 brew 'python'
-brew 'python3'
 
 # Tmux.
 brew 'tmux'
