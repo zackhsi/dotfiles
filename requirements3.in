@@ -1,4 +1,5 @@
 isort
 mypy-lang
 neovim
+pylint
 typed-ast
