@@ -1,5 +1,6 @@
 -e git+git://github.com/python/mypy.git#egg=mypy
 flake8
+ipython
 isort
 neovim
 pylint
