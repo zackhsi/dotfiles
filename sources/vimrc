@@ -66,6 +66,9 @@ autocmd Filetype zsh        setlocal ts=2 sts=2 sw=2
 " Python 79 lines.
 autocmd Filetype python setlocal textwidth=79
 
+" *.pyi stub files.
+au BufNewFile,BufRead *.pyi setfiletype python
+
 " Detect tmux.conf, must be before *.conf.
 au BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 
