@@ -6,7 +6,7 @@ files: ## Ensure files are up to date
 pip: ## Ensure pip packages in requirements.in are installed
 	pip2 install --upgrade pip-tools
 	python2.7 -m piptools compile --output-file requirements.txt requirements.in
-	pip2 install -r requirements.txt
+	pip2 install --requirement requirements.txt
 
 pip_clean: ## Uninstall all pip modules
 	pip2 freeze | xargs pip2 uninstall -y -q
@@ -14,7 +14,10 @@ pip_clean: ## Uninstall all pip modules
 pip3: ## Ensure pip3 packages in requirements.in are installed
 	pip3 install --upgrade pip-tools
 	python3 -m piptools compile --output-file requirements3.txt requirements3.in
-	pip3 install -r requirements3.txt --src ~/.pyenv/versions/3.6.1/lib/python3.6/site-packages
+	pip3 install \
+		--requirement requirements3.txt \
+		--src ~/oss \
+		--exists-action s
 
 pip3_clean: ## Uninstall all pip3 modules
 	pip3 freeze | xargs pip3 uninstall -y -q

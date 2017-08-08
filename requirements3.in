@@ -1,4 +1,4 @@
--e git+git://github.com/python/mypy.git#egg=mypy
+-e git+/Users/zhsi/oss/mypy#egg=mypy
 flake8
 ipython
 isort
