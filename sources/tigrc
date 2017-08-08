@@ -5,7 +5,7 @@ color cursor            magenta default underline
 # Focused pane.
 color title-focus       yellow  default
 # Unfocused panes.
-color title-blur        black   white
+color title-blur        white   black
 # Commit SHA.
 color id                yellow  default
 # Commit author.
