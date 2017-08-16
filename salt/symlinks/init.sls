@@ -15,6 +15,7 @@
   '~/.bashrc.d': 'bashrc.d',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
+  '~/.eslintrc.yml': 'eslintrc.yml',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
   '~/.ipython/profile_default/ipython_config.py': 'ipython_config.py',
