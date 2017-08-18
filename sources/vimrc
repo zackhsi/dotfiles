@@ -233,7 +233,7 @@ Plug 'terryma/vim-multiple-cursors'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Neomake.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'neomake/neomake'
+Plug 'neomake/neomake', { 'dir': '~/oss/neomake' }
 autocmd BufWritePost,BufEnter * Neomake
 
 let g:neomake_java_enabled_makers = []
