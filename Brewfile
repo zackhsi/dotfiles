@@ -53,7 +53,6 @@ brew 'node'
 
 # Pyenv.
 brew 'pyenv'
-brew 'pyenv-virtualenv'
 
 # Python
 brew 'python'
