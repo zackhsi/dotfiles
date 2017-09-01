@@ -28,11 +28,7 @@ export EDITOR='nvim'
 
 # FZF
 export FZF_DEFAULT_COMMAND='ag -l -U -g ""'
-if [[ "$BACKGROUND" == "light" ]]; then
-  export FZF_DEFAULT_OPTS='--color 16 --color light'
-else
-  export FZF_DEFAULT_OPTS='--color 16 --color'
-fi
+export FZF_DEFAULT_OPTS='--color 16,bg+:-1'
 export FZF_CTRL_R_OPTS='--sort'
 
 # Golang
