@@ -524,6 +524,13 @@
 			<key>Text</key>
 			<string>f</string>
 		</dict>
+		<key>0x74-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Text</key>
+			<string>New Tab with Current Profile</string>
+		</dict>
 		<key>0x7f-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -710,7 +717,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>558 102 445 77 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>394 561 606 456 0 0 1680 1028 </string>
+	<string>394 561 606 456 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
@@ -2229,7 +2236,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-01T15:53:43Z</date>
+	<date>2017-09-05T20:17:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
