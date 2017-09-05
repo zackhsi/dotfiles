@@ -10,6 +10,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AutoCommandHistory</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>One Dark</key>
@@ -708,7 +710,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>558 102 445 77 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 436 606 456 0 0 1440 900 </string>
+	<string>394 561 606 456 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
@@ -716,9 +718,9 @@
 	<key>NSWindow Frame com.apple.typography_panel_UbuntuMono-Regular</key>
 	<string>-91 1433 260 246 -570 900 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 878 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-570 1872 730 452 -570 900 2560 1440 </string>
+	<string>-570 2000 730 452 -570 1050 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>720 14 714 427 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
@@ -1385,7 +1387,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm-256color-italic</string>
+			<string>xterm-16color-italic</string>
 			<key>Thin Strokes</key>
 			<integer>2</integer>
 			<key>Transparency</key>
@@ -2079,7 +2081,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm-256color-italic</string>
+			<string>xterm-16color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -2227,7 +2229,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-16T04:15:00Z</date>
+	<date>2017-09-01T15:53:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
