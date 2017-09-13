@@ -483,6 +483,10 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>A96AAA18-C143-43C7-A03B-4229D616E510</string>
+	<key>DimOnlyText</key>
+	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
@@ -717,7 +721,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>558 102 445 77 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>394 561 606 456 0 0 1680 1050 </string>
+	<string>394 572 606 456 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
@@ -2135,6 +2139,10 @@
 	<true/>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>464596572.55374002</real>
 	<key>NoSyncTipsToNotShow</key>
@@ -2236,15 +2244,22 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-05T20:17:02Z</date>
+	<date>2017-09-08T22:23:14Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowBookmarkName</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.37564102564102564</real>
+	<real>0.10000000000000001</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+		<string>Recent Directories</string>
+	</array>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1436633344</real>
 	<key>UseBorder</key>
