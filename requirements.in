@@ -3,6 +3,7 @@ boto
 flake8
 ipython
 isort
+jedi
 neovim
 pip-tools
 pylint

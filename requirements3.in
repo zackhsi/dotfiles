@@ -2,6 +2,10 @@
 flake8
 ipython
 isort
+jedi
+mistune
 neovim
+psutil
 pylint
+setproctitle
 typed-ast

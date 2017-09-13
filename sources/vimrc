@@ -133,23 +133,6 @@ Plug 'rizzatti/dash.vim'
 noremap <silent> <leader>d :Dash<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Deoplete.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-let g:deoplete#enable_at_startup = 1
-let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/Users/zhsi/.pyenv/versions/3.6.1/bin/python3.6'
-" Use shift to cycle through completions.
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
-let g:deoplete#sources#jedi#show_docstring = 1
-" New line when the typed word matches the suggestion exactly and I hit enter.
-inoremap <silent><expr><CR> pumvisible() ? deoplete#mappings#close_popup()."\<CR>" : "\<CR>"
-" Close preview window upon completion.
-autocmd CompleteDone * pclose!
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-fugitive'
@@ -237,6 +220,18 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 Plug 'terryma/vim-multiple-cursors'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NCM.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'roxma/nvim-completion-manager'
+
+" Close menu _and insert newline_ on return.
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
+" Use tab to cycle menu.
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Neomake.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'neomake/neomake', { 'dir': '~/oss/neomake' }
@@ -274,6 +269,8 @@ let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 
 Plug 'fisadev/vim-isort'
+
+Plug 'davidhalter/jedi-vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Repeat.
