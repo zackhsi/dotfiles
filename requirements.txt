@@ -28,6 +28,7 @@ greenlet==0.4.12          # via neovim
 ipython-genutils==0.2.0   # via traitlets
 ipython==5.3.0
 isort==4.2.5
+jedi==0.10.2
 jmespath==0.9.2           # via boto3, botocore
 lazy-object-proxy==1.2.2  # via astroid
 mccabe==0.6.1             # via flake8, pylint
