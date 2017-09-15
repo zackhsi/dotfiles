@@ -1,7 +1,7 @@
 # Common zsh/bash configuration
 
 # Code
-export SRC=$HOME/src
+export SRC=$HOME/go/src/github.com/lyft
 
 # Devbox
 alias c=control
@@ -32,10 +32,8 @@ export FZF_DEFAULT_OPTS='--color 16,bg+:-1'
 export FZF_CTRL_R_OPTS='--sort'
 
 # Golang
-export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
 
 # GNU Coreutils
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
