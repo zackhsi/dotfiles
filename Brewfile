@@ -28,6 +28,7 @@ brew 'icdiff'
 brew 'tig'
 
 # Golang.
+brew 'glide'
 brew 'go'
 
 # Htop.

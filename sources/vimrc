@@ -202,6 +202,12 @@ Plug 'airblade/vim-gitgutter'
 highlight clear SignColumn
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Golang.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gutentags.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ludovicchabant/vim-gutentags'
@@ -337,7 +343,6 @@ Plug 'burnettk/vim-angular'
 Plug 'cespare/vim-toml'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plug 'evanmiller/nginx-vim-syntax'
-Plug 'fatih/vim-go'
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
