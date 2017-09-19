@@ -3,14 +3,18 @@ set -e
 
 export TERM=xterm-color
 
-# Source service_venv if it exists
+# Source default bashrc.
+if [ -f /root/.bashrc ]; then
+  . /root/.bashrc
+fi
+
+# Source service_venv if it exists.
 if command -v service_venv > /dev/null; then
   . service_venv
 fi
 
-if [ -f /root/.bashrc ]; then
-  . /root/.bashrc
-fi
+# Golang.
+alias wd="cd $GOPATH/src/github.com/lyft/$IMAGE_NAME"
 
 # Do not exit interactive shell on errors
 set +e
