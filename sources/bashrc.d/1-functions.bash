@@ -46,7 +46,7 @@ mfa() {
   awsaccess role admin
 }
 f() {
-  (cd $SRC/hacktools/ && ./fab.sh "$@")
+  (cd $SRC/hacktools/fab && ./fab "$@")
 }
 
 ###############################################################################
