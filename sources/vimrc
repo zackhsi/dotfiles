@@ -67,16 +67,19 @@ autocmd Filetype zsh        setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal textwidth=79
 
 " *.pyi stub files.
-au BufNewFile,BufRead *.pyi setfiletype python
+autocmd BufNewFile,BufRead *.pyi setfiletype python
 
 " Detect tmux.conf, must be before *.conf.
-au BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
+autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 
 " Detect ini files.
-au BufNewFile,BufRead *.ini,*.conf setf dosini
+autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
 
 " Vagrantfile syntax highlighting.
-au BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+
+" Reload edited files.
+autocmd FocusGained * :checktime
 
 " Window navigation.
 nmap <C-j> <C-w>j
