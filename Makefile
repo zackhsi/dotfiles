@@ -9,7 +9,7 @@ pip: ## Ensure pip packages in requirements.in are installed
 	pip2 install --requirement requirements.txt
 
 pip_clean: ## Uninstall all pip modules
-	pip2 freeze | xargs pip2 uninstall -y -q
+	pip2 freeze | grep -v "^-e " | xargs pip2 uninstall -y -q
 
 pip3: ## Ensure pip3 packages in requirements.in are installed
 	pip3 install --upgrade pip-tools
