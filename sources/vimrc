@@ -79,7 +79,11 @@ autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 " Reload edited files.
-autocmd FocusGained * :checktime
+augroup improved_autoread
+  autocmd FocusGained * checktime
+  autocmd BufEnter * checktime
+augroup end
+noremap <c-z> :suspend<cr>:checktime<cr>
 
 " Window navigation.
 nmap <C-j> <C-w>j
