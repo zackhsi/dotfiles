@@ -735,7 +735,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 83 937 512 0 0 1680 1028 </string>
+	<string>269 162 916 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 61 1131 816 0 0 1440 877 </string>
 	<key>NSWindow Frame com.apple.typography_panel_UbuntuMono-Regular</key>
@@ -755,6 +755,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1439,6 +1441,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Allow Title Setting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -2162,7 +2166,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1D4BBC1E-F98D-4F63-9480-B80214094394</string>
 	<key>NoSyncLastTipTime</key>
-	<real>527808416.99909598</real>
+	<real>528049747.98991603</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2247,6 +2251,8 @@
 		<string>0064</string>
 		<string>0065</string>
 		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
 	</array>
 	<key>NoSyncWarnAboutAmbiguousWidth</key>
 	<true/>
@@ -2305,6 +2311,8 @@
 	<string>1</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
