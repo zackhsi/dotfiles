@@ -6,6 +6,7 @@ brew 'the_silver_searcher'
 
 # Asciinema
 brew 'asciinema'
+brew 'asciinema2gif'
 
 # Bash.
 brew 'bash'
