@@ -4,6 +4,9 @@ cask 'aerial'
 # Ag.
 brew 'the_silver_searcher'
 
+# Asciinema
+brew 'asciinema'
+
 # Bash.
 brew 'bash'
 brew 'bash-completion'
