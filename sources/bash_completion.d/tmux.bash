@@ -1,5 +1,5 @@
 have tmux &&
-_tmux_sessions() 
+_tmux_sessions()
 {
     COMPREPLY=()
     local cur prev opts cword
