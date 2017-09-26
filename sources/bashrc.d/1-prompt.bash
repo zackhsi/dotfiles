@@ -20,9 +20,10 @@ __set_bash_prompt()
   local Mag='\[\e[0;35m\]'
   local Cya='\[\e[0;36m\]'
   local Whi='\[\e[0;37m\]'
+  local Bold='\[\e[1m\]'
   local None='\[\e[0m\]' # Return to default colour
 
-  PreGitPS1+="$Mag\W$None"
+  PreGitPS1+="$Mag$Bold\W$None"
 
   # Virtualenv
   if [ -n "$VIRTUAL_ENV" ]; then
@@ -31,13 +32,13 @@ __set_bash_prompt()
 
   # Highlight non-standard exit codes
   if [[ $exit != 0 ]]; then
-    PostGitPS1+=" $Red[$exit]"
+    PostGitPS1+=" $Red$Bold[$exit]"
   fi
 
   if [[ $exit == 0 ]]; then
-    PostGitPS1+="$Blu"' $ '"$None"
+    PostGitPS1+="$Blu$Bold"' $ '"$None"
   else
-    PostGitPS1+="$Red"' $ '"$None"
+    PostGitPS1+="$Red$Bold"' $ '"$None"
   fi
 
   # Set PS1 from $PreGitPS1 + <git-status> + $PostGitPS1
