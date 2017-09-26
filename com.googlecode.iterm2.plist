@@ -731,7 +731,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>735 198 445 77 0 0 1680 1028 </string>
+	<string>735 64 445 77 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>283 348 606 456 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -739,7 +739,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1074 123 597 401 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>573 518 796 473 0 0 1680 1050 </string>
+	<string>573 597 918 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 61 1131 816 0 0 1440 877 </string>
 	<key>NSWindow Frame com.apple.typography_panel_UbuntuMono-Regular</key>
@@ -1996,7 +1996,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>UbuntuMono-Regular 14</string>
+			<string>UbuntuMono-Regular 15</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2043,6 +2043,8 @@
 			<string>xterm-color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Version</key>
+			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
