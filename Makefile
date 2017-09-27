@@ -11,16 +11,18 @@ pip: ## Ensure pip packages in requirements.in are installed
 pip_clean: ## Uninstall all pip modules
 	pip2 freeze | grep -v "^-e " | xargs pip2 uninstall -y -q
 
+PIP3=PYENV_VERSION=3.6.1 pip
+
 pip3: ## Ensure pip3 packages in requirements.in are installed
-	pip3 install --upgrade pip-tools
+	$(PIP3) install --upgrade pip-tools
 	python3 -m piptools compile --output-file requirements3.txt requirements3.in
-	pip3 install \
+	$(PIP3) install \
 		--requirement requirements3.txt \
 		--src ~/oss \
 		--exists-action s
 
 pip3_clean: ## Uninstall all pip3 modules
-	pip3 freeze | xargs pip3 uninstall -y -q
+	$(PIP3) freeze | xargs $(PIP3) uninstall -y -q
 
 cargo: ## Install crates in Cargofile
 	./rustcargo
