@@ -180,7 +180,11 @@
 #c.InteractiveShell.color_info = True
 
 ## Set the color scheme (NoColor, Neutral, Linux, or LightBG).
-c.InteractiveShell.colors = 'Linux'
+import os
+if os.getenv('BACKGROUND') == 'light':
+    c.InteractiveShell.colors = 'LightBG'
+else:
+    c.InteractiveShell.colors = 'Linux'
 
 ##
 #c.InteractiveShell.debug = False
