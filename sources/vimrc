@@ -349,7 +349,6 @@ Plug 'bfontaine/Brewfile.vim'
 Plug 'burnettk/vim-angular'
 Plug 'cespare/vim-toml'
 Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plug 'evanmiller/nginx-vim-syntax'
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
