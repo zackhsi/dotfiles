@@ -1,6 +1,8 @@
+ipython
+
+# Editor.
 -e git+/Users/zhsi/oss/mypy#egg=mypy
 flake8
-ipython
 isort
 jedi>=0.11.0
 mistune
@@ -8,4 +10,3 @@ neovim
 psutil
 pylint
 setproctitle
-typed-ast
