@@ -1,15 +1,14 @@
-Cython
 aws-shell
-boto
-flake8
 ipython
-isort
-jedi>=0.11.0
-neovim
-pip-tools
-pylint
-pytest
-requests
-speedtest-cli
 venmo
 virtualenv
+
+# Editor.
+flake8
+isort
+jedi>=0.11.0
+mistune
+neovim
+psutil
+pylint
+setproctitle

@@ -39,7 +39,7 @@
 }) %}
 {% endfor %}
 
-{% for name, source in links.iteritems() %}
+{% for name, source in links.items() %}
 Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
     - name: {{ name }}
@@ -53,7 +53,7 @@ Ensure {{ name }} is symlinked to from {{ source }}:
 {% for name, source in {
   '~/.docker/config.json': 'docker_config.json',
   src ~ '/profile/.bash_profile': 'devbox_bash_profile',
-}.iteritems() %}
+}.items() %}
 Ensure {{ name }} is managed:
   file.managed:
     - name: {{ name }}
@@ -68,9 +68,11 @@ Ensure neovim config is linked:
     - name: ~/.config/nvim
     - target: /Users/{{ user }}/.vim
     - user: {{ user }}
+    - makedirs: True
 
 Ensure neovimrc is linked:
   file.symlink:
     - name: ~/.config/nvim/init.vim
     - target: {{ sources_dir }}/vimrc
     - user: {{ user }}
+    - makedirs: True

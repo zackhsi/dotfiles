@@ -9,11 +9,15 @@ if ! command -v salt-call > /dev/null; then
   if ! [ -d $salt_dir ]; then
     git clone git@github.com:saltstack/salt.git $salt_dir
   fi
-  pip2 install -e $salt_dir
+  pip3 install -e $salt_dir
 fi
 
 # Own /etc/salt.
-owner="$(stat -c '%U' /etc/salt)"
+if ! [ -d /etc/salt ]; then
+  echo "Creating /etc/salt..."
+  sudo mkdir -p /etc/salt
+fi
+owner="$(gstat -c '%U' /etc/salt)"
 if [[ "$owner" != "$USER" ]]; then
   echo "Chowning /etc/salt..."
   sudo chown -vR "$USER" /etc/salt

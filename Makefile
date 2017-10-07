@@ -1,21 +1,25 @@
-all: files brew pip pip3 tmux_plugins ## Make it all!
+all: files brew pip2 pip3 tmux_plugins ## Make it all!
 
 files: ## Ensure files are up to date
 	./manage
 
-pip: ## Ensure pip packages in requirements.in are installed
-	pip2 install --upgrade pip-tools
-	python2.7 -m piptools compile --output-file requirements.txt requirements.in
-	pip2 install --requirement requirements.txt
+PYTHON2=PYENV_VERSION=2.7.14 python
+PIP2=PYENV_VERSION=2.7.14 pip
+
+pip2: ## Ensure pip packages in requirements.in are installed
+	$(PIP2) install --upgrade pip-tools
+	$(PYTHON2) -m piptools compile --output-file requirements.txt requirements.in
+	$(PIP2) install --requirement requirements.txt
 
 pip_clean: ## Uninstall all pip modules
-	pip2 freeze | grep -v "^-e " | xargs pip2 uninstall -y -q
+	$(PIP2) freeze | grep -v "^-e " | xargs $(PIP2) uninstall -y -q
 
+PYTHON3=PYENV_VERSION=3.6.1 python
 PIP3=PYENV_VERSION=3.6.1 pip
 
 pip3: ## Ensure pip3 packages in requirements.in are installed
 	$(PIP3) install --upgrade pip-tools
-	python3 -m piptools compile --output-file requirements3.txt requirements3.in
+	$(PYTHON3) -m piptools compile --output-file requirements3.txt requirements3.in
 	$(PIP3) install \
 		--requirement requirements3.txt \
 		--src ~/oss \

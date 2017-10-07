@@ -4,10 +4,6 @@ cask 'aerial'
 # Ag.
 brew 'the_silver_searcher'
 
-# Asciinema
-brew 'asciinema'
-brew 'asciinema2gif'
-
 # Bash.
 brew 'bash'
 brew 'bash-completion'
@@ -53,14 +49,8 @@ tap 'neovim/homebrew-neovim'
 brew 'neovim'
 brew 'ctags'
 
-# Node.
-brew 'node'
-
 # Pyenv.
 brew 'pyenv'
-
-# Python
-brew 'python'
 
 # Tmux.
 brew 'tmux'
@@ -74,6 +64,3 @@ brew 'urlview'
 
 # Watch.
 brew 'watch'
-
-# Yarn.
-brew 'yarn'
