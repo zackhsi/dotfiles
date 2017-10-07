@@ -11,7 +11,7 @@ pip2: ## Ensure pip packages in requirements.in are installed
 	$(PYTHON2) -m piptools compile --output-file requirements.txt requirements.in
 	$(PIP2) install --requirement requirements.txt
 
-pip_clean: ## Uninstall all pip modules
+pip2_clean: ## Uninstall all pip modules
 	$(PIP2) freeze | grep -v "^-e " | xargs $(PIP2) uninstall -y -q
 
 PYTHON3=PYENV_VERSION=3.6.1 python
@@ -27,9 +27,6 @@ pip3: ## Ensure pip3 packages in requirements.in are installed
 
 pip3_clean: ## Uninstall all pip3 modules
 	$(PIP3) freeze | xargs $(PIP3) uninstall -y -q
-
-cargo: ## Install crates in Cargofile
-	./rustcargo
 
 brew: ## Install formulas in Brewfile
 	brew bundle
