@@ -1,26 +1,37 @@
-Installation
-============
-```
-➜  dotfiles git:(master) make
-all                            Make it all!
-brew                           Ensure only formulas in Brewfile are installed
-ensure_symlinks                Symlink files to where they belong
-pip                            Ensure only pip packages in requirements.in are installed
-sleepwatcher                   Link sleepwatcher user launch agent
-```
+Dotfiles 🌴
+==========
+
+This repository contains my configurations for:
+- bash
+- git
+- neovim
+- python
+- tmux
 
 ```
-➜  dotfiles git:(master) make all
-./ensure_symlinks.sh
-brew update
-Already up-to-date.
-brew doctor
-Your system is ready to brew.
-brew bundle cleanup --force
-brew bundle check || brew bundle
-The Brewfile's dependencies are satisfied.
-brew bundle dump --force
-pip freeze | xargs pip uninstall -y -q
-pip install -r requirements.in --upgrade -q
-pip freeze -r requirements.in > requirements.txt
+$ make
+all                            Make it all!
+brew                           Install formulas in Brewfile
+files                          Ensure files are up to date
+npm_freeze                     Freeze node packages into Nodefile
+pip2                           Ensure pip packages in requirements.in are installed
+pip2_clean                     Uninstall all pip modules
+pip3                           Ensure pip3 packages in requirements.in are installed
+pip3_clean                     Uninstall all pip3 modules
+tmux_plugins                   Install and update tmux plugins
 ```
+
+Installation
+------------
+
+(May be out of order or missing steps.)
+
+1. Clone this repository.
+1. Install [Homebrew](https://brew.sh/).
+1. `make brew` to install bash4.4, pyenv.
+1. `pyenv install 3.6.1`.
+1. `pyenv install 2.7.14`.
+1. Download [iTerm beta build](https://www.iterm2.com/downloads.html).
+1. Set up iTerm preferences to load from file.
+1. `make files` (will install Salt into Python3 installation).
+1. `make pip3`.
