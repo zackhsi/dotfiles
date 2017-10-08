@@ -131,7 +131,13 @@ __git_complete grb _git_rebase
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbm='git rebase master'
-alias grev='git rev-parse HEAD'
+grev() {
+  if [[ $# -gt 0 ]]; then
+    git rev-parse "$@"
+  else
+    git rev-parse HEAD
+  fi
+}
 alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
