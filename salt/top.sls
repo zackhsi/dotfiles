@@ -2,4 +2,3 @@ base:
   '*':
     - symlinks
     - shells
-    - tmux

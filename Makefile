@@ -34,10 +34,6 @@ brew: ## Install formulas in Brewfile
 npm_freeze: ## Freeze node packages into Nodefile
 	npm ls -g --depth=0 > Nodefile
 
-tmux_plugins: ## Install and update tmux plugins
-	~/.tmux/plugins/tpm/bin/install_plugins
-	~/.tmux/plugins/tpm/bin/update_plugins all
-
 .DEFAULT_GOAL := help
 .PHONY: help
 help:

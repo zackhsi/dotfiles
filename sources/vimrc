@@ -334,7 +334,6 @@ Plug 'hashivim/vim-terraform'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sjl/vitality.vim'
-Plug 'tmux-plugins/vim-tmux-focus-events'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Unimpaired.
