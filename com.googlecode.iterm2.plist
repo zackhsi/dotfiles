@@ -705,12 +705,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1115 1173 445 103 -111 1050 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 281 796 473 0 0 1680 1050 </string>
+	<string>921 1481 916 394 -111 1050 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>969 1597 730 477 -111 1050 3840 2138 </string>
+	<string>302 1291 650 427 -111 1050 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510_selection</key>
@@ -1291,7 +1293,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>UbuntuMono-Regular 18</string>
+			<string>UbuntuMono-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2034,12 +2036,20 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>62F63845-DB75-433C-B8F3-E9183939E5E3</string>
+	<key>NoSyncLastTipTime</key>
+	<real>529258704.52596802</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>529002000.08713299</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
@@ -2063,7 +2073,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-06T17:06:15Z</date>
+	<date>2017-10-09T16:18:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
