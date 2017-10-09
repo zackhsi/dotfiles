@@ -42,7 +42,7 @@ p() {
 ###############################################################################
 export CACHE_EC2_INSTANCES=1
 mfa() {
-  source ~/src/awsaccess/awsaccess2.sh
+  source $SRC/awsaccess/awsaccess2.sh
   awsaccess role admin
 }
 f() {
