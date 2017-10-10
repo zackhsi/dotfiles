@@ -38,9 +38,14 @@ set noswapfile                     " no swap files
 set nowritebackup                  " only in case you don't want a backup file while editing
 
 " Restrict CursorLine to active window.
+if $BACKGROUND == "light"
+  let cursorlinenrfg = 5  " purple
+else
+  let cursorlinenrfg = 3  " yellow
+endif
 augroup CursorLineOnlyInActiveWindow
   autocmd!
-  autocmd VimEnter,WinEnter,BufWinEnter * highlight CursorLineNr ctermfg=3
+  autocmd VimEnter,WinEnter,BufWinEnter * execute 'highlight CursorLineNr ctermfg=' . cursorlinenrfg
   autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   autocmd WinLeave * setlocal nocursorline
 augroup END
@@ -252,7 +257,7 @@ autocmd BufWritePost,BufEnter * Neomake
 
 let g:neomake_java_enabled_makers = []
 let g:neomake_jsx_enabled_makers = ['eslint']
-let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
+let g:neomake_python_enabled_makers = ['mypy']
 let g:neomake_highlight_columns = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
