@@ -86,7 +86,9 @@ autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 " Reload edited files.
 augroup improved_autoread
   autocmd FocusGained * checktime
+  autocmd FocusGained * GitGutterAll
   autocmd BufEnter * checktime
+  autocmd BufEnter * GitGutterAll
 augroup end
 noremap <c-z> :suspend<cr>:checktime<cr>
 
