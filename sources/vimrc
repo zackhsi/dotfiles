@@ -90,7 +90,7 @@ augroup improved_autoread
   autocmd BufEnter * checktime
   autocmd BufEnter * GitGutterAll
 augroup end
-noremap <c-z> :suspend<cr>:checktime<cr>
+noremap <c-z> :suspend<cr>:checktime<cr>:GitGutterAll<cr>
 
 " Window navigation.
 nmap <C-j> <C-w>j
