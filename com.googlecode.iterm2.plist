@@ -14,6 +14,8 @@
 	<string>manual</string>
 	<key>AutoCommandHistory</key>
 	<true/>
+	<key>CopyLastNewline</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>One Dark</key>
@@ -708,11 +710,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1115 1173 445 103 -111 1050 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 126 606 469 0 0 1680 1028 </string>
+	<string>218 1188 606 469 -111 1050 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>921 1481 916 394 -111 1050 1920 1080 </string>
+	<string>554 516 937 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>302 1291 650 427 -111 1050 1920 1058 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>136 1160 570 377 -111 1050 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510_selection</key>
@@ -1328,6 +1332,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
@@ -1996,6 +2002,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>
@@ -2037,7 +2045,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>62F63845-DB75-433C-B8F3-E9183939E5E3</string>
 	<key>NoSyncLastTipTime</key>
-	<real>529258704.52596802</real>
+	<real>529521740.22646999</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2049,6 +2057,9 @@
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -2073,7 +2084,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-09T16:18:23Z</date>
+	<date>2017-10-11T22:53:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2090,11 +2101,12 @@
 	<integer>1</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Profiles</string>
-		<string>Recent Directories</string>
+		<string>Command History</string>
 	</array>
 	<key>UseBorder</key>
 	<false/>
+	<key>UseLionStyleFullscreen</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>1</string>
 	<key>findIgnoreCase_iTerm</key>
