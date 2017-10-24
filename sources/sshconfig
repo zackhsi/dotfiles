@@ -27,3 +27,7 @@ Host *
     GSSAPIAuthentication no
     ForwardAgent no
     ForwardX11 no
+
+UseKeychain yes
+AddKeysToAgent yes
+IdentityFile ~/.ssh/id_rsa
