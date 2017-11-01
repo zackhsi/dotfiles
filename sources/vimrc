@@ -21,6 +21,11 @@ set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
 set list                           " show whitespace
+if $BACKGROUND == "light"
+  set listchars=                   " rely on solarized underline
+else
+  set listchars=tab:»·,trail:·
+endif
 
 set hlsearch                       " highlight what you search for
 set ic                             " case insensitive search
