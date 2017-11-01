@@ -20,6 +20,7 @@ set mouse=a                        " enable mouse
 set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
+set list                           " show whitespace
 
 set hlsearch                       " highlight what you search for
 set ic                             " case insensitive search
@@ -309,6 +310,20 @@ let g:racer_experimental_completer = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'altercation/vim-colors-solarized'
 
+"   option name                         default      optional
+"   --------------------------------------------------------------
+let g:solarized_termcolors = 16       " 16       |   256
+let g:solarized_termtrans  = 0        " 0        |   1
+let g:solarized_degrade    = 0        " 0        |   1
+let g:solarized_bold       = 1        " 1        |   0
+let g:solarized_underline  = 1        " 1        |   0
+let g:solarized_italic     = 1        " 1        |   0
+let g:solarized_contrast   = 'normal' " 'normal' |   'high' or 'low'
+let g:solarized_visibility = 'normal' " 'normal' |   'high' or 'low'
+let g:solarized_hitrail    = 1        " 0        |   1
+let g:solarized_menu       = 1        " 1        |   0
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Surround.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -386,8 +401,3 @@ endif
 
 " Italic comments.
 highlight Comment cterm=italic
-
-" Highlight trailing whitespace red. Must be after colorscheme.
-" http://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
