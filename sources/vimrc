@@ -22,7 +22,7 @@ set scrolloff=2                    " Always shows two lines of vertical context 
 set showcmd                        " show incomplete commands
 set list                           " show whitespace
 if $BACKGROUND == "light"
-  set listchars=                   " rely on solarized underline
+  set listchars=tab:»·             " rely on solarized underline
 else
   set listchars=tab:»·,trail:·
 endif
