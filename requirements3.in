@@ -3,11 +3,12 @@ twine
 
 # Editor.
 -e git+/Users/zhsi/oss/mypy#egg=mypy
-flake8
+flake8>=3.5.0
 isort
 jedi>=0.11.0
 mistune
 neovim
 psutil
+pyflakes>=1.6.0
 pylint
 setproctitle
