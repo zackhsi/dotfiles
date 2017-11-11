@@ -74,6 +74,9 @@ autocmd Filetype xml        setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2
 autocmd Filetype zsh        setlocal ts=2 sts=2 sw=2
 
+" Markdown 79 lines.
+autocmd Filetype markdown setlocal textwidth=79
+
 " Python 79 lines.
 autocmd Filetype python setlocal textwidth=79
 
