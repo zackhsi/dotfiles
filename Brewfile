@@ -13,6 +13,10 @@ brew 'shellcheck'
 tap 'Goles/battery'
 brew 'battery'
 
+# Ctags.
+tap 'universal-ctags/homebrew-universal-ctags'
+brew 'universal-ctags/homebrew-universal-ctags/universal-ctags', args: ['HEAD']
+
 # Docker.
 brew 'docker'
 
@@ -47,7 +51,6 @@ brew 'mtr'
 # Neovim.
 tap 'neovim/homebrew-neovim'
 brew 'neovim'
-brew 'ctags'
 
 # Pyenv.
 brew 'pyenv'
