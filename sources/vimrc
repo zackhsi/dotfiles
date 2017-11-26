@@ -239,6 +239,12 @@ Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/sy
 Plug 'ludovicchabant/vim-gutentags'
 noremap <Leader>c :GutentagsUpdate!<CR>
 let g:gutentags_generate_on_empty_buffer = 1
+let g:gutentags_ctags_exclude = [
+    \ '.eggs',
+    \ '.mypy_cache',
+    \ 'build',
+    \ 'venv',
+\ ]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSX.
