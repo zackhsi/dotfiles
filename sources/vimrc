@@ -65,14 +65,14 @@ vnorem // y/<c-r>"<cr>
 
 " Indentation.
 filetype plugin indent on
-autocmd Filetype bash       setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype ruby       setlocal ts=2 sts=2 sw=2
-autocmd Filetype sh         setlocal ts=2 sts=2 sw=2
-autocmd Filetype vim        setlocal ts=2 sts=2 sw=2
-autocmd Filetype xml        setlocal ts=2 sts=2 sw=2
-autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2
-autocmd Filetype zsh        setlocal ts=2 sts=2 sw=2
+autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Markdown 79 lines.
 autocmd Filetype markdown setlocal textwidth=79
@@ -240,10 +240,10 @@ Plug 'ludovicchabant/vim-gutentags'
 noremap <Leader>c :GutentagsUpdate!<CR>
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
-    \ '.eggs',
-    \ '.mypy_cache',
-    \ 'build',
-    \ 'venv',
+  \ '.eggs',
+  \ '.mypy_cache',
+  \ 'build',
+  \ 'venv',
 \ ]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
