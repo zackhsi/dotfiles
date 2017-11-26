@@ -89,6 +89,9 @@ autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 " Detect ini files.
 autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
 
+" Pipfile syntax highlighting.
+autocmd BufNewFile,BufRead Vagrantfile set filetype=toml
+
 " Vagrantfile syntax highlighting.
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 
