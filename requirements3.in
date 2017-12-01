@@ -1,3 +1,4 @@
+-e git+/Users/zhsi/oss/all-repos#egg=all-repos
 ipython
 twine
 
