@@ -4,8 +4,8 @@
 #
 #    pip-compile --output-file requirements3.txt requirements3.in
 #
--e git+/Users/zhsi/oss/all-repos#egg=all-repos
--e git+/Users/zhsi/oss/mypy#egg=mypy
+-e file:///Users/zhsi/oss/all-repos
+-e file:///Users/zhsi/oss/mypy
 appnope==0.1.0            # via ipython
 astroid==1.5.3            # via pylint
 certifi==2017.7.27.1      # via requests
