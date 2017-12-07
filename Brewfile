@@ -55,6 +55,9 @@ brew 'neovim'
 # Pyenv.
 brew 'pyenv'
 
+# terminal-notifier
+brew 'terminal-notifier'
+
 # Tmux.
 brew 'tmux'
 brew 'reattach-to-user-namespace'
