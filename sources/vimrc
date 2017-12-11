@@ -192,7 +192,7 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor by using Ag | leader + a
-noremap <silent> <leader>a :silent Ag <C-r>=expand('<cword>')<CR><CR>
+noremap <silent> <leader>a :silent Ag -sw <C-r>=expand('<cword>')<CR><CR>
 
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
