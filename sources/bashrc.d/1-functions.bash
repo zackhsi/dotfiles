@@ -66,14 +66,8 @@ f() {
 ###############################################################################
 
 # term i-d2609352
-# term -f i-d2609352
 term() {
-  if [[ $1 == "-f" ]]; then
-    shift
-    aws ec2 stop-instances --instance-ids $@ --force
-  else
-    aws ec2 stop-instances --instance-ids $@
-  fi
+  aws ec2 terminate-instances --instance-ids "$@"
 }
 
 describe() {
