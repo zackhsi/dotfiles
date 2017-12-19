@@ -101,13 +101,27 @@ asg_term_no_decrement() {
 }
 asg_ls() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
-    | jq ".AutoScalingGroups[0].Instances | .[].InstanceId" \
+    | jq --raw-output ".AutoScalingGroups[0].Instances | .[].InstanceId" \
     | sort
 }
 asg_ll() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
     | jq ".AutoScalingGroups[0].Instances | .[]" \
     | sort
+}
+discovery_ls() {
+  service="$1"
+  if [ -z "$service" ]; then
+    echo "ERROR: service required."
+    exit 1
+  fi
+  shift
+  environment="$1"
+  if [ -z "$environment" ]; then
+    environment=production
+  fi
+  ssh gateway.ln \
+    curl --silent "discovery-${environment}.lyft.net/v1/registration/${service}" | jq --raw-output '.hosts | .[].tags.instance_id'
 }
 
 # https://news.ycombinator.com/item?id=12296000
