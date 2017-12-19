@@ -7,6 +7,7 @@ twine
 flake8>=3.5.0
 isort
 jedi>=0.11.0
+markdown2ctags
 mistune
 mypy-extensions
 neovim
