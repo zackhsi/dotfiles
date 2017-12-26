@@ -14,6 +14,7 @@ alias dot="cd ~/homespace/dotfiles"
 alias h="cd ~/homespace"
 alias o="cd $SRC/ops"
 alias oss="cd ~/oss"
+alias r="cd $HOME/repos/lyft"
 alias s="cd $SRC"
 alias sim="cd $SRC/simulatedrides"
 
