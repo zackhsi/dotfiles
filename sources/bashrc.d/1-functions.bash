@@ -106,8 +106,7 @@ asg_ls() {
 }
 asg_ll() {
   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$1" \
-    | jq ".AutoScalingGroups[0].Instances | .[]" \
-    | sort
+    | jq ".AutoScalingGroups[0].Instances | .[]"
 }
 discovery_ls() {
   service="$1"
