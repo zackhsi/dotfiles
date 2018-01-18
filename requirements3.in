@@ -14,5 +14,5 @@ mypy-extensions
 neovim
 psutil
 pyflakes>=1.6.0
-pylint
+pylint>=1.8.1
 setproctitle
