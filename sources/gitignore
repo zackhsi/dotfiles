@@ -1,6 +1,7 @@
 *.bak
 *.pyc
 *.swp
+.*@neomake*
 .DS_Store
 .mypy_cache
 .python-version
