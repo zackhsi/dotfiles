@@ -52,6 +52,9 @@ brew 'mtr'
 tap 'neovim/homebrew-neovim'
 brew 'neovim'
 
+# Node.
+brew 'node'
+
 # Pyenv.
 brew 'pyenv'
 
