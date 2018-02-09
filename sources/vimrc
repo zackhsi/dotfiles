@@ -69,6 +69,7 @@ autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -89,8 +90,8 @@ autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 " Detect ini files.
 autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
 
-" Pipfile syntax highlighting.
-autocmd BufNewFile,BufRead Vagrantfile set filetype=toml
+" Typescript syntax highlighting.
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 
 " Vagrantfile syntax highlighting.
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
@@ -390,6 +391,16 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sjl/vitality.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Typescript.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Syntax.
+Plug 'HerringtonDarkholme/yats.vim'
+
+" Completion.
+Plug 'mhartington/nvim-typescript', {'do': ':UpdateRemotePlugins'}
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Unimpaired.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-unimpaired'
@@ -401,7 +412,7 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'bfontaine/Brewfile.vim'
 Plug 'burnettk/vim-angular'
 Plug 'cespare/vim-toml'
-Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+Plug 'docker/docker', {'rtp': '/contrib/syntax/vim/'}
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'

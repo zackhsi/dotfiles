@@ -1,0 +1,13 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Dotfiles 🌴 ==========",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackhsi/dotfiles.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.7.1"
+  }
+}

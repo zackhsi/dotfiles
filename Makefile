@@ -31,8 +31,8 @@ pip3_clean: ## Uninstall all pip3 modules
 brew: ## Install formulas in Brewfile
 	brew bundle
 
-npm_freeze: ## Freeze node packages into Nodefile
-	npm ls -g --depth=0 > Nodefile
+node: ## Install local npm packages
+	npm install
 
 .DEFAULT_GOAL := help
 .PHONY: help

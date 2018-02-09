@@ -52,6 +52,9 @@ alias v=nvim
 alias vi=nvim
 alias vim=nvim
 
+# Node
+export PATH=~/homespace/dotfiles/node_modules/.bin:$PATH
+
 # OSX
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
