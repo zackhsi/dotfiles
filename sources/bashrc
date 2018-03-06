@@ -9,13 +9,10 @@ export HISTFILESIZE=""
 export HISTSIZE=""
 
 # Erase duplicate commands and whitespace in history
-export HISTCONTROL=ignoreboth:erasedups
-
-# Keep the times of the commands in history
-HISTTIMEFORMAT='%F %T  '
+HISTCONTROL=ignoreboth:erasedups
 
 # Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r;"
+PROMPT_COMMAND="history -n; history -w; history -c; history -r;"
 
 # Use a more compact format for the time builtin's output
 TIMEFORMAT='real:%lR user:%lU sys:%lS'
