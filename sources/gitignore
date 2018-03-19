@@ -4,6 +4,7 @@
 .*@neomake*
 .DS_Store
 .mypy_cache
+.pytest_cache
 .python-version
 .ropeproject
 node_modules
