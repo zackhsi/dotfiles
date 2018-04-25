@@ -18,6 +18,7 @@ alias oss="cd ~/oss"
 alias r="cd $HOME/repos/lyft"
 alias s="cd $SRC"
 alias sim="cd $SRC/simulatedrides"
+alias user="cd $SRC/python-lyft-userclient"
 
 # ls
 alias l="ls -lah"
