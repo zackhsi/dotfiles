@@ -5,3 +5,6 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 source '/Users/zhsi/go/src/github.com/lyft/blessclient/lyftprofile' # bless ssh alias
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
