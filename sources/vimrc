@@ -90,6 +90,12 @@ autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 " Detect ini files.
 autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
 
+" Pipfile syntax highlighting.
+autocmd BufNewFile,BufRead Pipfile set filetype=toml
+
+" Pipfile.lock syntax highlighting.
+autocmd BufNewFile,BufRead Pipfile.lock set filetype=json
+
 " Typescript syntax highlighting.
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 
