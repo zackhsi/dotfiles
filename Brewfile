@@ -57,6 +57,11 @@ brew 'node'
 
 # Pyenv.
 brew 'pyenv'
+brew 'openssl'
+brew 'readline'
+brew 'sqlite3'
+brew 'xz'
+brew 'zlib'
 
 # terminal-notifier
 brew 'terminal-notifier'
