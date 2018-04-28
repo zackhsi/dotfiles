@@ -29,7 +29,7 @@ Installation
 1. Clone this repository.
 1. Install [Homebrew](https://brew.sh/).
 1. `make brew` to install bash4.4, pyenv.
-1. `pyenv install 3.6.1`.
+1. `pyenv install 3.6.5`.
 1. `pyenv install 2.7.14`.
 1. Download [iTerm beta build](https://www.iterm2.com/downloads.html).
 1. Set up iTerm preferences to load from file.
