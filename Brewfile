@@ -55,6 +55,9 @@ brew 'neovim'
 # Node.
 brew 'node'
 
+# PDF.
+cask 'wkhtmltopdf'
+
 # Pyenv.
 brew 'pyenv'
 brew 'pyenv-virtualenv'
