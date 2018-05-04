@@ -10,6 +10,7 @@
   "dependencies": {
     "create-react-app": "^1.5.1",
     "eslint": "^4.17.0",
+    "hackmyresume": "^1.9.0-beta",
     "tslint": "^5.9.1",
     "typescript": "^2.7.1"
   }
