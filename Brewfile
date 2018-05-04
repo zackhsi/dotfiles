@@ -57,6 +57,7 @@ brew 'node'
 
 # Pyenv.
 brew 'pyenv'
+brew 'pyenv-virtualenv'
 brew 'openssl'
 brew 'readline'
 brew 'sqlite3'
