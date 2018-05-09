@@ -304,6 +304,14 @@ Plug 'joshdick/onedark.vim'
 let g:onedark_termcolors=16
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Parenthesis.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'junegunn/rainbow_parentheses.vim'
+autocmd Filetype * RainbowParentheses
+let g:rainbow#blacklist = [10, 11]
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'klen/python-mode'
