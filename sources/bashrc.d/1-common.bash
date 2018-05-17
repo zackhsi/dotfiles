@@ -20,6 +20,9 @@ alias s="cd $SRC"
 alias sim="cd $SRC/simulatedrides"
 alias user="cd $SRC/python-lyft-userclient"
 
+# dotfiles bin
+export PATH=~/homespace/dotfiles/bin:$PATH
+
 # ls
 alias l="ls -lah"
 alias la="ls -lAh"

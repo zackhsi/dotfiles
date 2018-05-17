@@ -19,7 +19,7 @@ pyc() {
 ###############################################################################
 # Clone Lyft repo
 cl() {
-  hub clone lyft/$@
+  hub clone "lyft/$@"
 }
 
 # Push branch, create pull request, browse.
