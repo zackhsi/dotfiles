@@ -13,7 +13,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>AutoCommandHistory</key>
-	<true/>
+	<false/>
 	<key>CopyLastNewline</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -668,7 +668,7 @@
 	<key>LogDrawingPerformance</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/homespace/dotfiles</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -714,13 +714,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 131 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>409 1202 937 512 -111 1050 1920 1080 </string>
+	<string>498 409 928 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>153 1352 570 377 -111 1050 1920 1080 </string>
+	<string>0 0 836 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>153 1164 570 377 -111 1050 1920 1080 </string>
+	<string>0 11 836 503 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>755 537 570 377 0 0 1680 1028 </string>
+	<string>839 11 836 503 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>254 55 570 377 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_A96AAA18-C143-43C7-A03B-4229D616E510</key>
@@ -2112,7 +2112,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-19T17:52:17Z</date>
+	<date>2018-05-19T19:52:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2144,7 +2144,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6beta5</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
