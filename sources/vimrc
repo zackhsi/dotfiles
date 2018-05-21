@@ -75,9 +75,6 @@ autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-" Markdown 79 lines.
-autocmd Filetype markdown setlocal textwidth=79
-
 " Python 79 lines.
 autocmd Filetype python setlocal textwidth=79
 
