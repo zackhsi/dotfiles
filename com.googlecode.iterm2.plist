@@ -1267,7 +1267,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 131 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>522 572 928 394 0 0 1680 1028 </string>
+	<string>725 538 928 394 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1437,13 +1437,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.71698176860809326</real>
+				<real>0.71764705882352942</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44204992055892944</real>
+				<real>0.44313725490196076</real>
 				<key>Red Component</key>
-				<real>0.6111406683921814</real>
+				<real>0.61176470588235299</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -2125,13 +2125,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.94509803921568625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.94509803921568625</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.94509803921568625</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -2244,13 +2244,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.94509803921568625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.94509803921568625</real>
 				<key>Red Component</key>
-				<real>0.99999600648880005</real>
+				<real>0.94509803921568625</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -2849,7 +2849,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-20T19:52:28Z</date>
+	<date>2018-06-06T15:26:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
