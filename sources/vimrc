@@ -58,6 +58,9 @@ augroup CursorLineOnlyInActiveWindow
   autocmd WinLeave * setlocal nocursorline
 augroup END
 
+" Reset cursor to vertical line that does not blink.
+au VimLeave * set guicursor=a:ver1-blinkon0
+
 " Copy to system clipboard.
 vnoremap <Leader>y "+y
 
