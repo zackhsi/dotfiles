@@ -307,13 +307,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.29803922772407532</real>
+				<real>0.36862745881080627</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.30196079611778259</real>
+				<real>0.25882354378700256</real>
 				<key>Red Component</key>
-				<real>0.30196079611778259</real>
+				<real>0.26666668057441711</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -1267,7 +1267,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 131 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>472 356 928 394 0 0 1680 1028 </string>
+	<string>399 349 928 394 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>15 1336 650 427 -111 1050 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1320,13 +1320,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.29803921568627451</real>
+				<real>0.36862745098039218</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.30196078431372547</real>
+				<real>0.25882352941176473</real>
 				<key>Red Component</key>
-				<real>0.30196078431372547</real>
+				<real>0.26666666666666666</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -2060,13 +2060,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.29803922772407532</real>
+				<real>0.36862745098039218</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.30196079611778259</real>
+				<real>0.25882352941176473</real>
 				<key>Red Component</key>
-				<real>0.30196079611778259</real>
+				<real>0.26666666666666666</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
