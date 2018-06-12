@@ -32,6 +32,7 @@ set hlsearch                       " highlight what you search for
 set ic                             " case insensitive search
 set incsearch                      " type-ahead-find
 set scs                            " smart case search
+set inccommand=nosplit             " in-place substitution preview
 
 set expandtab                      " use spaces instead of tabs
 set shiftwidth=4                   " 1 tab == 2 spaces
