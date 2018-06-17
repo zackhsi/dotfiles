@@ -47,7 +47,7 @@ set nowritebackup                  " only in case you don't want a backup file w
 
 " Restrict CursorLine to active window.
 if $BACKGROUND == "light"
-  let cursorlinenrfg = 1  " red
+  let cursorlinenrfg = 4  " blue
 else
   let cursorlinenrfg = 3  " yellow
 endif
