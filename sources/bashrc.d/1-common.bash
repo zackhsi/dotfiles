@@ -69,7 +69,7 @@ export PAGER="less -IM"
 export PYTHONDONTWRITEBYTECODE=1
 
 # Rust
-export PATH=$PATH:~/.cargo/bin
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Search
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
