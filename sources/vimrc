@@ -459,3 +459,4 @@ endif
 
 " Italic comments.
 highlight Comment cterm=italic
+highlight LineNr ctermbg=15  " clear background for line numbers
