@@ -11,7 +11,7 @@ env:
   # Note that some xterm terminfo databases don't declare support for italics.
   # You can verify this by checking for the presence of `smso` and `sitm` in
   # `infocmp xterm-256color`.
-  TERM: xterm-256color
+  TERM: xterm-color
 
 window:
   # Window dimensions in character columns and lines
@@ -29,36 +29,36 @@ window:
 
   # Window decorations
   # Setting this to false will result in window without borders and title bar.
-  decorations: true
+  decorations: false
 
 # Display tabs using this many cells (changes require restart)
-tabspaces: 8
+tabspaces: 4
 
 # When true, bold text is drawn using the bright variant of colors.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 # Font configuration (changes require restart)
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Menlo
+    family: SF Mono
     # Style can be specified to pick a specific face.
     # style: Regular
 
   # The bold font face
   bold:
-    family: Menlo
+    family: SF Mono
     # Style can be specified to pick a specific face.
     # style: Bold
 
   # The italic font face
   italic:
-    family: Menlo
+    family: SF Mono
     # Style can be specified to pick a specific face.
     # style: Italic
 
   # Point size of the font
-  size: 12.0
+  size: 14.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -89,12 +89,12 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Tomorrow Night Bright)
+# Colors (Suborbital)
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xeaeaea'
+    background: '0xf8f8ff'
+    foreground: '0x60605e'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
@@ -104,24 +104,24 @@ colors:
   # Normal colors
   normal:
     black:   '0x000000'
-    red:     '0xd54e53'
-    green:   '0xb9ca4a'
-    yellow:  '0xe6c547'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
-    white:   '0xffffff'
+    red:     '0xff1500'
+    green:   '0x00b958'
+    yellow:  '0xea9d04'
+    blue:    '0x00aee8'
+    magenta: '0xcc66ff'
+    cyan:    '0x03b9bc'
+    white:   '0xf2f2ff'
 
   # Bright colors
   bright:
     black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xe7c547'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
-    white:   '0xffffff'
+    red:     '0xff3399'
+    green:   '0x60605e'
+    yellow:  '0x60605e'
+    blue:    '0x60605e'
+    magenta: '0xcc66ff'
+    cyan:    '0xa09bb3'
+    white:   '0xf8f8ff'
 
   # Dim colors (Optional)
   dim:
@@ -223,11 +223,11 @@ live_config_reload: true
 #
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
 # Entries in shell.args are passed unmodified as arguments to the shell.
-#
-# shell:
-#   program: /bin/bash
-#   args:
-#     - --login
+
+shell:
+  program: /usr/local/bin/bash
+  args:
+    - --login
 
 # Key bindings
 #
