@@ -1,6 +1,7 @@
 -e /Users/zhsi/oss/all-repos
 aiohttp
 ipython
+pre-commit
 twine
 
 # Editor.
