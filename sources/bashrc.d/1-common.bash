@@ -10,6 +10,7 @@ export DOCKER_HOST="tcp://127.0.0.1:2375"
 # Directories
 alias cont="cd $SRC/containers"
 alias d="cd ~/Desktop"
+alias desk="cd ~/Desktop"
 alias dev="cd $SRC/devbox"
 alias dot="cd ~/homespace/dotfiles"
 alias h="cd ~/homespace"
