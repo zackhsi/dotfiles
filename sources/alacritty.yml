@@ -286,16 +286,13 @@ key_bindings:
   - { key: PageDown,                chars: "\x1b[6~"                     }
   - { key: Tab,      mods: Shift,   chars: "\x1b[Z"                      }
   - { key: Back,                    chars: "\x7f"                        }
-  - { key: Back,     mods: Alt,     chars: "\x17"                        }
   - { key: Insert,                  chars: "\x1b[2~"                     }
   - { key: Delete,                  chars: "\x1b[3~"                     }
-  - { key: Left,     mods: Control|Shift,   chars: "\x1b[1;6D"           }
   - { key: Left,     mods: Shift,   chars: "\x1b[1;2D"                   }
   - { key: Left,     mods: Control, chars: "\x1b[1;5D"                   }
   - { key: Left,     mods: Alt,     chars: "\x1b[1;3D"                   }
   - { key: Left,                    chars: "\x1b[D",   mode: ~AppCursor  }
   - { key: Left,                    chars: "\x1bOD",   mode: AppCursor   }
-  - { key: Right,    mods: Control|Shift,   chars: "\x1b[1;6C"           }
   - { key: Right,    mods: Shift,   chars: "\x1b[1;2C"                   }
   - { key: Right,    mods: Control, chars: "\x1b[1;5C"                   }
   - { key: Right,    mods: Alt,     chars: "\x1b[1;3C"                   }
@@ -371,3 +368,11 @@ key_bindings:
   - { key: F10,      mods: Command, chars: "\x1b[21;3~"                  }
   - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
+
+  # Custom.
+  - { key: Back,     mods: Command,         chars: "\x15"                }
+  - { key: Back,     mods: Alt,             chars: "\x17"                }
+  - { key: Left,     mods: Control|Shift,   chars: "\x1b[1;6D"           }
+  - { key: Right,    mods: Control|Shift,   chars: "\x1b[1;6C"           }
+  - { key: B,        mods: Control|Alt,     chars: "b"                 }
+  - { key: F,        mods: Control|Alt,     chars: "f"                 }
