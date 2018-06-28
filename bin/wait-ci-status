@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Poll current directory until CI status is no longer pending. Then show a
+# macOS notification with the result.
+#
+# Usage:
+#   $ wait-ci-status [<COMMIT>]
+#
+set -e
+
+main() {
+  # Check if we are in a git repo.
+  if ! git rev-parse --is-inside-work-tree &> /dev/null; then
+    return 1
+  fi
+
+  # Wait until the status is not "pending".
+  while [[ $(hub ci-status "$@") == "pending" ]]; do
+    sleep 5
+  done
+  terminal-notifier \
+    -title "$(basename "$(pwd)")" \
+    -message "CI status: $(hub ci-status "$@")" \
+    -sound default
+}
+
+main "$@"

@@ -36,19 +36,6 @@ p() {
   fi
 }
 
-# Poll current directory until CI status is no longer pending. Then show a
-# macOS notification.
-wait-ci-status() {
-  while [[ "$(hub ci-status)" == "pending" ]]; do
-    sleep 5
-  done
-  terminal-notifier \
-    -title "$(basename "$(pwd)")" \
-    -message "CI status: $(hub ci-status)" \
-    -sound default
-}
-
-
 ###############################################################################
 # Fabric
 ###############################################################################
