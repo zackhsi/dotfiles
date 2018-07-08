@@ -157,15 +157,23 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#branch#enabled       = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ALE.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'w0rp/ale'
+
+let g:ale_linters = {}
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {}
+
+" Typescript.
+let g:ale_linters['typescript'] = ['eslint']
+let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-bracket-spacing'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'jiangmiao/auto-pairs'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Dash.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'rizzatti/dash.vim'
-noremap <silent> <leader>d :Dash<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive.
@@ -285,16 +293,6 @@ inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 " Use tab to cycle menu.
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Neomake.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'neomake/neomake', { 'dir': '~/oss/neomake' }
-autocmd BufWritePost,BufEnter * Neomake
-
-let g:neomake_java_enabled_makers = []
-let g:neomake_jsx_enabled_makers = ['eslint']
-let g:neomake_python_enabled_makers = ['pylint', 'mypy', 'flake8']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.
@@ -423,7 +421,8 @@ Plug 'sjl/vitality.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
 " Completion.
-Plug 'mhartington/nvim-typescript', {'do': ':UpdateRemotePlugins'}
+" https://github.com/mhartington/nvim-typescript/issues/149
+Plug 'mhartington/nvim-typescript', {'do': ':UpdateRemotePlugins', 'commit': '70e36b80113c2d84663b0f86885320022943dd51'}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Undo.
