@@ -71,10 +71,8 @@ vnorem // y/<c-r>"<cr>
 " Indentation.
 filetype plugin indent on
 autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -171,7 +169,7 @@ let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_fixers['typescriptreact'] = ['prettier']
-let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-bracket-spacing'
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-bracket-spacing --tab-width 4'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.

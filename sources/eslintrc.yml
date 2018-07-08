@@ -1,10 +1,11 @@
 parser: typescript-eslint-parser
 extends: airbnb
-plugins:
-  - typescript
 env:
   browser: true
+plugins:
+  - typescript
 rules:
+  indent: ['error', 4]
   # All the rules: https://github.com/nzakas/eslint-plugin-typescript.
   typescript/adjacent-overload-signatures: error
   typescript/class-name-casing: error
