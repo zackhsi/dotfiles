@@ -421,8 +421,7 @@ Plug 'sjl/vitality.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
 " Completion.
-" https://github.com/mhartington/nvim-typescript/issues/149
-Plug 'mhartington/nvim-typescript', {'do': ':UpdateRemotePlugins', 'commit': '70e36b80113c2d84663b0f86885320022943dd51'}
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 autocmd FileType typescript nnoremap <buffer> <leader>d :TSTypeDef<CR>
 autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
 autocmd FileType typescript nnoremap <buffer> K :TSDoc<CR>
