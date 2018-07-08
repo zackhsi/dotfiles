@@ -166,7 +166,7 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
 
 " Typescript.
-let g:ale_linters['typescript'] = ['eslint']
+let g:ale_linters['typescript'] = ['eslint', 'tslint']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-bracket-spacing'
 
@@ -423,6 +423,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 " Completion.
 " https://github.com/mhartington/nvim-typescript/issues/149
 Plug 'mhartington/nvim-typescript', {'do': ':UpdateRemotePlugins', 'commit': '70e36b80113c2d84663b0f86885320022943dd51'}
+autocmd FileType typescript nnoremap <buffer> <leader>d :TSTypeDef<CR>
+autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
+autocmd FileType typescript nnoremap <buffer> K :TSDoc<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Undo.
