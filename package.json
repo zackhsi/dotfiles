@@ -12,6 +12,7 @@
     "eslint": "^4.19.1",
     "hackmyresume": "^1.9.0-beta",
     "jsonresume-theme-onepage": "0.0.3",
+    "prettier": "^1.13.7",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
   }
