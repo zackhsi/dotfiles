@@ -3,6 +3,7 @@
 *.swp
 .*@neomake*
 .DS_Store
+.env
 .mypy_cache
 .pytest_cache
 .python-version
