@@ -18,4 +18,5 @@ pylint>=1.8.1
 setproctitle
 
 # Lyft.
+-e /Users/zhsi/repos/lyft/python-lyft-public-api-lib
 -e /Users/zhsi/repos/lyft/python-lyft-stdlib
