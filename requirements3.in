@@ -1,19 +1,21 @@
--e /Users/zhsi/oss/all-repos
 aiohttp
 ipython
 pre-commit
 twine
 
 # Editor.
--e /Users/zhsi/oss/mypy
 flake8>=3.5.0
 isort
 jedi>=0.11.0
 markdown2ctags
 mistune
+mypy
 mypy-extensions
 neovim
 psutil
 pyflakes>=1.6.0
 pylint>=1.8.1
 setproctitle
+
+# Lyft.
+-e /Users/zhsi/repos/lyft/python-lyft-stdlib
