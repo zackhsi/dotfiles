@@ -61,8 +61,11 @@ augroup END
 " Reset cursor to vertical line that does not blink.
 au VimLeave * set guicursor=a:ver1-blinkon0
 
-" Copy to system clipboard.
+" Copy selection to system clipboard.
 vnoremap <Leader>y "+y
+ 
+" Copy current filepath to systen clipboard.
+nnoremap <Leader>f :let @+ = expand("%")<CR>
 
 " Double slash to search for visual selection.
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
