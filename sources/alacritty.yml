@@ -89,50 +89,50 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Suborbital)
+# Colors (Orbital)
 colors:
   # Default colors
   primary:
-    background: '0xffffff'
-    foreground: '0x60605e'
+    background: '0xffffff'  # Terminal background.
+    foreground: '0x746f86'  # Lightness: 48.
 
   # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
+  # cursor:
+  #   text: '0x000000'
+  #   cursor: '0xffffff'
 
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xf01400'
-    green:   '0x28c674'
-    yellow:  '0xea9d04'
-    blue:    '0x00aee8'
-    magenta: '0xcc66ff'
-    cyan:    '0x03b2b3'
-    white:   '0xf7f7ff'
+    black:   '0x746f86'  # Tig border.
+    red:     '0xff683f'
+    green:   '0x38c271'
+    yellow:  '0xe89b00'
+    blue:    '0x25b7f2'
+    magenta: '0xe67eff'
+    cyan:    '0x00bebf'
+    white:   '0xf7f7ff'  # Current line, pane borders.
 
   # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xff3399'
-    green:   '0x60605e'
-    yellow:  '0x60605e'
-    blue:    '0x60605e'
-    magenta: '0xcc66ff'
-    cyan:    '0xa09bb3'
-    white:   '0xffffff'
+    black:   '0xff0000'  # Unused?!
+    red:     '0xff70ca'
+    green:   '0x746f86'
+    yellow:  '0x746f86'
+    blue:    '0x746f86'
+    magenta: '0xe67eff'
+    cyan:    '0xada8c1'  # Comments, line numbers.
+    white:   '0xffffff'  # Vim background.
 
   # Dim colors (Optional)
-  dim:
-    black:   '0x333333'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xdddddd'
+  # dim:
+  #   black:   '0x333333'
+  #   red:     '0xf2777a'
+  #   green:   '0x99cc99'
+  #   yellow:  '0xffcc66'
+  #   blue:    '0x6699cc'
+  #   magenta: '0xcc99cc'
+  #   cyan:    '0x66cccc'
+  #   white:   '0xdddddd'
 
 
 # Visual Bell
