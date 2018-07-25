@@ -3,6 +3,8 @@ attrs
 colorful
 ipython
 pre-commit
+pytest
+pytest-mock
 twine
 
 # Editor.

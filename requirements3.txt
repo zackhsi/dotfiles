@@ -14,6 +14,7 @@ appnope==0.1.0            # via ipython
 aspy.yaml==1.1.1          # via pre-commit
 astroid==1.5.3            # via pylint
 async-timeout==2.0.0      # via aiohttp
+atomicwrites==1.1.5       # via pytest
 attrs==18.1.0
 cached-property==1.4.3    # via pre-commit
 cachetools==2.1.0
@@ -48,6 +49,7 @@ markupsafe==1.0           # via jinja2
 marshmallow==2.15.3
 mccabe==0.6.1             # via flake8, pylint
 mistune==0.7.4
+more-itertools==4.2.0     # via pytest
 msgpack-python==0.4.8     # via neovim
 multidict==4.0.0          # via aiohttp, yarl
 mypy-extensions==0.3.0
@@ -58,22 +60,26 @@ parso==0.1.0              # via jedi
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
 pkginfo==1.4.1            # via twine
+pluggy==0.6.0             # via pytest
 pre-commit==1.10.2
 prompt-toolkit==1.0.15    # via ipython
 protobuf==3.5.2.post1     # via lyft-idl, lyft-requests
 psutil==5.4.0
 ptyprocess==0.5.2         # via pexpect
+py==1.5.4                 # via pytest
 pycodestyle==2.3.1        # via flake8
 pyflakes==1.6.0
 pygments==2.2.0           # via ipython
 pylint==1.8.1
+pytest-mock==1.10.0
+pytest==3.6.3
 pytz==2018.5              # via flask-restful
 pyyaml==3.12              # via aspy.yaml, pre-commit
 requests-toolbelt==0.8.0  # via twine
 requests==2.18.4          # via lyft-idl, lyft-ratelimit, lyft-requests, requests-toolbelt, twine
 setproctitle==1.1.10
 simplegeneric==0.8.1      # via ipython
-six==1.10.0               # via astroid, cfgv, flask-restful, lyft-idl, lyft-logging, lyft-requests, pre-commit, prompt-toolkit, protobuf, pylint, traitlets
+six==1.10.0               # via astroid, cfgv, flask-restful, lyft-idl, lyft-logging, lyft-requests, more-itertools, pre-commit, prompt-toolkit, protobuf, pylint, pytest, traitlets
 statsd==3.2.2             # via lyft-stats
 toml==0.9.4               # via pre-commit
 tqdm==4.19.2              # via twine
