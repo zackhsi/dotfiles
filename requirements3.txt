@@ -14,6 +14,7 @@ appnope==0.1.0            # via ipython
 aspy.yaml==1.1.1          # via pre-commit
 astroid==1.5.3            # via pylint
 async-timeout==2.0.0      # via aiohttp
+attrs==18.1.0
 cached-property==1.4.3    # via pre-commit
 cachetools==2.1.0
 certifi==2017.7.27.1      # via requests

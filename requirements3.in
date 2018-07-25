@@ -1,4 +1,5 @@
 aiohttp
+attrs
 ipython
 pre-commit
 twine
