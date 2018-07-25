@@ -80,7 +80,7 @@ export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
 export SHELLCHECK_OPTS="-e SC1091"
 
 # TERM
-export TERM=xterm-color
+export TERM=xterm-256color-italic
 
 # thefuck
 alias fk=fuck
