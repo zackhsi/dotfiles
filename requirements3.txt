@@ -21,6 +21,7 @@ certifi==2017.7.27.1      # via requests
 cfgv==1.1.0               # via pre-commit
 chardet==3.0.4            # via aiohttp, requests
 click==6.7                # via flask
+colorful==0.4.1
 decorator==4.1.2          # via ipython, traitlets
 flake8==3.5.0
 flask-restful==0.3.6
