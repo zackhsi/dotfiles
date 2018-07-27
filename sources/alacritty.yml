@@ -118,8 +118,8 @@ colors:
     red:     '0xff70ca'
     green:   '0x746f86'
     yellow:  '0x746f86'
-    blue:    '0x746f86'
-    magenta: '0xe67eff'
+    blue:    '0x746f86'  # Inactive vim pane/tab and X tab.
+    magenta: '0xe67eff'  # Unused?!
     cyan:    '0xada8c1'  # Comments, line numbers.
     white:   '0xffffff'  # Vim background.
 
