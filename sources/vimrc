@@ -1,5 +1,5 @@
 let mapleader = "\<Space>"         " Use space as leader
-nnoremap <Leader>v :source $MYVIMRC<CR>
+nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Legacy settings.
 if !has('nvim')
