@@ -2,6 +2,7 @@ aiohttp
 attrs
 colorful
 ipython
+pipenv
 pre-commit
 pytest
 pytest-mock
