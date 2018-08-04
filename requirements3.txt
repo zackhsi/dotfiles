@@ -94,5 +94,6 @@ virtualenv-clone==0.3.0   # via pipenv
 virtualenv==16.0.0        # via pipenv, pre-commit
 wcwidth==0.1.7            # via prompt-toolkit
 werkzeug==0.14.1          # via flask
+wheel==0.31.1
 wrapt==1.10.10            # via astroid
 yarl==1.0.0               # via aiohttp
