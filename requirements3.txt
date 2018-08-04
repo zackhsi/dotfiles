@@ -8,6 +8,7 @@
 
 -e file:///Users/zhsi/repos/lyft/python-lyft-public-api-lib
 -e file:///Users/zhsi/repos/lyft/python-lyft-stdlib
+-e file:///Users/zhsi/oss/prefab
 aiohttp==2.3.8
 aniso8601==3.0.2          # via flask-restful
 appnope==0.1.0            # via ipython

@@ -8,6 +8,8 @@ pytest
 pytest-mock
 twine
 
+-e /Users/zhsi/oss/prefab
+
 # Editor.
 flake8>=3.5.0
 isort
