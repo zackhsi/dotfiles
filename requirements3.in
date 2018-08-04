@@ -6,7 +6,7 @@ pipenv
 pre-commit
 pytest
 pytest-mock
-twine
+twine>=1.11
 wheel
 
 -e /Users/zhsi/oss/prefab

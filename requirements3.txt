@@ -61,7 +61,7 @@ parso==0.1.0              # via jedi
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
 pipenv==2018.7.1
-pkginfo==1.4.1            # via twine
+pkginfo==1.4.2            # via twine
 pluggy==0.6.0             # via pytest
 pre-commit==1.10.2
 prompt-toolkit==1.0.15    # via ipython
@@ -86,7 +86,7 @@ statsd==3.2.2             # via lyft-stats
 toml==0.9.4               # via pre-commit
 tqdm==4.19.2              # via twine
 traitlets==4.3.2          # via ipython
-twine==1.9.1
+twine==1.11.0
 typed-ast==1.1.0          # via mypy
 ujson==1.35
 urllib3==1.22             # via requests
