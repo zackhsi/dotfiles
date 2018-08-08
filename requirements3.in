@@ -4,8 +4,10 @@ colorful
 ipython
 pipenv
 pre-commit
+psycopg2
 pytest
 pytest-mock
+sqlalchemy
 twine>=1.11
 wheel
 
