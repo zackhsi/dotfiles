@@ -5,7 +5,6 @@ export SRC=$HOME/go/src/github.com/lyft
 
 # Devbox
 alias c=control
-export DOCKER_HOST="tcp://127.0.0.1:2375"
 
 # Directories
 alias cont="cd $SRC/containers"
