@@ -187,6 +187,12 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 Plug 'jiangmiao/auto-pairs'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Docker.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'ekalinin/Dockerfile.vim'
+autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-fugitive'
@@ -458,7 +464,6 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'bfontaine/Brewfile.vim'
 Plug 'burnettk/vim-angular'
 Plug 'cespare/vim-toml'
-Plug 'docker/docker', {'rtp': '/contrib/syntax/vim/'}
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
