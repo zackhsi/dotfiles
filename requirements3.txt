@@ -11,18 +11,20 @@
 -e file:///Users/zhsi/oss/prefab
 aiohttp==2.3.8
 aniso8601==3.0.2          # via flask-restful
+appdirs==1.4.3            # via black
 appnope==0.1.0            # via ipython
 aspy.yaml==1.1.1          # via pre-commit
 astroid==1.5.3            # via pylint
 async-timeout==2.0.0      # via aiohttp
 atomicwrites==1.1.5       # via pytest
 attrs==18.1.0
+black==18.6b4
 cached-property==1.4.3    # via pre-commit
 cachetools==2.1.0
 certifi==2017.7.27.1      # via pipenv, requests
 cfgv==1.1.0               # via pre-commit
 chardet==3.0.4            # via aiohttp, requests
-click==6.7                # via flask
+click==6.7                # via black, flask
 colorful==0.4.1
 decorator==4.1.2          # via ipython, traitlets
 flake8==3.5.0
@@ -85,7 +87,7 @@ simplegeneric==0.8.1      # via ipython
 six==1.10.0               # via astroid, cfgv, flask-restful, lyft-idl, lyft-logging, lyft-requests, more-itertools, pre-commit, prompt-toolkit, protobuf, pylint, pytest, traitlets
 sqlalchemy==1.2.10
 statsd==3.2.2             # via lyft-stats
-toml==0.9.4               # via pre-commit
+toml==0.9.4               # via black, pre-commit
 tqdm==4.19.2              # via twine
 traitlets==4.3.2          # via ipython
 twine==1.11.0
