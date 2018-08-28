@@ -192,7 +192,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ambv/black'
 " Run Black on save if file .black exists.
 if filereadable('.black')
-  autocmd BufWritePost *.py execute ':silent Black'
+  autocmd BufWritePre *.py execute ':silent Black'
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
