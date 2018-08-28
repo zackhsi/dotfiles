@@ -190,8 +190,10 @@ Plug 'jiangmiao/auto-pairs'
 " Black.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ambv/black'
-" Run Black on save.
-autocmd BufWritePost *.py execute ':silent Black'
+" Run Black on save if file .black exists.
+if filereadable('.black')
+  autocmd BufWritePost *.py execute ':silent Black'
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.

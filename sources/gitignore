@@ -4,6 +4,7 @@
 *.swp
 .*@neomake*
 .DS_Store
+.black
 .env
 .mypy_cache
 .pytest_cache
