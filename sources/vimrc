@@ -359,6 +359,9 @@ let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 
 Plug 'fisadev/vim-isort'
+if filereadable('.black')
+  autocmd BufWritePre *.py execute ':Isort'
+endif
 
 Plug 'davidhalter/jedi-vim'
 
