@@ -187,6 +187,13 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 Plug 'jiangmiao/auto-pairs'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Black.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'ambv/black'
+" Run Black on save.
+autocmd BufWritePost *.py execute ':silent Black'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ekalinin/Dockerfile.vim'
