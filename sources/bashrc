@@ -146,7 +146,7 @@ alias tst='tig status'
 stty dsusp undef  # Scroll up with <C-y> https://github.com/jonas/tig/issues/214.
 
 # Vim. Must be exported before FZF configuration.
-export BACKGROUND=dark
+export BACKGROUND=light
 
 # Load startup files in ~/.bashrc.d.
 for sh in "$HOME"/.bashrc.d/*.bash ; do

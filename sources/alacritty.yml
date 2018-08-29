@@ -90,7 +90,7 @@ render_timer: false
 custom_cursor_colors: false
 
 # Colors (Orbital)
-colors_orbital:
+colors:
   # Default colors
   primary:
     background: '0xffffff'  # Terminal background.
@@ -124,7 +124,7 @@ colors_orbital:
     white:   '0xffffff'  # Vim background.
 
 # Colors (One Dark)
-colors:
+colors_onedark:
   # Default colors
   primary:
     background: '0x002b36'  # Terminal background.
