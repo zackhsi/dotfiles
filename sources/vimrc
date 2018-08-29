@@ -22,12 +22,6 @@ set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set undofile
 set showcmd                        " show incomplete commands
-if $BACKGROUND == "light"
-  " rely on solarized underline
-else
-  set list                         " show whitespace
-  set listchars=tab:»·,trail:·
-endif
 
 set hlsearch                       " highlight what you search for
 set ic                             " case insensitive search
@@ -147,11 +141,7 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-if $BACKGROUND == "light"
-  let g:airline_theme                         = 'solarized'
-else
-  let g:airline_theme                         = 'onedark'
-endif
+let g:airline_theme                         = 'solarized'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
@@ -485,12 +475,18 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
+colorscheme solarized
 if $BACKGROUND == "light"
-  colorscheme solarized
+  set background=light
 else
-  colorscheme onedark
+  set background=dark
 endif
 
 " Italic comments.
 highlight Comment cterm=italic
-highlight LineNr ctermbg=15  " clear background for line numbers
+" clear background for line numbers
+if $BACKGROUND == "light"
+  highlight LineNr ctermbg=15
+else
+  highlight LineNr ctermbg=8
+endif
