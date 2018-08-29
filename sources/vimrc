@@ -82,8 +82,9 @@ autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-" Python 79 lines.
-autocmd Filetype python setlocal textwidth=79
+" Python 88 lines.
+autocmd Filetype python setlocal textwidth=88
+autocmd Filetype python setlocal colorcolumn=89
 
 " *.pyi stub files.
 autocmd BufNewFile,BufRead *.pyi setfiletype python
