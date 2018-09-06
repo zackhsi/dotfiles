@@ -150,7 +150,7 @@ colors:
     blue:    '0xa1a6a8'  # Vim text.
     magenta: '0x6c71c4'  # Unused?
     cyan:    '0x93a1a1'  # Airline background vim mode.
-    white:   '0xF9F9F9'  # Airline text.
+    white:   '0x282a36'  # Airline text.
 
 # Visual Bell
 #
