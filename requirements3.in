@@ -20,7 +20,7 @@ isort
 jedi>=0.11.0
 markdown2ctags
 mistune
-mypy
+mypy>=0.620
 mypy-extensions
 neovim
 psutil
