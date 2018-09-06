@@ -133,18 +133,18 @@ colors:
   # Normal colors
   normal:
     black:   '0x43454F'  # Current line, pane borders.
-    red:     '0xff5c57'
-    green:   '0x3fe27b'
-    yellow:  '0xf3f99d'
+    red:     '0xea706c'
+    green:   '0x6ecfa0'
+    yellow:  '0xedf2a4'
     blue:    '0x57c7ff'
-    magenta: '0xff6ac1'  # "todo's"
+    magenta: '0xa85de2'  # "todo's"
     cyan:    '0x9aedfe'
     white:   '0xeee8d5'  # Airline text.
 
   # Bright colors
   bright:
     black:   '0x282a36'  # Vim background.
-    red:     '0xff5c57'  # Python imports.
+    red:     '0xff6ac1'  # Python imports.
     green:   '0x586e75'  # Comments, line numbers
     yellow:  '0x848688'  # Airline background inactive.
     blue:    '0xa1a6a8'  # Vim text.
