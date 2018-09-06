@@ -127,30 +127,30 @@ colors_off:
 colors:
   # Default colors
   primary:
-    background: '0x212731'  # Terminal background.
-    foreground: '0x88999a'  # Terminal text.
+    background: '0x282a36'  # Terminal background.
+    foreground: '0xa1a6a8'  # Terminal text.
 
   # Normal colors
   normal:
-    black:   '0x2b3340'  # Current line, pane borders.
-    red:     '0xe06c75'
-    green:   '0x90c36b'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'  # "todo's"
-    cyan:    '0x56b6c2'
+    black:   '0x43454F'  # Current line, pane borders.
+    red:     '0xff5c57'
+    green:   '0x3fe27b'
+    yellow:  '0xf3f99d'
+    blue:    '0x57c7ff'
+    magenta: '0xff6ac1'  # "todo's"
+    cyan:    '0x9aedfe'
     white:   '0xeee8d5'  # Airline text.
 
   # Bright colors
   bright:
-    black:   '0x212731'  # Vim background.
-    red:     '0xcb4b16'  # Python imports.
+    black:   '0x282a36'  # Vim background.
+    red:     '0xff5c57'  # Python imports.
     green:   '0x586e75'  # Comments, line numbers
-    yellow:  '0x657b83'  # Airline background 1.
-    blue:    '0x88999a'  # Vim text.
+    yellow:  '0x848688'  # Airline background inactive.
+    blue:    '0xa1a6a8'  # Vim text.
     magenta: '0x6c71c4'  # Unused?
-    cyan:    '0x93a1a1'  # Airline background 2.
-    white:   '0xfdf6e3'  # Airline text.
+    cyan:    '0x93a1a1'  # Airline background vim mode.
+    white:   '0xF9F9F9'  # Airline text.
 
 # Visual Bell
 #

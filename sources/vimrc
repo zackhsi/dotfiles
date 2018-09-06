@@ -144,7 +144,7 @@ Plug 'vim-airline/vim-airline-themes'
 if $BACKGROUND == "light"
   let g:airline_theme                         = 'solarized'
 else
-  let g:airline_theme                         = 'onedark'
+  let g:airline_theme                         = 'solarized'
 endif
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
