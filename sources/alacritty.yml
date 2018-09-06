@@ -90,7 +90,7 @@ render_timer: false
 custom_cursor_colors: false
 
 # Colors (Orbital)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0xffffff'  # Terminal background.
@@ -123,8 +123,8 @@ colors:
     cyan:    '0xada8c1'  # Comments, line numbers.
     white:   '0xffffff'  # Vim background.
 
-# Colors (One Dark)
-colors_onedark:
+# Colors (Orbital Dark)
+colors:
   # Default colors
   primary:
     background: '0x002b36'  # Terminal background.

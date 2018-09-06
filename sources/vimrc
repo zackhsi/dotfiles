@@ -141,7 +141,11 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme                         = 'solarized'
+if $BACKGROUND == "light"
+  let g:airline_theme                         = 'solarized'
+else
+  let g:airline_theme                         = 'onedark'
+endif
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
