@@ -128,7 +128,7 @@ colors:
   # Default colors
   primary:
     background: '0x282a36'  # Terminal background.
-    foreground: '0xc7cacc'  # Terminal text.
+    foreground: '0xa8bccc'  # Terminal text.
 
   # Normal colors
   normal:
@@ -147,10 +147,10 @@ colors:
     red:     '0xff6ac1'  # Python imports.
     green:   '0x586e75'  # Comments, line numbers
     yellow:  '0x848688'  # Airline background inactive.
-    blue:    '0xc7cacc'  # Vim text.
+    blue:    '0xa8bccc'  # Vim text.
     magenta: '0x6c71c4'  # Unused?
     cyan:    '0x93a1a1'  # Airline background vim mode.
-    white:   '0xc7cacc'  # Airline text, iPython text.
+    white:   '0xa8bccc'  # Airline text, iPython text.
 
 # Visual Bell
 #
