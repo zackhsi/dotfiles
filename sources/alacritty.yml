@@ -132,25 +132,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x43454F'  # Current line, pane borders.
+    black:   '0x353847'  # Current line, color column.
     red:     '0xef7d74'
     green:   '0x87d9aa'
     yellow:  '0xd0d590'
     blue:    '0x57c7ff'
     magenta: '0xba79ec'  # "todo's"
     cyan:    '0x9aedfe'
-    white:   '0xeee8d5'  # Airline text.
+    white:   '0xa8bccc'  # Airline git branch.
 
   # Bright colors
   bright:
     black:   '0x282a36'  # Vim background.
     red:     '0xff6ac1'  # Python imports.
     green:   '0x586e75'  # Comments, line numbers
-    yellow:  '0x848688'  # Airline background inactive.
+    yellow:  '0x4c4f66'  # Vim pane border.
     blue:    '0xa8bccc'  # Vim text.
     magenta: '0x6c71c4'  # Unused?
     cyan:    '0x93a1a1'  # Airline background vim mode.
-    white:   '0xa8bccc'  # Airline text, iPython text.
+    white:   '0x282a36'  # Airline text, iPython text.
 
 # Visual Bell
 #
