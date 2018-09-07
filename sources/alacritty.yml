@@ -133,8 +133,8 @@ colors:
   # Normal colors
   normal:
     black:   '0x43454F'  # Current line, pane borders.
-    red:     '0xef4d48'
-    green:   '0x41d9aa'
+    red:     '0xef7d74'
+    green:   '0x87d9aa'
     yellow:  '0xedf2a4'
     blue:    '0x57c7ff'
     magenta: '0xa85de2'  # "todo's"
