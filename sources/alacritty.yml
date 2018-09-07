@@ -135,9 +135,9 @@ colors:
     black:   '0x43454F'  # Current line, pane borders.
     red:     '0xef7d74'
     green:   '0x87d9aa'
-    yellow:  '0xedf2a4'
+    yellow:  '0xd0d590'
     blue:    '0x57c7ff'
-    magenta: '0xa85de2'  # "todo's"
+    magenta: '0xba79ec'  # "todo's"
     cyan:    '0x9aedfe'
     white:   '0xeee8d5'  # Airline text.
 
