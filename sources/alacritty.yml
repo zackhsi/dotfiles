@@ -134,7 +134,7 @@ colors:
   normal:
     black:   '0x404040'  # Current line, color column.
     red:     '0xff967c'
-    green:   '0x80ffb6'
+    green:   '0xafffb6'
     yellow:  '0xfff680'
     blue:    '0x80c9ff'
     magenta: '0xf680ff'  # "todo's"
