@@ -145,7 +145,7 @@ colors:
   bright:
     black:   '0x333333'  # Vim background.
     red:     '0xff80c9'  # Python imports.
-    green:   '0xa6a6a6'  # Comments, line numbers
+    green:   '0x8c8c8c'  # Comments, line numbers
     yellow:  '0x777777'  # Vim pane border.
     blue:    '0xdedede'  # Vim text.
     magenta: '0xff0000'  # Unused?
