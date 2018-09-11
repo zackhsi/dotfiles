@@ -1,32 +1,26 @@
-aiohttp
-attrs
-colorful
-ipython
-pipenv
-pre-commit
-psycopg2
-pytest
-pytest-mock
-sqlalchemy
-twine>=1.11
-wheel
-
--e /Users/zhsi/oss/prefab
+aiohttp>=3.4.4
+attrs>=18.2.0
+ipython>=6.5.0
+pipenv>=2018.7.1
+pre-commit>=1.11.0
+pytest>=3.8.0
+pytest-mock>=1.10.0
+twine>=1.11.0
+wheel>=0.31.1
 
 # Editor.
-black
+black>=18.6b4
 flake8>=3.5.0
-isort
-jedi>=0.11.0
-markdown2ctags
-mistune
+isort>=4.3.4
+jedi>=0.12.1
+markdown2ctags>=0.2.2
+mistune>=0.8.3
 mypy>=0.620
-mypy-extensions
-neovim
-psutil
-pyflakes>=1.6.0
-pylint>=1.8.1
-setproctitle
+mypy-extensions>=0.4.1
+neovim>=0.2.6
+psutil>=5.4.7
+pyflakes
+setproctitle>=1.1.10
 
 # Lyft.
 -e /Users/zhsi/repos/lyft/python-lyft-public-api-lib
