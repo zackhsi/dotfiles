@@ -138,7 +138,7 @@ colors:
     yellow:  '0xfff680'
     blue:    '0x80c9ff'
     magenta: '0xf680ff'  # "todo's"
-    cyan:    '0x9be6e6'
+    cyan:    '0xb3f8ff'
     white:   '0xdedede'  # Airline git branch.
 
   # Bright colors
