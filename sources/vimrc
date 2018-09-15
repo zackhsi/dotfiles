@@ -177,6 +177,11 @@ let g:ale_fixers['typescriptreact'] = ['prettier']
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --tab-width 4'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Base16.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'chriskempson/base16-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'jiangmiao/auto-pairs'
@@ -506,10 +511,11 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
-colorscheme solarized
 if $BACKGROUND == "light"
+  colorscheme solarized
   set background=light
 else
+  colorscheme base16-default-dark
   set background=dark
 endif
 
