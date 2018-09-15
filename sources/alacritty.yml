@@ -123,8 +123,37 @@ colors_off:
     cyan:    '0xada8c1'  # Comments, line numbers.
     white:   '0xffffff'  # Vim background.
 
-# Colors (Orbital Dark)
+# Colors (Base16)
 colors:
+  # Default colors
+  primary:
+    background: '0x363636'  # Terminal background.
+    foreground: '0xdedede'  # Terminal text.
+
+  # Normal colors
+  normal:
+    black:   '0x404040'  # Current line, color column.
+    red:     '0xff967c'
+    green:   '0xafffb6'
+    yellow:  '0xfff680'
+    blue:    '0x99d4ff'
+    magenta: '0xf78fff'  # "todo's"
+    cyan:    '0xb3f8ff'
+    white:   '0xdedede'  # Airline git branch.
+
+  # Bright colors
+  bright:
+    black:   '0x363636'  # Vim background.
+    red:     '0xff80bd'  # Python imports.
+    green:   '0x8c8c8c'  # Comments, line numbers
+    yellow:  '0x777777'  # Vim pane border.
+    blue:    '0xdedede'  # Vim text.
+    magenta: '0xff0000'  # Unused?
+    cyan:    '0x808080'  # Airline background vim mode.
+    white:   '0x363636'  # Airline text, iPython text.
+
+# Colors (Orbital Dark)
+colors_off:
   # Default colors
   primary:
     background: '0x363636'  # Terminal background.
