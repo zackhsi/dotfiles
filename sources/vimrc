@@ -333,9 +333,10 @@ Plug 'autozimu/LanguageClient-neovim', {
   \ 'branch': 'next',
   \ 'do': 'bash install.sh',
   \ }
-" let g:LanguageClient_serverCommands = {
-"   \ 'typescript': ['javascript-typescript-stdio']
-"   \ }
+
+let g:LanguageClient_serverCommands = {
+  \ 'ruby': [ 'solargraph',  'stdio' ],
+  \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.
