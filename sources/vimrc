@@ -236,9 +236,6 @@ vnoremap <silent> <leader>a y:silent Ag -sw <C-r>"<CR>
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
 
-" Search lines in buffers by using leader + l
-noremap <silent> <leader>l :silent BLines '<C-r>=expand('<cword>')<CR><CR>
-
 " Search all tags by using leader + T
 noremap <silent> <leader>T :silent Tags<CR>
 
@@ -336,6 +333,11 @@ Plug 'autozimu/LanguageClient-neovim', {
 let g:LanguageClient_serverCommands = {
   \ 'ruby': [ 'solargraph',  'stdio' ],
   \ }
+
+nnoremap <silent> <leader>ld :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <leader>lk :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> <leader>ln :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> <leader>lr :call LanguageClient#textDocument_references()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.
