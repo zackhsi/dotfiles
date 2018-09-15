@@ -46,7 +46,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  solargraph
+  rubocop (~> 0.59.1)
+  solargraph (~> 0.27.1)
 
 BUNDLED WITH
    1.16.4
