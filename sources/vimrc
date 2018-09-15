@@ -180,6 +180,19 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 " Base16.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'chriskempson/base16-vim'
+function! s:base16_customize() abort
+  " Bright red imports.
+  call Base16hi("pythonInclude", "", "", g:base16_cterm09, "", "", "")
+endfunction
+
+augroup on_change_colorschema
+  autocmd!
+  autocmd ColorScheme * call s:base16_customize()
+augroup END
+
+map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.
@@ -525,5 +538,5 @@ highlight Comment cterm=italic
 if $BACKGROUND == "light"
   highlight LineNr ctermbg=15
 else
-  highlight LineNr ctermbg=8
+  highlight LineNr ctermbg=0
 endif

@@ -132,7 +132,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x404040'  # Current line, color column.
+    black:   '0x363636'  # Vim background.
     red:     '0xff967c'
     green:   '0xafffb6'
     yellow:  '0xfff680'
@@ -143,14 +143,14 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x363636'  # Vim background.
-    red:     '0xff80bd'  # Python imports.
-    green:   '0x8c8c8c'  # Comments, line numbers
-    yellow:  '0x777777'  # Vim pane border.
-    blue:    '0xdedede'  # Vim text.
+    black:   '0x8c8c8c'  # Comments, line number background.
+    red:     '0xff80bd'  # Parens, ints.
+    green:   '0x404040'  # Current line, color column.
+    yellow:  '0x808080'  # Airline background vim mode.
+    blue:    '0xff0000'  # Unused?
     magenta: '0xff0000'  # Unused?
-    cyan:    '0x808080'  # Airline background vim mode.
-    white:   '0x363636'  # Airline text, iPython text.
+    cyan:    '0xb3f8ff'  # Curly braces.
+    white:   '0xb3b3b3'  # Curly braces.
 
 # Colors (Orbital Dark)
 colors_off:
