@@ -58,7 +58,7 @@ au VimLeave * set guicursor=a:ver1-blinkon0
 
 " Copy selection to system clipboard.
 vnoremap <Leader>y "+y
- 
+
 " Copy current filepath to systen clipboard.
 nnoremap <Leader>f :let @+ = expand("%")<CR>
 
@@ -236,9 +236,6 @@ vnoremap <silent> <leader>a y:silent Ag -sw <C-r>"<CR>
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
 
-" Search lines in buffers by using leader + l
-noremap <silent> <leader>l :silent BLines '<C-r>=expand('<cword>')<CR><CR>
-
 " Search all tags by using leader + T
 noremap <silent> <leader>T :silent Tags<CR>
 
@@ -308,14 +305,39 @@ Plug 'terryma/vim-multiple-cursors'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NCM.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'roxma/nvim-completion-manager'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 
-" Close menu _and insert newline_ on return.
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+" Enable ncm2 for all buffers.
+autocmd BufEnter * call ncm2#enable_for_buffer()
 
-" Use tab to cycle menu.
+" :help Ncm2PopupOpen for more information.
+set completeopt=noinsert,menuone,noselect
+
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+
+" Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" LanguageServer client for NeoVim.
+Plug 'autozimu/LanguageClient-neovim', {
+  \ 'branch': 'next',
+  \ 'do': 'bash install.sh',
+  \ }
+
+let g:LanguageClient_serverCommands = {
+  \ 'ruby': [ 'solargraph',  'stdio' ],
+  \ }
+
+nnoremap <silent> <leader>ld :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <leader>lk :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> <leader>ln :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> <leader>lr :call LanguageClient#textDocument_references()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.
@@ -363,6 +385,12 @@ Plug 'davidhalter/jedi-vim'
 " Repeat.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-repeat'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ruby.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-endwise'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Rust.

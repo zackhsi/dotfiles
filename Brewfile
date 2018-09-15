@@ -67,6 +67,9 @@ brew 'sqlite3'
 brew 'xz'
 brew 'zlib'
 
+# Rbenv.
+brew 'rbenv'
+
 # terminal-notifier
 brew 'terminal-notifier'
 
