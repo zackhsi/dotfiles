@@ -177,6 +177,29 @@ let g:ale_fixers['typescriptreact'] = ['prettier']
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --tab-width 4'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Base16.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'chriskempson/base16-vim'
+function! s:base16_customize() abort
+  call Base16hi("pythonInclude", "", "", "09", "", "", "")
+  call Base16hi("pythonStatement", "", "", "02", "", "", "")
+  call Base16hi("pythonDocstring", "", "", "06", "", "", "")
+  call Base16hi("pythonExClass", "", "", "03", "", "", "")
+  call Base16hi("pythonOperator", "", "", "01", "", "", "")
+  call Base16hi("pythonConditional", "", "", "04", "", "", "")
+endfunction
+
+augroup on_change_colorschema
+  autocmd!
+  autocmd ColorScheme * call s:base16_customize()
+augroup END
+
+" Print highlight group under cursor with leader + h.
+map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'jiangmiao/auto-pairs'
@@ -506,10 +529,11 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
-colorscheme solarized
 if $BACKGROUND == "light"
+  colorscheme solarized
   set background=light
 else
+  colorscheme base16-default-dark
   set background=dark
 endif
 
@@ -519,5 +543,5 @@ highlight Comment cterm=italic
 if $BACKGROUND == "light"
   highlight LineNr ctermbg=15
 else
-  highlight LineNr ctermbg=8
+  highlight LineNr ctermbg=0
 endif
