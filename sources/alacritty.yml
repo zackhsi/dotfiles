@@ -136,15 +136,15 @@ colors:
     red:     '0xff967c'
     green:   '0xafffb6'
     yellow:  '0xfff680'
-    blue:    '0x80c9ff'
-    magenta: '0xf680ff'  # "todo's"
+    blue:    '0x99d4ff'
+    magenta: '0xf78fff'  # "todo's"
     cyan:    '0xb3f8ff'
     white:   '0xdedede'  # Airline git branch.
 
   # Bright colors
   bright:
     black:   '0x363636'  # Vim background.
-    red:     '0xff80c9'  # Python imports.
+    red:     '0xff80bd'  # Python imports.
     green:   '0x8c8c8c'  # Comments, line numbers
     yellow:  '0x777777'  # Vim pane border.
     blue:    '0xdedede'  # Vim text.
