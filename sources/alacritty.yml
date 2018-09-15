@@ -127,7 +127,7 @@ colors_off:
 colors:
   # Default colors
   primary:
-    background: '0x333333'  # Terminal background.
+    background: '0x363636'  # Terminal background.
     foreground: '0xdedede'  # Terminal text.
 
   # Normal colors
@@ -143,14 +143,14 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x333333'  # Vim background.
+    black:   '0x363636'  # Vim background.
     red:     '0xff80c9'  # Python imports.
     green:   '0x8c8c8c'  # Comments, line numbers
     yellow:  '0x777777'  # Vim pane border.
     blue:    '0xdedede'  # Vim text.
     magenta: '0xff0000'  # Unused?
     cyan:    '0x808080'  # Airline background vim mode.
-    white:   '0x333333'  # Airline text, iPython text.
+    white:   '0x363636'  # Airline text, iPython text.
 
 # Visual Bell
 #
