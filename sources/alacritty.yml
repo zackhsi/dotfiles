@@ -90,7 +90,7 @@ render_timer: false
 custom_cursor_colors: false
 
 # Colors (base16-orbital-light)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0xffffff'  # Terminal background.
@@ -119,7 +119,7 @@ colors:
     white:   '0xff0000'  # Unused.
 
 # Colors (base16-orbital-dark)
-colors_off:
+colors:
   # Default colors
   primary:
     background: '0x363636'  # Terminal background.

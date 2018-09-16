@@ -193,8 +193,8 @@ function! s:base16_customize() abort
   call Base16hi("vimComment", "", "", "08", "", "italic", "")
   call Base16hi("vimMapMod", "", "", "06", "", "", "")
   call Base16hi("vimBracket", "", "", "06", "", "", "")
-  " If light?
-  call Base16hi("vimCommand", "", "", "03", "", "", "")
+  call Base16hi("vimCommand", "", "", "01", "", "", "")
+  call Base16hi("vimVar", "", "", "06", "", "", "")
 endfunction
 
 augroup on_change_colorschema
