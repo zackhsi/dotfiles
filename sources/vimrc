@@ -141,11 +141,7 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-if $BACKGROUND == "light"
-  let g:airline_theme                         = 'solarized'
-else
-  let g:airline_theme                         = 'base16'
-endif
+let g:airline_theme                         = 'base16'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
@@ -190,6 +186,15 @@ function! s:base16_customize() abort
   call Base16hi("pythonExClass", "", "", "03", "", "", "")
   call Base16hi("pythonOperator", "", "", "01", "", "", "")
   call Base16hi("pythonConditional", "", "", "05", "", "", "")
+  call Base16hi("pythonComment", "", "", "08", "", "italic", "")
+
+  call Base16hi("yamlComment", "", "", "08", "", "italic", "")
+
+  call Base16hi("vimComment", "", "", "08", "", "italic", "")
+  call Base16hi("vimMapMod", "", "", "06", "", "", "")
+  call Base16hi("vimBracket", "", "", "06", "", "", "")
+  " If light?
+  call Base16hi("vimCommand", "", "", "03", "", "", "")
 endfunction
 
 augroup on_change_colorschema
@@ -533,7 +538,7 @@ Plug 'saltstack/salt-vim'
 call plug#end()
 
 if $BACKGROUND == "light"
-  colorscheme solarized
+  colorscheme base16-default-light
   set background=light
 else
   colorscheme base16-default-dark
@@ -543,8 +548,4 @@ endif
 " Italic comments.
 highlight Comment cterm=italic
 " clear background for line numbers
-if $BACKGROUND == "light"
-  highlight LineNr ctermbg=15
-else
-  highlight LineNr ctermbg=0
-endif
+highlight LineNr ctermbg=0
