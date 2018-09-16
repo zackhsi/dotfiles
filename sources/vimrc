@@ -165,6 +165,9 @@ let g:ale_linters = {}
 let g:ale_linter_aliases = {}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
+let g:ale_set_highlights = 0
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
 
 " Python.
 let g:ale_python_mypy_options = '--ignore-missing-imports'
