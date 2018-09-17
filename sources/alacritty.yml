@@ -90,36 +90,36 @@ render_timer: false
 custom_cursor_colors: false
 
 # Colors (base16-orbital-light)
-colors_off:
+colors:
   # Default colors
   primary:
-    background: '0xffffff'  # Terminal background.
-    foreground: '0x746f86'  # Terminal text
+    background: '0xf7f8f9'  # Terminal background.
+    foreground: '0x333333'  # Terminal text
 
   # Normal colors
   normal:
-    black:   '0xffffff'  # Vim background.
-    red:     '0xff683f'
-    green:   '0x38c271'
-    yellow:  '0xe89b00'
-    blue:    '0x25b7f2'
-    magenta: '0xe67eff'
+    black:   '0xf7f8f9'  # Vim background.
+    red:     '0xdd1144'
+    green:   '0x24b47e'
+    yellow:  '0xffae54'
+    blue:    '0x2191ef'
+    magenta: '0x6772e5'
     cyan:    '0x00bebf'
-    white:   '0x746f86'  # Vim text.
+    white:   '0x333333'  # Vim text.
 
   # Bright colors
   bright:
-    black:   '0xada8c1'  # Vim line numbers.
-    red:     '0xff80bd'  # Unused.
-    green:   '0xf5f5f5'  # Current line, color column.
-    yellow:  '0xe6e6e6'  # Vim pane borders, visual selection.
+    black:   '0x91a2b0'  # Vim line numbers, comments.
+    red:     '0xfa755a'
+    green:   '0xdfe3e6'  # Current line, color column.
+    yellow:  '0xbbc3ce'  # Vim pane borders, visual selection.
     blue:    '0xff0000'  # Unused.
     magenta: '0x00ff00'  # Unused.
     cyan:    '0x00bebf'  # Yaml escape.
     white:   '0xff0000'  # Unused.
 
 # Colors (base16-orbital-dark)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0x363636'  # Terminal background.

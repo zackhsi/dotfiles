@@ -141,7 +141,7 @@ call plug#begin('~/.vim/plugged')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme                         = 'base16'
+let g:airline_theme                           = 'base16'
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
@@ -177,11 +177,18 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'chriskempson/base16-vim'
 function! s:base16_customize() abort
-  call Base16hi("SpellCap",   "", "", "03", "00", "", "")
-  call Base16hi("ALEWarningSign",   "", "", "03", "00", "", "")
-  call Base16hi("SpellBad",   "", "", "01", "00", "", "")
-  call Base16hi("ALEErrorSign",   "", "", "01", "00", "", "")
+  " Ale.
+  call Base16hi("SpellCap", "", "", "03", "00", "", "")
+  call Base16hi("ALEWarningSign", "", "", "03", "00", "", "")
+  call Base16hi("SpellBad", "", "", "01", "00", "", "")
+  call Base16hi("ALEErrorSign", "", "", "01", "00", "", "")
 
+  " Markdown.
+  call Base16hi("markdownH1", "", "", "05", "00", "bold", "")
+  call Base16hi("markdownH2", "", "", "04", "00", "bold", "")
+  call Base16hi("markdownHeadingRule", "", "", "09", "00", "bold", "")
+
+  " Python.
   call Base16hi("pythonInclude", "", "", "09", "", "", "")
   call Base16hi("pythonStatement", "", "", "02", "", "", "")
   call Base16hi("pythonDocstring", "", "", "06", "", "", "")
@@ -190,13 +197,15 @@ function! s:base16_customize() abort
   call Base16hi("pythonConditional", "", "", "05", "", "", "")
   call Base16hi("pythonComment", "", "", "08", "", "italic", "")
 
-  call Base16hi("yamlComment", "", "", "08", "", "italic", "")
-
+  " Vim.
   call Base16hi("vimComment", "", "", "08", "", "italic", "")
   call Base16hi("vimMapMod", "", "", "06", "", "", "")
   call Base16hi("vimBracket", "", "", "06", "", "", "")
   call Base16hi("vimCommand", "", "", "01", "", "", "")
   call Base16hi("vimVar", "", "", "06", "", "", "")
+
+  " Yaml.
+  call Base16hi("yamlComment", "", "", "08", "", "italic", "")
 endfunction
 
 augroup on_change_colorschema
