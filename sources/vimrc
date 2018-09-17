@@ -297,7 +297,6 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 " Git gutter.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'airblade/vim-gitgutter'
-highlight clear SignColumn
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Golang.
@@ -558,3 +557,8 @@ endif
 highlight Comment cterm=italic
 " clear background for line numbers
 highlight LineNr ctermbg=0
+" Gitgutter
+highlight GitGutterAdd ctermbg=0
+highlight GitGutterChange ctermbg=0
+highlight GitGutterDelete ctermbg=0
+highlight GitGutterChangeDelete ctermbg=0
