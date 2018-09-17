@@ -141,7 +141,7 @@ colors:
     black:   '0x8c8c8c'  # Comments, line number background.
     red:     '0xff80bd'  # Parens, ints.
     green:   '0x404040'  # Current line, color column.
-    yellow:  '0x808080'  # Airline background vim mode.
+    yellow:  '0x595959'  # Airline background vim mode, visual selection.
     blue:    '0xff0000'  # Unused.
     magenta: '0xff0000'  # Unused.
     cyan:    '0xb3f8ff'  # Curly braces.
