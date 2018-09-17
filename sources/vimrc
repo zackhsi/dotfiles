@@ -161,9 +161,6 @@ let g:ale_linters = {}
 let g:ale_linter_aliases = {}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
-let g:ale_set_highlights = 0
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
 
 " Python.
 let g:ale_python_mypy_options = '--ignore-missing-imports'
@@ -180,6 +177,11 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'chriskempson/base16-vim'
 function! s:base16_customize() abort
+  call Base16hi("SpellCap",   "", "", "03", "00", "", "")
+  call Base16hi("ALEWarningSign",   "", "", "03", "00", "", "")
+  call Base16hi("SpellBad",   "", "", "01", "00", "", "")
+  call Base16hi("ALEErrorSign",   "", "", "01", "00", "", "")
+
   call Base16hi("pythonInclude", "", "", "09", "", "", "")
   call Base16hi("pythonStatement", "", "", "02", "", "", "")
   call Base16hi("pythonDocstring", "", "", "06", "", "", "")
