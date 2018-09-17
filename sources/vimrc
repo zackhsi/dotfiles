@@ -183,6 +183,9 @@ function! s:base16_customize() abort
   call Base16hi("SpellBad", "", "", "01", "00", "", "")
   call Base16hi("ALEErrorSign", "", "", "01", "00", "", "")
 
+  " Bash.
+  call Base16hi("shComment", "", "", "08", "", "italic", "")
+
   " Markdown.
   call Base16hi("markdownH1", "", "", "05", "00", "bold", "")
   call Base16hi("markdownH2", "", "", "04", "00", "bold", "")
