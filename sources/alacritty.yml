@@ -101,10 +101,10 @@ colors:
     black:   '0xf7f8f9'  # Vim background.
     red:     '0xdd1144'
     green:   '0x24b47e'
-    yellow:  '0xffae54'
+    yellow:  '0xff921a'
     blue:    '0x2191ef'
     magenta: '0x6772e5'
-    cyan:    '0x00bebf'
+    cyan:    '0x00b2b3'
     white:   '0x333333'  # Vim text.
 
   # Bright colors
