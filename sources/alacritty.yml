@@ -129,9 +129,9 @@ colors:
   normal:
     black:   '0x363636'  # Vim background.
     red:     '0xff967c'
-    green:   '0x74ebb5'
+    green:   '0x8ae5bf'
     yellow:  '0xfff680'
-    blue:    '0x99d4ff'
+    blue:    '0x47c2eb'
     magenta: '0xf78fff'  # "todo's"
     cyan:    '0xb3f8ff'
     white:   '0xdedede'  # Airline git branch.
