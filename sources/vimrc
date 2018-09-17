@@ -192,9 +192,9 @@ function! s:base16_customize() abort
   call Base16hi("markdownHeadingRule", "", "", "09", "00", "bold", "")
 
   " Python.
-  call Base16hi("pythonInclude", "", "", "09", "", "", "")
+  call Base16hi("pythonInclude", "", "", "09", "", "italic", "")
   call Base16hi("pythonStatement", "", "", "02", "", "", "")
-  call Base16hi("pythonDocstring", "", "", "06", "", "", "")
+  call Base16hi("pythonDocstring", "", "", "06", "", "italic", "")
   call Base16hi("pythonExClass", "", "", "03", "", "", "")
   call Base16hi("pythonOperator", "", "", "01", "", "", "")
   call Base16hi("pythonConditional", "", "", "05", "", "", "")
