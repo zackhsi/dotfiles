@@ -99,7 +99,7 @@ colors:
   # Normal colors
   normal:
     black:   '0xf7f8f9'  # Vim background.
-    red:     '0xdd1144'
+    red:     '0xdd2c67'
     green:   '0x24b47e'
     yellow:  '0xff921a'
     blue:    '0x2191ef'
@@ -113,10 +113,10 @@ colors:
     red:     '0xfa755a'
     green:   '0xdfe3e6'  # Current line, color column.
     yellow:  '0xbbc3ce'  # Vim pane borders, visual selection.
-    blue:    '0xff0000'  # Unused.
-    magenta: '0x00ff00'  # Unused.
+    blue:    '0x000000'  # Unused.
+    magenta: '0x000000'  # Unused.
     cyan:    '0x00bebf'  # Yaml escape.
-    white:   '0xff0000'  # Unused.
+    white:   '0x000000'  # Unused.
 
 # Colors (base16-orbital-dark)
 colors_off:
