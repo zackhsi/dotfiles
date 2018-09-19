@@ -101,7 +101,7 @@ colors:
     black:   '0xf7f8f9'  # Vim background.
     red:     '0xdd2c67'
     green:   '0x24b47e'
-    yellow:  '0xff921a'
+    yellow:  '0xef9d43'
     blue:    '0x2191ef'
     magenta: '0x6772e5'
     cyan:    '0x00b2b3'
