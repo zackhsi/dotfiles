@@ -162,9 +162,6 @@ let g:ale_linter_aliases = {}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
 
-" Python.
-let g:ale_python_mypy_options = '--ignore-missing-imports'
-
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
