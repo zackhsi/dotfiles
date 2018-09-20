@@ -545,6 +545,8 @@ endif
 
 " Italic comments.
 highlight Comment cterm=italic
+" Bold title.
+highlight Title cterm=bold
 " clear background for line numbers
 highlight LineNr ctermbg=0
 " Gitgutter
