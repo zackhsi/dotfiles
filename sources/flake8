@@ -1,5 +1,5 @@
 [flake8]
-ignore = E402
+ignore = E402,W503
 format = default
 max-line-length = 79
 builtins = __salt__,__opts__,__context__,__grains__,__env__,__states__
