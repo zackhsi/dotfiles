@@ -175,16 +175,36 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 Plug 'chriskempson/base16-vim'
 
 function! s:base16_customize() abort
+  let l:black = "00"
+  let l:red =  "01"
+  let l:green =  "02"
+  let l:yellow = "03"
+  let l:blue =    "04"
+  let l:magenta = "05"
+  let l:cyan =    "06"
+  let l:white =  "07"
+  let l:bright_black = "08"
+  let l:bright_red =  "09"
+  let l:bright_green =  "10"
+  let l:bright_yellow = "11"
+  let l:bright_blue =    "12"
+  let l:bright_magenta = "13"
+  let l:bright_cyan =    "14"
+  let l:bright_white =  "15"
+
   " Ale.
-  call Base16hi("SpellCap", "", "", "03", "00", "", "")
-  call Base16hi("ALEWarningSign", "", "", "03", "00", "", "")
-  call Base16hi("SpellBad", "", "", "01", "00", "", "")
-  call Base16hi("ALEErrorSign", "", "", "01", "00", "", "")
+  call Base16hi("SpellCap", "", "", yellow, "00", "", "")
+  call Base16hi("ALEWarningSign", "", "", yellow, "00", "", "")
+  call Base16hi("SpellBad", "", "", red, "00", "", "")
+  call Base16hi("ALEErrorSign", "", "", red, "00", "", "")
+
+  " Jinja.
+  call Base16hi("jinjaTagDelim", "", "", blue, "", "", "")
 
   " Python.
-  call Base16hi("pythonInclude", "", "", "09", "", "italic", "")
-  call Base16hi("pythonDocstring", "", "", "06", "", "italic", "")
-  call Base16hi("pythonOperator", "", "", "01", "", "", "")
+  call Base16hi("pythonInclude", "", "", bright_red, "", "italic", "")
+  call Base16hi("pythonDocstring", "", "", cyan, "", "italic", "")
+  call Base16hi("pythonOperator", "", "", red, "", "", "")
 endfunction
 
 augroup on_change_colorschema
