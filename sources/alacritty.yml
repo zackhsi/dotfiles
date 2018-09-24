@@ -134,8 +134,8 @@ colors:
   bright:
     black:   '0x91a2b0'  # Vim line numbers, comments.
     red:     '0xfa755a'
-    green:   '0xdfe3e6'  # Current line, color column.
-    yellow:  '0xbbc3ce'  # Vim pane borders, visual selection.
+    green:   '0xe8edf0'  # Current line, color column.
+    yellow:  '0xccd4e0'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.
     cyan:    '0x0059b3'  # Special chars (YAML escape).
