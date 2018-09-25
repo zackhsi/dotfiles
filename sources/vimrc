@@ -188,6 +188,9 @@ function! s:base16_customize() abort
   " Jinja.
   call Base16hi("jinjaTagDelim", "", "", blue, "", "", "")
 
+  " NERDTree.
+  call Base16hi("NERDTreeExecFile", "", "", green, "", "bold", "")
+
   " Python.
   call Base16hi("pythonInclude", "", "", bright_red, "", "italic", "")
   call Base16hi("pythonDocstring", "", "", cyan, "", "italic", "")
