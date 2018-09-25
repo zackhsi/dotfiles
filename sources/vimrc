@@ -40,19 +40,6 @@ set nobackup                       " no backup files
 set noswapfile                     " no swap files
 set nowritebackup                  " only in case you don't want a backup file while editing
 
-" Restrict CursorLine to active window.
-if $BACKGROUND == "light"
-  let cursorlinenrfg = 4  " blue
-else
-  let cursorlinenrfg = 3  " yellow
-endif
-augroup CursorLineOnlyInActiveWindow
-  autocmd!
-  autocmd VimEnter,WinEnter,BufWinEnter * execute 'highlight CursorLineNr ctermfg=' . cursorlinenrfg
-  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  autocmd WinLeave * setlocal nocursorline
-augroup END
-
 " Reset cursor to vertical line that does not blink.
 au VimLeave * set guicursor=a:ver1-blinkon0
 
@@ -555,9 +542,19 @@ call plug#end()
 
 if $BACKGROUND == "light"
   colorscheme base16-default-light
+  let cursorlinenrfg = 4  " blue
 else
   colorscheme base16-default-dark
+  let cursorlinenrfg = 3  " yellow
 endif
+
+" Restrict CursorLine to active window.
+augroup CursorLineOnlyInActiveWindow
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * execute 'highlight CursorLineNr ctermfg=' . cursorlinenrfg
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+augroup END
 
 " Italic comments.
 highlight Comment cterm=italic
