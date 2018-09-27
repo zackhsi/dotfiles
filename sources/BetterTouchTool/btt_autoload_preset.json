@@ -1,0 +1,132 @@
+{
+  "BTTPresetName" : "Default",
+  "BTTPresetUUID" : "D70E96F8-9708-4698-9F6D-0252D52C6A87",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 21,
+          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 46,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 20,
+          "BTTPredefinedActionName" : "Maximize Window Right",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 15,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : 118,
+          "BTTTriggerTypeDescription" : "Rotate Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,30",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerType" : 117,
+          "BTTTriggerTypeDescription" : "Rotate Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,33",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 102,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Up",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,13",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : 103,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Down",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,17",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerType" : 171,
+          "BTTTriggerTypeDescription" : "4 Finger FORCE Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 13,
+          "BTTPredefinedActionName" : "Sleep Display",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 96,
+          "BTTPredefinedActionName" : "Maximize Window to Top Half",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 17,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 19,
+          "BTTPredefinedActionName" : "Maximize Window Left",
+          "BTTAdditionalConfiguration" : "1835008",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 95,
+          "BTTPredefinedActionName" : "Maximize Window to Bottom Half",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 11,
+          "BTTShortcutModifierKeys" : 1835008,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 195,
+          "BTTPredefinedActionName" : "Run Apple Script in background (enter directly as text)",
+          "BTTInlineAppleScript" : "-----------------------------------------\r-- Show and Hide <application>\r-----------------------------------------\r--\r-- This script allows you to easily\r-- toggle the visibility of a specific\r-- app, similar to how Twitter and\r-- Sparrow toggle with their global\r-- hotkey option.\r-- \r-- 1. Set app name below.\r-- 2. If you use Spaces, make the\r-- app visible on all Spaces.\r-- 3. Run this script through a\r-- global hotkey in QuickSilver\r-- or something similar.\r--\r-----------------------------------------\r\rset theApp to \"Alacritty\"\r\rif isAppActive(theApp) then\r\thideApp(theApp)\relse\r\tactivateApp(theApp)\rend if\r\r\r-- helper methods\r\ron isAppActive(appName)\r\ttell application \"System Events\" to set activeApps to (get name of processes whose frontmost is true)\r\tappName is equal to item 1 of activeApps\rend isAppActive\r\ron activateApp(appName)\r\ttell application appName to activate\rend activateApp\r\ron hideApp(appName)\r\ttell application \"Finder\" to set visible of process appName to false\rend hideApp",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 36,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 5
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}
