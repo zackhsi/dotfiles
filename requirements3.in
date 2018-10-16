@@ -21,7 +21,3 @@ neovim>=0.2.6
 psutil>=5.4.7
 pyflakes
 setproctitle>=1.1.10
-
-# Lyft.
--e /Users/zhsi/repos/lyft/python-lyft-public-api-lib
--e /Users/zhsi/repos/lyft/python-lyft-stdlib

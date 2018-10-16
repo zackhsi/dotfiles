@@ -1,8 +1,8 @@
 # vi: ft=sh
 
 if [ -f ~/.bashrc ]; then
-  # shellcheck source=/Users/zhsi/.bashrc
+  # shellcheck source=/Users/zackhsi/.bashrc
   . ~/.bashrc
 fi
 
-source '/Users/zhsi/go/src/github.com/lyft/blessclient/lyftprofile' # bless ssh alias
+export PATH="$HOME/.cargo/bin:$PATH"

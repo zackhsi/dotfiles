@@ -1,27 +1,16 @@
 # Common zsh/bash configuration
 
-# Code
-export SRC=$HOME/go/src/github.com/lyft
-
 # Devbox
 alias c=control
 
 # Directories
-alias cont="cd $SRC/containers"
 alias d="cd ~/Desktop"
 alias desk="cd ~/Desktop"
-alias dev="cd $SRC/devbox"
-alias dot="cd ~/homespace/dotfiles"
-alias h="cd ~/homespace"
-alias o="cd $SRC/ops"
+alias dot="cd ~/dotfiles"
 alias oss="cd ~/oss"
-alias r="cd $HOME/repos/lyft"
-alias s="cd $SRC"
-alias sim="cd $SRC/simulatedrides"
-alias user="cd $SRC/python-lyft-userclient"
 
 # dotfiles bin
-export PATH=~/homespace/dotfiles/bin:$PATH
+export PATH=~/dotfiles/bin:$PATH
 
 # ls
 alias l="ls -lah"
@@ -57,7 +46,7 @@ alias vi=nvim
 alias vim=nvim
 
 # Node
-export PATH=~/homespace/dotfiles/node_modules/.bin:$PATH
+export PATH=~/dotfiles/node_modules/.bin:$PATH
 
 # OSX
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
