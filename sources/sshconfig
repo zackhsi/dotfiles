@@ -7,6 +7,10 @@ Host *
     ForwardAgent no
     ForwardX11 no
 
+Host git.corp.stripe.com
+    Port 22222
+    user git
+
 UseKeychain yes
 AddKeysToAgent yes
 IdentityFile ~/.ssh/id_rsa
