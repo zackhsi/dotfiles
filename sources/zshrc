@@ -40,7 +40,6 @@ source ~/.bashrc.d/1-common.bash
 source ~/.bashrc.d/1-functions.bash
 
 # JIRA
-JIRA_URL=https://lyftme.atlassian.net
 JIRA_DEFAULT_ACTION="dashboard"
 
 # FZF
@@ -63,4 +62,3 @@ ta() {
   tmux attach -t "$session" -d
 }
 export EVENT_NOKQUEUE=1
-source '/Users/zhsi/go/src/github.com/lyft/blessclient/lyftprofile' # bless ssh alias

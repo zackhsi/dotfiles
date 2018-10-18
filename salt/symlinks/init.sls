@@ -1,4 +1,3 @@
-{% set src = salt['environ.get']('SRC') %}
 {% set user = salt['environ.get']('USER') %}
 
 {% set file_root = salt['config.get']('file_roots')['base'][0] %}
@@ -44,20 +43,6 @@ Ensure {{ name }} is symlinked to from {{ source }}:
   file.symlink:
     - name: {{ name }}
     - target: {{ sources_dir }}/{{ source }}
-    - user: {{ user }}
-    - force: True
-    - makedirs: True
-{% endfor %}
-
-# Files
-{% for name, source in {
-  '~/.docker/config.json': 'docker_config.json',
-  src ~ '/profile/.bash_profile': 'devbox_bash_profile',
-}.items() %}
-Ensure {{ name }} is managed:
-  file.managed:
-    - name: {{ name }}
-    - source: {{ sources_dir }}/{{ source }}
     - user: {{ user }}
     - force: True
     - makedirs: True
