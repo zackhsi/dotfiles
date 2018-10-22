@@ -37,3 +37,5 @@ cmd = icdiff --line-numbers $LOCAL $REMOTE
 
 [alias]
 showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
+[hub]
+	host = git.corp.stripe.com
