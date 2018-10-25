@@ -18,8 +18,7 @@ tap 'bazelbuild/tap'
 brew 'bazel'
 
 # Ctags.
-tap 'universal-ctags/homebrew-universal-ctags'
-brew 'universal-ctags/homebrew-universal-ctags/universal-ctags', args: ['HEAD']
+brew 'ctags-exuberant'
 
 # Docker.
 brew 'docker'
