@@ -1,9 +1,6 @@
 # Aerial.
 cask 'aerial'
 
-# Ag.
-brew 'the_silver_searcher'
-
 # Bash.
 brew 'bash'
 brew 'bash-completion'
@@ -72,6 +69,9 @@ brew 'zlib'
 
 # Rbenv.
 brew 'rbenv'
+
+# Ripgrep.
+brew 'ripgrep'
 
 # terminal-notifier
 brew 'terminal-notifier'

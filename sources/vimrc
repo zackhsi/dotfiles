@@ -1,5 +1,4 @@
 let mapleader = "\<Space>"         " Use space as leader
-nnoremap <Leader>r :source $MYVIMRC<CR>
 
 " Legacy settings.
 if !has('nvim')
@@ -240,15 +239,12 @@ let g:github_enterprise_urls = ['git@git.corp.stripe.com']
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 
-" Redefine :Ag command
-function! s:ag_with_opts(arg, bang)
-  let tokens  = split(a:arg)
-  let ag_opts = join(filter(copy(tokens), 'v:val =~ "^-"'))
-  let query   = join(filter(copy(tokens), 'v:val !~ "^-"'))
-  call fzf#vim#ag(query, ag_opts, a:bang ? {} : {'down': '40%'})
-endfunction
-
-autocmd VimEnter * command! -nargs=* -bang Ag call s:ag_with_opts(<q-args>, <bang>0)
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '. <q-args>, 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
 
 " Set fzf statusline color
 function! s:fzf_statusline()
@@ -261,9 +257,9 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor with leader + a
-nnoremap <silent> <leader>a :silent Ag -sw <C-r>=expand('<cword>')<CR><CR>
+nnoremap <silent> <leader>r :silent Rg -sw <C-r>=expand('<cword>')<CR><CR>
 " Search visual selection with leader + a
-vnoremap <silent> <leader>a y:silent Ag -sw <C-r>"<CR>
+vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
@@ -441,7 +437,7 @@ let g:racer_experimental_completer = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Scala.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'derekwyatt/vim-scala'
+Plug 'derekwyatt/vim-scala'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized.
