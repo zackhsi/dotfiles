@@ -20,7 +20,6 @@
   '~/.gitignore': 'gitignore',
   '~/.ipython/profile_default/ipython_config.py': 'ipython_config.py',
   '~/.isort.cfg': 'isort.cfg',
-  '~/.ssh/config': 'sshconfig',
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
