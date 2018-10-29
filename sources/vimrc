@@ -246,12 +246,14 @@ function RgArgs(args)
   return rg_opts . ' ' . shellescape(query)
 endfunction
 
-command! -bang -nargs=* R
+command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case ' . RgArgs(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+cnoreabbrev R Rg
 
 " Set fzf statusline color
 function! s:fzf_statusline()
@@ -263,10 +265,10 @@ endfunction
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
-" Search word under cursor with leader + a
-nnoremap <silent> <leader>r :silent R -sw <C-r>=expand('<cword>')<CR><CR>
-" Search visual selection with leader + a
-vnoremap <silent> <leader>r y:silent R -sw <C-r>"<CR>
+" Search word under cursor with leader + r
+nnoremap <silent> <leader>r :silent Rg -sw <C-r>=expand('<cword>')<CR><CR>
+" Search visual selection with leader + r
+vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
