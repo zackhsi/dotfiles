@@ -194,6 +194,9 @@ function! s:base16_customize() abort
   call Base16hi("pythonInclude", "", "", bright_red, "", "italic", "")
   call Base16hi("pythonDocstring", "", "", cyan, "", "italic", "")
   call Base16hi("pythonOperator", "", "", red, "", "", "")
+
+  " Scala.
+  call Base16hi("Include", "", "", "", "", "italic", "")
 endfunction
 
 augroup on_change_colorschema
