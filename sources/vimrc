@@ -445,6 +445,7 @@ let g:racer_experimental_completer = 1
 " Scala.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'derekwyatt/vim-scala'
+let g:scala_use_builtin_tagbar_defs = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized.
