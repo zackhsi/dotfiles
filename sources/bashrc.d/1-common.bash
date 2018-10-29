@@ -8,6 +8,7 @@ alias d="cd ~/Desktop"
 alias desk="cd ~/Desktop"
 alias dot="cd ~/dotfiles"
 alias oss="cd ~/oss"
+alias s="cd ~/stripe"
 
 # dotfiles bin
 export PATH=~/dotfiles/bin:$PATH
