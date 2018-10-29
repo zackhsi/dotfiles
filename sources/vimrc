@@ -234,7 +234,7 @@ autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-let g:github_enterprise_urls = ['git@git.corp.stripe.com']
+let g:github_enterprise_urls = ['git.corp.stripe.com']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FZF.
