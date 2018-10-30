@@ -29,7 +29,7 @@ pip3_clean: ## Uninstall all pip3 modules
 	$(PIP3) freeze | xargs $(PIP3) uninstall -y -q
 
 rubygems: ## Install rubygems
-	rbenv global 2.2
+	rbenv global 2.4
 	@command -v bundle &> /dev/null || (echo "Installing bundler..." && gem install bundler)
 	bundle install
 

@@ -329,6 +329,7 @@ let g:gutentags_ctags_exclude = [
   \ 'build',
   \ 'venv',
 \ ]
+let g:gutentags_ctags_executable_ruby = 'ripper-tags --ignore-unsupported-options --recursive'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSX.
