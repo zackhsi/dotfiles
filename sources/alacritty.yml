@@ -143,7 +143,7 @@ colors:
     yellow:  '0xccd4e0'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.
-    cyan:    '0x0059b3'  # Special chars (YAML escape).
+    cyan:    '0x217ab7'  # Special chars (YAML escape).
     white:   '0x000000'  # Unused.
 
 # Colors (base16-orbital-dark)
