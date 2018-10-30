@@ -64,21 +64,21 @@ draw_bold_text_with_bright_colors: false
 font:
   # The normal (roman) font face to use.
   normal:
-    family: SF Mono
+    family: Source Code Pro
     # Style can be specified to pick a specific face.
-    # style: Regular
+    style: Medium
 
   # The bold font face
   bold:
-    family: SF Mono
+    family: Source Code Pro
     # Style can be specified to pick a specific face.
     # style: Bold
 
   # The italic font face
   italic:
-    family: SF Mono
+    family: Source Code Pro
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Medium Italic
 
   # Point size of the font
   size: 14.0
@@ -123,18 +123,18 @@ colors:
   normal:
     black:   '0xf7f8f9'  # Vim background.
     red:     '0xdd2c67'
-    green:   '0x24b47e'
-    yellow:  '0xef9d43'
+    green:   '0x3ecf8e'
+    yellow:  '0xf79a59'
     blue:    '0x2191ef'
     magenta: '0x6772e5'
-    cyan:    '0x00b2b3'
+    cyan:    '0x45b2e8'
     white:   '0x333333'  # Vim text.
 
   # Bright colors
   bright:
-    black:   '0x91a2b0'  # Vim line numbers, comments.
+    black:   '0x6b7c93'  # Vim line numbers, comments.
     red:     '0xfa755a'
-    green:   '0xe8edf0'  # Current line, color column.
+    green:   '0xeceff1'  # Current line, color column.
     yellow:  '0xccd4e0'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.

@@ -20,6 +20,10 @@ brew 'ctags-exuberant'
 # Docker.
 brew 'docker'
 
+# Fonts.
+tap 'caskroom/fonts'
+cask 'font-source-code-pro'
+
 # Fuck.
 brew 'thefuck'
 
