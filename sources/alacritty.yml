@@ -110,10 +110,15 @@ render_timer: false
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
+custom_cursor_colors: true
 
 # Colors (base16-orbital-light)
 colors:
+  # Cursor colors
+  cursor:
+    background: '0x333333'
+    foreground: '0xf7f8f9'
+
   # Default colors
   primary:
     background: '0xf7f8f9'  # Terminal background.
