@@ -401,7 +401,7 @@ let g:onedark_termcolors=16
 Plug 'junegunn/rainbow_parentheses.vim'
 autocmd Filetype * RainbowParentheses
 autocmd Filetype sls RainbowParentheses!
-let g:rainbow#blacklist = [10, 11]
+let g:rainbow#blacklist = [7, 10, 11, 15]
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
