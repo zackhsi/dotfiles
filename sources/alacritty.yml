@@ -72,7 +72,7 @@ font:
   bold:
     family: Source Code Pro
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Black
 
   # The italic font face
   italic:
