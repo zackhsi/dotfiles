@@ -471,6 +471,14 @@ let g:solarized_visibility = 'normal' " 'normal' |   'high' or 'low'
 let g:solarized_hitrail    = 1        " 0        |   1
 let g:solarized_menu       = 1        " 1        |   0
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SQL.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup SQL
+  autocmd!
+  autocmd Filetype sql command! SQLFMT :%!sqlfmt --align --print-width 120 --tab-width 2 --use-spaces
+  autocmd Filetype sql nnoremap <leader>s :SQLFMT<CR>
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Surround.
