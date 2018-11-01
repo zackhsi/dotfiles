@@ -371,9 +371,10 @@ Plug 'autozimu/LanguageClient-neovim', {
   \ 'do': 'bash install.sh',
   \ }
 
-let g:LanguageClient_serverCommands = {
-  \ 'ruby': [ 'solargraph',  'stdio' ],
-  \ }
+" Solargraph is too slow for large repositories.
+" let g:LanguageClient_serverCommands = {
+"   \ 'ruby': [ 'solargraph',  'stdio' ],
+"   \ }
 
 nnoremap <silent> <leader>ld :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <leader>lk :call LanguageClient#textDocument_hover()<CR>
