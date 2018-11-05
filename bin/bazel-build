@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+if [ -x "./bazel" ]; then
+  bazel_executable="./bazel"
+else
+  bazel_executable="bazel"
+fi
+fullname=$($bazel_executable query "$1")
+targets=$(bazel query "attr('srcs', $fullname, ${fullname//:*/}:*)")
+
+set -x
+$bazel_executable build "$targets"
