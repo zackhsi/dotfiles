@@ -601,6 +601,12 @@ else
   let cursorlinenrfg = 3  " yellow
 endif
 
+" For some silly reason, :set ft=help leads to a positive conceallevel.
+augroup ConcealLevel
+  autocmd!
+  autocmd Filetype help set conceallevel=0
+augroup END
+
 " Restrict CursorLine to active window.
 augroup CursorLineOnlyInActiveWindow
   autocmd!
