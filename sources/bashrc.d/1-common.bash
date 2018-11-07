@@ -49,6 +49,7 @@ alias pr="hub pull-request"
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
+alias view='nvim -R'
 
 # Node
 export PATH=~/dotfiles/node_modules/.bin:$PATH
