@@ -148,6 +148,9 @@ let g:ale_linter_aliases = {}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
 
+" Bazel.
+Plug '~/oss/ale-bazel'
+
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
