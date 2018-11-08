@@ -154,6 +154,7 @@ let g:ale_fixers = {}
 
 " Bazel.
 Plug '~/oss/ale-bazel'
+let g:ale_linters['scala'] = ['bazel-scala']
 
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
