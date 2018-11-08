@@ -81,6 +81,9 @@ autocmd BufNewFile,BufRead Pipfile set filetype=toml
 " Pipfile.lock syntax highlighting.
 autocmd BufNewFile,BufRead Pipfile.lock set filetype=json
 
+" Scala 99 lines.
+autocmd Filetype scala setlocal colorcolumn=100
+
 " Typescript syntax highlighting.
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 
