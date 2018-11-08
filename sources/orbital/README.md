@@ -25,7 +25,7 @@ Custom light base16 colorscheme.
 Slack
 -----
 
-`#f7f8f9,#e8edf0,#2191ef,#f7f8f9,#dfe3e6,#333333,#24b47e,#fa755a`
+`#f7f8f9,#e8edf0,#45b2e8,#f7f8f9,#dfe3e6,#333333,#f79a59,#6772e5`
 
 Alacritty
 ---------
