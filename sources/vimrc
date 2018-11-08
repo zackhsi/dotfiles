@@ -1,11 +1,13 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 let mapleader = "\<Space>"         " Use space as leader
 
 " Legacy settings.
 if !has('nvim')
-    set ai                         " auto indenting
+    set autoindent                 " auto indenting
     set autoread                   " reread file on focus
     set backspace=indent,eol,start " backspace over everything in insert mode
-    set encoding=utf-8             " Set the default encodings just in case $LANG isn't set
     set laststatus=2               " grey status bar at the bottom
     set smarttab                   " be smart when using tabs
     set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
@@ -23,9 +25,9 @@ set undofile
 set showcmd                        " show incomplete commands
 
 set hlsearch                       " highlight what you search for
-set ic                             " case insensitive search
+set ignorecase                     " case insensitive search
 set incsearch                      " type-ahead-find
-set scs                            " smart case search
+set smartcase                      " smart case search
 set inccommand=nosplit             " in-place substitution preview
 
 set expandtab                      " use spaces instead of tabs
@@ -40,7 +42,10 @@ set noswapfile                     " no swap files
 set nowritebackup                  " only in case you don't want a backup file while editing
 
 " Reset cursor to vertical line that does not blink.
-au VimLeave * set guicursor=a:ver1-blinkon0
+augroup CursorStyle
+  autocmd!
+  autocmd VimLeave * set guicursor=a:ver1-blinkon0
+augroup END
 
 " Copy selection to system clipboard.
 vnoremap <Leader>y "+y
@@ -52,43 +57,36 @@ nnoremap <Leader>f :let @+ = expand("%")<CR>
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnorem // y/<c-r>"<cr>
 
-" Indentation.
 filetype plugin indent on
-autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup Indentation
+  autocmd!
+  autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
+  autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
 
-" Python 88 lines.
-autocmd Filetype python setlocal textwidth=88
-autocmd Filetype python setlocal colorcolumn=89
+augroup LineLength
+  autocmd!
+  autocmd Filetype python setlocal textwidth=88
+  autocmd Filetype python setlocal colorcolumn=89
+  autocmd Filetype scala setlocal colorcolumn=100
+augroup END
 
-" *.pyi stub files.
-autocmd BufNewFile,BufRead *.pyi setfiletype python
-
-" Detect tmux.conf, must be before *.conf.
-autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
-
-" Detect ini files.
-autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
-
-" Pipfile syntax highlighting.
-autocmd BufNewFile,BufRead Pipfile set filetype=toml
-
-" Pipfile.lock syntax highlighting.
-autocmd BufNewFile,BufRead Pipfile.lock set filetype=json
-
-" Scala 99 lines.
-autocmd Filetype scala setlocal colorcolumn=100
-
-" Typescript syntax highlighting.
-autocmd BufNewFile,BufRead *.tsx set filetype=typescript
-
-" Vagrantfile syntax highlighting.
-autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+augroup FileTypeAliases
+  autocmd!
+  autocmd BufNewFile,BufRead *.pyi setfiletype python
+  autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
+  autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
+  autocmd BufNewFile,BufRead Pipfile set filetype=toml
+  autocmd BufNewFile,BufRead Pipfile.lock set filetype=json
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+  autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+augroup END
 
 " Reload edited files.
 augroup improved_autoread
@@ -121,7 +119,10 @@ cnoremap <C-n> <Down>
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
                 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall | source $MYVIMRC
+    augroup VimPlugBootstrap
+      autocmd!
+      autocmd VimEnter * PlugInstall | source $MYVIMRC
+    augroup END
 endif
 call plug#begin('~/.vim/plugged')
 
@@ -167,42 +168,42 @@ let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --t
 Plug 'chriskempson/base16-vim'
 
 function! s:base16_customize() abort
-  let l:black = "00"
-  let l:red =  "01"
-  let l:green =  "02"
-  let l:yellow = "03"
-  let l:blue =    "04"
-  let l:magenta = "05"
-  let l:cyan =    "06"
-  let l:white =  "07"
-  let l:bright_black = "08"
-  let l:bright_red =  "09"
-  let l:bright_green =  "10"
-  let l:bright_yellow = "11"
-  let l:bright_blue =    "12"
-  let l:bright_magenta = "13"
-  let l:bright_cyan =    "14"
-  let l:bright_white =  "15"
+  let l:black          = '00'
+  let l:red            = '01'
+  let l:green          = '02'
+  let l:yellow         = '03'
+  let l:blue           = '04'
+  let l:magenta        = '05'
+  let l:cyan           = '06'
+  let l:white          = '07'
+  let l:bright_black   = '08'
+  let l:bright_red     = '09'
+  let l:bright_green   = '10'
+  let l:bright_yellow  = '11'
+  let l:bright_blue    = '12'
+  let l:bright_magenta = '13'
+  let l:bright_cyan    = '14'
+  let l:bright_white   = '15'
 
   " Ale.
-  call Base16hi("SpellCap", "", "", yellow, "00", "", "")
-  call Base16hi("ALEWarningSign", "", "", yellow, "00", "", "")
-  call Base16hi("SpellBad", "", "", red, "00", "", "")
-  call Base16hi("ALEErrorSign", "", "", red, "00", "", "")
+  call Base16hi('SpellCap', '', '', yellow, '00', '', '')
+  call Base16hi('ALEWarningSign', '', '', yellow, '00', '', '')
+  call Base16hi('SpellBad', '', '', red, '00', '', '')
+  call Base16hi('ALEErrorSign', '', '', red, '00', '', '')
 
   " Jinja.
-  call Base16hi("jinjaTagDelim", "", "", blue, "", "", "")
+  call Base16hi('jinjaTagDelim', '', '', blue, '', '', '')
 
   " NERDTree.
-  call Base16hi("NERDTreeExecFile", "", "", green, "", "bold", "")
+  call Base16hi('NERDTreeExecFile', '', '', green, '', 'bold', '')
 
   " Python.
-  call Base16hi("pythonInclude", "", "", bright_red, "", "italic", "")
-  call Base16hi("pythonDocstring", "", "", cyan, "", "italic", "")
-  call Base16hi("pythonOperator", "", "", red, "", "", "")
+  call Base16hi('pythonInclude', '', '', bright_red, '', 'italic', '')
+  call Base16hi('pythonDocstring', '', '', cyan, '', 'italic', '')
+  call Base16hi('pythonOperator', '', '', red, '', '', '')
 
   " Scala.
-  call Base16hi("Include", "", "", "", "", "italic", "")
+  call Base16hi('Include', '', '', '', '', 'italic', '')
 endfunction
 
 augroup on_change_colorschema
@@ -221,19 +222,9 @@ map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 Plug 'jiangmiao/auto-pairs'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Black.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'ambv/black'
-" Run Black on save if file .black exists.
-if filereadable('.black')
-  autocmd BufWritePre *.py execute ':silent Black'
-endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ekalinin/Dockerfile.vim'
-autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive.
@@ -250,8 +241,8 @@ Plug 'junegunn/fzf.vim'
 
 function RgArgs(args)
   let tokens  = split(a:args)
-  let rg_opts = join(filter(copy(tokens), 'v:val =~ "^-"'))
-  let query   = join(filter(copy(tokens), 'v:val !~ "^-"'))
+  let rg_opts = join(filter(copy(tokens), 'v:val =~# "^-"'))
+  let query   = join(filter(copy(tokens), 'v:val !~# "^-"'))
   return rg_opts . ' ' . shellescape(query)
 endfunction
 
@@ -271,7 +262,10 @@ function! s:fzf_statusline()
   highlight fzf3 ctermfg=yellow
   setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
 endfunction
-autocmd! User FzfStatusLine call <SID>fzf_statusline()
+augroup FZF
+  autocmd!
+  autocmd User FzfStatusLine call <SID>fzf_statusline()
+augroup END
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor with leader + r
@@ -355,7 +349,10 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 
 " Enable ncm2 for all buffers.
-autocmd BufEnter * call ncm2#enable_for_buffer()
+augroup NCM2
+  autocmd!
+  autocmd BufEnter * call ncm2#enable_for_buffer()
+augroup END
 
 " :help Ncm2PopupOpen for more information.
 set completeopt=noinsert,menuone,noselect
@@ -406,8 +403,11 @@ let g:onedark_termcolors=16
 " Parenthesis.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'junegunn/rainbow_parentheses.vim'
-autocmd Filetype * RainbowParentheses
-autocmd Filetype sls RainbowParentheses!
+augroup RainbowParentheses
+  autocmd!
+  autocmd Filetype * RainbowParentheses
+  autocmd Filetype sls RainbowParentheses!
+augroup END
 let g:rainbow#blacklist = [7, 10, 11, 15]
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
@@ -427,10 +427,15 @@ let g:pymode_options_colorcolumn = 0
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 
+Plug 'ambv/black'
 Plug 'fisadev/vim-isort'
-if filereadable('.black')
-  autocmd BufWritePre *.py execute ':Isort'
-endif
+augroup PythonAutoFormat
+  autocmd!
+  if filereadable('.black')
+    autocmd BufWritePre *.py execute ':Isort'
+    autocmd BufWritePre *.py execute ':silent Black'
+  endif
+augroup END
 
 Plug 'davidhalter/jedi-vim'
 let g:jedi#completions_enabled = 0
@@ -566,9 +571,12 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 " Completion.
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
-autocmd FileType typescript nnoremap <buffer> <leader>d :TSTypeDef<CR>
-autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
-autocmd FileType typescript nnoremap <buffer> K :TSDoc<CR>
+augroup Typescript
+  autocmd!
+  autocmd FileType typescript nnoremap <buffer> <leader>d :TSTypeDef<CR>
+  autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
+  autocmd FileType typescript nnoremap <buffer> K :TSDoc<CR>
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Undo.
@@ -596,7 +604,7 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
-if $BACKGROUND == "light"
+if $BACKGROUND ==# 'light'
   colorscheme base16-default-light
   let cursorlinenrfg = 4  " blue
 else
