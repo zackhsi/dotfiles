@@ -3,9 +3,10 @@ attrs>=18.2.0
 ipython>=6.5.0
 pipenv>=2018.7.1
 pre-commit>=1.11.0
-pytest>=3.8.0
 pytest-mock>=1.10.0
+pytest>=3.8.0
 twine>=1.11.0
+vim-vint
 wheel>=0.31.1
 
 # Editor.
