@@ -260,8 +260,6 @@ command! -bang -nargs=* Ag
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-cnoreabbrev A Ag
-
 " Set fzf statusline color
 function! s:fzf_statusline()
   highlight fzf1 ctermfg=yellow
