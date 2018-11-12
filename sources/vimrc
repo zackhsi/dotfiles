@@ -253,7 +253,7 @@ function RgArgs(args)
   return rg_opts . ' ' . shellescape(query)
 endfunction
 
-command! -bang -nargs=* Ag
+command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case ' . RgArgs(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
@@ -274,9 +274,9 @@ augroup END
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor with leader + r
-nnoremap <silent> <leader>a :silent Ag -sw <C-r>=expand('<cword>')<CR><CR>
+nnoremap <silent> <leader>r :silent Rg -sw <C-r>=expand('<cword>')<CR><CR>
 " Search visual selection with leader + r
-vnoremap <silent> <leader>a y:silent Ag -sw <C-r>"<CR>
+vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
 " Search tags in buffer by using leader + t
 noremap <silent> <leader>t :silent BTags<CR>
@@ -431,6 +431,7 @@ let g:pymode_motion = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
+let g:pymode_run_bind = ''
 
 Plug 'ambv/black'
 Plug 'fisadev/vim-isort'
@@ -444,6 +445,7 @@ augroup END
 
 Plug 'davidhalter/jedi-vim'
 let g:jedi#completions_enabled = 0
+let g:jedi#rename_command = ''
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Repeat.
