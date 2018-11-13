@@ -20,6 +20,14 @@ brew 'ctags-exuberant'
 # Docker.
 brew 'docker'
 
+# ERD (Haskell).
+brew 'graphviz', args: ['--with-pango']
+brew 'ghc'
+brew 'cabal-install'
+# Finish with:
+# $ cabal install --allow-newer erd
+# $ ln -s ~/.cabal/bin/erd /usr/local/bin/
+
 # Fonts.
 tap 'caskroom/fonts'
 cask 'font-source-code-pro'
