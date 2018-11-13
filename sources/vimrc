@@ -53,6 +53,7 @@ vnoremap <Leader>y "+y
 " Copy current filepath to systen clipboard.
 nnoremap <Leader>f :let @+ = expand("%")<CR>
 nnoremap <Leader>F :let @+ = expand("%:t")<CR>
+command! Dirname :let @+ = expand("%:h")
 
 " Double slash to search for visual selection.
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
