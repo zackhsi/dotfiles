@@ -32,6 +32,9 @@ brew 'cabal-install'
 tap 'caskroom/fonts'
 cask 'font-source-code-pro'
 
+# fswatch.
+brew 'fswatch'
+
 # Fuck.
 brew 'thefuck'
 
