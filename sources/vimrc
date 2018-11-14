@@ -337,6 +337,7 @@ let g:gutentags_ctags_exclude = [
   \ 'tags',
   \ 'tags.temp',
   \ '.ijwb',
+  \ 'bazel-*',
 \ ]
 let g:gutentags_project_info = []
 call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
