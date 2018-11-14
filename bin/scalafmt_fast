@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+# Can only use fast scalafmt if NGServer is running on port 2113.
 if netstat -an | grep -q 2113; then
   exec ng org.scalafmt.cli.Cli "$@"
 else
