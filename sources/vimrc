@@ -334,8 +334,14 @@ let g:gutentags_ctags_exclude = [
   \ '.mypy_cache',
   \ 'build',
   \ 'venv',
+  \ 'tags',
+  \ 'tags.temp',
+  \ '.ijwb',
 \ ]
+let g:gutentags_project_info = []
+call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
 let g:gutentags_ctags_executable_ruby = 'ripper-tags --ignore-unsupported-options --recursive'
+call add(g:gutentags_project_info, {'type': 'scala', 'file': '.scalafmt.conf'})
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSX.
