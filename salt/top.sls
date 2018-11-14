@@ -1,4 +1,5 @@
 base:
   '*':
+    - scala
     - symlinks
     - shells

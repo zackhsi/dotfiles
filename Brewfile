@@ -63,6 +63,9 @@ brew 'pstree'
 # MTR.
 brew 'mtr'
 
+# Nailgun.
+brew 'nailgun'
+
 # Neovim.
 tap 'neovim/homebrew-neovim'
 brew 'neovim'
