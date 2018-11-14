@@ -161,6 +161,23 @@ let g:ale_fixers = {}
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
+let g:ale_scala_scalafmt_executable = 'scalafmt_fast'
+
+function! CheckScalafmtNg()
+  let _ = !system('netstat -an | grep -q 2113')
+  if v:shell_error
+    set cmdheight=2
+    echohl WarningMsg
+		echo expand('%').' written. Start `scalafmt_ng` process to speed up scalafmt runs.'
+		echohl None
+    set cmdheight=1
+  endif
+endfunction
+
+augroup CheckScalafmtNg
+  autocmd!
+  autocmd BufWritePost *.scala call CheckScalafmtNg()
+augroup END
 
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
