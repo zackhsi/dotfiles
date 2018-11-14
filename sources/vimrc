@@ -159,6 +159,9 @@ let g:ale_fixers = {}
 " Plug '~/oss/ale-bazel'
 " let g:ale_linters['scala'] = ['bazel-scala']
 
+" Scala.
+let g:ale_fixers['scala'] = ['scalafmt']
+
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
