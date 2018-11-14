@@ -21,7 +21,7 @@ brew 'ctags-exuberant'
 brew 'docker'
 
 # ERD (Haskell).
-brew 'graphviz', args: ['--with-pango']
+brew 'graphviz', args: ['with-pango']
 brew 'ghc'
 brew 'cabal-install'
 # Finish with:
@@ -87,6 +87,9 @@ brew 'rbenv'
 
 # Ripgrep.
 brew 'ripgrep'
+
+# Scala.
+brew 'olafurpg/scalafmt/scalafmt', args: ['HEAD']
 
 # terminal-notifier
 brew 'terminal-notifier'
