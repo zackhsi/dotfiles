@@ -27,7 +27,8 @@ export EDITOR='nvim'
 # --no-ignore: Do not respect .gitignore, etc...
 # --hidden: Search hidden files and folders
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --glob "!.git/*"'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --glob "!.git/*" --glob "!bazel-bin/*" --glob "!.ijwb/*"'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--color 16,bg+:-1'
 export FZF_CTRL_R_OPTS='--sort'
 
