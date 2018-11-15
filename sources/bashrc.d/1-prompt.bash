@@ -1,10 +1,14 @@
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWCOLORHINTS=true
-
-
 __set_bash_prompt()
 {
+  GIT_PS1_SHOWCOLORHINTS=true
+  if [[ $(pwd) = "/Users/zackhsi/stripe/pay-server" ]]; then
+    GIT_PS1_SHOWDIRTYSTATE=
+    GIT_PS1_SHOWUNTRACKEDFILES=
+  else
+    GIT_PS1_SHOWDIRTYSTATE=true
+    GIT_PS1_SHOWUNTRACKEDFILES=true
+  fi
+
   local exit="$?" # Save the exit status of the last command
 
   # PS1 is made from $PreGitPS1 + <git-status> + $PostGitPS1
