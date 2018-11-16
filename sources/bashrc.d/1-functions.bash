@@ -23,11 +23,12 @@ p() {
   branch_name=$(git rev-parse --abbrev-ref HEAD)
   base_commit=$(git merge-base master "$branch_name")
   num_commits=$(git rev-list --count "$base_commit".."$branch_name")
+  message=$(git log --format=%B -n1 "$branch_name")
   git push --set-upstream origin "$branch_name"
-  if [[ "$num_commits" == "1" ]] && ! [ -f .github/PULL_REQUEST_TEMPLATE.md ]; then
-    hub pull-request --browse --no-edit "$@"
-  else
+  if [ -f .github/PULL_REQUEST_TEMPLATE.md ]; then
     hub pull-request --browse "$@"
+  else
+    hub pull-request --browse --edit --message "$message" "$@"
   fi
 }
 
