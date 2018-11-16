@@ -4,5 +4,3 @@ if [ -f ~/.bashrc ]; then
   # shellcheck source=/Users/zackhsi/.bashrc
   . ~/.bashrc
 fi
-
-export PATH="$HOME/.cargo/bin:$PATH"
