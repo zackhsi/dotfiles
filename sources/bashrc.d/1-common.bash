@@ -67,6 +67,9 @@ export PYTHONDONTWRITEBYTECODE=1
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Scala
+export PATH="/usr/local/opt/scala@2.11/bin:$PATH"
+
 # Search
 export ACK_OPTIONS='--ignore-dir=venv --ignore-file=is:tags'
 export GREP_OPTIONS='--exclude-dir=venv --exclude=tags --color=auto'
