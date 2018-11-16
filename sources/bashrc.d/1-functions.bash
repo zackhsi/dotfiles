@@ -24,9 +24,8 @@ p() {
   base_commit=$(git merge-base master "$branch_name")
   num_commits=$(git rev-list --count "$base_commit".."$branch_name")
   git push --set-upstream origin "$branch_name"
-  if [[ "$num_commits" == "1" ]]; then
-    message=$(git log --format=%B -n1 "$branch_name")
-    hub pull-request --browse -m "$message" "$@"
+  if [[ "$num_commits" == "1" ]] && ! [ -f .github/PULL_REQUEST_TEMPLATE.md ]; then
+    hub pull-request --browse --no-edit "$@"
   else
     hub pull-request --browse "$@"
   fi
