@@ -168,8 +168,8 @@ function! CheckScalafmtNg()
   if v:shell_error
     set cmdheight=2
     echohl WarningMsg
-		echo expand('%').' written. Start `scalafmt_ng` process to speed up scalafmt runs.'
-		echohl None
+    echo expand('%').' written. Start `scalafmt_ng` process to speed up scalafmt runs.'
+    echohl None
     set cmdheight=1
   endif
 endfunction
