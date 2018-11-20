@@ -156,8 +156,8 @@ let g:ale_fixers = {}
 
 " Bazel.
 " Comment out until invocation options are supported.
-" Plug '~/oss/ale-bazel'
-" let g:ale_linters['scala'] = ['bazel-scala']
+Plug '~/oss/ale-bazel'
+let g:ale_linters['scala'] = ['bazel-scala']
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']

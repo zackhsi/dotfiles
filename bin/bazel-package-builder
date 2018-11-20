@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+absolute_filename=$1
+relative_filename=$(realpath --relative-to=. "$absolute_filename")
+
+absolute_directory=$(dirname "$absolute_filename")
+while ! [ -f "$absolute_directory/BUILD" ]; do
+  absolute_directory=$(dirname "$absolute_directory")
+done
+relative_directory=$(realpath --relative-to=. "$absolute_directory")
+
+./bazel build "$relative_directory/..." 2>&1 | grep "$relative_filename"
