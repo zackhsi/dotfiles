@@ -66,7 +66,7 @@ augroup Indentation
   autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype vim        setlocal tabstop=4 softtabstop=4 shiftwidth=4
   autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
