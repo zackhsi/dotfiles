@@ -27,5 +27,5 @@ relative_directory=$(realpath --relative-to=. "$absolute_directory")
 if $verbose; then
   ./bazel build "$relative_directory/..."
 else
-  ./bazel build "$relative_directory/..." 2>&1 | grep "$relative_filename"
+  ./bazel build --color=no "$relative_directory/..." 2>&1 | grep -A2 -E "($relative_filename|FAILED)"
 fi
