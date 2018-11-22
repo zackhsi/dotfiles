@@ -350,6 +350,7 @@ noremap <silent> <leader>g :Goyo<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ludovicchabant/vim-gutentags'
 noremap <Leader>c :GutentagsUpdate!<CR>
+let g:gutentags_exclude_filetypes = ['gitcommit']
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
   \ '.eggs',
