@@ -269,7 +269,7 @@ let g:github_enterprise_urls = ['git.corp.stripe.com']
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 
-function RgArgs(args)
+function! RgArgs(args)
   let tokens  = split(a:args)
   let rg_opts = join(filter(copy(tokens), 'v:val =~# "^-"'))
   let query   = join(filter(copy(tokens), 'v:val !~# "^-"'))
