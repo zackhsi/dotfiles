@@ -45,7 +45,8 @@ __set_bash_prompt() {
   else
     EXIT_STATUS="$MAG$BOLD"
   fi
-  PS1="${CYA}${BOLD}"'\W'"${YEL}$(__git_branch_fast)""${EXIT_STATUS}"' $ '"$NONE"
+  ARROWS="${BOLD}${RED}"$'\u227b'"${YEL}"$'\u227b'"${GRE}"$'\u227b'
+  PS1="${CYA}${BOLD}"'\W'"${YEL}$(__git_branch_fast)${EXIT_STATUS} ${ARROWS} ${NONE}"
 
   export PS1
 }
