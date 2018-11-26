@@ -77,7 +77,7 @@ augroup LineLength
   autocmd!
   autocmd Filetype python setlocal textwidth=88
   autocmd Filetype python setlocal colorcolumn=89
-  autocmd Filetype scala setlocal colorcolumn=100
+  autocmd Filetype scala setlocal colorcolumn=101
 augroup END
 
 augroup FileTypeAliases
