@@ -1,4 +1,8 @@
 __git_branch_fast() {
+  local YEL='\[\e[0;33m\]'
+  local MAG='\[\e[0;35m\]'
+  local NONE='\[\e[0m\]'
+
   local gitdir=""
   local cur="$PWD"
   while [[ ! -z "$cur" ]]; do
@@ -21,7 +25,7 @@ __git_branch_fast() {
       ;;
   esac
   if [ -n "$branch" ]; then
-    echo " ($branch)"
+    echo " ${YEL}(${MAG}$branch${YEL})${NONE}"
   fi
 }
 
@@ -32,10 +36,8 @@ __set_bash_prompt() {
   local RED='\[\e[0;31m\]'
   local GRE='\[\e[0;32m\]'
   local YEL='\[\e[0;33m\]'
-  local BLU='\[\e[0;34m\]'
   local MAG='\[\e[0;35m\]'
   local CYA='\[\e[0;36m\]'
-  local WHI='\[\e[0;37m\]'
   local BOLD='\[\e[1m\]'
   local NONE='\[\e[0m\]'
 
