@@ -1,6 +1,7 @@
 __git_branch_fast() {
   local YEL='\[\e[0;33m\]'
   local MAG='\[\e[0;35m\]'
+  local ITALIC='\[\e[3m\]'
   local NONE='\[\e[0m\]'
 
   local gitdir=""
@@ -25,7 +26,7 @@ __git_branch_fast() {
       ;;
   esac
   if [ -n "$branch" ]; then
-    echo " ${YEL}(${MAG}$branch${YEL})${NONE}"
+    echo " ${YEL}${ITALIC}(${MAG}${ITALIC}$branch${YEL}${ITALIC})${NONE}"
   fi
 }
 
@@ -47,7 +48,7 @@ __set_bash_prompt() {
   else
     EXIT_STATUS="$MAG$BOLD"
   fi
-  ARROWS="${BOLD}${RED}"$'\u227b'"${YEL}"$'\u227b'"${GRE}"$'\u227b'
+  ARROWS="${RED}"$'\u227b'"${YEL}"$'\u227b'"${GRE}"$'\u227b'
   PS1="${CYA}${BOLD}"'\W'"${YEL}$(__git_branch_fast)${EXIT_STATUS} ${ARROWS} ${NONE}"
 
   export PS1
