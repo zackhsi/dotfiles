@@ -147,6 +147,9 @@ let g:airline#extensions#branch#enabled       = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'w0rp/ale'
 
+nmap <silent> [l <Plug>(ale_previous_wrap)
+nmap <silent> ]l <Plug>(ale_next_wrap)
+
 let g:ale_sign_warning='●'
 let g:ale_sign_error='●'
 
