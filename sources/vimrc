@@ -662,14 +662,6 @@ augroup ConcealLevel
   autocmd Filetype help set conceallevel=0
 augroup END
 
-" Restrict CursorLine to active window.
-augroup CursorLineOnlyInActiveWindow
-  autocmd!
-  autocmd VimEnter,WinEnter,BufWinEnter * execute 'highlight CursorLineNr ctermfg=' . cursorlinenrfg
-  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  autocmd WinLeave * setlocal nocursorline
-augroup END
-
 " Italic comments.
 highlight Comment cterm=italic
 " Bold title.
