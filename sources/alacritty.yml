@@ -137,7 +137,7 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (base16-orbital-light)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0xf7f8f9'  # Terminal background.
@@ -171,33 +171,33 @@ colors:
     white:   '0x000000'  # Unused.
 
 # Colors (base16-orbital-dark)
-colors_off:
+colors:
   # Default colors
   primary:
-    background: '0x363636'  # Terminal background.
-    foreground: '0xdedede'  # Terminal text.
+    background: '0x282c34'  # Terminal background.
+    foreground: '0xabb2bf'  # Terminal text.
 
   cursor:
-    text: '0x363636'
-    cursor: '0xdedede'
+    text: '0x282c34'
+    cursor: '0xabb2bf'
 
   # Normal colors
   normal:
-    black:   '0x363636'  # Vim background.
-    red:     '0xff967c'
-    green:   '0x8ae5bf'
-    yellow:  '0xfff680'
+    black:   '0x282c34'  # Vim background.
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xe5c07b'
     blue:    '0x5ecaed'
-    magenta: '0xf78fff'  # "todo's"
-    cyan:    '0xb3f8ff'
-    white:   '0xdedede'  # Airline git branch.
+    magenta: '0xc678dd'  # "todo's"
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'  # Airline git branch.
 
   # Bright colors
   bright:
-    black:   '0x8c8c8c'  # Comments, line number background.
-    red:     '0xff80bd'  # Parens, ints.
-    green:   '0x404040'  # Current line, color column.
-    yellow:  '0x595959'  # Airline background vim mode, visual selection.
+    black:   '0x636c83'  # Comments, line number background.
+    red:     '0xd19a66'  # Parens, ints.
+    green:   '0x4b5263'  # Current line, color column.
+    yellow:  '0x373c49'  # Airline background vim mode, visual selection.
     blue:    '0xff0000'  # Unused.
     magenta: '0xff0000'  # Unused.
     cyan:    '0xb3f8ff'  # Curly braces.
