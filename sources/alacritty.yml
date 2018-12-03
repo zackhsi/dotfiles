@@ -197,7 +197,7 @@ colors:
     black:   '0x636c83'  # Comments, line number background.
     red:     '0xd19a66'  # Parens, ints.
     green:   '0x4b5263'  # Current line, color column.
-    yellow:  '0x373c49'  # Airline background vim mode, visual selection.
+    yellow:  '0x434959'  # Airline background vim mode, visual selection.
     blue:    '0x86dcf8'  # FZF search term current line.
     magenta: '0xff0000'  # Unused.
     cyan:    '0xb3f8ff'  # Curly braces.
