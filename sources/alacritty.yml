@@ -137,7 +137,7 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (base16-orbital-light)
-colors_off:
+colors:
   # Default colors
   primary:
     background: '0xf7f8f9'  # Terminal background.
@@ -152,7 +152,7 @@ colors_off:
   normal:
     black:   '0xf7f8f9'  # Vim background.
     red:     '0xdd2c67'
-    green:   '0x3ecf8e'
+    green:   '0x24b47e'
     yellow:  '0xf79a59'
     blue:    '0x2191ef'
     magenta: '0x6772e5'
@@ -171,7 +171,7 @@ colors_off:
     white:   '0x000000'  # Unused.
 
 # Colors (base16-orbital-dark)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0x282c34'  # Terminal background.
