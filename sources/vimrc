@@ -163,7 +163,7 @@ let g:ale_fixers = {}
 " Comment out until invocation options are supported.
 Plug '~/oss/ale-bazel'
 let g:ale_linters['bzl'] = ['bazel-scala']
-let g:ale_linters['scala'] = ['bazel-scala']
+let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
@@ -191,6 +191,11 @@ let g:ale_linters['typescript'] = ['eslint', 'tslint']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_fixers['typescriptreact'] = ['prettier']
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --tab-width 4'
+
+for key in keys(g:ale_fixers)
+    call add(g:ale_fixers[key], 'remove_trailing_lines')
+    call add(g:ale_fixers[key], 'trim_whitespace')
+endfor
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Base16.
