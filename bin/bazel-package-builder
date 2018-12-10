@@ -20,7 +20,12 @@ relative_filename=$(realpath --relative-to=. "$absolute_filename")
 
 absolute_directory=$(dirname "$absolute_filename")
 while ! [ -f "$absolute_directory/BUILD" ]; do
-  absolute_directory=$(dirname "$absolute_directory")
+  next=$(dirname "$absolute_directory")
+  if [[ $next == "$absolute_directory" ]]; then
+    exit
+  else
+    absolute_directory=$next
+  fi
 done
 relative_directory=$(realpath --relative-to=. "$absolute_directory")
 
