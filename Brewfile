@@ -96,6 +96,9 @@ brew 'scala@2.11', args: ['with-docs', 'with-src']
 brew 'olafurpg/scalafmt/coursier', args: ['HEAD']
 brew 'olafurpg/scalafmt/scalafmt', args: ['HEAD']
 
+# sed.
+brew 'gnu-sed', args: ['with-default-names']
+
 # terminal-notifier
 brew 'terminal-notifier'
 

@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+sed --in-place --expression='s/colors_off:/temp_color:/g' "$DIR/../sources/alacritty.yml"
+sed --in-place --expression='s/colors:/colors_off:/g' "$DIR/../sources/alacritty.yml"
+sed --in-place --expression='s/temp_color:/colors:/g' "$DIR/../sources/alacritty.yml"
