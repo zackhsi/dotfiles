@@ -122,7 +122,13 @@ alias gl='git pull'
 alias gl='git pull'
 alias glg='git log --stat'
 __git_complete glg _git_log
-alias gp='git push'
+gp() {
+  if [[ $# -gt 0 ]]; then
+    git push "$@"
+  else
+    git push origin "$(git rev-parse --abbrev-ref HEAD)"
+  fi
+}
 alias grb='git rebase'
 __git_complete grb _git_rebase
 alias grba='git rebase --abort'
