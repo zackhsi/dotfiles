@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem "rubocop", "~> 0.59.1"
+gem "rubocop"
 
-gem "pry", "~> 0.11.3"
+gem "pry"
 
-gem "ripper-tags", "~> 0.6.1"
+gem "ripper-tags"
 
-gem "sqlint", "~> 0.1.8"
+gem "sqlint"
