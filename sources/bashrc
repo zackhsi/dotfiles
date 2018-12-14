@@ -102,6 +102,7 @@ alias gb='git branch'
 __git_complete gb _git_branch
 alias gbc="git branch | grep -v master | xargs git branch -d"
 alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
+alias gbDa="git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D"
 alias gc!='git commit -v --amend'
 alias gc='git commit -v'
 alias gcount='git shortlog -sn'
