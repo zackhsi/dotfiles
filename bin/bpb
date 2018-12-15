@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# `bpb` (Bazel package builder) builds all the targets for a given file's
+set -e
+
+bazel_package=$(bpb-package "$1")
+if [ -x ./bazel ]; then
+  bazel_executable="./bazel"
+else
+  bazel_executable="bazel"
+fi
+$bazel_executable build "$bazel_package/..."

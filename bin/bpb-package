@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# `bpb-package` recurses up the target file's directory tree until it finds a
+# BUILD file.
+set -e
+
+absolute_filename=$1
+absolute_directory=$(dirname "$absolute_filename")
+while ! [ -f "$absolute_directory/BUILD" ]; do
+  next=$(dirname "$absolute_directory")
+  if [[ $next == "$absolute_directory" ]]; then
+    exit
+  else
+    absolute_directory=$next
+  fi
+done
+relative_directory=$(realpath --relative-to=. "$absolute_directory")
+echo "$relative_directory"

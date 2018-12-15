@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# `bpb` (Bazel package builder) builds all the targets for a given file's
+# package. It does so by recursing up the target file's directory tree until it
+# finds a BUILD file.
+set -e
+
+relative_filename=$(realpath --relative-to=. "$1")
+exec bpb "$1" 2>&1 | grep -A3 -E "($relative_filename|FAILED)"
