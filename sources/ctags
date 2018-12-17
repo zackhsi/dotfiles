@@ -1,6 +1,5 @@
 --langdef=scala
 --langmap=scala:.scala
-
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy)[ \t]*)*(private[^ ]*|protected)?[ \t]*class[ \t]+([a-zA-Z0-9_]+)/\4/c,classes/
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy)[ \t]*)*(private[^ ]*|protected)?[ \t]*object[ \t]+([a-zA-Z0-9_]+)/\4/o,objects/
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy)[ \t]*)*(private[^ ]*|protected)?[ \t]*((abstract|final|sealed|implicit|lazy)[ \t ]*)*case class[ \t ]+([a-zA-Z0-9_]+)/\6/C,case classes/
@@ -11,3 +10,16 @@
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy|override|private[^ ]*|protected)[ \t]*)*val[ \t]+([a-zA-Z0-9_]+)/\3/V,values/
 --regex-scala=/^[ \t]*((abstract|final|sealed|implicit|lazy|override|private[^ ]*|protected)[ \t]*)*var[ \t]+([a-zA-Z0-9_]+)/\3/v,variables/
 --regex-scala=/^[ \t]*package[ \t]+([a-zA-Z0-9_.]+)/\1/p,packages/
+
+--langdef=thrift
+--langmap=thrift:.thrift
+--regex-thrift=/^[ \t]*const[ \t]+[A-Za-z0-9_<>., \t]+[ \t]+([A-Za-z0-9_]+)[ \t]*=/\1/c,constants/
+--regex-thrift=/^[ \t]*typedef[ \t]+[A-Za-z0-9_<>., \t]+[ \t]+([A-Za-z0-9_]+)/\1/t,typedefs/
+--regex-thrift=/^[ \t]*s?enum[ \t]+([A-Za-z0-9_]+)/\1/e,enums/
+--regex-thrift=/^[ \t]*([A-Za-z0-9_]+)[ \t]*([=,;]|$)/\1/E,enum constants/
+--regex-thrift=/^[ \t]*struct[ \t]+([A-Za-z0-9_]+)/\1/s,structs/
+--regex-thrift=/^[ \t]*union[ \t]+([A-Za-z0-9_]+)/\1/u,unions/
+--regex-thrift=/^[ \t]*exception[ \t]+([A-Za-z0-9_]+)/\1/x,exceptions/
+--regex-thrift=/^[ \t]*service[ \t]+([A-Za-z0-9_]+)/\1/v,services/
+--regex-thrift=/^[ \t]*[A-Za-z0-9_][A-Za-z0-9_<>., \t]*[ \t]+([A-Za-z0-9_]+)[ \t]*\(/\1/f,functions/
+--regex-thrift=/^[ \t]*[0-9]+:[ \t]*((required|optional)[ \t]+)?[A-Za-z0-9_<>., \t]+[ \t]+([A-Za-z0-9_]+)/\3/m,members/
