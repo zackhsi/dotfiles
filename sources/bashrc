@@ -127,7 +127,7 @@ gp() {
   if [[ $# -gt 0 ]]; then
     git push "$@"
   else
-    git push origin "$(git rev-parse --abbrev-ref HEAD)"
+    git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
   fi
 }
 alias grb='git rebase'
