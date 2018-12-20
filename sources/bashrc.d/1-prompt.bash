@@ -16,7 +16,7 @@ __git_branch_fast() {
   [ -f "$gitdir/HEAD" ] && read -r head < "$gitdir/HEAD"
   case "$head" in
     ref:*)
-      branch="${head##*/}"
+      branch="${head##ref: refs/heads/}"
       ;;
     "")
       branch=""
