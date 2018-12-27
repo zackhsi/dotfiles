@@ -203,6 +203,39 @@ colors_off:
     cyan:    '0xb3f8ff'  # Curly braces.
     white:   '0xb3b3b3'  # Curly braces.
 
+# Colors (cobalt2)
+colors_cobalt2:
+  # Default colors
+  primary:
+    background: '0x193549'  # Terminal background.
+    foreground: '0xffffff'  # Terminal text. lighter: e1efff
+
+  cursor:
+    text: '0x193549'
+    cursor: '0xffc600'
+
+  # Normal colors
+  normal:
+    black:   '0x193549'  # Vim background.
+    red:     '0xff628c'
+    green:   '0x3ad900'  # lighter: a5ff90
+    yellow:  '0xffc600'  # lighter: ffee80
+    blue:    '0x9effff'  # mint?!
+    magenta: '0xfb94ff'  # "todo's"
+    cyan:    '0xa5ff90'  # lighter: 9effff
+    white:   '0xffffff'  # Vim text, airline git branch.
+
+  # Bright colors
+  bright:
+    black:   '0x0088ff'  # Comments, line number background.
+    red:     '0xffee80'  # Parens, ints.
+    green:   '0x1F4662'  # Current line, color column.
+    yellow:  '0x0050A4'  # Airline background vim mode, visual selection.
+    blue:    '0x86dcf8'  # FZF search term current line.
+    magenta: '0xc678dd'  # Git diff file position.
+    cyan:    '0xb3f8ff'  # Curly braces.
+    white:   '0xb3b3b3'  # Curly braces.
+
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
