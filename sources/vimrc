@@ -293,7 +293,7 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-" Set fzf statusline color
+" Set fzf statusline color.
 function! s:fzf_statusline()
   highlight fzf1 ctermfg=yellow
   highlight fzf2 ctermfg=yellow
@@ -306,16 +306,16 @@ augroup FZF
 augroup END
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
-" Search word under cursor with leader + r
+" Search word under cursor with leader + r.
 nnoremap <silent> <leader>r :silent Rg -sw <C-r>=expand('<cword>')<CR><CR>
-" Search visual selection with leader + r
+" Search visual selection with leader + r.
 vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
-" Search tags in buffer by using leader + t
+" Search tags in buffer by using leader + t.
 noremap <silent> <leader>t :silent BTags<CR>
 
-" Search all tags by using leader + T
-noremap <silent> <leader>T :silent Tags<CR>
+" Fuzzy find tag under cursor.
+nnoremap <leader>T :Tags '<c-r><c-w><cr>
 
 " Search marks by using leader + m
 noremap <silent> <leader>m :silent Marks<CR>
