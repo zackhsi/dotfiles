@@ -212,7 +212,7 @@ colors:
 
   cursor:
     text: '0x1f2430'
-    cursor: '0xffcc66'
+    cursor: '0xFA86DF'
 
   # Normal colors
   normal:
