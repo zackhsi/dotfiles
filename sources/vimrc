@@ -139,6 +139,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme                           = 'base16'
+let g:airline_base16_improved_contrast        = 1
 let g:airline_left_sep                        = ''
 let g:airline_right_sep                       = ''
 let g:airline_section_y                       = ''
