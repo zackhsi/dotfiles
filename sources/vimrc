@@ -169,6 +169,10 @@ Plug '~/oss/ale-bazel'
 let g:ale_linters['bzl'] = ['bazel-scala']
 let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 
+" Ruby.
+let g:ale_linters['ruby'] = ['rubocop', 'ruby']
+let g:ale_ruby_rubocop_executable = 'bundle'
+
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
 let g:ale_scala_scalafmt_executable = 'scalafmt_fast'

@@ -50,6 +50,9 @@ brew 'tig'
 brew 'glide'
 brew 'go'
 
+# GSL.
+brew 'gsl'
+
 # Htop.
 brew 'htop'
 

@@ -137,7 +137,7 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (base16-orbital)
-colors_off:
+colors:
   # Default colors
   primary:
     background: '0xf7f8f9'  # Terminal background.
@@ -204,7 +204,7 @@ colors_onedark:
     white:   '0xb3b3b3'  # Curly braces.
 
 # Colors (ayu)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0x1f2430'  # Terminal background.
