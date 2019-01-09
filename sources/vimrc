@@ -92,6 +92,11 @@ augroup FileTypeAliases
   autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 augroup END
 
+augroup KeywordProgram
+  autocmd!
+  autocmd Filetype ruby setlocal keywordprg=:terminal\ ri
+augroup END
+
 " Reload edited files.
 augroup improved_autoread
   autocmd FocusGained * checktime
