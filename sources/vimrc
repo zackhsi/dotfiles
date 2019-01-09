@@ -678,7 +678,6 @@ Plug 'saltstack/salt-vim'
 call plug#end()
 
 colorscheme base16-default-light
-let cursorlinenrfg = 3  " Yellow.
 
 " For some silly reason, :set ft=help leads to a positive conceallevel.
 augroup ConcealLevel
