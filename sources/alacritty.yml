@@ -171,7 +171,7 @@ colors_orbital:
     white:   '0x000000'  # Unused.
 
 # Colors (ayu)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.
@@ -238,7 +238,40 @@ colors_onedark:
     white:   '0xb3b3b3'  # Curly braces.
 
 # Colors (ayu)
-colors_off:
+colors_ayu_dark:
+  # Default colors
+  primary:
+    background: '0x1f2430'  # Terminal background.
+    foreground: '0xcbccc6'  # Terminal text.
+
+  cursor:
+    text: '0x1f2430'
+    cursor: '0xFA86DF'
+
+  # Normal colors
+  normal:
+    black:   '0x1f2430'  # Vim background.
+    red:     '0xf28779'
+    green:   '0xbae67e'
+    yellow:  '0xffd580'
+    blue:    '0x73d0ff'
+    magenta: '0xd4bfff'
+    cyan:    '0x95e6cb'
+    white:   '0xcbccc6'  # Vim text, airline git branch.
+
+  # Bright colors
+  bright:
+    black:   '0x5c6773'  # Comments, line number background.
+    red:     '0x5ccfe6'  # Parens, ints.
+    green:   '0x2a3546'  # Color column.
+    yellow:  '0x313e52'  # Airline background vim mode, visual selection.
+    blue:    '0x86dcf8'  # FZF search term current line.
+    magenta: '0xc678dd'  # Git diff file position.
+    cyan:    '0xb3f8ff'  # Curly braces.
+    white:   '0xb3b3b3'  # Curly braces.
+
+# Colors (material-palenight)
+colors:
   # Default colors
   primary:
     background: '0x1f2430'  # Terminal background.
