@@ -298,7 +298,7 @@ colors:
     red:     '0xF78C6C'  # Parens, ints.
     green:   '0x3A3F58'  # Color column.
     yellow:  '0x353d64'  # Airline background vim mode, visual selection.
-    blue:    '0x0000ff'  # Unused.
+    blue:    '0xB2CCD6'  # FZF search term current line.
     magenta: '0x0000ff'  # Unused.
     cyan:    '0xf07178'  # Special chars (YAML escape).
     white:   '0x0000ff'  # Unused.
