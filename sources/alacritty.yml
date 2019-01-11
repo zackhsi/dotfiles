@@ -274,34 +274,34 @@ colors_ayu_dark:
 colors:
   # Default colors
   primary:
-    background: '0x1f2430'  # Terminal background.
-    foreground: '0xcbccc6'  # Terminal text.
+    background: '0x292D3E'  # Terminal background.
+    foreground: '0xA6ACCD'  # Terminal text.
 
   cursor:
-    text: '0x1f2430'
-    cursor: '0xFA86DF'
+    text: '0x292D3E'
+    cursor: '0xA6ACCD'
 
   # Normal colors
   normal:
-    black:   '0x1f2430'  # Vim background.
-    red:     '0xf28779'
-    green:   '0xbae67e'
-    yellow:  '0xffd580'
-    blue:    '0x73d0ff'
-    magenta: '0xd4bfff'
-    cyan:    '0x95e6cb'
-    white:   '0xcbccc6'  # Vim text, airline git branch.
+    black:   '0x292D3E'  # Vim background.
+    red:     '0xFF5370'
+    green:   '0xC3E88D'
+    yellow:  '0xFFCB6B'
+    blue:    '0x82AAFF'
+    magenta: '0xbb80b3'
+    cyan:    '0x89DDFF'
+    white:   '0xA6ACCD'  # Vim text, airline git branch.
 
   # Bright colors
   bright:
-    black:   '0x5c6773'  # Comments, line number background.
-    red:     '0x5ccfe6'  # Parens, ints.
-    green:   '0x2a3546'  # Color column.
-    yellow:  '0x313e52'  # Airline background vim mode, visual selection.
-    blue:    '0x86dcf8'  # FZF search term current line.
-    magenta: '0xc678dd'  # Git diff file position.
-    cyan:    '0xb3f8ff'  # Curly braces.
-    white:   '0xb3b3b3'  # Curly braces.
+    black:   '0x676E95'  # Comments, line number background.
+    red:     '0xF78C6C'  # Parens, ints.
+    green:   '0x3A3F58'  # Color column.
+    yellow:  '0x353d64'  # Airline background vim mode, visual selection.
+    blue:    '0x0000ff'  # Unused.
+    magenta: '0x0000ff'  # Unused.
+    cyan:    '0x0000ff'  # Unused.
+    white:   '0x0000ff'  # Unused.
 
 # Visual Bell
 #
