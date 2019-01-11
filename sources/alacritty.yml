@@ -300,7 +300,7 @@ colors:
     yellow:  '0x353d64'  # Airline background vim mode, visual selection.
     blue:    '0x0000ff'  # Unused.
     magenta: '0x0000ff'  # Unused.
-    cyan:    '0x0000ff'  # Unused.
+    cyan:    '0xf07178'  # Special chars (YAML escape).
     white:   '0x0000ff'  # Unused.
 
 # Visual Bell
