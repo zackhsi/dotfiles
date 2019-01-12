@@ -202,7 +202,7 @@ colors_off:
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
-    white:   '0x000000'  # Unused.
+    white:   '0xe6ba7e'  # Vimscript bold asterisk.
 
 # Colors (base16-onedark)
 colors_onedark:
