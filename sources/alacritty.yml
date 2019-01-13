@@ -231,7 +231,7 @@ colors:
   bright:
     black:   '0x899ba6'  # Vim line numbers, comments.
     red:     '0xd18ec2'
-    green:   '0x6A7D89'  # Color column.
+    green:   '0x556873'  # Color column.
     yellow:  '0x556873'  # Vim pane borders, visual selection.
     blue:    '0x00ff00'  # Unused.
     magenta: '0x00ff00'  # Unused.
