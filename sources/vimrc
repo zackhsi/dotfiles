@@ -330,9 +330,6 @@ vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 " Search tags in buffer by using leader + t.
 noremap <silent> <leader>t :silent BTags<CR>
 
-" Fuzzy find tag under cursor.
-nnoremap <leader>T :Tags '<c-r><c-w><cr>
-
 " Search marks by using leader + m
 noremap <silent> <leader>m :silent Marks<CR>
 
@@ -353,6 +350,9 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 \   'options':     '+m',
 \   'tmux_height': '40%'
 \ })<CR>
+
+Plug 'zackhsi/fzf-tags'
+nmap <C-]> <Plug>(fzf_tags)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git gutter.
