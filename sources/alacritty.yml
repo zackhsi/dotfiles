@@ -233,7 +233,7 @@ colors:
     red:     '0xd18ec2'
     green:   '0x556873'  # Color column.
     yellow:  '0x556873'  # Vim pane borders, visual selection.
-    blue:    '0x00ff00'  # Unused.
+    blue:    '0x83afe5'  # FZF search term current line.
     magenta: '0x00ff00'  # Unused.
     cyan:    '0xF2C38F'  # Special chars (YAML escape).
     white:   '0x89DDFF'  # Vimscript bold asterisk.

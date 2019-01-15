@@ -70,6 +70,7 @@ augroup Indentation
   autocmd Filetype bzl        setlocal tabstop=4 softtabstop=4 shiftwidth=4
   autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype sql        setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype thrift     setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
@@ -302,10 +303,9 @@ function! RgArgs(args)
   return rg_opts . ' ' . shellescape(query)
 endfunction
 
-let rg_colors = '--colors "match:fg:yellow" --colors "match:bg:blue" --colors "match:style:bold" '
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --color=always --smart-case ' . rg_colors . RgArgs(<q-args>), 1,
+  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --color=always --smart-case ' . RgArgs(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
@@ -560,7 +560,7 @@ let g:solarized_menu       = 1        " 1        |   0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup SQL
   autocmd!
-  autocmd Filetype sql command! SQLFMT :%!sqlfmt --align --print-width 120 --tab-width 2 --use-spaces
+  autocmd Filetype sql command! SQLFMT :%!sqlfmt --align --print-width 200 --no-simplify --tab-width 2 --use-spaces
   autocmd Filetype sql nnoremap <leader>s :SQLFMT<CR>
 augroup END
 
