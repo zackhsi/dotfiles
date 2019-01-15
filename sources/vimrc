@@ -15,7 +15,7 @@ if !has('nvim')
     syntax enable                  " syntax highlighting
 endif
 
-set colorcolumn=80                 " line length matters
+set colorcolumn=+1                 " line length matters
 set foldmethod=manual              " set a foldmethod
 set hidden
 set mouse=a                        " enable mouse
@@ -81,8 +81,7 @@ augroup END
 augroup LineLength
   autocmd!
   autocmd Filetype python setlocal textwidth=88
-  autocmd Filetype python setlocal colorcolumn=89
-  autocmd Filetype scala setlocal colorcolumn=101
+  autocmd Filetype scala setlocal textwidth=100
 augroup END
 
 augroup FileTypeAliases
