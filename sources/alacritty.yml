@@ -208,17 +208,17 @@ colors_off:
 colors:
   # Default colors
   primary:
-    background: '0x3c4c55'  # Terminal background.
+    background: '0x334955'  # Terminal background.
     foreground: '0xc5d4dd'  # Terminal text
 
   # Cursor colors
   cursor:
-    text: '0x3c4c55'
+    text: '0x334955'
     cursor: '0xc5d4dd'
 
   # Normal colors
   normal:
-    black:   '0x3c4c55'  # Vim background.
+    black:   '0x334955'  # Vim background.
     red:     '0xdf8c8c'
     green:   '0xa8ce93'
     yellow:  '0xdada93'
