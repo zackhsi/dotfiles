@@ -223,7 +223,7 @@ colors:
     green:   '0xa8ce93'
     yellow:  '0xdada93'
     blue:    '0x83afe5'
-    magenta: '0x9a93e1'
+    magenta: '0xa993e1'
     cyan:    '0x7fc1ca'
     white:   '0xc5d4dd'  # Vim text.
 
