@@ -456,6 +456,7 @@ Plug 'scrooloose/nerdtree'
 :command! NTF NERDTreeFind
 let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeShowHidden=1
+let NERDTreeHighlightCursorline=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Onedark.
