@@ -137,7 +137,7 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (orbital)
-colors_orbital:
+colors:
   # Default colors
   primary:
     background: '0xf7f8f9'  # Terminal background.
@@ -153,7 +153,7 @@ colors_orbital:
     black:   '0xf7f8f9'  # Vim background.
     red:     '0xdd2c67'
     green:   '0x24b47e'
-    yellow:  '0xf79a59'
+    yellow:  '0xe39f48'
     blue:    '0x2191ef'
     magenta: '0x6772e5'
     cyan:    '0x45b2e8'
@@ -171,7 +171,7 @@ colors_orbital:
     white:   '0x000000'  # Unused.
 
 # Colors (ayu)
-colors_off:
+colors_ayu:
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.
@@ -239,7 +239,7 @@ colors_nova:
     white:   '0x89DDFF'  # Vimscript bold asterisk.
 
 # Colors (base16-onedark)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0x282c34'  # Terminal background.
@@ -268,7 +268,7 @@ colors:
     yellow:  '0x434959'  # Airline background vim mode, visual selection.
     blue:    '0x86dcf8'  # FZF search term current line.
     magenta: '0xc678dd'  # Git diff file position.
-    cyan:    '0x80f3ff'  # Curly braces.
+    cyan:    '0x7ee0ce'  # Curly braces.
     white:   '0xb3b3b3'  # Curly braces.
 
 # Colors (ayu)
