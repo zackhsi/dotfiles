@@ -268,7 +268,7 @@ colors:
     yellow:  '0x434959'  # Airline background vim mode, visual selection.
     blue:    '0x86dcf8'  # FZF search term current line.
     magenta: '0xc678dd'  # Git diff file position.
-    cyan:    '0xb3f8ff'  # Curly braces.
+    cyan:    '0x80f3ff'  # Curly braces.
     white:   '0xb3b3b3'  # Curly braces.
 
 # Colors (ayu)
