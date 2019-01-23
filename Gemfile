@@ -11,3 +11,5 @@ gem "pry"
 gem "ripper-tags"
 
 gem "sqlint"
+
+gem "solargraph", "~> 0.31.1"
