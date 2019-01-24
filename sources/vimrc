@@ -180,7 +180,8 @@ let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 " Ruby.
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
 let g:ale_ruby_rubocop_executable = 'bundle'
-augroup RubyBang
+" <cword> expansion relies on `iskeyword`. This fixes tag jumping.
+augroup RubySpecialKeywordCharacters
   autocmd!
   autocmd Filetype ruby setlocal iskeyword+=!
   autocmd Filetype ruby setlocal iskeyword+=?
@@ -327,15 +328,17 @@ augroup FZF
 augroup END
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
-" Search word under cursor with leader + r.
-function! s:CWord()
+
+" Escape question marks for usage in Rg.
+function! s:CWordEscaped()
   if (&filetype ==# 'ruby')
     return substitute(expand('<cword>'), '?', '\\?', '')
   else
     return expand('<cword>')
   endif
 endfunction
-nnoremap <silent> <leader>r :silent Rg -sw <C-r>=<SID>CWord()<CR><CR>
+" Search word under cursor with leader + r.
+nnoremap <silent> <leader>r :silent Rg -sw <C-r>=<SID>CWordEscaped()<CR><CR>
 " Search visual selection with leader + r.
 vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
