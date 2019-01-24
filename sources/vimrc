@@ -180,6 +180,10 @@ let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 " Ruby.
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
 let g:ale_ruby_rubocop_executable = 'bundle'
+augroup RubyBang
+  autocmd!
+  autocmd Filetype ruby set iskeyword+=!
+augroup END
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
