@@ -328,7 +328,14 @@ augroup END
 
 noremap <silent> <Leader><Leader> :silent FZF <CR>
 " Search word under cursor with leader + r.
-nnoremap <silent> <leader>r :silent Rg -sw <C-r>=expand('<cword>')<CR><CR>
+function! s:CWord()
+  if (&filetype ==# 'ruby')
+    return substitute(expand('<cword>'), '?', '\\?', '')
+  else
+    return expand('<cword>')
+  endif
+endfunction
+nnoremap <silent> <leader>r :silent Rg -sw <C-r>=<SID>CWord()<CR><CR>
 " Search visual selection with leader + r.
 vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
 
