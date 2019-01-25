@@ -140,17 +140,17 @@ custom_cursor_colors: true
 colors:
   # Default colors
   primary:
-    background: '0xf7f8f9'  # Terminal background.
+    background: '0xf6f9fc'  # Terminal background.
     foreground: '0x333333'  # Terminal text
 
   # Cursor colors
   cursor:
-    text: '0xf7f8f9'
+    text: '0xf6f9fc'
     cursor: '0x333333'
 
   # Normal colors
   normal:
-    black:   '0xf7f8f9'  # Vim background.
+    black:   '0xf6f9fc'  # Vim background.
     red:     '0xdd2c67'
     green:   '0x24b47e'
     yellow:  '0xe39f48'
@@ -163,8 +163,8 @@ colors:
   bright:
     black:   '0x6b7c93'  # Vim line numbers, comments.
     red:     '0xfa755a'
-    green:   '0xeceff1'  # Current line, color column.
-    yellow:  '0xccd4e0'  # Vim pane borders, visual selection.
+    green:   '0xe1e8fa'  # Current line, color column.
+    yellow:  '0xe1e8fa'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.
     cyan:    '0x217ab7'  # Special chars (YAML escape).
