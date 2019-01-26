@@ -179,7 +179,7 @@ let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 
 " Ruby.
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
-let g:ale_ruby_rubocop_executable = 'bundle'
+let g:ale_ruby_rubocop_executable = 'rbenvexecrubocop'
 " <cword> expansion relies on `iskeyword`. This fixes tag jumping.
 augroup RubySpecialKeywordCharacters
   autocmd!
