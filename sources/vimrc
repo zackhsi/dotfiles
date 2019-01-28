@@ -225,7 +225,7 @@ endfor
 Plug 'chriskempson/base16-vim'
 
 function! s:base16_customize() abort
-  let l:black          = '00'
+  let l:background     = '00'
   let l:red            = '01'
   let l:green          = '02'
   let l:yellow         = '03'
@@ -243,24 +243,28 @@ function! s:base16_customize() abort
   let l:bright_white   = '15'
 
   " Ale.
-  call Base16hi('SpellCap', '', '', yellow, '00', '', '')
-  call Base16hi('ALEWarningSign', '', '', yellow, '00', '', '')
-  call Base16hi('SpellBad', '', '', red, '00', '', '')
-  call Base16hi('ALEErrorSign', '', '', red, '00', '', '')
+  call Base16hi('SpellCap'         , '' , '' , yellow     , background , ''       , '')
+  call Base16hi('ALEWarningSign'   , '' , '' , yellow     , background , ''       , '')
+  call Base16hi('SpellBad'         , '' , '' , red        , background , ''       , '')
+  call Base16hi('ALEErrorSign'     , '' , '' , red        , background , ''       , '')
 
   " Jinja.
-  call Base16hi('jinjaTagDelim', '', '', blue, '', '', '')
+  call Base16hi('jinjaTagDelim'    , '' , '' , blue       , ''         , ''       , '')
 
   " NERDTree.
-  call Base16hi('NERDTreeExecFile', '', '', green, '', 'bold', '')
+  call Base16hi('NERDTreeExecFile' , '' , '' , green      , ''         , 'bold'   , '')
 
   " Python.
-  call Base16hi('pythonInclude', '', '', bright_red, '', 'italic', '')
-  call Base16hi('pythonDocstring', '', '', cyan, '', 'italic', '')
-  call Base16hi('pythonOperator', '', '', red, '', '', '')
+  call Base16hi('pythonInclude'    , '' , '' , bright_red , ''         , 'italic' , '')
+  call Base16hi('pythonDocstring'  , '' , '' , cyan       , ''         , 'italic' , '')
+  call Base16hi('pythonOperator'   , '' , '' , red        , ''         , ''       , '')
+
+  " Ruby.
+  call Base16hi('rubyDefine'       , '' , '' , magenta    , ''         , 'italic' , '')
+  call Base16hi('Sig'              , '' , '' , background , magenta    , 'italic' , '')
 
   " Scala.
-  call Base16hi('Include', '', '', '', '', 'italic', '')
+  call Base16hi('Include'          , '' , '' , ''         , ''         , 'italic' , '')
 endfunction
 
 augroup on_change_colorschema
@@ -537,6 +541,7 @@ Plug 'tpope/vim-repeat'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
+Plug '~/oss/sorbet.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Rust.
