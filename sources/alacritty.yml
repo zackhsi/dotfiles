@@ -174,34 +174,34 @@ colors_off:
 colors:
   # Default colors
   primary:
-    background: '0x32325d'  # Terminal background.
-    foreground: '0xcfd7df'  # Terminal text
+    background: '0x424770'  # Terminal background.
+    foreground: '0xaab7c4'  # Terminal text
 
   # Cursor colors
   cursor:
-    text: '0x32325d'
-    cursor: '0xcfd7df'
+    text: '0x424770'
+    cursor: '0xaab7c4'
 
   # Normal colors
   normal:
-    black:   '0x32325d'  # Vim background.
-    red:     '0xffa27b'
-    green:   '0xaff1b6'
-    yellow:  '0xfcf4b2'
-    blue:    '0x87bbfd'
-    magenta: '0xbeb0f4'
-    cyan:    '0x8feffb'
-    white:   '0xcfd7df'  # Vim text.
+    black:   '0x424770'  # Vim background.
+    red:     '0xfa755a'
+    green:   '0x24b47e'
+    yellow:  '0xf5be58'
+    blue:    '0x7795f8'
+    magenta: '0xa78ce9'
+    cyan:    '0x68d4f8'
+    white:   '0xaab7c4'  # Vim text.
 
   # Bright colors
   bright:
-    black:   '0x8898aa'  # Vim line numbers, comments.
+    black:   '0x6b7c93'  # Vim line numbers, comments.
     red:     '0xf79a59'
-    green:   '0x424770'  # Current line, color column.
-    yellow:  '0x424770'  # Vim pane borders, visual selection.
+    green:   '0x525f7f'  # Current line, color column.
+    yellow:  '0x525f7f'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # Unused.
     magenta: '0x000000'  # Unused.
-    cyan:    '0xffc7ee'  # Special chars (YAML escape).
+    cyan:    '0xd782d9'  # Special chars (YAML escape).
     white:   '0x000000'  # Unused.
 
 # Colors (ayu)
