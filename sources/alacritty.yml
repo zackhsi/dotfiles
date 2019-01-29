@@ -272,8 +272,8 @@ colors_nova:
     cyan:    '0xF2C38F'  # Special chars (YAML escape).
     white:   '0x89DDFF'  # Vimscript bold asterisk.
 
-# Colors (base16-onedark)
-colors_off:
+# Colors (onedark)
+colors_onedark:
   # Default colors
   primary:
     background: '0x282c34'  # Terminal background.
