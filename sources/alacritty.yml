@@ -175,12 +175,12 @@ colors:
   # Default colors
   primary:
     background: '0x32325d'  # Terminal background.
-    foreground: '0xe6ebf1'  # Terminal text
+    foreground: '0xcfd7df'  # Terminal text
 
   # Cursor colors
   cursor:
     text: '0x32325d'
-    cursor: '0xe6ebf1'
+    cursor: '0xcfd7df'
 
   # Normal colors
   normal:
@@ -191,7 +191,7 @@ colors:
     blue:    '0x87bbfd'
     magenta: '0xbeb0f4'
     cyan:    '0x8feffb'
-    white:   '0xe6ebf1'  # Vim text.
+    white:   '0xcfd7df'  # Vim text.
 
   # Bright colors
   bright:
