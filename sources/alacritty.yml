@@ -137,6 +137,40 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (orbital)
+colors_off:
+  # Default colors
+  primary:
+    background: '0xf6f9fc'  # Terminal background.
+    foreground: '0x333333'  # Terminal text
+
+  # Cursor colors
+  cursor:
+    text: '0xf6f9fc'
+    cursor: '0x333333'
+
+  # Normal colors
+  normal:
+    black:   '0xf6f9fc'  # Vim background.
+    red:     '0xdd2c67'
+    green:   '0x24b47e'
+    yellow:  '0xe39f48'
+    blue:    '0x2191ef'
+    magenta: '0x6772e5'
+    cyan:    '0x45b2e8'
+    white:   '0x333333'  # Vim text.
+
+  # Bright colors
+  bright:
+    black:   '0x6b7c93'  # Vim line numbers, comments.
+    red:     '0xfa755a'
+    green:   '0xe1e8fa'  # Current line, color column.
+    yellow:  '0xe1e8fa'  # Vim pane borders, visual selection.
+    blue:    '0x000000'  # Unused.
+    magenta: '0x000000'  # Unused.
+    cyan:    '0x217ab7'  # Special chars (YAML escape).
+    white:   '0x000000'  # Unused.
+
+# Colors (orbital_dark)
 colors:
   # Default colors
   primary:
