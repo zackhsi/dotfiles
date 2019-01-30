@@ -186,9 +186,9 @@ colors:
   normal:
     black:   '0x424770'  # Vim background.
     red:     '0xfa755a'
-    green:   '0x24b47e'
+    green:   '0x3ecf8e'
     yellow:  '0xf5be58'
-    blue:    '0x7795f8'
+    blue:    '0x87bbfd'
     magenta: '0xa78ce9'
     cyan:    '0x68d4f8'
     white:   '0xaab7c4'  # Vim text.
