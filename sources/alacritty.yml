@@ -165,10 +165,10 @@ colors_off:
     red:     '0xfa755a'
     green:   '0xe1e8fa'  # Current line, color column.
     yellow:  '0xe1e8fa'  # Vim pane borders, visual selection.
-    blue:    '0x000000'  # Unused.
+    blue:    '0x000000'  # FZF search term current line.
     magenta: '0x000000'  # Unused.
     cyan:    '0x217ab7'  # Special chars (YAML escape).
-    white:   '0x000000'  # Unused.
+    white:   '0x000000'  # Vimscript bold asterisk.
 
 # Colors (orbital_dark)
 colors:
@@ -199,10 +199,10 @@ colors:
     red:     '0xf79a59'
     green:   '0x525f7f'  # Current line, color column.
     yellow:  '0x525f7f'  # Vim pane borders, visual selection.
-    blue:    '0x000000'  # Unused.
+    blue:    '0x87bbfd'  # FZF search term current line.
     magenta: '0x000000'  # Unused.
     cyan:    '0xd782d9'  # Special chars (YAML escape).
-    white:   '0x000000'  # Unused.
+    white:   '0xe6ebf1'  # Vimscript bold asterisk.
 
 # Colors (ayu)
 colors_ayu:
