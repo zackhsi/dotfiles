@@ -186,7 +186,7 @@ colors:
   normal:
     black:   '0x424770'  # Vim background.
     red:     '0xfa755a'
-    green:   '0x3ecf8e'
+    green:   '0x50bd8c'  # Green5, HSL saturation lowered to 45%.
     yellow:  '0xf5be58'
     blue:    '0x87bbfd'
     magenta: '0xa78ce9'
