@@ -5,6 +5,6 @@ export PATH="~/stripe/henson/bin:$PATH"
 export PATH="~/stripe/password-vault/bin:$PATH"
 export PATH="~/stripe/space-commander/bin:$PATH"
 
-export SC_AWS_ROLE_NAME=access-s3-stripe-data
+export SC_AWS_ROLE_NAME=engineersreadonly
 
 alias pay="TERM=xterm-color pay"
