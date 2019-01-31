@@ -105,6 +105,11 @@ brew 'gnu-sed', args: ['with-default-names']
 # terminal-notifier
 brew 'terminal-notifier'
 
+# Terraform.
+brew 'terraform'
+tap 'wata727/tflint'
+brew 'tflint'
+
 # Tmux.
 brew 'tmux'
 brew 'reattach-to-user-namespace'

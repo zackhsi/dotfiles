@@ -207,6 +207,9 @@ augroup CheckScalafmtNg
   autocmd BufWritePost *.scala call CheckScalafmtNg()
 augroup END
 
+" Terraform.
+let g:ale_fixers['terraform'] = ['terraform']
+
 " Typescript.
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
