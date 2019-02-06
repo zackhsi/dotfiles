@@ -163,8 +163,8 @@ colors_off:
   bright:
     black:   '0x6b7c93'  # Vim line numbers, comments.
     red:     '0xfa755a'
-    green:   '0xe1e8fa'  # Current line, color column.
-    yellow:  '0xe1e8fa'  # Vim pane borders, visual selection.
+    green:   '0xe6ebf1'  # Current line, color column.
+    yellow:  '0xe6ebf1'  # Vim pane borders, visual selection.
     blue:    '0x000000'  # FZF search term current line.
     magenta: '0x000000'  # Unused.
     cyan:    '0x217ab7'  # Special chars (YAML escape).
