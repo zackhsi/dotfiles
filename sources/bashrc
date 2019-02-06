@@ -145,6 +145,9 @@ grev() {
 alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
+# Hub.
+alias hc='hub compare'
+
 # Tig.
 alias tst='tig status'
 stty dsusp undef  # Scroll up with <C-y> https://github.com/jonas/tig/issues/214.
