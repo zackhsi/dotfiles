@@ -137,7 +137,7 @@ draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
 # Colors (orbital)
-colors_off:
+colors_orbital:
   # Default colors
   primary:
     background: '0xf6f9fc'  # Terminal background.
@@ -171,7 +171,7 @@ colors_off:
     white:   '0x000000'  # Vimscript bold asterisk.
 
 # Colors (orbital_dark)
-colors:
+colors_off:
   # Default colors
   primary:
     background: '0x424770'  # Terminal background.
@@ -205,7 +205,7 @@ colors:
     white:   '0xe6ebf1'  # Vimscript bold asterisk.
 
 # Colors (ayu)
-colors_ayu:
+colors:
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.
