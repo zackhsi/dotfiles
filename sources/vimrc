@@ -81,7 +81,6 @@ augroup END
 augroup LineLength
   autocmd!
   autocmd Filetype python setlocal textwidth=88
-  autocmd Filetype scala setlocal textwidth=100
 augroup END
 
 augroup FileTypeAliases
