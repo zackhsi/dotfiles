@@ -1,6 +1,6 @@
 __git_branch_fast() {
   local YEL='\[\e[0;33m\]'
-  local MAG='\[\e[0;35m\]'
+  local GRE='\[\e[0;32m\]'
   local ITALIC='\[\e[3m\]'
   local NONE='\[\e[0m\]'
 
@@ -26,7 +26,7 @@ __git_branch_fast() {
       ;;
   esac
   if [ -n "$branch" ]; then
-    echo " ${YEL}${ITALIC}(${MAG}${ITALIC}$branch${YEL}${ITALIC})${NONE}"
+    echo " ${YEL}${ITALIC}(${GRE}${ITALIC}$branch${YEL}${ITALIC})${NONE}"
   fi
 }
 
