@@ -78,11 +78,6 @@ augroup Indentation
   autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
-augroup LineLength
-  autocmd!
-  autocmd Filetype python setlocal textwidth=88
-augroup END
-
 augroup FileTypeAliases
   autocmd!
   autocmd BufNewFile,BufRead *.pyi setfiletype python
