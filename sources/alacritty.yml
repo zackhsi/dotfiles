@@ -338,39 +338,6 @@ colors_ayu_dark:
     cyan:    '0xb3f8ff'  # Curly braces.
     white:   '0xb3b3b3'  # Curly braces.
 
-# Colors (material-palenight)
-colors_material_palenight:
-  # Default colors
-  primary:
-    background: '0x292D3E'  # Terminal background.
-    foreground: '0xA6ACCD'  # Terminal text.
-
-  cursor:
-    text: '0x292D3E'
-    cursor: '0xA6ACCD'
-
-  # Normal colors
-  normal:
-    black:   '0x292D3E'  # Vim background.
-    red:     '0xF07178'
-    green:   '0xC3E88D'
-    yellow:  '0xFFE57F'
-    blue:    '0x82AAFF'
-    magenta: '0xbb80b3'
-    cyan:    '0x89DDFF'
-    white:   '0xA6ACCD'  # Vim text, airline git branch.
-
-  # Bright colors
-  bright:
-    black:   '0x676E95'  # Comments, line number background.
-    red:     '0xF78C6C'  # Parens, ints.
-    green:   '0x3A3F58'  # Color column.
-    yellow:  '0x353d64'  # Airline background vim mode, visual selection.
-    blue:    '0xB2CCD6'  # FZF search term current line.
-    magenta: '0x0000ff'  # Unused.
-    cyan:    '0xf07178'  # Special chars (YAML escape).
-    white:   '0x0000ff'  # Unused.
-
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
