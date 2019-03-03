@@ -24,7 +24,7 @@
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
-  '~/.vimrc': 'vimrc',
+  '~/.config/nvim/init.vim': 'init.vim',
   '~/.xvimrc': 'xvimrc',
   '~/.zsh_theme.zsh': 'zsh_theme.zsh',
   '~/.zshrc': 'zshrc',
@@ -47,17 +47,3 @@ Ensure {{ name }} is symlinked to from {{ source }}:
     - force: True
     - makedirs: True
 {% endfor %}
-
-Ensure neovim config is linked:
-  file.symlink:
-    - name: ~/.config/nvim
-    - target: /Users/{{ user }}/.vim
-    - user: {{ user }}
-    - makedirs: True
-
-Ensure neovimrc is linked:
-  file.symlink:
-    - name: ~/.config/nvim/init.vim
-    - target: {{ sources_dir }}/vimrc
-    - user: {{ user }}
-    - makedirs: True

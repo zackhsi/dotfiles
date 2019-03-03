@@ -124,14 +124,16 @@ tnoremap <Esc> <C-\><C-n>
 " Plugins.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:plug_shallow = 0
+
 " Bootstrap vim-plug.
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    augroup VimPlugBootstrap
-      autocmd!
-      autocmd VimEnter * PlugInstall | source $MYVIMRC
-    augroup END
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  augroup VimPlugBootstrap
+    autocmd!
+    autocmd VimEnter * PlugInstall | source $MYVIMRC
+  augroup END
 endif
 call plug#begin('~/.vim/plugged')
 
@@ -282,11 +284,6 @@ map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 " Auto pairs.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'jiangmiao/auto-pairs'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CSV.
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'chrisbra/csv.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
