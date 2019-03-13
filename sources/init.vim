@@ -178,7 +178,7 @@ let g:ale_ruby_rubocop_executable = 'rbenvexecrubocop'
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
 let g:ale_fixers['ruby'] = ['rubocop']
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
-  let g:ale_ruby_rubocop_options = '--fix-layout'
+  let g:ale_ruby_rubocop_options = '--except PrisonGuard/AutogenLoaderPreamble'
 end
 " <cword> expansion relies on `iskeyword`. This fixes tag jumping.
 augroup RubySpecialKeywordCharacters
