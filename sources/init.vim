@@ -303,6 +303,8 @@ let g:github_enterprise_urls = ['git.corp.stripe.com']
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 
+let g:fzf_colors = { 'border':  ['fg', 'Comment'] }
+
 function! RgArgs(args)
   let tokens  = split(a:args)
   let rg_opts = join(filter(copy(tokens), 'v:val =~# "^-"'))
@@ -315,7 +317,7 @@ command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --color=always --smart-case ' . rg_colors . RgArgs(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
-  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \           : fzf#vim#with_preview('right:40%', '?'),
   \   <bang>0)
 
 " Set fzf statusline color.
