@@ -7,12 +7,12 @@
 # Symlinks
 {% set links = {
   '~/.agignore': 'agignore',
-  '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
   '~/.bash_completion': 'bash_completion',
   '~/.bash_completion.d': 'bash_completion.d',
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
   '~/.bashrc.d': 'bashrc.d',
+  '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
   '~/.eslintrc.yml': 'eslintrc.yml',

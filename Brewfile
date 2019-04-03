@@ -6,6 +6,9 @@ brew 'bash'
 brew 'bash-completion'
 brew 'shellcheck'
 
+# Bat.
+brew 'bat'
+
 # Battery.
 tap 'Goles/battery'
 brew 'battery'

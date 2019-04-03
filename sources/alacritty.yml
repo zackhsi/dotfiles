@@ -170,8 +170,7 @@ colors_orbital:
     cyan:    '0x217ab7'  # Special chars (YAML escape).
     white:   '0x000000'  # Vimscript bold asterisk.
 
-# Colors (orbital_dark)
-colors_off:
+colors: # orbital_dark
   # Default colors
   primary:
     background: '0x424770'  # Terminal background.
@@ -204,8 +203,7 @@ colors_off:
     cyan:    '0xd782d9'  # Special chars (YAML escape).
     white:   '0xe6ebf1'  # Vimscript bold asterisk.
 
-# Colors (ayu)
-colors:
+colors_off: # ayu_light
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.

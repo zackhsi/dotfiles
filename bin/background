@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+alacritty_color=$(grep --max-count=1 "^colors:" "$DIR/../sources/alacritty.yml")
+if grep --quiet dark <<< "$alacritty_color"; then
+  echo "dark"
+else
+  echo "light"
+fi
