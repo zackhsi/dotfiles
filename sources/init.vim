@@ -332,7 +332,7 @@ augroup FZF
   autocmd User FzfStatusLine call <SID>fzf_statusline()
 augroup END
 
-noremap <silent> <Leader><Leader> :silent FZF <CR>
+noremap <silent> <Leader><Leader> :call fzf#vim#gitfiles('', fzf#vim#with_preview('right:40%'))<CR>
 
 " Escape question marks for usage in Rg.
 function! s:CWordEscaped()
