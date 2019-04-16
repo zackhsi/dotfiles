@@ -590,7 +590,7 @@ augroup END
 
 function! s:PayTest()
   let pay_test_command = '"pay test ' . expand('%') . ' -l ' . line('.') . '"'
-  execute 'silent !tmux send-keys -t "pay test" ' . pay_test_command . ' Enter'
+  execute 'silent !tmux send-keys -R -t "pay test" ' . pay_test_command . ' Enter'
   execute 'silent !tmux select-window -t "pay test"'
 endfunction
 
