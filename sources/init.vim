@@ -585,6 +585,20 @@ augroup SQL
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Stripe.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:PayTest()
+  let pay_test_command = '"pay test ' . expand('%') . ' -l ' . line('.') . '"'
+  execute 'silent !tmux send-keys -t "pay test" ' . pay_test_command . ' Enter'
+  execute 'silent !tmux select-window -t "pay test"'
+endfunction
+
+if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
+  nnoremap <leader>pt :call <SID>PayTest()<CR>
+end
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Surround.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-surround'
