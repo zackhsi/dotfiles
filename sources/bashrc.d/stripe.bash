@@ -10,6 +10,5 @@ export SC_AWS_ROLE_NAME=engineersreadonly
 alias pay="TERM=xterm-color pay"
 
 opsbox() {
-  ls-servers -Spt opsbox --sample-user -N
-  ssh "$(ls-servers -Spt opsbox --sample-user -sN)"
+  ssh "$(ls-servers -Spt opsbox --sample-user -N)"
 }
