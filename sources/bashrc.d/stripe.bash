@@ -12,3 +12,6 @@ alias pay="TERM=xterm-color pay"
 opsbox() {
   ssh "$(ls-servers -Spt opsbox --sample-user -N)"
 }
+runway() {
+  ssh "$(ls-servers -Spt runway --sample-user -N)"
+}
