@@ -263,6 +263,7 @@ function! s:base16_customize() abort
   call Base16hi('pythonOperator'   , '' , '' , red        , ''         , ''       , '')
 
   " Ruby.
+  call Base16hi('rubyboolean'      , '' , '' , cyan       , ''         , 'italic' , '')
   call Base16hi('rubyDefine'       , '' , '' , magenta    , ''         , 'italic' , '')
   call Base16hi('Sig'              , '' , '' , background , magenta    , 'italic' , '')
 
@@ -401,17 +402,18 @@ let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
   \ '.eggs',
   \ '.mypy_cache',
-  \ 'build',
   \ 'venv',
   \ 'tags',
   \ 'tags.temp',
   \ '.ijwb',
   \ 'bazel-*',
 \ ]
-let g:gutentags_project_info = []
-call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
 let g:gutentags_ctags_executable_ruby = 'rtags'
-call add(g:gutentags_project_info, {'type': 'scala', 'file': '.scalafmt.conf'})
+if fnamemodify(getcwd(), ':p') =~ $HOME.'/stripe/'
+  let g:gutentags_project_info = []
+  call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
+  call add(g:gutentags_project_info, {'type': 'scala', 'file': '.scalafmt.conf'})
+end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSX.
