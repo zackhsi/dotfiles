@@ -168,24 +168,19 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {'*': []}
 
 " Bazel.
-" Comment out until invocation options are supported.
 Plug '~/oss/ale-bazel'
 let g:ale_linters['bzl'] = ['bazel-scala']
 let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 
 " Ruby.
+Plug '~/oss/sorbet-lsp'
 let g:ale_ruby_rubocop_executable = 'rbenvexecrubocop'
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
 let g:ale_fixers['ruby'] = ['rubocop']
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
   let g:ale_ruby_rubocop_options = '--except PrisonGuard/AutogenLoaderPreamble'
+  call add(g:ale_linters['ruby'], 'sorbet-lsp')
 end
-" <cword> expansion relies on `iskeyword`. This fixes tag jumping.
-augroup RubySpecialKeywordCharacters
-  autocmd!
-  autocmd Filetype ruby setlocal iskeyword+=!
-  autocmd Filetype ruby setlocal iskeyword+=?
-augroup END
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
@@ -454,16 +449,6 @@ Plug 'ncm2/ncm2-tmux'
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" LanguageServer client for NeoVim.
-Plug 'autozimu/LanguageClient-neovim', {
-  \ 'branch': 'next',
-  \ 'do': 'bash install.sh',
-  \ }
-
-let g:LanguageClient_serverCommands = {
-  \ 'ruby': [ 'sorbet',  '--lsp' ],
-  \ }
-
 nnoremap <silent> <leader>ld :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <leader>lk :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> <leader>ln :call LanguageClient#textDocument_rename()<CR>
@@ -544,6 +529,13 @@ Plug 'tpope/vim-repeat'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-endwise'
 Plug '~/oss/sorbet.vim'
+
+" <cword> expansion relies on `iskeyword`. This fixes tag jumping.
+augroup RubySpecialKeywordCharacters
+  autocmd!
+  autocmd Filetype ruby setlocal iskeyword+=!
+  autocmd Filetype ruby setlocal iskeyword+=?
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Rust.
