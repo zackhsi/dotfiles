@@ -50,8 +50,16 @@ window:
   #     - transparent: Title bar, transparent background, but no title bar buttons
   decorations: none
 
-  # When true, alacritty starts maximized.
-  start_maximized: false
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  startup_mode: Windowed
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -134,42 +142,6 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-custom_cursor_colors: true
-
-# Colors (orbital)
-colors_orbital:
-  # Default colors
-  primary:
-    background: '0xf6f9fc'  # Terminal background.
-    foreground: '0x333333'  # Terminal text
-
-  # Cursor colors
-  cursor:
-    text: '0xf6f9fc'
-    cursor: '0x333333'
-
-  # Normal colors
-  normal:
-    black:   '0xf6f9fc'  # Vim background.
-    red:     '0xdd2c67'
-    green:   '0x24b47e'
-    yellow:  '0xe39f48'
-    blue:    '0x2191ef'
-    magenta: '0x6772e5'
-    cyan:    '0x45b2e8'
-    white:   '0x333333'  # Vim text.
-
-  # Bright colors
-  bright:
-    black:   '0x6b7c93'  # Vim line numbers, comments.
-    red:     '0xfa755a'
-    green:   '0xe6ebf1'  # Current line, color column.
-    yellow:  '0xe6ebf1'  # Vim pane borders, visual selection.
-    blue:    '0x000000'  # FZF search term current line.
-    magenta: '0x000000'  # Unused.
-    cyan:    '0x217ab7'  # Special chars (YAML escape).
-    white:   '0x000000'  # Vimscript bold asterisk.
-
 colors: # orbital_dark
   # Default colors
   primary:
@@ -235,106 +207,6 @@ colors_off: # ayu_light
     magenta: '0x000000'  # Unused.
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
     white:   '0xe6ba7e'  # Vimscript bold asterisk.
-
-# Colors (nova)
-colors_nova:
-  # Default colors
-  primary:
-    background: '0x334955'  # Terminal background.
-    foreground: '0xc5d4dd'  # Terminal text
-
-  # Cursor colors
-  cursor:
-    text: '0x334955'
-    cursor: '0xc5d4dd'
-
-  # Normal colors
-  normal:
-    black:   '0x334955'  # Vim background.
-    red:     '0xdf8c8c'
-    green:   '0xa8ce93'
-    yellow:  '0xdada93'
-    blue:    '0x83afe5'
-    magenta: '0xa993e1'
-    cyan:    '0x7fc1ca'
-    white:   '0xc5d4dd'  # Vim text.
-
-  # Bright colors
-  bright:
-    black:   '0x899ba6'  # Vim line numbers, comments.
-    red:     '0xd18ec2'
-    green:   '0x556873'  # Color column.
-    yellow:  '0x556873'  # Vim pane borders, visual selection.
-    blue:    '0x83afe5'  # FZF search term current line.
-    magenta: '0x00ff00'  # Unused.
-    cyan:    '0xF2C38F'  # Special chars (YAML escape).
-    white:   '0x89DDFF'  # Vimscript bold asterisk.
-
-# Colors (onedark)
-colors_onedark:
-  # Default colors
-  primary:
-    background: '0x282c34'  # Terminal background.
-    foreground: '0xabb2bf'  # Terminal text.
-
-  cursor:
-    text: '0x282c34'
-    cursor: '0xabb2bf'
-
-  # Normal colors
-  normal:
-    black:   '0x282c34'  # Vim background.
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xe5c07b'
-    blue:    '0x5ecaed'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'  # Airline git branch.
-
-  # Bright colors
-  bright:
-    black:   '0x636c83'  # Comments, line number background.
-    red:     '0xd19a66'  # Parens, ints.
-    green:   '0x4b5263'  # Current line, color column.
-    yellow:  '0x434959'  # Airline background vim mode, visual selection.
-    blue:    '0x86dcf8'  # FZF search term current line.
-    magenta: '0xc678dd'  # Git diff file position.
-    cyan:    '0x7ee0ce'  # Curly braces.
-    white:   '0xb3b3b3'  # Curly braces.
-
-# Colors (ayu)
-colors_ayu_dark:
-  # Default colors
-  primary:
-    background: '0x1f2430'  # Terminal background.
-    foreground: '0xcbccc6'  # Terminal text.
-
-  cursor:
-    text: '0x1f2430'
-    cursor: '0xFA86DF'
-
-  # Normal colors
-  normal:
-    black:   '0x1f2430'  # Vim background.
-    red:     '0xf28779'
-    green:   '0xbae67e'
-    yellow:  '0xffd580'
-    blue:    '0x73d0ff'
-    magenta: '0xd4bfff'
-    cyan:    '0x95e6cb'
-    white:   '0xcbccc6'  # Vim text, airline git branch.
-
-  # Bright colors
-  bright:
-    black:   '0x5c6773'  # Comments, line number background.
-    red:     '0x5ccfe6'  # Parens, ints.
-    green:   '0x2a3546'  # Color column.
-    yellow:  '0x313e52'  # Airline background vim mode, visual selection.
-    blue:    '0x86dcf8'  # FZF search term current line.
-    magenta: '0xc678dd'  # Git diff file position.
-    cyan:    '0xb3f8ff'  # Curly braces.
-    white:   '0xb3b3b3'  # Curly braces.
 
 # Visual Bell
 #
