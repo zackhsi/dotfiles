@@ -125,3 +125,6 @@ brew 'urlview'
 
 # Watch.
 brew 'watch'
+
+# Yarn.
+brew 'yarn'
