@@ -142,7 +142,7 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-colors: # orbital_dark
+colors_off: # orbital_dark
   # Default colors
   primary:
     background: '0x424770'  # Terminal background.
@@ -175,7 +175,7 @@ colors: # orbital_dark
     cyan:    '0xd782d9'  # Special chars (YAML escape).
     white:   '0xe6ebf1'  # Vimscript bold asterisk.
 
-colors_off: # ayu_light
+colors: # ayu_light
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.
