@@ -44,12 +44,6 @@ set nowritebackup                  " only in case you don't want a backup file w
 " Reload vimrc.
 nnoremap <leader>v :source $MYVIMRC<CR>
 
-" Reset cursor to vertical line that does not blink.
-augroup CursorStyle
-  autocmd!
-  autocmd VimLeave * set guicursor=a:ver1-blinkon0
-augroup END
-
 " Copy selection to system clipboard.
 vnoremap <Leader>y "+y
 
@@ -379,7 +373,6 @@ Plug 'airblade/vim-gitgutter'
 " Golang.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Goyo.
@@ -439,7 +432,6 @@ set completeopt=noinsert,menuone,noselect
 " NOTE: you need to install completion sources to get completions. Check
 " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
 Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-tagprefix'
