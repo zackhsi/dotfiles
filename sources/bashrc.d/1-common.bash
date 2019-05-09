@@ -1,8 +1,5 @@
 # Common zsh/bash configuration
 
-# Devbox
-alias c=control
-
 # Directories
 alias d="cd ~/Desktop"
 alias desk="cd ~/Desktop"
