@@ -4,16 +4,6 @@ case $- in
     *) return ;;
 esac
 
-# Keep around INFINITE lines of history in file
-export HISTFILESIZE=""
-export HISTSIZE=""
-
-# Erase duplicate commands and whitespace in history
-HISTCONTROL=ignoreboth:erasedups
-
-# Use a more compact format for the time builtin's output
-TIMEFORMAT='real:%lR user:%lU sys:%lS'
-
 # Change directory with cd
 shopt -s autocd
 # Autocorrect fudged paths in cd calls
@@ -65,9 +55,6 @@ if ((BASH_VERSINFO[0] >= 4)) ; then
     ((BASH_VERSINFO[1] >= 3)) && shopt -s direxpand
 fi
 
-# all-repos.
-export ALL_REPOS_CONFIG_FILENAME=~/.config/all-repos.json
-
 # Bash completion.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -76,7 +63,22 @@ export BASH_COMPLETION_DIR # Give salt access
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
-# vi mode.
+# Editor.
+export EDITOR='nvim'
+
+# History.
+# Keep around INFINITE lines of history in file
+export HISTFILESIZE=""
+export HISTSIZE=""
+# Erase duplicate commands and whitespace in history
+HISTCONTROL=ignoreboth:erasedups
+# Use a more compact format for the time builtin's output
+TIMEFORMAT='real:%lR user:%lU sys:%lS'
+
+# Pager
+export PAGER="less -IM"
+
+# Vi mode.
 set -o vi
 bind '"\C-p": previous-history'
 bind '"\C-n": next-history'
@@ -88,72 +90,6 @@ bind '"\C-d": delete-char'
 bind '"^W": backward-kill-word'
 bind '"\C-a": beginning-of-line'
 bind '"\C-e": end-of-line'
-
-# thefuck.
-eval $(thefuck --alias)
-
-# FZF.
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Git.
-alias g='git'
-__git_complete g __git_main
-alias gb='git branch'
-__git_complete gb _git_branch
-alias gbc="git branch | grep -v master | xargs git branch -d"
-alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d'
-alias gbDa="git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D"
-alias gc!='git commit -v --amend'
-alias gc='git commit -v'
-alias gcount='git shortlog -sn'
-alias gca!='git commit -v -a --amend'
-alias gca='git commit -v -a'
-alias gcan!='git commit -v -a --no-edit --amend'
-alias gcm='git checkout master'
-alias gco='git checkout'
-__git_complete gco _git_checkout
-alias gd='git diff'
-__git_complete gd _git_diff
-alias gdm='git diff master'
-alias gds='git diff --staged'
-alias gdt='git difftool'
-__git_complete gdt _git_diff
-alias gdw='git diff --word-diff'
-alias gl='git pull'
-alias gl='git pull'
-alias glg='git log --stat'
-__git_complete glg _git_log
-gp() {
-  if [[ $# -gt 0 ]]; then
-    git push "$@"
-  else
-    git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
-  fi
-}
-alias grb='git rebase'
-__git_complete grb _git_rebase
-alias grba='git rebase --abort'
-alias grbc='git rebase --continue'
-alias grbm='git rebase master'
-grev() {
-  if [[ $# -gt 0 ]]; then
-    git rev-parse "$@"
-  else
-    git rev-parse HEAD
-  fi
-}
-alias gst='git status'
-alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
-
-# Hub.
-alias hc='hub compare'
-
-# Tig.
-alias tst='tig status'
-stty dsusp undef  # Scroll up with <C-y> https://github.com/jonas/tig/issues/214.
-
-# Vim. Must be exported before FZF configuration.
-export BACKGROUND=dark
 
 # Load startup files in ~/.bashrc.d.
 for sh in "$HOME"/.bashrc.d/*.bash ; do

@@ -1,5 +1,11 @@
 # vi: ft=sh
 
+# https://superuser.com/questions/544989/does-tmux-sort-the-path-variable/583502#583502
+if [ -f /etc/profile ]; then
+  export PATH=""
+  . /etc/profile
+fi
+
 if [ -f ~/.bashrc ]; then
   # shellcheck source=/Users/zackhsi/.bashrc
   . ~/.bashrc

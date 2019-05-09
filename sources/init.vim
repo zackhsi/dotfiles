@@ -69,7 +69,6 @@ augroup Indentation
   autocmd Filetype vim        setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype xml        setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype yaml       setlocal tabstop=2 softtabstop=2 shiftwidth=2
-  autocmd Filetype zsh        setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
 augroup FileTypeAliases

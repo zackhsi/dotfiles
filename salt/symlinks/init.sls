@@ -18,16 +18,12 @@
   '~/.eslintrc.yml': 'eslintrc.yml',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
-  '~/.ipython/profile_default/ipython_config.py': 'ipython_config.py',
   '~/.isort.cfg': 'isort.cfg',
   '~/.rubocop.yml': 'rubocop.yml',
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
   '~/.config/nvim/init.vim': 'init.vim',
-  '~/.xvimrc': 'xvimrc',
-  '~/.zsh_theme.zsh': 'zsh_theme.zsh',
-  '~/.zshrc': 'zshrc',
 } %}
 
 # Bash completion.
