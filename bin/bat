@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-set -e
-light_or_dark=$(background)
-/usr/local/bin/bat --theme="OneHalf${light_or_dark^}" "$@"

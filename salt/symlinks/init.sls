@@ -13,6 +13,7 @@
   '~/.bashrc': 'bashrc',
   '~/.bashrc.d': 'bashrc.d',
   '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
+  '~/.config/bat/config': 'bat.conf',
   '~/.config/flake8': 'flake8',
   '~/.ctags': 'ctags',
   '~/.eslintrc.yml': 'eslintrc.yml',
