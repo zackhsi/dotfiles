@@ -459,6 +459,8 @@ let NERDTreeIgnore = ['\.pyc$']
 let NERDTreeShowHidden=1
 let NERDTreeHighlightCursorline=0
 
+Plug '~/oss/nerdtree-rg.vim'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Onedark.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
