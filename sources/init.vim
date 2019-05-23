@@ -180,7 +180,7 @@ let g:ale_fixers['scala'] = ['scalafmt']
 let g:ale_scala_scalafmt_executable = 'scalafmt_fast'
 
 function! CheckScalafmtNg()
-  let _ = !system('netstat -an | grep -q 2113')
+  silent execute('!nc -z localhost 2113')
   if v:shell_error
     set cmdheight=2
     echohl WarningMsg
