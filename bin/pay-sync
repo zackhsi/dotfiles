@@ -9,4 +9,4 @@ if ! [ -d "$HOME/stripe/$repo/.git" ]; then
   echo "ERROR: no git repo found at ~/stripe/$repo"
   exit 1
 fi
-exec pay --host runway2.nw sync "$HOME/stripe/$repo:/home/$USER/$repo"
+exec pay --host $(ls-servers -Spt runway --sample-user -N) sync "$HOME/stripe/$repo:/home/$USER/$repo"
