@@ -3,18 +3,6 @@ scriptencoding utf-8
 
 let mapleader = "\<Space>"         " Use space as leader
 
-" Legacy settings.
-if !has('nvim')
-    set autoindent                 " auto indenting
-    set autoread                   " reread file on focus
-    set backspace=indent,eol,start " backspace over everything in insert mode
-    set laststatus=2               " grey status bar at the bottom
-    set smarttab                   " be smart when using tabs
-    set termencoding=utf-8         " Set the default encodings just in case $LANG isn't set
-    set ttymouse=xterm2            " more mouse
-    syntax enable                  " syntax highlighting
-endif
-
 set colorcolumn=+1                 " line length matters
 set foldmethod=manual              " set a foldmethod
 set hidden
