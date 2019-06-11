@@ -223,29 +223,45 @@ function! s:base16_customize() abort
   let l:bright_white   = '15'
 
   " Ale.
-  call Base16hi('SpellCap'         , '' , '' , yellow     , background , ''       , '')
-  call Base16hi('ALEWarningSign'   , '' , '' , yellow     , background , ''       , '')
-  call Base16hi('SpellBad'         , '' , '' , red        , background , ''       , '')
-  call Base16hi('ALEErrorSign'     , '' , '' , red        , background , ''       , '')
+  call Base16hi('SpellCap'              , '' , '' , yellow     , background , ''       , '')
+  call Base16hi('ALEWarningSign'        , '' , '' , yellow     , background , ''       , '')
+  call Base16hi('SpellBad'              , '' , '' , red        , background , ''       , '')
+  call Base16hi('ALEErrorSign'          , '' , '' , red        , background , ''       , '')
+
+  " Comments.
+  call Base16hi('Comment'               , '' , '' , ''         , ''         , 'italic' , '')
+
+  " Gitgutter.
+  call Base16hi('GitGutterAdd'          , '' , '' , ''         , background , ''       , '')
+  call Base16hi('GitGutterChange'       , '' , '' , ''         , background , ''       , '')
+  call Base16hi('GitGutterDelete'       , '' , '' , ''         , background , ''       , '')
+  call Base16hi('GitGutterChangeDelete' , '' , '' , ''         , background , ''       , '')
 
   " Jinja.
-  call Base16hi('jinjaTagDelim'    , '' , '' , blue       , ''         , ''       , '')
+  call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''         , ''       , '')
+
+  " Line numbers.
+  call Base16hi('LineNr'                , '' , '' , ''         , background , ''       , '')
 
   " NERDTree.
-  call Base16hi('NERDTreeExecFile' , '' , '' , green      , ''         , 'bold'   , '')
+  call Base16hi('NERDTreeExecFile'      , '' , '' , green      , ''         , 'bold'   , '')
 
   " Python.
-  call Base16hi('pythonInclude'    , '' , '' , bright_red , ''         , 'italic' , '')
-  call Base16hi('pythonDocstring'  , '' , '' , cyan       , ''         , 'italic' , '')
-  call Base16hi('pythonOperator'   , '' , '' , red        , ''         , ''       , '')
+  call Base16hi('pythonInclude'         , '' , '' , bright_red , ''         , 'italic' , '')
+  call Base16hi('pythonDocstring'       , '' , '' , cyan       , ''         , 'italic' , '')
+  call Base16hi('pythonOperator'        , '' , '' , red        , ''         , ''       , '')
 
   " Ruby.
-  call Base16hi('rubyboolean'      , '' , '' , cyan       , ''         , 'italic' , '')
-  call Base16hi('rubyDefine'       , '' , '' , magenta    , ''         , 'italic' , '')
-  call Base16hi('Sig'              , '' , '' , background , magenta    , 'italic' , '')
+  call Base16hi('rubyboolean'           , '' , '' , cyan       , ''         , 'italic' , '')
+  call Base16hi('rubyDefine'            , '' , '' , magenta    , ''         , 'italic' , '')
+  call Base16hi('Sig'                   , '' , '' , background , magenta    , 'italic' , '')
 
   " Scala.
-  call Base16hi('Include'          , '' , '' , ''         , ''         , 'italic' , '')
+  call Base16hi('Include'               , '' , '' , ''         , ''         , 'italic' , '')
+
+  " Title.
+  call Base16hi('Title'                 , '' , '' , ''         , ''         , 'bold'   , '')
+
 endfunction
 
 augroup on_change_colorschema
@@ -298,16 +314,10 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:40%', '?'),
   \   <bang>0)
 
-" Set fzf statusline color.
-function! s:fzf_statusline()
-  highlight fzf1 ctermfg=yellow
-  highlight fzf2 ctermfg=yellow
-  highlight fzf3 ctermfg=yellow
-  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
-endfunction
 augroup FZF
   autocmd!
-  autocmd User FzfStatusLine call <SID>fzf_statusline()
+  autocmd FileType fzf set laststatus=0 noshowmode noruler
+        \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 augroup END
 
 if trim(system('git rev-parse --is-inside-work-tree')) ==# 'true'
@@ -702,15 +712,3 @@ augroup ConcealLevel
   autocmd!
   autocmd Filetype help set conceallevel=0
 augroup END
-
-" Italic comments.
-highlight Comment cterm=italic
-" Bold title.
-highlight Title cterm=bold
-" clear background for line numbers
-highlight LineNr ctermbg=0
-" Gitgutter
-highlight GitGutterAdd ctermbg=0
-highlight GitGutterChange ctermbg=0
-highlight GitGutterDelete ctermbg=0
-highlight GitGutterChangeDelete ctermbg=0
