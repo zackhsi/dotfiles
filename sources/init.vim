@@ -255,7 +255,7 @@ function! s:base16_customize() abort
   call Base16hi('Sig'                   , '' , '' , background , magenta    , 'italic' , '')
   call Base16hi('rubyDefine'            , '' , '' , magenta    , ''         , 'italic' , '')
   call Base16hi('rubySymbol'            , '' , '' , ''         , ''         , 'bold'   , '')
-  call Base16hi('rubyboolean'           , '' , '' , cyan       , ''         , 'italic' , '')
+  call Base16hi('rubyboolean'           , '' , '' , cyan       , ''         , 'bold'   , '')
 
   " Scala.
   call Base16hi('Include'               , '' , '' , ''         , ''         , 'italic' , '')
