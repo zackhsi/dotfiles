@@ -223,45 +223,49 @@ function! s:base16_customize() abort
   let l:bright_white   = '15'
 
   " Ale.
-  call Base16hi('SpellCap'              , '' , '' , yellow     , background , ''       , '')
-  call Base16hi('ALEWarningSign'        , '' , '' , yellow     , background , ''       , '')
-  call Base16hi('SpellBad'              , '' , '' , red        , background , ''       , '')
-  call Base16hi('ALEErrorSign'          , '' , '' , red        , background , ''       , '')
+  call Base16hi('SpellCap'              , '' , '' , yellow     , background    , ''       , '')
+  call Base16hi('ALEWarningSign'        , '' , '' , yellow     , background    , ''       , '')
+  call Base16hi('SpellBad'              , '' , '' , red        , background    , ''       , '')
+  call Base16hi('ALEErrorSign'          , '' , '' , red        , background    , ''       , '')
 
   " Comments.
-  call Base16hi('Comment'               , '' , '' , ''         , ''         , 'italic' , '')
+  call Base16hi('Comment'               , '' , '' , ''         , ''            , 'italic' , '')
 
   " Gitgutter.
-  call Base16hi('GitGutterAdd'          , '' , '' , ''         , background , ''       , '')
-  call Base16hi('GitGutterChange'       , '' , '' , ''         , background , ''       , '')
-  call Base16hi('GitGutterDelete'       , '' , '' , ''         , background , ''       , '')
-  call Base16hi('GitGutterChangeDelete' , '' , '' , ''         , background , ''       , '')
+  call Base16hi('GitGutterAdd'          , '' , '' , ''         , background    , ''       , '')
+  call Base16hi('GitGutterChange'       , '' , '' , ''         , background    , ''       , '')
+  call Base16hi('GitGutterDelete'       , '' , '' , ''         , background    , ''       , '')
+  call Base16hi('GitGutterChangeDelete' , '' , '' , ''         , background    , ''       , '')
 
   " Jinja.
-  call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''         , ''       , '')
+  call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''            , ''       , '')
 
   " Line numbers.
-  call Base16hi('LineNr'                , '' , '' , ''         , background , ''       , '')
+  call Base16hi('LineNr'                , '' , '' , ''         , background    , ''       , '')
+
+  " Matches.
+  call Base16hi('MatchParen'            , '' , '' , ''         , bright_yellow , ''       , '')
+  call Base16hi('MatchWord'             , '' , '' , ''         , bright_yellow , ''       , '')
 
   " NERDTree.
-  call Base16hi('NERDTreeExecFile'      , '' , '' , green      , ''         , 'bold'   , '')
+  call Base16hi('NERDTreeExecFile'      , '' , '' , green      , ''            , 'bold'   , '')
 
   " Python.
-  call Base16hi('pythonInclude'         , '' , '' , bright_red , ''         , 'italic' , '')
-  call Base16hi('pythonDocstring'       , '' , '' , cyan       , ''         , 'italic' , '')
-  call Base16hi('pythonOperator'        , '' , '' , red        , ''         , ''       , '')
+  call Base16hi('pythonInclude'         , '' , '' , bright_red , ''            , 'italic' , '')
+  call Base16hi('pythonDocstring'       , '' , '' , cyan       , ''            , 'italic' , '')
+  call Base16hi('pythonOperator'        , '' , '' , red        , ''            , ''       , '')
 
   " Ruby.
-  call Base16hi('Sig'                   , '' , '' , background , magenta    , 'italic' , '')
-  call Base16hi('rubyDefine'            , '' , '' , magenta    , ''         , 'italic' , '')
-  call Base16hi('rubySymbol'            , '' , '' , ''         , ''         , 'bold'   , '')
-  call Base16hi('rubyboolean'           , '' , '' , cyan       , ''         , 'bold'   , '')
+  call Base16hi('Sig'                   , '' , '' , background , magenta       , 'italic' , '')
+  call Base16hi('rubyDefine'            , '' , '' , magenta    , ''            , 'italic' , '')
+  call Base16hi('rubySymbol'            , '' , '' , ''         , ''            , 'bold'   , '')
+  call Base16hi('rubyboolean'           , '' , '' , cyan       , ''            , 'bold'   , '')
 
   " Scala.
-  call Base16hi('Include'               , '' , '' , ''         , ''         , 'italic' , '')
+  call Base16hi('Include'               , '' , '' , ''         , ''            , 'italic' , '')
 
   " Title.
-  call Base16hi('Title'                 , '' , '' , ''         , ''         , 'bold'   , '')
+  call Base16hi('Title'                 , '' , '' , ''         , ''            , 'bold'   , '')
 
 endfunction
 
@@ -278,7 +282,11 @@ map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto pairs.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'andymass/vim-matchup'
+let g:matchup_matchparen_deferred = 1
+
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-endwise'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
@@ -524,7 +532,6 @@ Plug 'tpope/vim-repeat'
 " Ruby.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-endwise'
 Plug '~/oss/sorbet.vim'
 
 " <cword> expansion relies on `iskeyword`. This fixes tag jumping.
