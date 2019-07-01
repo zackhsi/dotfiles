@@ -154,6 +154,10 @@ Plug '~/oss/ale-bazel'
 let g:ale_linters['bzl'] = ['bazel-scala']
 let g:ale_linters['scala'] = ['scalac', 'bazel-scala']
 
+" Javascript.
+let g:ale_linters['javascript'] = ['flow', 'eslint']
+let g:ale_fixers['javascript'] = ['prettier']
+
 " Ruby.
 Plug '~/oss/sorbet-lsp'
 let g:ale_ruby_rubocop_executable = 'rbenvexecrubocop'
@@ -192,7 +196,6 @@ let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 let g:ale_linters['typescript'] = ['eslint', 'tslint']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_fixers['typescriptreact'] = ['prettier']
-let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --tab-width 4'
 
 for key in keys(g:ale_fixers)
   call add(g:ale_fixers[key], 'remove_trailing_lines')

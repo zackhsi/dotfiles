@@ -59,6 +59,9 @@ brew 'gsl'
 # Htop.
 brew 'htop'
 
+# Javascript.
+brew 'nodenv'
+
 # Jq.
 brew 'jq'
 
@@ -75,9 +78,6 @@ brew 'nailgun'
 # Neovim.
 tap 'neovim/homebrew-neovim'
 brew 'neovim'
-
-# Node.
-brew 'node'
 
 # PDF.
 cask 'wkhtmltopdf'
@@ -125,6 +125,3 @@ brew 'urlview'
 
 # Watch.
 brew 'watch'
-
-# Yarn.
-brew 'yarn'

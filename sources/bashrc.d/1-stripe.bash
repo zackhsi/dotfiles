@@ -1,6 +1,7 @@
 export PATH=$HOME/stripe/henson/bin:$PATH
 export PATH=$HOME/stripe/password-vault/bin:$PATH
 export PATH=$HOME/stripe/space-commander/bin:$PATH
+export PATH=$HOME/stripe/pay-server/manage/frontend/node_modules/.bin:$PATH
 
 [ -f ~/stripe/password-vault/bash_completion ] && . ~/stripe/password-vault/bash_completion
 [ -x ~/stripe/space-commander/bin/sc-ssh-wrapper ] && alias ssh="TERM=xterm-color sc-ssh-wrapper"
