@@ -240,6 +240,10 @@ function! s:base16_customize() abort
   call Base16hi('GitGutterDelete'       , '' , '' , ''         , background    , ''       , '')
   call Base16hi('GitGutterChangeDelete' , '' , '' , ''         , background    , ''       , '')
 
+  " Javascript.
+  call Base16hi('xmlTagName'            , '' , '' , blue       , ''            , 'bold'   , '')
+  call Base16hi('xmlEndTag'             , '' , '' , red        , ''            , 'bold'   , '')
+
   " Jinja.
   call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''            , ''       , '')
 
