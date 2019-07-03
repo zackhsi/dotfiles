@@ -243,6 +243,7 @@ function! s:base16_customize() abort
   " Javascript.
   call Base16hi('xmlTagName'            , '' , '' , blue       , ''            , 'bold'   , '')
   call Base16hi('xmlEndTag'             , '' , '' , red        , ''            , 'bold'   , '')
+  call Base16hi('xmlAttrib'             , '' , '' , yellow     , ''            , 'italic'   , '')
 
   " Jinja.
   call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''            , ''       , '')
