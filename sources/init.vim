@@ -410,7 +410,7 @@ Plug 'jparise/vim-graphql'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ludovicchabant/vim-gutentags'
 noremap <Leader>c :GutentagsUpdate!<CR>
-let g:gutentags_exclude_filetypes = ['gitcommit']
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitrebase']
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
   \ '.eggs',
