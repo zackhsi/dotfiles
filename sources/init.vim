@@ -51,6 +51,7 @@ augroup Indentation
   autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
   autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype bzl        setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sql        setlocal tabstop=2 softtabstop=2 shiftwidth=2
