@@ -429,10 +429,12 @@ if fnamemodify(getcwd(), ':p') =~ $HOME.'/stripe/'
 end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" JSX.
+" Javascript.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+Plug 'pangloss/vim-javascript'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Multiple cursors.
@@ -722,7 +724,6 @@ Plug 'cespare/vim-toml'
 Plug 'keith/swift.vim'
 Plug 'keith/tmux.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'pangloss/vim-javascript'
 Plug 'saltstack/salt-vim'
 
 call plug#end()
