@@ -37,7 +37,16 @@ cmd = icdiff --line-numbers $LOCAL $REMOTE
 
 [alias]
 showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
+
 [hub]
-	host = git.corp.stripe.com
+host = git.corp.stripe.com
+
 [fetch]
-	prune = true
+prune = true
+
+[mergetool "fugitive"]
+cmd = NOTAGS=1 nvim -f -c \"Gdiff\" \"$MERGED\"
+keepBackup = false
+
+[merge]
+tool = fugitive

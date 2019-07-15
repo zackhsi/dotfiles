@@ -408,8 +408,11 @@ Plug 'jparise/vim-graphql'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gutentags.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'ludovicchabant/vim-gutentags'
+if $NOTAGS !=# '1'
+  Plug 'ludovicchabant/vim-gutentags'
+end
 noremap <Leader>c :GutentagsUpdate!<CR>
+let g:gutentags_define_advanced_commands = 1
 let g:gutentags_exclude_filetypes = ['gitcommit', 'gitrebase']
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
