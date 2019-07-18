@@ -32,7 +32,7 @@ eval "$(thefuck --alias)"
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --glob "!.git/*" --glob "!bazel-bin/*" --glob "!.ijwb/*"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_DEFAULT_OPTS='--color 16,bg+:0,fg+:3,hl:6,hl+:6'
+export FZF_DEFAULT_OPTS='--color 16,bg+:0,fg+:3,hl:6,hl+:6 --bind up:preview-up,down:preview-down'
 export FZF_CTRL_R_OPTS='--sort'
 # shellcheck source=/Users/zackhsi/.fzf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
