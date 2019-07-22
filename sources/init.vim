@@ -553,6 +553,9 @@ augroup RubySpecialKeywordCharacters
   autocmd Filetype ruby setlocal iskeyword+=?
 augroup END
 
+Plug '~/oss/fzf-copy-ruby-token'
+nmap <leader>ry <Plug>(fzf_copy_ruby_token)
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Rust.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
