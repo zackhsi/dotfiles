@@ -14,5 +14,8 @@ ssh-service() {
 alias opsbox="ssh-service opsbox"
 alias runway="ssh-service runway"
 
-# Fix messages of "WARNING: Nokogiri was built against LibXML version 2.9.9, but has dynamically loaded 2.9.4"
+# Fix messages of "WARNING: Nokogiri was built against LibXML version 2.9.9, but has dynamically loaded 2.9.4".
 alias nokogiri-fix="gem install nokogiri -- --use-system-libraries"
+
+# Stripe git wrapper is slow and messes up IO (cannot pipe git log -G to tig).
+unalias git
