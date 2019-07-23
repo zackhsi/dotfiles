@@ -162,7 +162,6 @@ let g:ale_fixers['javascript'] = ['prettier']
 " Ruby.
 Plug '~/oss/sorbet-lsp'
 " Rubocop in pay-server requires `bundle install`.
-let g:ale_ruby_rubocop_executable = 'rbenvexecrubocop'
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
 let g:ale_fixers['ruby'] = ['rubocop']
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
