@@ -143,38 +143,38 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-colors: # orbital_dark
+colors: # solarized_dark
   # Default colors
   primary:
-    background: '0x424770'  # Terminal background.
-    foreground: '0xaab7c4'  # Terminal text
+    background: '0x073642'  # Terminal background.
+    foreground: '0xeee8d5'  # Terminal text
 
   # Cursor colors
   cursor:
-    text: '0x424770'
-    cursor: '0xaab7c4'
+    text: '0x073642'
+    cursor: '0xeee8d5'
 
   # Normal colors
   normal:
-    black:   '0x424770'  # Vim background.
-    red:     '0xfa755a'
-    green:   '0x68d2bc'  # Swiped from a deck.
-    yellow:  '0xf5be58'
-    blue:    '0x87bbfd'
-    magenta: '0xa78ce9'
-    cyan:    '0x68d4f8'
-    white:   '0xaab7c4'  # Vim text.
+    black:   '0x073642'  # Vim background.
+    red:     '0xdc322f'
+    green:   '0x859900'  # Swiped from a deck.
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0xeee8d5'  # Vim text.
 
   # Bright colors
   bright:
-    black:   '0x6b7c93'  # Vim line numbers, comments.
-    red:     '0xf79a59'
-    green:   '0x525f7f'  # Current line, color column.
-    yellow:  '0x525f7f'  # Vim pane borders, visual selection.
-    blue:    '0x87bbfd'  # FZF search term current line.
-    magenta: '0x000000'  # Unused.
-    cyan:    '0xd782d9'  # Special chars (YAML escape).
-    white:   '0xe6ebf1'  # Vimscript bold asterisk.
+    black:   '0x586e75'  # Vim line numbers, comments.
+    red:     '0xcb4b16'
+    green:   '0x002b36'  # Current line, color column.
+    yellow:  '0x002b36'  # Vim pane borders, visual selection.
+    blue:    '0x0000ff'  # FZF search term current line.
+    magenta: '0x6c71c4'  # Unused.
+    cyan:    '0x93a1a1'  # Special chars (YAML escape).
+    white:   '0xfdf6e3'  # Vimscript bold asterisk.
 
 colors_orbital_dark: # orbital_dark
   # Default colors
