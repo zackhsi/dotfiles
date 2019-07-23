@@ -147,12 +147,12 @@ colors: # solarized_dark
   # Default colors
   primary:
     background: '0x073642'  # Terminal background.
-    foreground: '0xeee8d5'  # Terminal text
+    foreground: '0x93a1a1'  # Terminal text
 
   # Cursor colors
   cursor:
     text: '0x073642'
-    cursor: '0xeee8d5'
+    cursor: '0x93a1a1'
 
   # Normal colors
   normal:
@@ -163,7 +163,7 @@ colors: # solarized_dark
     blue:    '0x268bd2'
     magenta: '0xd33682'
     cyan:    '0x2aa198'
-    white:   '0xeee8d5'  # Vim text.
+    white:   '0x93a1a1'  # Vim text.
 
   # Bright colors
   bright:
