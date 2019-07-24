@@ -78,3 +78,7 @@ wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 wheel==0.32.2
 yarl==1.2.6               # via aiohttp
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip==19.2.1               # via pipenv
+# setuptools==41.0.1        # via flake8, ipython, pipenv, pytest, twine
