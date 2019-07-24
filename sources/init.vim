@@ -496,7 +496,7 @@ augroup RainbowParentheses
   autocmd Filetype * RainbowParentheses
   autocmd Filetype sls RainbowParentheses!
 augroup END
-let g:rainbow#blacklist = [7, 10, 11, 15]
+let g:rainbow#blacklist = [0, 1, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

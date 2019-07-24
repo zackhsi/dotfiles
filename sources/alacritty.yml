@@ -174,7 +174,7 @@ colors: # solarized_dark
     blue:    '0x268bd2'  # FZF search term current line.
     magenta: '0x6c71c4'  # Unused.
     cyan:    '0x93a1a1'  # Special chars (YAML escape).
-    white:   '0xfdf6e3'  # Vimscript bold asterisk.
+    white:   '0xeee8d5'  # Vimscript bold asterisk.
 
 colors_orbital_dark: # orbital_dark
   # Default colors
