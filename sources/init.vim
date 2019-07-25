@@ -125,14 +125,24 @@ call plug#begin('~/.vim/plugged')
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme                           = 'base16'
-let g:airline_base16_improved_contrast        = 1
-let g:airline_left_sep                        = ''
-let g:airline_right_sep                       = ''
-let g:airline_section_y                       = ''
-let g:airline#extensions#tabline#enabled      = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#branch#enabled       = 1
+
+" Theme.
+let g:airline_theme                    = 'base16'
+let g:airline_base16_improved_contrast = 1
+
+" Airline config.
+let g:airline_left_sep  = ''
+let g:airline_right_sep = ''
+let g:airline_section_y = ''
+
+" Tabline config.
+let g:airline#extensions#tabline#enabled           = 1
+let g:airline#extensions#tabline#show_buffers      = 0
+let g:airline#extensions#tabline#fnamemod          = ':t' " Only show file name.
+let g:airline#extensions#tabline#show_tab_nr       = 0
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#show_tab_count    = 0
+let g:airline#extensions#tabline#show_splits       = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALE.
