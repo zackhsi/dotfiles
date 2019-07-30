@@ -347,18 +347,10 @@ else
   noremap <silent> <Leader><Leader> :silent FZF <CR>
 endif
 
-" Escape question marks for usage in Rg.
-function! s:CWordEscaped()
-  if (&filetype ==# 'ruby')
-    return substitute(expand('<cword>'), '?', '\\?', '')
-  else
-    return expand('<cword>')
-  endif
-endfunction
 " Search word under cursor with leader + r.
-nnoremap <silent> <leader>r :silent Rg -sw <C-r>=<SID>CWordEscaped()<CR><CR>
+nnoremap <silent> <leader>r :silent Rg --case-sensitive --fixed-strings --word-regexp <C-r>=expand('<cword>')<CR><CR>
 " Search visual selection with leader + r.
-vnoremap <silent> <leader>r y:silent Rg -s '<C-r>"'<CR>
+vnoremap <silent> <leader>r y:silent Rg --case-sensitive --fixed-strings '<C-r>"'<CR>
 
 " Search tags in buffer by using leader + t.
 noremap <silent> <leader>t :silent BTags<CR>
