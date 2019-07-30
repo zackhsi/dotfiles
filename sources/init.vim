@@ -358,7 +358,7 @@ endfunction
 " Search word under cursor with leader + r.
 nnoremap <silent> <leader>r :silent Rg -sw <C-r>=<SID>CWordEscaped()<CR><CR>
 " Search visual selection with leader + r.
-vnoremap <silent> <leader>r y:silent Rg -sw <C-r>"<CR>
+vnoremap <silent> <leader>r y:silent Rg -s '<C-r>"'<CR>
 
 " Search tags in buffer by using leader + t.
 noremap <silent> <leader>t :silent BTags<CR>
