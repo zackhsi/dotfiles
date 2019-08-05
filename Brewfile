@@ -64,6 +64,7 @@ brew 'nodenv'
 
 # Jq.
 brew 'jq'
+brew 'python-yq'
 
 # Linux.
 brew 'coreutils'
