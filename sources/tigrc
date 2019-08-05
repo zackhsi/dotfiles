@@ -19,3 +19,6 @@ bind main B !git rebase -i %(commit)
 
 # Revert.
 bind main ! !git revert %(commit)
+
+# Speed! (https://github.com/jonas/tig/blob/master/contrib/large-repo.tigrc)
+set commit-order = default
