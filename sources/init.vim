@@ -260,6 +260,7 @@ function! s:base16_customize() abort
   call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''            , ''       , '')
 
   " Line numbers.
+  call Base16hi('CursorLineNr'          , '' , '' , ''         , background    , ''       , '')
   call Base16hi('LineNr'                , '' , '' , ''         , background    , ''       , '')
 
   " Matches.
