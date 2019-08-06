@@ -476,11 +476,6 @@ Plug 'ncm2/ncm2-tmux'
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-nnoremap <silent> <leader>ld :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <leader>lk :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> <leader>ln :call LanguageClient#textDocument_rename()<CR>
-nnoremap <silent> <leader>lr :call LanguageClient#textDocument_references()<CR>
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
