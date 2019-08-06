@@ -695,15 +695,6 @@ Plug 'sjl/vitality.vim'
 " Syntax.
 Plug 'HerringtonDarkholme/yats.vim'
 
-" Completion.
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
-augroup Typescript
-  autocmd!
-  autocmd FileType typescript nnoremap <buffer> <leader>d :TSTypeDef<CR>
-  autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
-  autocmd FileType typescript nnoremap <buffer> K :TSDoc<CR>
-augroup END
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Undo.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
