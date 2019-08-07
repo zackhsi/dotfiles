@@ -318,6 +318,7 @@ Plug 'ekalinin/Dockerfile.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+set diffopt+=vertical " Vertical diffs.
 let g:github_enterprise_urls = ['git.corp.stripe.com']
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
