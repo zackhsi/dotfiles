@@ -151,6 +151,7 @@ Plug 'w0rp/ale'
 
 nmap <silent> [l <Plug>(ale_previous_wrap)
 nmap <silent> ]l <Plug>(ale_next_wrap)
+nmap <silent> <leader>d <Plug>(ale_go_to_definition)
 
 let g:ale_sign_warning='●'
 let g:ale_sign_error='●'
