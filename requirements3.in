@@ -7,6 +7,7 @@ pytest-mock>=1.10.0
 pytest>=3.8.0
 twine>=1.11.0
 vim-vint
+visidata
 wheel>=0.31.1
 
 # Editor.

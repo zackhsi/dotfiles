@@ -59,12 +59,13 @@ pyflakes==2.0.0
 pygments==2.2.0           # via ipython, readme-renderer
 pytest-mock==1.10.0
 pytest==3.10.0
+python-dateutil==2.8.0    # via visidata
 pyyaml==3.13              # via aspy.yaml, pre-commit, vim-vint
 readme-renderer==24.0     # via twine
 requests-toolbelt==0.8.0  # via twine
 requests==2.20.0          # via requests-toolbelt, twine
 setproctitle==1.1.10
-six==1.11.0               # via bleach, cfgv, more-itertools, pre-commit, prompt-toolkit, pytest, readme-renderer, traitlets
+six==1.11.0               # via bleach, cfgv, more-itertools, pre-commit, prompt-toolkit, pytest, python-dateutil, readme-renderer, traitlets
 toml==0.10.0              # via black, pre-commit
 tqdm==4.28.1              # via twine
 traitlets==4.3.2          # via ipython
@@ -74,11 +75,12 @@ urllib3==1.24.1           # via requests
 vim-vint==0.3.19
 virtualenv-clone==0.4.0   # via pipenv
 virtualenv==16.1.0        # via pipenv, pre-commit
+visidata==1.5.2
 wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 wheel==0.32.2
 yarl==1.2.6               # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
-# pip==19.2.1               # via pipenv
-# setuptools==41.0.1        # via flake8, ipython, pipenv, pytest, twine
+# pip==19.2.3               # via pipenv
+# setuptools==41.2.0        # via flake8, ipython, pipenv, pytest, twine
