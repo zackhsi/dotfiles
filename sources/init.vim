@@ -11,7 +11,7 @@ set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
 set undofile
-set updatetime=100
+set updatetime=200
 
 set hlsearch                       " highlight what you search for
 set ignorecase                     " case insensitive search
