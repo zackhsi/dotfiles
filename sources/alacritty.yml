@@ -169,8 +169,8 @@ colors: # solarized_dark
   bright:
     black:   '0x586e75'  # Vim line numbers, comments.
     red:     '0xcb4b16'
-    green:   '0x002b36'  # Current line, color column.
-    yellow:  '0x002b36'  # Vim pane borders, visual selection.
+    green:   '0x00252e'  # Current line, color column.
+    yellow:  '0x00252e'  # Vim pane borders, visual selection.
     blue:    '0x268bd2'  # FZF search term current line.
     magenta: '0x6c71c4'  # Unused.
     cyan:    '0x2aa198'  # Special chars (YAML escape).
