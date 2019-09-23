@@ -70,6 +70,9 @@ brew 'python-yq'
 brew 'coreutils'
 brew 'pstree'
 
+# Mosh.
+brew 'mosh'
+
 # MTR.
 brew 'mtr'
 
