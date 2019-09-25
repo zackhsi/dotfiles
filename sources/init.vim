@@ -328,12 +328,14 @@ let g:github_enterprise_urls = ['git.corp.stripe.com']
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/fzf.vim'
 
-let g:fzf_colors = { 'border':  ['fg', 'Comment'] }
+" Configure g:fzf_colors sparingly! Prefer FZF_DEFAULT_OPTS.
+let g:fzf_colors = {
+      \ 'border':  ['fg', 'Comment'],
+      \ }
 
-let rg_colors = '--colors "match:none" --colors "match:style:bold" '
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --color=always --smart-case ' . rg_colors . <q-args>, 1,
+  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --smart-case --color=always ' . <q-args>, 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:40%', '?'),
   \   <bang>0)
