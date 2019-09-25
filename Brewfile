@@ -81,7 +81,7 @@ brew 'nailgun'
 
 # Neovim.
 tap 'neovim/homebrew-neovim'
-brew 'neovim'
+brew 'neovim', args: ['HEAD']
 
 # PDF.
 cask 'wkhtmltopdf'
