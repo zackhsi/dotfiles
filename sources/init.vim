@@ -335,7 +335,7 @@ let g:fzf_colors = {
 
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --smart-case --color=always ' . <q-args>, 1,
+  \   'rg --hidden --glob "!.git/*" --column --line-number --no-heading --smart-case --color=always --colors match:fg:blue ' . <q-args>, 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:40%', '?'),
   \   <bang>0)
