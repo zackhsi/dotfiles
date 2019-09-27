@@ -267,7 +267,7 @@ colors_off: # ayu_light
     green:   '0xdee8f1'  # Color column.
     yellow:  '0xdee8f1'  # Vim pane borders, visual selection.
     blue:    '0x399ee6'  # FZF search term current line.
-    magenta: '0x000000'  # Unused.
+    magenta: '0xa37acc'  # Unused.
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
     white:   '0xe6ba7e'  # Vimscript bold asterisk.
 
