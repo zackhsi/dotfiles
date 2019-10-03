@@ -254,7 +254,7 @@ colors_off: # ayu_light
     black:   '0xfafafa'  # Vim background.
     red:     '0xf07171'
     green:   '0x86b300'
-    yellow:  '0xeab700'
+    yellow:  '0xfa8d3e'
     blue:    '0x399ee6'
     magenta: '0xa37acc'
     cyan:    '0x55b4d4'
@@ -263,7 +263,7 @@ colors_off: # ayu_light
   # Bright colors
   bright:
     black:   '0xabb0b6'  # Vim line numbers, comments.
-    red:     '0xfa8d3e'  # Yellow from Tomorrow.
+    red:     '0xc18401'  # Yellow from One.
     green:   '0xdee8f1'  # Color column.
     yellow:  '0xdee8f1'  # Vim pane borders, visual selection.
     blue:    '0x399ee6'  # FZF search term current line.
