@@ -157,7 +157,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-colors: # solarized_dark
+colors_solarized_dark: &colors_dark
   # Default colors
   primary:
     background: '0x073642'  # Terminal background.
@@ -170,15 +170,6 @@ colors: # solarized_dark
   cursor:
     text: '0x073642'
     cursor: '0x93a1a1'
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '0xeaeaea'
-  #  background: '0x404040'
 
   # Normal colors
   normal:
@@ -202,31 +193,7 @@ colors: # solarized_dark
     cyan:    '0x2aa198'  # Special chars (YAML escape).
     white:   '0xeee8d5'  # Vimscript bold asterisk.
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  indexed_colors: []
-
-colors_off: # ayu_light
+colors_ayu_light: &colors_light
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.
@@ -239,15 +206,6 @@ colors_off: # ayu_light
   cursor:
     text: '0xfafafa'
     cursor: '0x6c7680'
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '0xeaeaea'
-  #  background: '0x404040'
 
   # Normal colors
   normal:
@@ -271,29 +229,7 @@ colors_off: # ayu_light
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
     white:   '0xe6ba7e'  # Vimscript bold asterisk.
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  indexed_colors: []
+colors: *colors_light
 
 # Visual Bell
 #
