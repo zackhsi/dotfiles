@@ -2,7 +2,7 @@
 set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-if grep '^colors: ' sources/alacritty.yml | grep -q colors_light; then
+if grep '^colors: ' "$DIR/../sources/alacritty.yml" | grep -q colors_light; then
   # light -> dark
   /usr/bin/sed -i '' -e 's/\*colors_light/\*colors_dark/g' "$DIR/../sources/alacritty.yml"
 else
