@@ -157,7 +157,43 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-colors_solarized_dark: &colors_dark
+colors_solarized_dark:
+  # Default colors
+  primary:
+    background: '0x073642'  # Terminal background.
+    foreground: '0x93a1a1'  # Terminal text
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  cursor:
+    text: '0x073642'
+    cursor: '0x93a1a1'
+
+  # Normal colors
+  normal:
+    black:   '0x073642'  # Vim background.
+    red:     '0xdc322f'
+    green:   '0x859900'  # Swiped from a deck.
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0x93a1a1'  # Vim text.
+
+  # Bright colors
+  bright:
+    black:   '0x586e75'  # Vim line numbers, comments.
+    red:     '0xcb4b16'
+    green:   '0x00252e'  # Current line, color column.
+    yellow:  '0x00252e'  # Vim pane borders, visual selection.
+    blue:    '0x268bd2'  # FZF search term current line.
+    magenta: '0x6c71c4'  # Unused.
+    cyan:    '0x2aa198'  # Special chars (YAML escape).
+    white:   '0xeee8d5'  # Vimscript bold asterisk.
+
+colors_onedark: &colors_dark
   # Default colors
   primary:
     background: '0x073642'  # Terminal background.
@@ -229,7 +265,7 @@ colors_ayu_light: &colors_light
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
     white:   '0xe6ba7e'  # Vimscript bold asterisk.
 
-colors: *colors_light
+colors: *colors_dark
 
 # Visual Bell
 #
