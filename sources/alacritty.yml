@@ -13,6 +13,14 @@
   # TERM: xterm-256color-italic
 
 window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  dimensions:
+    columns: 0
+    lines: 0
+
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -520,7 +528,7 @@ key_bindings:
   - { key: Add,    mods: Command,         action: IncreaseFontSize }
   - { key: Minus,  mods: Command,         action: DecreaseFontSize }
   - { key: K,      mods: Command,         action: ClearHistory     }
-  # - { key: K,      mods: Command,         chars: "\x0c"            }
+  - { key: K,      mods: Command,         chars: "\x0c"            }
   - { key: V,      mods: Command,         action: Paste            }
   - { key: C,      mods: Command,         action: Copy             }
   - { key: H,      mods: Command,         action: Hide             }
@@ -635,9 +643,9 @@ key_bindings:
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                      }
   - { key: NumpadEnter,             chars: "\n"                              }
 
-  # Do not overwrite pane switching.
-  # - { key: L,        mods: Control, action: ClearLogNotice                   }
-  # - { key: L,        mods: Control, chars: "\x0c"                            }
+  ############################
+  # BEGIN CUSTOM KEYBINDINGS #
+  ############################
 
   # Simple fullscreen for mac display.
   - { key: F,        mods: Alt,    action: ToggleSimpleFullscreen        }
