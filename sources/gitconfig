@@ -50,3 +50,4 @@ keepBackup = false
 
 [merge]
 tool = fugitive
+renameLimit = 999999
