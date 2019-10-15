@@ -229,12 +229,12 @@ colors_onedark: &colors_dark
   # Bright colors
   bright:
     black:   '0x5c6370'  # Vim line numbers, comments.
-    red:     '0xbe5046'
+    red:     '0xd19a66'
     green:   '0x4b5263'  # Current line, color column.
     yellow:  '0x4b5263'  # Vim pane borders, visual selection.
     blue:    '0x61afef'  # FZF search term current line.
     magenta: '0xc678dd'  # Unused.
-    cyan:    '0xd19a66'  # Special chars (YAML escape).
+    cyan:    '0x56b6c2'  # Special chars (YAML escape).
     white:   '0xabb2bf'  # Vimscript bold asterisk.
 
 colors_ayu_light: &colors_light
