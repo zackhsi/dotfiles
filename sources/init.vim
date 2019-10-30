@@ -413,7 +413,7 @@ if $NOTAGS !=# '1'
 end
 noremap <Leader>c :GutentagsUpdate!<CR>
 let g:gutentags_define_advanced_commands = 1
-let g:gutentags_exclude_filetypes = ['gitcommit', 'gitrebase']
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_exclude = [
   \ '.eggs',
