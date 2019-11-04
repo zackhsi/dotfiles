@@ -439,6 +439,12 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 Plug 'pangloss/vim-javascript'
 
+augroup DetectEmbeddedCoffeeScript
+  autocmd!
+  autocmd BufNewFile,BufRead *.eco set filetype=xml
+  autocmd BufNewFile,BufRead *.eco execute ':ALEDisableBuffer'
+augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Multiple cursors.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
