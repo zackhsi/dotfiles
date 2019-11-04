@@ -439,6 +439,9 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 Plug 'pangloss/vim-javascript'
 
+Plug 'kchmck/vim-coffee-script'
+Plug 'AndrewRadev/vim-eco'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Multiple cursors.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
