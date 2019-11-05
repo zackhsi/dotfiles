@@ -360,6 +360,9 @@ vnoremap <silent> <leader>r y:silent Rg --case-sensitive --fixed-strings '<C-r>"
 " Search tags in buffer by using leader + t.
 noremap <silent> <leader>t :silent BTags<CR>
 
+" Search tags in buffer by using leader + /.
+noremap <silent> <leader>/ :silent BLines<CR>
+
 function! BufList()
     redir => ls
     silent ls
