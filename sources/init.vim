@@ -451,16 +451,7 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Multiple cursors.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'terryma/vim-multiple-cursors'
-function! Multiple_cursors_before()
-  execute 'ALEDisable'
-  call ncm2#lock('vim-multiple-cursors')
-endfunction
-
-function! Multiple_cursors_after()
-  execute 'ALEEnable'
-  call ncm2#unlock('vim-multiple-cursors')
-endfunction
+Plug 'mg979/vim-visual-multi'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NCM.
