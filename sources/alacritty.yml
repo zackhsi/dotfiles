@@ -450,3 +450,4 @@ key_bindings:
 # Simple fullscreen for mac display.
 - { key: F,        mods: Alt,    action: ToggleSimpleFullscreen        }
 - { key: Back,     mods: Alt,             chars: "\x17"                }
+- { key: Back,     mods: Command,         chars: "\x15"                }
