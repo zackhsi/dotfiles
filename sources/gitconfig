@@ -14,8 +14,8 @@ default = simple
 insteadOf = https://github.com/
 
 [pager]
-diff = diff-so-fancy
-show = diff-so-fancy
+diff = delta
+show = delta
 
 [diff]
 tool = icdiff

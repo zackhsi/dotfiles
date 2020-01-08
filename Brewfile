@@ -45,6 +45,8 @@ brew 'thefuck'
 brew 'diff-so-fancy'
 brew 'gist'
 brew 'git'
+# Move macOS executable to /usr/local/bin/
+# brew 'git-delta'
 brew 'hub'
 brew 'icdiff'
 brew 'tig'
