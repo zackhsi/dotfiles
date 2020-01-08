@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 if [ "$(background)" == "dark" ]; then
-  theme=TwoDark
+  theme="TwoDark"
 else
-  theme=OneHalfLight
+  theme="OneHalfLight"
 fi
-exec /usr/local/bin/delta --theme $theme "$@"
+exec /usr/local/bin/delta --theme "$theme" "$@"
