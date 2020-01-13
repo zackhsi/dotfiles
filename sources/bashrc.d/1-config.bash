@@ -114,12 +114,6 @@ alias gst='git status'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
 
 ###############################################################################
-# Golang                                                                      #
-###############################################################################
-export GOPATH=~/go
-export PATH=$GOPATH/bin:$PATH
-
-###############################################################################
 # Grep                                                                        #
 ###############################################################################
 export GREP_OPTIONS='--exclude-dir=venv --color=auto'
