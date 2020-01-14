@@ -256,7 +256,10 @@ function! s:base16_customize() abort
   " Javascript.
   call Base16hi('xmlTagName'            , '' , '' , blue       , ''            , 'bold'   , '')
   call Base16hi('xmlEndTag'             , '' , '' , red        , ''            , 'bold'   , '')
-  call Base16hi('xmlAttrib'             , '' , '' , yellow     , ''            , 'italic'   , '')
+  call Base16hi('xmlAttrib'             , '' , '' , yellow     , ''            , 'italic' , '')
+  call Base16hi('jsFlowTypeStatement'   , '' , '' , blue       , ''            , ''       , '')
+  call Base16hi('jsFlowType'            , '' , '' , bright_red , ''            , 'bold'   , '')
+  call Base16hi('jsFlowObject'          , '' , '' , red        , ''            , ''       , '')
 
   " Jinja.
   call Base16hi('jinjaTagDelim'         , '' , '' , blue       , ''            , ''       , '')
@@ -439,6 +442,7 @@ Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 Plug 'pangloss/vim-javascript'
+let g:javascript_plugin_flow = 1
 
 Plug 'kchmck/vim-coffee-script'
 
