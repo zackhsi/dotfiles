@@ -626,6 +626,12 @@ function! s:JestTest()
   let test_cwd = 'manage/frontend/'
   let test_file_path = expand('%')[len(test_cwd) :]
   let jest_test_command = 'yarn jest ' . test_file_path
+
+  let test_name = matchstr(getline('.'), 'it(''\zs.*\ze''')
+  if test_name !=# ''
+    let jest_test_command = jest_test_command . ' --testNamePattern=''' . test_name . ''''
+  endif
+
   execute 'silent !tmux send-keys -R -t "cd ~/stripe/pay-server/' . test_cwd . '" Enter'
   execute 'silent !tmux send-keys -R -t "jest test" "' . jest_test_command . '" Enter'
   execute 'silent !tmux select-window -t "jest test"'
