@@ -617,13 +617,23 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:PayTest()
-  let pay_test_command = '"pay test ' . expand('%') . ' -l ' . line('.') . '"'
-  execute 'silent !tmux send-keys -R -t "pay test" ' . pay_test_command . ' Enter'
+  let pay_test_command = 'pay test ' . expand('%') . ' -l ' . line('.')
+  execute 'silent !tmux send-keys -R -t "pay test" "' . pay_test_command . '" Enter'
   execute 'silent !tmux select-window -t "pay test"'
+endfunction
+
+function! s:JestTest()
+  let test_cwd = 'manage/frontend/'
+  let test_file_path = expand('%')[len(test_cwd) :]
+  let jest_test_command = 'yarn jest ' . test_file_path
+  execute 'silent !tmux send-keys -R -t "cd ~/stripe/pay-server/' . test_cwd . '" Enter'
+  execute 'silent !tmux send-keys -R -t "jest test" "' . jest_test_command . '" Enter'
+  execute 'silent !tmux select-window -t "jest test"'
 endfunction
 
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
   nnoremap <leader>pt :call <SID>PayTest()<CR>
+  nnoremap <leader>jt :call <SID>JestTest()<CR>
 end
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
