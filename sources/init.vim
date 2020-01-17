@@ -618,8 +618,12 @@ augroup END
 
 function! s:PayTest()
   let pay_test_command = 'pay test ' . expand('%') . ' -l ' . line('.')
-  execute 'silent !tmux send-keys -R -t "pay test" "' . pay_test_command . '" Enter'
+  " Ensure 'pay test' window exists.
+  execute 'silent !tmux list-windows | grep --quiet "pay test" || tmux new-window -n "pay test"'
+  " Select test window.
   execute 'silent !tmux select-window -t "pay test"'
+  " Run test command.
+  execute 'silent !tmux send-keys -t "pay test" "' . pay_test_command . '" Enter'
 endfunction
 
 function! s:JestTest()
@@ -632,9 +636,14 @@ function! s:JestTest()
     let jest_test_command = jest_test_command . ' --testNamePattern=''' . test_name . ''''
   endif
 
-  execute 'silent !tmux send-keys -R -t "cd ~/stripe/pay-server/' . test_cwd . '" Enter'
-  execute 'silent !tmux send-keys -R -t "jest test" "' . jest_test_command . '" Enter'
+  " Ensure 'jest test' window exists.
+  execute 'silent !tmux list-windows | grep --quiet "jest test" || tmux new-window -n "jest test"'
+  " Select test window.
   execute 'silent !tmux select-window -t "jest test"'
+  " cd to test directory.
+  execute 'silent !tmux send-keys -t "jest test" "cd ~/stripe/pay-server/' . test_cwd . '" Enter'
+  " Run test command.
+  execute 'silent !tmux send-keys -t "jest test" "' . jest_test_command . '" Enter'
 endfunction
 
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
