@@ -53,6 +53,7 @@ augroup Indentation
   autocmd Filetype bzl        setlocal tabstop=4 softtabstop=4 shiftwidth=4
   autocmd Filetype coffee     setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd Filetype proto      setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype ruby       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sh         setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype sql        setlocal tabstop=2 softtabstop=2 shiftwidth=2
