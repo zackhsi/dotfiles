@@ -195,7 +195,7 @@ colors_solarized_dark:
 colors_onedark: &colors_dark
   # Default colors
   primary:
-    background: '0x282c34'  # Terminal background.
+    background: '0x303845'  # Terminal background.
     foreground: '0xabb2bf'  # Terminal text
 
   # Cursor colors
@@ -203,12 +203,12 @@ colors_onedark: &colors_dark
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: '0x282c34'
+    text: '0x303845'
     cursor: '0xabb2bf'
 
   # Normal colors
   normal:
-    black:   '0x282c34'  # Vim background.
+    black:   '0x303845'  # Vim background.
     red:     '0xe06c75'
     green:   '0x98c379'
     yellow:  '0xe5c07b'
@@ -221,8 +221,8 @@ colors_onedark: &colors_dark
   bright:
     black:   '0x5c6370'  # Vim line numbers, comments.
     red:     '0xd19a66'
-    green:   '0x4b5263'  # Current line, color column.
-    yellow:  '0x4b5263'  # Vim pane borders, visual selection.
+    green:   '0x282c34'  # Current line, color column.
+    yellow:  '0x282c34'  # Vim pane borders, visual selection.
     blue:    '0x61afef'  # FZF search term current line.
     magenta: '0xc678dd'  # Unused.
     cyan:    '0x56b6c2'  # Special chars (YAML escape).
