@@ -209,11 +209,11 @@ colors_onedark: &colors_dark
   # Normal colors
   normal:
     black:   '0x303845'  # Vim background.
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xe5c07b'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
+    red:     '0xde7c84'
+    green:   '0x92d69e'
+    yellow:  '0xdbb979'
+    blue:    '0x61aeef'
+    magenta: '0xc792ea'
     cyan:    '0x56b6c2'
     white:   '0xabb2bf'  # Vim text.
 
