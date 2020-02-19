@@ -6,7 +6,10 @@ let mapleader = "\<Space>"         " Use space as leader
 set colorcolumn=+1                 " line length matters
 set foldmethod=manual              " set a foldmethod
 set hidden
+set list
+set listchars=extends:⟩
 set mouse=a                        " enable mouse
+set nowrap
 set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
