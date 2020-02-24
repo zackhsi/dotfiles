@@ -7,14 +7,13 @@
 aiohttp==3.4.4
 ansicolor==0.2.6          # via vim-vint
 appdirs==1.4.3            # via black
-appnope==0.1.0            # via ipython
 aspy.yaml==1.1.1          # via pre-commit
 async-timeout==3.0.1      # via aiohttp
 atomicwrites==1.2.1       # via pytest
 attrs==18.2.0
 backcall==0.1.0           # via ipython
 black==18.9b0
-bleach==3.0.2             # via readme-renderer
+bleach==3.1.1             # via readme-renderer
 cached-property==1.5.1    # via pre-commit
 certifi==2018.10.15       # via pipenv, requests
 cfgv==1.1.0               # via pre-commit
@@ -25,10 +24,8 @@ docutils==0.14            # via readme-renderer
 flake8==3.6.0
 greenlet==0.4.15          # via neovim
 identify==1.1.7           # via pre-commit
-idna-ssl==1.1.0           # via aiohttp
-idna==2.7                 # via idna-ssl, requests, yarl
+idna==2.7                 # via requests, yarl
 importlib-metadata==0.6   # via pre-commit
-importlib-resources==1.0.2  # via pre-commit
 ipython-genutils==0.2.0   # via traitlets
 ipython==7.1.1
 isort==4.3.4
@@ -82,5 +79,5 @@ wheel==0.32.2
 yarl==1.2.6               # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
-# pip==19.2.3               # via pipenv
-# setuptools==41.2.0        # via flake8, ipython, pipenv, pytest, twine
+# pip
+# setuptools
