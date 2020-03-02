@@ -432,7 +432,8 @@ let g:gutentags_ctags_exclude = [
   \ '.ijwb',
   \ 'bazel-*',
 \ ]
-let g:gutentags_ctags_executable_ruby = 'ripper-tags --ignore-unsupported-options --recursive'
+let g:gutentags_ctags_executable_ruby = 'ripper-tags'
+let g:gutentags_ctags_extra_args = ['--ignore-unsupported-options', '--recursive']
 if fnamemodify(getcwd(), ':p') =~ $HOME.'/stripe/'
   let g:gutentags_project_info = []
   call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
