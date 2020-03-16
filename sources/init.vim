@@ -179,10 +179,11 @@ let g:ale_fixers['javascript'] = ['prettier']
 Plug '~/oss/sorbet-lsp'
 " Rubocop in pay-server requires `bundle install`.
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
-let g:ale_fixers['ruby'] = ['rubocop']
 if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
   let g:ale_ruby_rubocop_options = '--except PrisonGuard/AutogenLoaderPreamble'
   call add(g:ale_linters['ruby'], 'sorbet-lsp')
+else
+  let g:ale_fixers['ruby'] = ['rubocop']
 end
 
 " Scala.
