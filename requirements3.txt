@@ -4,17 +4,16 @@
 #
 #    pip-compile --output-file=requirements3.txt requirements3.in
 #
-aiohttp==3.4.4
+aiohttp==3.4.4            # via -r requirements3.in
 ansicolor==0.2.6          # via vim-vint
 appdirs==1.4.3            # via black
-appnope==0.1.0            # via ipython
 aspy.yaml==1.1.1          # via pre-commit
 async-timeout==3.0.1      # via aiohttp
 atomicwrites==1.2.1       # via pytest
-attrs==18.2.0
+attrs==18.2.0             # via -r requirements3.in, aiohttp, black, pytest
 backcall==0.1.0           # via ipython
-black==18.9b0
-bleach==3.0.2             # via readme-renderer
+black==18.9b0             # via -r requirements3.in
+bleach==3.1.2             # via readme-renderer
 cached-property==1.5.1    # via pre-commit
 certifi==2018.10.15       # via pipenv, requests
 cfgv==1.1.0               # via pre-commit
@@ -22,65 +21,63 @@ chardet==3.0.4            # via aiohttp, requests, vim-vint
 click==7.0                # via black
 decorator==4.3.0          # via ipython, traitlets
 docutils==0.14            # via readme-renderer
-flake8==3.6.0
+flake8==3.6.0             # via -r requirements3.in
 greenlet==0.4.15          # via neovim
 identify==1.1.7           # via pre-commit
-idna-ssl==1.1.0           # via aiohttp
-idna==2.7                 # via idna-ssl, requests, yarl
+idna==2.7                 # via requests, yarl
 importlib-metadata==0.6   # via pre-commit
-importlib-resources==1.0.2  # via pre-commit
 ipython-genutils==0.2.0   # via traitlets
-ipython==7.1.1
-isort==4.3.4
-jedi==0.13.1
-markdown2ctags==0.2.5
+ipython==7.1.1            # via -r requirements3.in
+isort==4.3.4              # via -r requirements3.in
+jedi==0.13.1              # via -r requirements3.in, ipython
+markdown2ctags==0.2.5     # via -r requirements3.in
 mccabe==0.6.1             # via flake8
-mistune==0.8.4
+mistune==0.8.4            # via -r requirements3.in
 more-itertools==4.3.0     # via pytest
 msgpack==0.5.6            # via neovim
 multidict==4.4.2          # via aiohttp, yarl
-mypy-extensions==0.4.1
-mypy==0.641
-neovim==0.3.0
+mypy-extensions==0.4.1    # via -r requirements3.in, mypy
+mypy==0.641               # via -r requirements3.in
+neovim==0.3.0             # via -r requirements3.in
 nodeenv==1.3.3            # via pre-commit
 parso==0.3.1              # via jedi
 pexpect==4.6.0            # via ipython
 pickleshare==0.7.5        # via ipython
-pipenv==2018.10.13
+pipenv==2018.10.13        # via -r requirements3.in
 pkginfo==1.4.2            # via twine
 pluggy==0.8.0             # via pytest
-pre-commit==1.12.0
+pre-commit==1.12.0        # via -r requirements3.in
 prompt-toolkit==2.0.7     # via ipython
-psutil==5.4.8
+psutil==5.4.8             # via -r requirements3.in
 ptyprocess==0.6.0         # via pexpect
 py==1.7.0                 # via pytest
 pycodestyle==2.4.0        # via flake8
-pyflakes==2.0.0
+pyflakes==2.0.0           # via -r requirements3.in, flake8
 pygments==2.2.0           # via ipython, readme-renderer
-pytest-mock==1.10.0
-pytest==3.10.0
+pytest-mock==1.10.0       # via -r requirements3.in
+pytest==3.10.0            # via -r requirements3.in, pytest-mock
 python-dateutil==2.8.0    # via visidata
 pyyaml==3.13              # via aspy.yaml, pre-commit, vim-vint
 readme-renderer==24.0     # via twine
 requests-toolbelt==0.8.0  # via twine
 requests==2.20.0          # via requests-toolbelt, twine
-setproctitle==1.1.10
+setproctitle==1.1.10      # via -r requirements3.in
 six==1.11.0               # via bleach, cfgv, more-itertools, pre-commit, prompt-toolkit, pytest, python-dateutil, readme-renderer, traitlets
 toml==0.10.0              # via black, pre-commit
 tqdm==4.28.1              # via twine
 traitlets==4.3.2          # via ipython
-twine==1.12.1
+twine==1.12.1             # via -r requirements3.in
 typed-ast==1.1.0          # via mypy
 urllib3==1.24.1           # via requests
-vim-vint==0.3.19
+vim-vint==0.3.19          # via -r requirements3.in
 virtualenv-clone==0.4.0   # via pipenv
 virtualenv==16.1.0        # via pipenv, pre-commit
-visidata==1.5.2
+visidata==1.5.2           # via -r requirements3.in
 wcwidth==0.1.7            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
-wheel==0.32.2
+wheel==0.32.2             # via -r requirements3.in
 yarl==1.2.6               # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
-# pip==19.2.3               # via pipenv
-# setuptools==41.2.0        # via flake8, ipython, pipenv, pytest, twine
+# pip
+# setuptools
