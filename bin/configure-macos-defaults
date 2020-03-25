@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euxo pipefail
+
+# Disable two-finger swipe back/forward.
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+# Open Zoom without prompting.
+defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
