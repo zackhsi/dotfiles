@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 if [ "$(background)" == "dark" ]; then
-  theme="ansi-dark"
+  theme="base16"
 else
   theme="OneHalfLight"
 fi
