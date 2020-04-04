@@ -623,6 +623,17 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mhinz/vim-startify'
 let g:startify_change_to_vcs_root = 1
+let g:startify_files_number = 15
+" Omit movement keys and keys from h:startify-mappings.
+let g:startify_custom_indices = [
+      \ 'a', 'c', 'd', 'f', 'g', 'm', 'n', 'o',
+      \ 'p', 'r', 'u', 'w', 'x', 'y', 'z'
+      \ ]
+let g:startify_lists = [
+      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ ]
+noremap <silent> <leader>s :Startify<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stripe.
