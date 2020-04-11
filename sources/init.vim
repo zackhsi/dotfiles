@@ -154,10 +154,6 @@ let g:airline#extensions#tabline#show_splits       = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'w0rp/ale'
 
-nmap <silent> [l <Plug>(ale_previous_wrap)
-nmap <silent> ]l <Plug>(ale_next_wrap)
-nmap <silent> <leader>d <Plug>(ale_go_to_definition)
-
 let g:ale_sign_warning='●'
 let g:ale_sign_error='●'
 
@@ -176,15 +172,11 @@ let g:ale_linters['javascript'] = ['flow', 'eslint']
 let g:ale_fixers['javascript'] = ['prettier']
 
 " Ruby.
-Plug '~/oss/sorbet-lsp'
 " Rubocop in pay-server requires `bundle install`.
 let g:ale_linters['ruby'] = ['rubocop', 'ruby']
-if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
-  let g:ale_ruby_rubocop_options = '--except PrisonGuard/AutogenLoaderPreamble'
-  call add(g:ale_linters['ruby'], 'sorbet-lsp')
-else
-  let g:ale_fixers['ruby'] = ['rubocop']
-end
+
+let g:ale_ruby_rubocop_options = '--except PrisonGuard/AutogenLoaderPreamble'
+let g:ale_fixers['ruby'] = ['rubocop']
 
 " Scala.
 let g:ale_fixers['scala'] = ['scalafmt']
@@ -317,6 +309,14 @@ let g:matchup_matchparen_deferred = 1
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" coc.nvim.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+nmap <silent> <leader>d <Plug>(coc-definition)
+
+Plug 'neoclide/jsonc.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
@@ -462,33 +462,6 @@ augroup END
 " Multiple cursors.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mg979/vim-visual-multi'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NCM.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-
-" Enable ncm2 for all buffers.
-augroup NCM2
-  autocmd!
-  autocmd BufEnter * call ncm2#enable_for_buffer()
-augroup END
-
-" :help Ncm2PopupOpen for more information.
-set completeopt=noinsert,menuone,noselect
-
-" NOTE: you need to install completion sources to get completions. Check
-" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-jedi'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-tagprefix'
-Plug 'ncm2/ncm2-tmux'
-
-" Use <TAB> to select the popup menu:
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.

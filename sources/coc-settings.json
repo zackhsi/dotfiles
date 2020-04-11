@@ -1,0 +1,19 @@
+{
+  "languageserver": {
+    "flow": {
+      "command": "${workspaceFolder}/node_modules/.bin/flow",
+      "args": ["lsp"],
+      "filetypes": ["javascript", "javascriptreact", "javascript.jsx"],
+      "initializationOptions": {},
+      "requireRootPattern": true,
+      "settings": {},
+      "rootPatterns": [".flowconfig"]
+    },
+    "sorbet": {
+      "command": "scripts/dev_productivity/while_pay_up_connected.sh",
+      "args": ["pay", "exec", "scripts/bin/typecheck", "--lsp", "--enable-all-beta-lsp-features"],
+      "filetypes": ["ruby"],
+      "rootPatterns": ["stripe-build.yaml"]
+    }
+  }
+}

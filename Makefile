@@ -14,7 +14,7 @@ pip2: ## Ensure pip packages in requirements.in are installed
 pip2_clean: ## Uninstall all pip modules
 	$(PIP2) freeze | grep -v "^-e " | xargs $(PIP2) uninstall -y -q
 
-PYTHON3=PYENV_VERSION=3.6.5 python
+PYTHON3=PYENV_VERSION=3.7.4 python
 PIP3=PYENV_VERSION=3.6.5 pip
 
 pip3: ## Ensure pip3 packages in requirements.in are installed
