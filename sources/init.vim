@@ -7,7 +7,7 @@ set colorcolumn=+1                 " line length matters
 set foldmethod=manual              " set a foldmethod
 set hidden
 set list
-set listchars=extends:⟩
+set listchars=tab:\ \ ,extends:⟩
 set mouse=a                        " enable mouse
 set nowrap
 set number                         " line numbers
