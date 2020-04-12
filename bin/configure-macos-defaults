@@ -6,3 +6,8 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Open Zoom without prompting.
 defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+
+# Maximize key repeat speed, but set initial delay slow enough to prevent
+# double entry.
+defaults write -globalDomain KeyRepeat -int 1
+defaults write -globalDomain InitialKeyRepeat -int 25
