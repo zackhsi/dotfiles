@@ -13,7 +13,9 @@
       "command": "scripts/dev_productivity/while_pay_up_connected.sh",
       "args": ["pay", "exec", "scripts/bin/typecheck", "--lsp", "--enable-all-beta-lsp-features"],
       "filetypes": ["ruby"],
-      "rootPatterns": ["stripe-build.yaml"]
+      "rootPatterns": ["stripe-build.yaml"],
+      // :CocRestart seems to hang coc.nvim.
+      "progressOnInitialization": false
     }
   }
 }
