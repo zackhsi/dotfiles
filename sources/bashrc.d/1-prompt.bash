@@ -96,7 +96,7 @@ __git_branch_fast() {
 }
 
 __export_git_branch() {
-  GIT_BRANCH="${CYA}${BOLD}"'\W'"${YEL}$(__git_branch_fast)${NO_COLOUR}"
+  GIT_BRANCH="${CYA}${BOLD}"'\w'"${YEL}$(__git_branch_fast)${NO_COLOUR}"
   export GIT_BRANCH
 }
 
