@@ -112,4 +112,4 @@ __export_exit_status() {
   export EXIT_STATUS
 }
 
-PROMPT_COMMAND="__export_exit_status; __export_git_branch; __prompt;"
+PROMPT_COMMAND="__export_exit_status; __export_git_branch; __prompt; history -n; history -w; history -c; history -r;"
