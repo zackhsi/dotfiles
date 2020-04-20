@@ -1,0 +1,10 @@
+<application>
+  <component name="BlazeWizardUserSettings">
+    <settings>
+      <entry key="blaze-wizard.last-imported-bazel-workspace" value="$USER_HOME$/stripe/uppsala" />
+      <entry key="import-from-workspace.last-workspace-path" value="intellij/afterpay.bazelproject" />
+      <entry key="select-project-view.selected-option" value="import-from-workspace" />
+      <entry key="select-workspace.selected-option" value="use-existing-bazel-workspace" />
+    </settings>
+  </component>
+</application>

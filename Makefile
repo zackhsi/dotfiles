@@ -3,6 +3,17 @@ all: files brew pip2 pip3 tmux_plugins ## Make it all!
 files: ## Ensure files are up to date
 	./manage
 
+intellij_backup: ## Back up IntelliJ settings.
+	@rm -rf /tmp/intellij-settings
+	@echo "Copying IntelliJ to /tmp/intellij-settings"
+	@cp -r ~/Library/Preferences/IntelliJIdea2019.3/settingsRepository/repository /tmp/intellij-settings
+	@rm -rf /tmp/intellij-settings/.git
+	@rm -f /tmp/intellij-settings/vim_settings.xml
+	@rm -f /tmp/intellij-settings/find.xml
+	@echo "Nuking ${HOME}/dotfiles/intellij-settings"
+	@rm -rf ~/dotfiles/intellij-settings
+	@mv -v /tmp/intellij-settings/ ~/dotfiles/intellij-settings
+
 PYTHON2=PYENV_VERSION=2.7.14 python
 PIP2=PYENV_VERSION=2.7.14 pip
 
