@@ -78,7 +78,7 @@ __prompt() {
   export PS0
 }
 
-__compute_git_branch_fast() {
+__git_branch_fast() {
   local gitdir=""
   local cur="$PWD"
   while [[ -n "$cur" ]]; do
@@ -101,11 +101,14 @@ __compute_git_branch_fast() {
       ;;
   esac
   if [ -n "$branch" ]; then
-    GIT_BRANCH="${YEL}${ITALIC}(${GRE}${ITALIC}$branch${YEL}${ITALIC})${NO_COLOR}"
-  else
-    GIT_BRANCH=""
+    echo "${YEL}${ITALIC}(${GRE}${ITALIC}$branch${YEL}${ITALIC})${NO_COLOR}"
   fi
 }
+
+ __compute_git_branch_fast() {
+   GIT_BRANCH="$(__git_branch_fast)"
+   export GIT_BRANCH
+ }
 
 __compute_exit_status() {
   local exit="$?"
