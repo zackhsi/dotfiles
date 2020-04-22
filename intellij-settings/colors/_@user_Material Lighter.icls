@@ -3,7 +3,7 @@
     <property name="created">2020-02-13T10:53:46</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.2.4.0.0</property>
-    <property name="modified">2020-04-21T20:02:42</property>
+    <property name="modified">2020-04-22T12:31:35</property>
     <property name="originalScheme">Material Lighter</property>
   </metaInfo>
   <colors>
@@ -978,8 +978,9 @@
     </option>
     <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="808080" />
-        <option name="EFFECT_COLOR" value="808080" />
+        <option name="FOREGROUND" value="399ee6" />
+        <option name="EFFECT_COLOR" value="399ee6" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="INFO_ATTRIBUTES">
@@ -1023,7 +1024,7 @@
     </option>
     <option name="JAVA.THIS_SUPER">
       <value>
-        <option name="FOREGROUND" value="e53935" />
+        <option name="FOREGROUND" value="f07171" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2884,7 +2885,9 @@
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="bc3f3c" />
+        <option name="FOREGROUND" value="f07171" />
+        <option name="EFFECT_COLOR" value="f07171" />
+        <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="XML_NS_PREFIX">
