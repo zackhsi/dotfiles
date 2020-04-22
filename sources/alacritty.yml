@@ -212,6 +212,10 @@ colors_onedark: &colors_dark
     cyan:    '0x56b6c2'  # Special chars (YAML escape).
     white:   '0xabb2bf'  # Vimscript bold asterisk.
 
+  # Indexed Colors
+  indexed_colors:
+    - { index: 16, color: '#e5dc6c' }
+
 colors_ayu_light: &colors_light
   # Default colors
   primary:
@@ -247,6 +251,10 @@ colors_ayu_light: &colors_light
     magenta: '0xa37acc'  # Unused.
     cyan:    '0x4cbf99'  # Special chars (YAML escape).
     white:   '0xe6ba7e'  # Vimscript bold asterisk.
+
+  # Indexed Colors
+  indexed_colors:
+    - { index: 16, color: '#f8e71c' }
 
 colors: *colors_light
 

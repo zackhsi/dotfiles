@@ -234,6 +234,7 @@ function! s:base16_customize() abort
   let l:bright_magenta = '13'
   let l:bright_cyan    = '14'
   let l:bright_white   = '15'
+  let l:highlight      = '16'
 
   " Ale.
   call Base16hi('SpellCap'              , '' , '' , yellow     , background    , ''       , '')
@@ -285,6 +286,9 @@ function! s:base16_customize() abort
 
   " Scala.
   call Base16hi('Include'               , '' , '' , ''         , ''            , 'italic' , '')
+
+  " Search.
+  call Base16hi('Search'                , '' , '' , white      , highlight     , '' ,       '')
 
   " Title.
   call Base16hi('Title'                 , '' , '' , ''         , ''            , 'bold'   , '')
