@@ -16,16 +16,17 @@
   '~/.config/bat/config': 'bat.conf',
   '~/.config/flake8': 'flake8',
   '~/.config/nvim/coc-settings.json': 'coc-settings.json',
+  '~/.config/nvim/init.vim': 'init.vim',
   '~/.ctags': 'ctags',
   '~/.eslintrc.yml': 'eslintrc.yml',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
+  '~/.ideavimrc': 'ideavimrc',
   '~/.isort.cfg': 'isort.cfg',
   '~/.rubocop.yml': 'rubocop.yml',
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
-  '~/.config/nvim/init.vim': 'init.vim',
 } %}
 
 # Bash completion.
