@@ -1,6 +1,7 @@
 <application>
   <component name="GeneralSettings">
     <option name="processCloseConfirmation" value="TERMINATE" />
+    <option name="searchInBackground" value="true" />
   </component>
   <component name="Registry">
     <entry key="SBT.system.in.process" value="true" />

@@ -3,7 +3,7 @@
     <property name="created">2020-02-13T10:53:46</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.2.4.0.0</property>
-    <property name="modified">2020-04-22T12:31:35</property>
+    <property name="modified">2020-04-22T15:41:07</property>
     <property name="originalScheme">Material Lighter</property>
   </metaInfo>
   <colors>
@@ -2821,8 +2821,10 @@
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="e53935" />
+        <option name="FOREGROUND" value="f07171" />
         <option name="FONT_TYPE" value="2" />
+        <option name="EFFECT_COLOR" value="f07171" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="TS.TYPE_PARAMETER">
