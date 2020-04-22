@@ -215,7 +215,7 @@ colors_onedark: &colors_dark
 colors_ayu_light: &colors_light
   # Default colors
   primary:
-    background: '0xffffff'  # Terminal background.
+    background: '0xfafafa'  # Terminal background.
     foreground: '0x6c7680'  # Terminal text
 
   # Cursor colors
@@ -223,12 +223,12 @@ colors_ayu_light: &colors_light
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: '0xffffff'
+    text: '0xfafafa'
     cursor: '0x6c7680'
 
   # Normal colors
   normal:
-    black:   '0xffffff'  # Vim background.
+    black:   '0xfafafa'  # Vim background.
     red:     '0xf07171'
     green:   '0x86b300'
     yellow:  '0xfa8d3e'
