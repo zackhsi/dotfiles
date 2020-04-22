@@ -1,9 +1,19 @@
+" Motion.
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 
+" Search.
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+" Plugins (see: https://github.com/JetBrains/ideavim/blob/master/doc/emulated-plugins.md)
+set surround
+
+set multiple-cursors
+map <C-n> <A-n>
+
+set commentary
