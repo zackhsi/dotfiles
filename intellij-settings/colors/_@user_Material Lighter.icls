@@ -3,7 +3,7 @@
     <property name="created">2020-02-13T10:53:46</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.2.4.0.0</property>
-    <property name="modified">2020-04-22T15:41:07</property>
+    <property name="modified">2020-04-23T14:43:30</property>
     <property name="originalScheme">Material Lighter</property>
   </metaInfo>
   <colors>
@@ -222,7 +222,7 @@
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="e53935" />
+        <option name="EFFECT_COLOR" value="f07171" />
       </value>
     </option>
     <option name="BROWSEWORDATCARET">
@@ -720,7 +720,8 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="91b859" />
+        <option name="EFFECT_COLOR" value="399ee6" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -1072,7 +1073,7 @@
     </option>
     <option name="JSON.PROPERTY_KEY">
       <value>
-        <option name="FOREGROUND" value="7c4dff" />
+        <option name="FOREGROUND" value="a37acc" />
       </value>
     </option>
     <option name="JUPYTER_SELECTED_CELL">

@@ -22,8 +22,12 @@
     <keyboard-shortcut first-keystroke="meta 9" />
   </action>
   <action id="DuplicatesForm.SendToRight" />
+  <action id="EditorToggleCase" />
   <action id="FileChooser.GotoModule" />
   <action id="FileChooser.GotoProject" />
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="shift meta u" />
+  </action>
   <action id="RerunFailedTests">
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
@@ -35,6 +39,7 @@
   <action id="SelectInProjectView">
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
+  <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="ToggleDistractionFreeMode">
     <keyboard-shortcut first-keystroke="shift meta m" />
   </action>
