@@ -14,6 +14,5 @@ set smartcase
 set surround
 
 set multiple-cursors
-map <C-n> <A-n>
 
 set commentary
