@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+# Open the selected file or lines in Github.
+#
+# Usage:
+#   intellij-open-in-github <file> [line_start, line_end, column_end]
+#
+# In IntelliJ, configure the external tool arguments:
+#   $FilePath$
+#   $SelectionStartLine$
+#   $SelectionEndLine$
+#   $SelectionEndColumn$
+#
+# TODO: handle https remote.
+set -euo pipefail
+
+filepath=${1-}
+line_start=${2-}
+line_end=${3-}
+column_end=${4-}
+
+# Git information.
+pushd "$(dirname "$filepath")"
+branch=$(git rev-parse --abbrev-ref HEAD)
+origin=$(git ls-remote --get-url origin)
+repository_path=$(git rev-parse --show-toplevel)
+popd
+
+# Parse url components.
+domain=$(echo "$origin" | cut -d: -f1 | cut -d@ -f2)
+organization=$(echo "$origin" | cut -d: -f2 | cut -d/ -f1)
+repository=$(echo "$origin" | cut -d: -f2 | cut -d/ -f2 | cut -d. -f1)
+filepath_relative=${filepath#"$repository_path/"}
+
+# Line filter.
+if [ -n "$line_start" ] && [ -n "$line_end" ] && [ -n "$column_end" ]; then
+  enable_line_filter=true
+else
+  enable_line_filter=false
+fi
+if [ "$enable_line_filter" = true ]; then
+  # When a trailing newline is selected IntelliJ passes line=n+1 and column=1.
+  # This conditional unwinds that behavior.
+  if [[ "$line_start" != "$line_end" ]] && [[ "$column_end" = "1" ]]; then
+    line_end=$(( line_end -1 ))
+  fi
+  if [[ "$line_start" == "$line_end" ]]; then
+    line_filter="#L${line_start}"
+  else
+    line_filter="#L${line_start}-L${line_end}"
+  fi
+else
+  line_filter=""
+fi
+
+url="https://${domain}/${organization}/${repository}/blob/${branch}/${filepath_relative}${line_filter}"
+open "$url"
