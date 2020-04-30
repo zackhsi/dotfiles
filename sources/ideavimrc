@@ -1,3 +1,5 @@
+set scrolloff=2
+
 " Motion.
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
