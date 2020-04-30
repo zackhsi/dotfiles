@@ -3,6 +3,7 @@
     <option name="SHOW_IMPORTS" value="false" />
   </component>
   <component name="UsageViewSettings">
+    <option name="GROUP_BY_PACKAGE" value="false" />
     <option name="IS_PREVIEW_USAGES" value="true" />
     <option name="PREVIEW_USAGES_SPLITTER_PROPORTIONS" value="0.565028" />
   </component>

@@ -24,6 +24,7 @@
   <action id="CompileDirty">
     <keyboard-shortcut first-keystroke="meta 9" />
   </action>
+  <action id="Console.TableResult.SetNull" />
   <action id="DuplicatesForm.SendToRight" />
   <action id="EditorToggleCase" />
   <action id="FileChooser.GotoModule" />
@@ -34,6 +35,10 @@
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift ctrl b" />
     <mouse-shortcut keystroke="shift meta button1" />
+  </action>
+  <action id="Inline" />
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="meta alt n" />
   </action>
   <action id="RerunFailedTests">
     <keyboard-shortcut first-keystroke="ctrl r" />

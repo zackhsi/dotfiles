@@ -1,0 +1,9 @@
+<application>
+  <component name="ProtobufSettings">
+    <option name="includePaths">
+      <list>
+        <option value="$USER_HOME$/stripe/uppsala" />
+      </list>
+    </option>
+  </component>
+</application>
