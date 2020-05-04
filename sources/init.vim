@@ -319,6 +319,7 @@ Plug 'tpope/vim-endwise'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <silent> <leader>u <Plug>(coc-references)
 
 Plug 'neoclide/jsonc.vim'
 
@@ -727,12 +728,6 @@ Plug 'sjl/vitality.vim'
 
 " Syntax.
 Plug 'HerringtonDarkholme/yats.vim'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Undo.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'mbbill/undotree'
-noremap <silent> <leader>u :UndotreeToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Unimpaired.
