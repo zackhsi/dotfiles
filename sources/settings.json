@@ -39,7 +39,6 @@
                             {
                                    "scope": "keyword.control.class.ruby",
                                    "settings": {
-                                          "foreground": "#A37ACC",
                                           "fontStyle": "italic"
                                    }
                             },
@@ -52,7 +51,21 @@
                             {
                                    "scope": "constant.language.symbol.hashkey.ruby",
                                    "settings": {
+                                          "foreground": "#86B300",
                                           "fontStyle": "bold"
+                                   }
+                            },
+                            {
+                                   "scope": "constant.language.boolean.ruby",
+                                   "settings": {
+                                          "foreground": "#55B4D4",
+                                          "fontStyle": "bold"
+                                   }
+                            },
+                            {
+                                   "scope": "entity.name.function.ruby",
+                                   "settings": {
+                                          "foreground": "#399EE6",
                                    }
                             },
                      ]
