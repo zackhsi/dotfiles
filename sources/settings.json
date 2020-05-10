@@ -1,0 +1,37 @@
+{
+       // Appearance.
+       "debug.console.fontFamily": "Operator Mono",
+       "debug.console.fontSize": 14,
+       "editor.fontFamily": "Operator Mono",
+       "editor.fontSize": 14,
+       "terminal.integrated.fontSize": 14,
+       "workbench.colorTheme": "Ayu Light",
+       "workbench.iconTheme": "ayu",
+       "bracket-pair-colorizer-2.colors": [
+              "#a37acc",
+              "#399ee6",
+              "#f07171",
+              "#86b300",
+       ],
+
+       // Editor.
+       "editor.formatOnPaste": true,
+       "editor.formatOnSave": true,
+       "editor.minimap.enabled": false,
+
+       // Files.
+       "files.autoSave": "afterDelay",
+
+       // Sorbet.
+       "sorbet.enabled": true,
+       "sorbet.revealOutputOnError": true,
+
+       // Vim.
+       "vim.hlsearch": true,
+       "vim.leader": " ",
+       "vim.searchHighlightColor": "#f8e71c",
+       "vim.visualstar": true,
+
+       // VSCode.
+       "update.mode": "none",
+}

@@ -27,6 +27,8 @@
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
+  '~/Library/Application Support/Code/User/keybindings.json': 'keybindings.json',
+  '~/Library/Application Support/Code/User/settings.json': 'settings.json',
 } %}
 
 # Bash completion.
