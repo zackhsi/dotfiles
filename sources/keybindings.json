@@ -14,5 +14,9 @@
     {
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]
