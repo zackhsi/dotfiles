@@ -19,6 +19,7 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
+    "editor.suggest.localityBonus": true,
     "editor.tokenColorCustomizations": {
         "[Ayu Light]": {
             "textMateRules": [
@@ -72,8 +73,19 @@
         }
     },
 
+    // Explorer.
+    "explorer.openEditors.visible": 0,
+    "explorer.sortOrder": "mixed",
+
     // Files.
     "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // Search.
+    "search.showLineNumbers": true,
+    "search.smartCase": true,
 
     // Sorbet.
     "sorbet.enabled": true,
@@ -91,4 +103,15 @@
     // Workbench.
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": true,
+    "workbench.list.multiSelectModifier": "alt",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.closeOnFileDelete": true,
+
+    // Screencast.
+    "screencastMode.onlyKeyboardShortcuts": true,
+
+    // Zen Mode.
+    "zenMode.fullScreen": false,
+    "zenMode.silentNotifications": false,
 }
