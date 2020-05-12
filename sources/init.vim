@@ -320,6 +320,15 @@ Plug 'tpope/vim-endwise'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 nmap <silent> <leader>d <Plug>(coc-definition)
 nmap <silent> <leader>u <Plug>(coc-references)
+let g:coc_user_config = {'languageserver': {}}
+if fnamemodify(getcwd(), ':p') == $HOME.'/stripe/pay-server/'
+  let g:coc_user_config['languageserver']['sorbet'] = {
+        \   'command': 'scripts/dev_productivity/while_pay_up_connected.sh',
+        \   'args': ['pay', 'exec', 'scripts/bin/typecheck', '--lsp', '--enable-all-beta-lsp-features'],
+        \   'filetypes': ['ruby'],
+        \   'rootPatterns': ['stripe-build.yaml'],
+        \ }
+end
 
 Plug 'neoclide/jsonc.vim'
 

@@ -15,7 +15,6 @@
   '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
   '~/.config/bat/config': 'bat.conf',
   '~/.config/flake8': 'flake8',
-  '~/.config/nvim/coc-settings.json': 'coc-settings.json',
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.ctags': 'ctags',
   '~/.eslintrc.yml': 'eslintrc.yml',
