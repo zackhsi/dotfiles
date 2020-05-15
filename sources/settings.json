@@ -114,4 +114,5 @@
     // Zen Mode.
     "zenMode.fullScreen": false,
     "zenMode.silentNotifications": false,
+    "window.zoomLevel": 0,
 }
