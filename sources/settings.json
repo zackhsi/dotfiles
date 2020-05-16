@@ -1,121 +1,121 @@
 {
-    // Appearance.
-    "debug.console.fontFamily": "Operator Mono",
-    "debug.console.fontSize": 14,
-    "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
-    "workbench.colorTheme": "Ayu Light",
-    "workbench.iconTheme": "ayu",
-    "bracket-pair-colorizer-2.colors": [
-        "#a37acc",
-        "#399ee6",
-        "#f07171",
-        "#86b300",
-    ],
+  // Appearance.
+  "debug.console.fontFamily": "Operator Mono",
+  "debug.console.fontSize": 14,
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorTheme": "Ayu Light",
+  "workbench.iconTheme": "ayu",
+  "bracket-pair-colorizer-2.colors": [
+    "#a37acc",
+    "#399ee6",
+    "#f07171",
+    "#86b300"
+  ],
 
-    // Editor.
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
-    "editor.scrollBeyondLastLine": false,
-    "editor.suggest.localityBonus": true,
-    "editor.tokenColorCustomizations": {
-        "[Ayu Light]": {
-            "textMateRules": [
-                {
-                    "scope": "constant.language.symbol.ruby",
-                    "settings": {
-                        "foreground": "#86B300",
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "variable.other.constant.ruby",
-                    "settings": {
-                        "foreground": "#FA8D3E",
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope": "keyword.control.class.ruby",
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": "keyword.control.module.ruby",
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": "constant.language.symbol.hashkey.ruby",
-                    "settings": {
-                        "foreground": "#86B300",
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "constant.language.boolean.ruby",
-                    "settings": {
-                        "foreground": "#55B4D4",
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "entity.name.function.ruby",
-                    "settings": {
-                        "foreground": "#399EE6",
-                    }
-                },
-            ]
+  // Editor.
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.suggest.localityBonus": true,
+  "editor.tokenColorCustomizations": {
+    "[Ayu Light]": {
+      "textMateRules": [
+        {
+          "scope": "constant.language.symbol.ruby",
+          "settings": {
+            "foreground": "#86B300",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "variable.other.constant.ruby",
+          "settings": {
+            "foreground": "#FA8D3E",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "keyword.control.class.ruby",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.control.module.ruby",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "constant.language.symbol.hashkey.ruby",
+          "settings": {
+            "foreground": "#86B300",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "constant.language.boolean.ruby",
+          "settings": {
+            "foreground": "#55B4D4",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "entity.name.function.ruby",
+          "settings": {
+            "foreground": "#399EE6"
+          }
         }
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+      ]
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
-    // Explorer.
-    "explorer.openEditors.visible": 0,
-    "explorer.sortOrder": "mixed",
+  // Explorer.
+  "explorer.openEditors.visible": 0,
+  "explorer.sortOrder": "mixed",
 
-    // Files.
-    "files.autoSave": "afterDelay",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
+  // Files.
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
 
-    // Search.
-    "search.showLineNumbers": true,
-    "search.smartCase": true,
+  // Search.
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
 
-    // Sorbet.
-    "sorbet.enabled": true,
-    "sorbet.revealOutputOnError": true,
+  // Sorbet.
+  "sorbet.enabled": true,
+  "sorbet.revealOutputOnError": true,
 
-    // Vim.
-    "vim.hlsearch": true,
-    "vim.leader": " ",
-    "vim.searchHighlightColor": "#f8e71c",
-    "vim.visualstar": true,
+  // Vim.
+  "vim.hlsearch": true,
+  "vim.leader": " ",
+  "vim.searchHighlightColor": "#f8e71c",
+  "vim.visualstar": true,
 
-    // Update.
-    "update.mode": "none",
+  // Update.
+  "update.mode": "none",
 
-    // Workbench.
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": true,
-    "workbench.list.multiSelectModifier": "alt",
-    "workbench.list.openMode": "doubleClick",
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.closeOnFileDelete": true,
+  // Workbench.
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": true,
+  "workbench.list.multiSelectModifier": "alt",
+  "workbench.list.openMode": "doubleClick",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.closeOnFileDelete": true,
 
-    // Screencast.
-    "screencastMode.onlyKeyboardShortcuts": true,
+  // Screencast.
+  "screencastMode.onlyKeyboardShortcuts": true,
 
-    // Zen Mode.
-    "zenMode.fullScreen": false,
-    "zenMode.silentNotifications": false,
-    "window.zoomLevel": 0,
+  // Zen Mode.
+  "zenMode.fullScreen": false,
+  "zenMode.silentNotifications": false,
+  "window.zoomLevel": 0
 }
