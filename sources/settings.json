@@ -72,6 +72,9 @@
             ]
         }
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
     // Explorer.
     "explorer.openEditors.visible": 0,
