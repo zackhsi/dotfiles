@@ -75,6 +75,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Explorer.
   "explorer.openEditors.visible": 0,
@@ -117,5 +120,5 @@
   // Zen Mode.
   "zenMode.fullScreen": false,
   "zenMode.silentNotifications": false,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
 }
