@@ -3,7 +3,7 @@
     <property name="created">2020-02-13T10:53:46</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.2.4.0.0</property>
-    <property name="modified">2020-04-27T13:52:03</property>
+    <property name="modified">2020-05-13T13:36:33</property>
     <property name="originalScheme">Material Lighter</property>
   </metaInfo>
   <colors>
@@ -898,7 +898,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="bfd1df" />
+        <option name="BACKGROUND" value="dee8f1" />
         <option name="ERROR_STRIPE_COLOR" value="65737e" />
       </value>
     </option>

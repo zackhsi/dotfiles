@@ -7,7 +7,9 @@
     <keyboard-shortcut first-keystroke="meta 3" />
   </action>
   <action id="ActivateFavoritesToolWindow" />
-  <action id="ActivateFindToolWindow" />
+  <action id="ActivateFindToolWindow">
+    <keyboard-shortcut first-keystroke="meta j" />
+  </action>
   <action id="ActivateServicesToolWindow" />
   <action id="ActivateStructureToolWindow">
     <keyboard-shortcut first-keystroke="meta 2" />
@@ -37,6 +39,7 @@
     <mouse-shortcut keystroke="shift meta button1" />
   </action>
   <action id="Inline" />
+  <action id="InsertLiveTemplate" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="meta alt n" />
   </action>
