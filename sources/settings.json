@@ -121,4 +121,5 @@
   "zenMode.fullScreen": false,
   "zenMode.silentNotifications": false,
   "window.zoomLevel": 0,
+  "markdown.extension.preview.autoShowPreviewToSide": true,
 }
