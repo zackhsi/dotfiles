@@ -68,7 +68,13 @@ alias gca!='git commit -v -a --amend'
 alias gca='git commit -v -a'
 alias gcan!='git commit -v -a --no-edit --amend'
 alias gcm='git checkout master'
-alias gco='git checkout'
+gco() {
+  if [[ $# -gt 0 ]]; then
+    git checkout "$@"
+  else
+    git checkout-with-relative-age
+  fi
+}
 __git_complete gco _git_checkout
 alias gd='git diff'
 __git_complete gd _git_diff

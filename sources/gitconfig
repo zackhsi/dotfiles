@@ -35,9 +35,6 @@ prompt = false
 [difftool "icdiff"]
 cmd = icdiff --line-numbers $LOCAL $REMOTE
 
-[alias]
-showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
-
 [hub]
 host = git.corp.stripe.com
 
@@ -51,3 +48,15 @@ keepBackup = false
 [merge]
 tool = fugitive
 renameLimit = 999999
+
+[alias]
+showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
+
+# Show the local branches along with their relative ages
+branches-with-relative-age = !git for-each-ref --sort=-committerdate --format='%(refname:short) : %(committerdate:relative)' refs/heads | column -t -s ':' \
+
+# Preview branch names and recent commit then checkout selection
+checkout-with-relative-age = !git branches-with-relative-age \
+                             | fzf --reverse --nth=1 --preview 'git log --patch --color {1}...{1}~3' \
+                             | awk '{print $1}' \
+                             | xargs git checkout
