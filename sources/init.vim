@@ -69,6 +69,7 @@ augroup END
 augroup FileTypeAliases
   autocmd!
   autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
+  autocmd BufNewFile,BufRead settings.json setf jsonc
   autocmd BufNewFile,BufRead *.pyi setfiletype python
   autocmd BufNewFile,BufRead *.tsx set filetype=typescript
   autocmd BufNewFile,BufRead Pipfile set filetype=toml
