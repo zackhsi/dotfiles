@@ -68,13 +68,13 @@ augroup END
 
 augroup FileTypeAliases
   autocmd!
-  autocmd BufNewFile,BufRead *.pyi setfiletype python
-  autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
   autocmd BufNewFile,BufRead *.ini,*.conf setf dosini
+  autocmd BufNewFile,BufRead *.pyi setfiletype python
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
   autocmd BufNewFile,BufRead Pipfile set filetype=toml
   autocmd BufNewFile,BufRead Pipfile.lock set filetype=json
-  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
   autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+  autocmd BufNewFile,BufRead {.,}tmux*.conf* setfiletype tmux
 augroup END
 
 augroup KeywordProgram
