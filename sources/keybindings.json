@@ -24,15 +24,15 @@
     "command": "workbench.action.navigateBack"
   },
   {
-    "key": "ctrl+-",
-    "command": "-workbench.action.navigateBack"
-  },
-  {
     "key": "cmd+]",
     "command": "workbench.action.navigateForward"
   },
   {
-    "key": "ctrl+shift+-",
-    "command": "-workbench.action.navigateForward"
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
   }
 ]
