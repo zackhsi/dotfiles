@@ -5,7 +5,13 @@
     <option name="LINE_SPACING" value="1.1" />
   </component>
   <component name="EditorSettings">
+    <option name="languageBreadcrumbsMap">
+      <map>
+        <entry key="JAVA" value="true" />
+      </map>
+    </option>
     <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+    <option name="SHOW_BREADCRUMBS_ABOVE" value="true" />
     <option name="IS_WHITESPACES_SHOWN" value="true" />
     <option name="IS_INDENT_GUIDES_SHOWN" value="false" />
   </component>
