@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+process_substrings=( stripe/uppsala/scripts/build_timing_metrics.sh bazel_cmd_helper 'bazel\(uppsala\)' )
+for process_substring in "${process_substrings[@]}"; do
+  if pgrep -f "$process_substring" > /dev/null; then
+    echo -n "Killing $(pgrep -f "$process_substring" | wc -l) $process_substring process(es)..."
+    kill "$(pgrep -f "$process_substring")"
+    echo "done!"
+  else
+    echo "No processes found: $process_substring"
+  fi
+done
