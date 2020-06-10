@@ -29,6 +29,37 @@
   "editor.scrollBeyondLastLine": false,
   "editor.suggest.localityBonus": true,
   "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.control.class.ruby",
+        "settings": {
+          "fontStyle": "italic"
+        },
+      },
+      {
+        "scope": "keyword.control.module.ruby",
+        "settings": {
+          "fontStyle": "italic"
+        },
+      },
+    ],
+  "[GitHub Light]": {
+      "textMateRules": [
+        {
+          "scope": "string.quoted.double.interpolated.ruby",
+          "settings": {
+            "foreground": "#28a745"
+          }
+        },
+        {
+          "scope": "constant.language.symbol.hashkey.ruby",
+          "settings": {
+            "foreground": "#28a745",
+            "fontStyle": "bold"
+          }
+        },
+      ]
+    },
     "[Ayu Light]": {
       "textMateRules": [
         {
@@ -43,18 +74,6 @@
           "settings": {
             "foreground": "#FA8D3E",
             "fontStyle": ""
-          }
-        },
-        {
-          "scope": "keyword.control.class.ruby",
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": "keyword.control.module.ruby",
-          "settings": {
-            "fontStyle": "italic"
           }
         },
         {
@@ -79,12 +98,6 @@
         }
       ]
     }
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // Explorer.
