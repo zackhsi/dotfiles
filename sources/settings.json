@@ -31,7 +31,7 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "comment.line.number-sign.ruby",
+        "scope": "comment",
         "settings": {
           "fontStyle": "italic"
         },
