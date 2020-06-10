@@ -7,11 +7,18 @@
   "terminal.integrated.fontSize": 14,
   "workbench.colorTheme": "GitHub Light",
   "workbench.iconTheme": "ayu",
-  "bracket-pair-colorizer-2.colors": [
-    "#a37acc",
-    "#399ee6",
-    "#f07171",
-    "#86b300"
+
+  // BracketPairColorizer.
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    [
+      "LightSkyBlue",
+      "Orange",
+      "Orchid",
+    ],
+    "Red"
   ],
 
   // Editor.
