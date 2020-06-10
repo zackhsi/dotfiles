@@ -5,7 +5,7 @@
   "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Ayu Light Bordered",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.iconTheme": "ayu",
   "bracket-pair-colorizer-2.colors": [
     "#a37acc",
