@@ -31,6 +31,18 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
+        "scope": "constant.language.boolean.ruby",
+        "settings": {
+          "fontStyle": "italic bold"
+        },
+      },
+      {
+        "scope": "constant.language.nil.ruby",
+        "settings": {
+          "fontStyle": "bold"
+        },
+      },
+      {
         "scope": "comment",
         "settings": {
           "fontStyle": "italic"
@@ -55,6 +67,13 @@
           "scope": "string.quoted.double.interpolated.ruby",
           "settings": {
             "foreground": "#28a745"
+          }
+        },
+        {
+          "scope": "constant.language.symbol.ruby",
+          "settings": {
+            "foreground": "#28a745",
+            "fontStyle": "bold"
           }
         },
         {
