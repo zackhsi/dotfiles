@@ -18,9 +18,12 @@ diff = delta
 show = delta
 
 [diff]
-tool = icdiff
 algorithm = patience
 compactionHeuristic = true
+tool = vscode
+
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
 
 [color "diff"]
 meta = yellow bold
@@ -46,8 +49,11 @@ cmd = NOTAGS=1 nvim -f -c \"Gdiff\" \"$MERGED\"
 keepBackup = false
 
 [merge]
-tool = fugitive
 renameLimit = 999999
+tool = vscode
+
+[mergetool "vscode"]
+cmd = code --wait $MERGED
 
 [alias]
 showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
