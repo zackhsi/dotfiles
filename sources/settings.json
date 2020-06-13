@@ -1,13 +1,4 @@
 {
-  // Appearance.
-  "debug.console.fontFamily": "Operator Mono",
-  "debug.console.fontSize": 14,
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "GitHub Light",
-  "workbench.iconTheme": "ayu",
-
   // BracketPairColorizer.
   "bracketPairColorizer.consecutivePairColors": [
     "()",
@@ -17,11 +8,18 @@
     "Red"
   ],
 
+  // Debug.
+  "debug.console.fontFamily": "Operator Mono",
+  "debug.console.fontSize": 14,
+
   // Editor.
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
   "editor.suggest.localityBonus": true,
   "editor.tokenColorCustomizations": {
@@ -122,6 +120,7 @@
   },
 
   // Explorer.
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "mixed",
@@ -143,25 +142,30 @@
   "sorbet.enabled": true,
   "sorbet.revealOutputOnError": true,
 
+  // Terminal.
+  "terminal.integrated.fontSize": 14,
+
+  // Update.
+  "update.mode": "none",
+
   // Vim.
   "vim.hlsearch": true,
   "vim.leader": " ",
   "vim.searchHighlightColor": "#f8e71c",
   "vim.visualstar": true,
 
-  // Update.
-  "update.mode": "none",
-
   // Window.
   "window.zoomLevel": 0,
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "vs-seti",
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.closeOnFileDelete": true,
+  "workbench.statusBar.visible": true,
 
   // Screencast.
   "screencastMode.onlyKeyboardShortcuts": true,
