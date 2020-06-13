@@ -25,6 +25,12 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
+        "scope": "keyword.control.module",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
         "scope": "constant.language.boolean.ruby",
         "settings": {
           "fontStyle": "italic bold"
