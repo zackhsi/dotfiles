@@ -151,7 +151,6 @@
   // Vim.
   "vim.hlsearch": true,
   "vim.leader": " ",
-  "vim.searchHighlightColor": "#f8e71c",
   "vim.visualstar": true,
 
   // Window.
