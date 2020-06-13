@@ -13,11 +13,7 @@
     "()",
     "[]",
     "{}",
-    [
-      "#f66a0a",
-      "#ea4aaa",
-      "#dbab09",
-    ],
+    ["#f66a0a", "#ea4aaa", "#dbab09"],
     "Red"
   ],
 
@@ -34,55 +30,55 @@
         "scope": "constant.language.boolean.ruby",
         "settings": {
           "fontStyle": "italic bold"
-        },
+        }
       },
       {
         "scope": "constant.language.nil.ruby",
         "settings": {
           "fontStyle": "bold"
-        },
+        }
       },
       {
         "scope": "comment",
         "settings": {
           "fontStyle": "italic"
-        },
+        }
       },
       {
         "scope": "keyword.control.class.ruby",
         "settings": {
           "fontStyle": "italic"
-        },
+        }
       },
       {
         "scope": "keyword.control.module.ruby",
         "settings": {
           "fontStyle": "italic"
-        },
-      },
+        }
+      }
     ],
-  "[GitHub Light]": {
+    "[GitHub Light]": {
       "textMateRules": [
         {
           "scope": "string.quoted.double.interpolated.ruby",
           "settings": {
-            "foreground": "#28a745"
+            "foreground": "#22863a"
           }
         },
         {
           "scope": "constant.language.symbol.ruby",
           "settings": {
-            "foreground": "#28a745",
+            "foreground": "#22863a",
             "fontStyle": "bold"
           }
         },
         {
           "scope": "constant.language.symbol.hashkey.ruby",
           "settings": {
-            "foreground": "#28a745",
+            "foreground": "#22863a",
             "fontStyle": "bold"
           }
-        },
+        }
       ]
     },
     "[Ayu Light]": {
@@ -168,5 +164,5 @@
   "zenMode.fullScreen": false,
   "zenMode.silentNotifications": false,
   "window.zoomLevel": 0,
-  "markdown.extension.preview.autoShowPreviewToSide": true,
+  "markdown.extension.preview.autoShowPreviewToSide": true
 }
