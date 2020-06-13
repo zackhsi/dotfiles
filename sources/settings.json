@@ -132,6 +132,9 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
+  // Markdown.
+  "markdown.extension.preview.autoShowPreviewToSide": true,
+
   // Search.
   "search.showLineNumbers": true,
   "search.smartCase": true,
@@ -149,6 +152,9 @@
   // Update.
   "update.mode": "none",
 
+  // Window.
+  "window.zoomLevel": 0,
+
   // Workbench.
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
@@ -162,7 +168,7 @@
 
   // Zen Mode.
   "zenMode.fullScreen": false,
-  "zenMode.silentNotifications": false,
-  "window.zoomLevel": 0,
-  "markdown.extension.preview.autoShowPreviewToSide": true
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideTabs": false,
+  "zenMode.silentNotifications": false
 }
