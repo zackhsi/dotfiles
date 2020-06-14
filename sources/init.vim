@@ -129,8 +129,10 @@ call plug#begin('~/.vim/plugged')
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+if $TERM_PROGRAM !=# 'vscode'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+endif
 
 " Theme.
 let g:airline_theme                    = 'base16'
@@ -768,7 +770,9 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
-colorscheme base16-default-light
+if $TERM_PROGRAM !=# 'vscode'
+  colorscheme base16-default-light
+endif
 
 " For some silly reason, :set ft=help leads to a positive conceallevel.
 augroup ConcealLevel
