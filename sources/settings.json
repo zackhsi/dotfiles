@@ -149,6 +149,7 @@
   "sorbet.revealOutputOnError": true,
 
   // Terminal.
+  "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
 
   // Update.
