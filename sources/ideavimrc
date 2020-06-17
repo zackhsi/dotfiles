@@ -19,6 +19,9 @@ set multiple-cursors
 
 set commentary
 
+" Git.
+nmap <space>a :action Annotate<CR>
+
 " Github.
 nmap <space>g :action Tool_External Tools_Open in Github<CR>
 vmap <space>g :action Tool_External Tools_Open selection in Github<CR>
