@@ -26,6 +26,7 @@
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
     "typescript": "^2.9.2",
-    "typescript-eslint-parser": "^16.0.1"
+    "typescript-eslint-parser": "^16.0.1",
+    "vercel": "^19.1.1"
   }
 }
