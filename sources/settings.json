@@ -18,6 +18,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.rename.enablePreview": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
@@ -125,6 +126,13 @@
     }
   },
 
+  // Editor formatters.
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
   // Explorer.
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -167,11 +175,14 @@
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
   "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "ayu",
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
   "workbench.statusBar.visible": true,
+  "workbench.tree.indent": 16,
 
   // Screencast.
   "screencastMode.onlyKeyboardShortcuts": true,
