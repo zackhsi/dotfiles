@@ -5,7 +5,7 @@ process_substrings=( stripe/uppsala/scripts/build_timing_metrics.sh bazel_cmd_he
 for process_substring in "${process_substrings[@]}"; do
   if pgrep -f "$process_substring" > /dev/null; then
     echo -n "Killing $(pgrep -f "$process_substring" | wc -l) $process_substring process(es)..."
-    kill "$(pgrep -f "$process_substring")"
+    pkill -f "$process_substring"
     echo "done!"
   else
     echo "No processes found: $process_substring"
