@@ -1,6 +1,6 @@
 #!/bin/bash
 # Format target file for Squarespace.
-# - Reduce file size to less than 500kb.
+# - Reduce file size to less than 400kb.
 # - Ensure image width is less than or equal to 2500 pixels.
 #
 # Usage:
@@ -36,7 +36,7 @@ output_directory=~/Desktop/output
 mkdir -p "$output_directory"
 mogrify \
   -path "$output_directory" \
-  -define jpeg:extent=500kb \
+  -define jpeg:extent=400kb \
   $resize \
   "$input"
 
