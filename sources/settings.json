@@ -154,7 +154,6 @@
 
   // Sorbet.
   "sorbet.enabled": true,
-  "sorbet.revealOutputOnError": true,
 
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
