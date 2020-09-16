@@ -6,7 +6,6 @@
 
 # Symlinks
 {% set links = {
-  '~/.agignore': 'agignore',
   '~/.bash_completion': 'bash_completion',
   '~/.bash_completion.d': 'bash_completion.d',
   '~/.bash_profile': 'bash_profile',
@@ -14,15 +13,11 @@
   '~/.bashrc.d': 'bashrc.d',
   '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
   '~/.config/bat/config': 'bat.conf',
-  '~/.config/flake8': 'flake8',
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.ctags': 'ctags',
-  '~/.eslintrc.yml': 'eslintrc.yml',
   '~/.gitconfig': 'gitconfig',
   '~/.gitignore': 'gitignore',
   '~/.ideavimrc': 'ideavimrc',
-  '~/.isort.cfg': 'isort.cfg',
-  '~/.rubocop.yml': 'rubocop.yml',
   '~/.tigrc': 'tigrc',
   '~/.tmux.conf': 'tmux.conf',
   '~/.tmux.reset.conf': 'tmux.reset.conf',
