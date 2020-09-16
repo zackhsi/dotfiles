@@ -432,33 +432,6 @@ noremap <silent> <leader>g :Goyo<CR>
 Plug 'jparise/vim-graphql'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Gutentags.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if $NOTAGS !=# '1'
-  Plug 'ludovicchabant/vim-gutentags'
-end
-noremap <Leader>c :GutentagsUpdate!<CR>
-let g:gutentags_define_advanced_commands = 1
-let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
-let g:gutentags_generate_on_empty_buffer = 1
-let g:gutentags_ctags_exclude = [
-  \ '.eggs',
-  \ '.mypy_cache',
-  \ 'venv',
-  \ 'tags',
-  \ 'tags.temp',
-  \ '.ijwb',
-  \ 'bazel-*',
-\ ]
-let g:gutentags_ctags_executable_ruby = 'ripper-tags'
-let g:gutentags_ctags_extra_args = ['--ignore-unsupported-options', '--recursive']
-if fnamemodify(getcwd(), ':p') =~ $HOME.'/stripe/'
-  let g:gutentags_project_info = []
-  call add(g:gutentags_project_info, {'type': 'ruby', 'file': '.solargraph.yml'})
-  call add(g:gutentags_project_info, {'type': 'scala', 'file': '.scalafmt.conf'})
-end
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Javascript.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mxw/vim-jsx'
@@ -514,37 +487,6 @@ let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 " Puppet.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'rodjek/vim-puppet'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Speed up Neovim start up.
-let g:loaded_python_provider = 1
-let g:python3_host_prog = '/Users/zackhsi/.pyenv/versions/3.6.5/bin/python3'
-
-Plug 'klen/python-mode'
-let g:pymode_folding = 0
-let g:pymode_lint = 0
-let g:pymode_motion = 0
-let g:pymode_options_colorcolumn = 0
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
-let g:pymode_run_bind = ''
-
-Plug 'ambv/black'
-Plug 'fisadev/vim-isort'
-augroup PythonAutoFormat
-  autocmd!
-  if filereadable('.black')
-    autocmd BufWritePre *.py execute ':Isort'
-    autocmd BufWritePre *.py execute ':silent Black'
-  endif
-augroup END
-
-Plug 'davidhalter/jedi-vim'
-let g:jedi#completions_enabled = 0
-let g:jedi#rename_command = ''
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Repeat.
