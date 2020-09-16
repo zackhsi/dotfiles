@@ -11,3 +11,7 @@ defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 # double entry.
 defaults write -globalDomain KeyRepeat -int 1
 defaults write -globalDomain InitialKeyRepeat -int 15
+
+# Allow key repeat for VSCode.
+defaults delete -g ApplePressAndHoldEnabled
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
