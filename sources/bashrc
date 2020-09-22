@@ -75,6 +75,10 @@ HISTCONTROL=ignoreboth:erasedups
 # Use a more compact format for the time builtin's output
 TIMEFORMAT='real:%lR user:%lU sys:%lS'
 
+# Locale.
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Pager
 export PAGER="less -IM"
 
