@@ -7,26 +7,5 @@
     "url": "git+https://github.com/zackhsi/dotfiles.git"
   },
   "license": "ISC",
-  "scripts": {
-    "preinstall": "npm i -g neovim"
-  },
-  "dependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^2.10.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-typescript": "^0.12.0",
-    "gatsby-cli": "^2.12.21",
-    "hackmyresume": "^1.9.0-beta",
-    "jsonlint": "^1.6.3",
-    "jsonresume-theme-onepage": "0.0.3",
-    "neovim": "^4.5.0",
-    "prettier": "^1.18.2",
-    "tslint": "^5.18.0",
-    "typescript": "^2.9.2",
-    "typescript-eslint-parser": "^16.0.1",
-    "vercel": "^19.1.1"
-  }
+  "dependencies": {}
 }
