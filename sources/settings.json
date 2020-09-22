@@ -190,5 +190,6 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false
+  "zenMode.silentNotifications": false,
+  "search.followSymlinks": false
 }
