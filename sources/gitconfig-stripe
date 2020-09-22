@@ -1,0 +1,6 @@
+[user]
+email = zackhsi@stripe.com
+name = Zack Hsi
+
+[commit]
+gpgsign = true

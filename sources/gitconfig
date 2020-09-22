@@ -1,5 +1,4 @@
 # vi: ft=dosini
-
 [user]
 email = zackhsi@gmail.com
 name = Zack Hsi
@@ -68,3 +67,7 @@ checkout-with-relative-age = !git branches-with-relative-age \
                              | xargs git checkout
 [pull]
 	ff = only
+
+# Pin to end -- last write wins.
+[includeIf "gitdir:~/stripe/"]
+path = ~/.gitconfig-stripe
