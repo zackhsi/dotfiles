@@ -16,6 +16,7 @@
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
+  '~/.gitconfig-stripe': 'gitconfig-stripe',
   '~/.gitignore': 'gitignore',
   '~/.ideavimrc': 'ideavimrc',
   '~/.tigrc': 'tigrc',
