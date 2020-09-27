@@ -11,6 +11,7 @@ brew 'bat'
 
 # Git.
 brew 'diff-so-fancy'
+brew 'gh'
 brew 'git'
 brew 'git-delta'
 brew 'hub'
