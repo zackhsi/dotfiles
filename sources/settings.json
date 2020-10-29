@@ -156,6 +156,9 @@
   // Sorbet.
   "sorbet.enabled": true,
 
+  // Spelling.
+  "cSpell.enabled": true,
+
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
