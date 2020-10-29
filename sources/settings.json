@@ -149,6 +149,7 @@
   "markdown.extension.preview.autoShowPreviewToSide": true,
 
   // Search.
+  "search.followSymlinks": false,
   "search.showLineNumbers": true,
   "search.smartCase": true,
 
@@ -190,6 +191,5 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false,
-  "search.followSymlinks": false
+  "zenMode.silentNotifications": false
 }
