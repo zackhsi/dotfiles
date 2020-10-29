@@ -145,6 +145,9 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
+  // Imports (Javascript).
+  "sort-imports.on-save": false,
+
   // Markdown.
   "markdown.extension.preview.autoShowPreviewToSide": true,
 
