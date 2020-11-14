@@ -170,7 +170,7 @@
   "terminal.integrated.scrollback": 1000000,
 
   // Update.
-  "update.mode": "none",
+  "update.mode": "manual",
 
   // Vim.
   "vim.hlsearch": true,
