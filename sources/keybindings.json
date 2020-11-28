@@ -1,4 +1,5 @@
 [
+  // Vim navigation.
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft"
@@ -15,10 +16,7 @@
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
   },
-  {
-    "key": "alt+f",
-    "command": "workbench.files.action.showActiveFileInExplorer"
-  },
+  // Back/forward navigation.
   {
     "key": "cmd+[",
     "command": "workbench.action.navigateBack"
@@ -27,6 +25,7 @@
     "key": "cmd+]",
     "command": "workbench.action.navigateForward"
   },
+  // Editor tab navigation.
   {
     "key": "ctrl+tab",
     "command": "workbench.action.nextEditor"
@@ -35,6 +34,12 @@
     "key": "ctrl+shift+tab",
     "command": "workbench.action.previousEditor"
   },
+  // Show active file.
+  {
+    "key": "alt+f",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  // Go to references.
   {
     "key": "shift+cmd+u",
     "command": "editor.action.goToReferences",
@@ -44,5 +49,11 @@
     "key": "shift+f12",
     "command": "-editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // Search Editor.
+  {
+    "key": "cmd+s",
+    "command": "searchEditorApplyChanges.apply",
+    "when": "inSearchEditor"
   }
 ]
