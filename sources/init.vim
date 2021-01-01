@@ -318,6 +318,13 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" coc.nvim.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <silent> <leader>u <Plug>(coc-references)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Docker.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'ekalinin/Dockerfile.vim'
