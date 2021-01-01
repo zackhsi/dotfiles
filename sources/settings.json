@@ -200,5 +200,15 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false
+  "zenMode.silentNotifications": false,
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "cSpell.userWords": [
+    "ebat",
+    "idct",
+    "strftime",
+    "strptime",
+    "vban"
+  ]
 }
