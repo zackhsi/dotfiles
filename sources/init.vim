@@ -398,6 +398,7 @@ nnoremap <silent> <Leader><Enter> :silent call fzf#run({
 
 Plug '~/oss/fzf-tags'
 nmap <C-]> <Plug>(fzf_tags)
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Comment' } }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git gutter.
