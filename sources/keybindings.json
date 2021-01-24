@@ -55,5 +55,9 @@
     "key": "cmd+s",
     "command": "searchEditorApplyChanges.apply",
     "when": "inSearchEditor"
+  },
+  {
+    "key": "alt+o",
+    "command": "outline.focus"
   }
 ]
