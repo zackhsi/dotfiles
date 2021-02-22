@@ -34,6 +34,14 @@
     "key": "ctrl+shift+tab",
     "command": "workbench.action.previousEditor"
   },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
   // Show active file.
   {
     "key": "alt+f",
