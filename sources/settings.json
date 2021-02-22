@@ -4,7 +4,8 @@
     "()",
     "[]",
     "{}",
-    ["#f66a0a", "#ea4aaa", "#dbab09"],
+    /* ["#f66a0a", "#ea4aaa", "#dbab09"], // Bright. */
+    ["#D08770", "#B48EAD", "#EBCB8B"], // Nord.
     "Red"
   ],
 

@@ -182,38 +182,38 @@ colors_solarized_dark:
 colors_nord: &colors_dark
   # Default colors
   primary:
-    background: '0x303845'  # Terminal background.
-    foreground: '0xabb2bf'  # Terminal text
+    background: '0x2E3440'  # Terminal background.
+    foreground: '0xD8DEE9'  # Terminal text
 
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: '0x303845'
-    cursor: '0xabb2bf'
+    text: '0x2E3440'
+    cursor: '0xD8DEE9'
 
   # Normal colors
   normal:
-    black:   '0x303845'  # Vim background.
-    red:     '0xde7c84'
-    green:   '0x92d69e'
-    yellow:  '0xdbb979'
-    blue:    '0x61aeef'
-    magenta: '0xc792ea'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'  # Vim text.
+    black:   '0x2E3440'  # Vim background.
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x8FBCBB'
+    white:   '0xD8DEE9'  # Vim text.
 
   # Bright colors
   bright:
     black:   '0x5c6370'  # Vim line numbers, comments.
-    red:     '0xd19a66'
+    red:     '0xD08770'
     green:   '0x282c34'  # Current line, color column.
     yellow:  '0x282c34'  # Vim pane borders, visual selection.
     blue:    '0x61afef'  # FZF search term current line.
     magenta: '0xc678dd'  # Unused.
     cyan:    '0x56b6c2'  # Special chars (YAML escape).
-    white:   '0xabb2bf'  # Vimscript bold asterisk.
+    white:   '0xD8DEE9'  # Vimscript bold asterisk.
 
 colors_onedark:
   # Default colors
