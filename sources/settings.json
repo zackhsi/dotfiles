@@ -13,6 +13,7 @@
   "debug.console.fontSize": 14,
 
   // Editor.
+  "editor.autoIndent": "full",
   "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
@@ -151,6 +152,19 @@
   // Markdown.
   "markdown.extension.preview.autoShowPreviewToSide": true,
 
+  // Pay.
+  "run-pay.test.setFirstLineBreakpoint": false,
+
+  // Python.
+  "python.defaultInterpreterPath": "/Users/zackhsi/.pyenv/shims/python",
+  "python.formatting.provider": "black",
+
+  // Ruby.
+  "ruby.format": false,
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+
   // Search.
   "search.followSymlinks": false,
   "search.showLineNumbers": true,
@@ -163,6 +177,13 @@
   "cSpell.enabled": true,
   "cSpell.enableFiletypes": ["ruby"],
   "cSpell.language": "en,en-US,en-GB",
+  "cSpell.userWords": [
+    "ebat",
+    "idct",
+    "strftime",
+    "strptime",
+    "vban"
+  ],
 
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
@@ -182,7 +203,7 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Nord",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -200,15 +221,5 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false,
-  "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
-  },
-  "cSpell.userWords": [
-    "ebat",
-    "idct",
-    "strftime",
-    "strptime",
-    "vban"
-  ]
+  "zenMode.silentNotifications": false
 }
