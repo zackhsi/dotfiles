@@ -12,6 +12,8 @@
   // Debug.
   "debug.console.fontFamily": "Operator Mono",
   "debug.console.fontSize": 14,
+  "debug.inlineValues": true,
+  "debug.toolBarLocation": "docked",
 
   // Editor.
   "editor.autoIndent": "full",
@@ -138,6 +140,7 @@
   // Explorer.
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "mixed",
 
@@ -167,7 +170,10 @@
   },
 
   // Search.
+  "search.collapseResults": "auto",
   "search.followSymlinks": false,
+  "search.searchEditor.defaultNumberOfContextLines": 2,
+  "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
   "search.showLineNumbers": true,
   "search.smartCase": true,
 
@@ -209,6 +215,8 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.showTabs": false,
   "workbench.iconTheme": "ayu",
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
