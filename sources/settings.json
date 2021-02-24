@@ -216,6 +216,8 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
+  "workbench.editor.limit.value": 30,
+  "workbench.editor.revealIfOpen": true,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "ayu",
   "workbench.list.multiSelectModifier": "alt",
