@@ -5,7 +5,7 @@
     "[]",
     "{}",
     /* ["#f66a0a", "#ea4aaa", "#dbab09"], // Bright. */
-    ["#D08770", "#B48EAD", "#EBCB8B"], // Nord.
+    ["#EBCB8B", "#B48EAD", "#D08770"], // Nord.
     "Red"
   ],
 
