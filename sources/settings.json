@@ -172,8 +172,10 @@
   // Search.
   "search.collapseResults": "auto",
   "search.followSymlinks": false,
+  "search.maintainFileSearchCache": true,
   "search.searchEditor.defaultNumberOfContextLines": 2,
   "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+  "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
 
