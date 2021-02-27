@@ -171,5 +171,5 @@ case $PALETTE in
 esac
 
 if [[ $COMPRESS == "1" ]]; then
-  gifsicle --optimize=3 --delay=3 "$OUTPUT_TEMP" -o "$OUTPUT"
+  gifsicle --optimize=3 "$OUTPUT_TEMP" -o "$OUTPUT"
 fi
