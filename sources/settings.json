@@ -191,7 +191,8 @@
     "idct",
     "strftime",
     "strptime",
-    "vban"
+    "vban",
+    "vbans"
   ],
 
   // Terminal.
