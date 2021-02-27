@@ -77,7 +77,7 @@ function print_usage() {
 
                         defaults to input file with extension changed to gif
 
-   -s, --scale INT      (optional) specify scale of the resulting gif (affects
+   -s, --scale DECIMAL  (optional) specify scale of the resulting gif (affects
                         both width and height)
 
                         affects speed of conversion and physical size of the
@@ -87,11 +87,15 @@ function print_usage() {
 
    --fps INT            (optional) specify FPS of the resulting gif
 
+                        affects size of resulting gif
+
                         defaults to 24
 
    --pts INT            (optional) specify PTS of the resulting gif
 
                         affects speed of the playback
+
+                        use 0.5 to speed up 2x
 
                         defaults to 1
 
