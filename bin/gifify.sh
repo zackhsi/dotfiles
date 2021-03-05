@@ -29,9 +29,17 @@ function print_usage() {
                          use 0.5 to speed up 2x
 
                          defaults to 1
+
+  ffmpeg arguments are all supported, including:
+
+    -t duration          record or transcode \"duration\" seconds of audio/video
+
+    -ss time_off         set the start time offset
+
 "
 }
 
+INPUT=""
 OUTPUT=""
 WIDTH=""
 FPS=24
@@ -67,16 +75,19 @@ do
       shift # past argument
       shift # past value
       ;;
-    *)    # unknown option
+    -h|--help)    # unknown option
       print_usage
-      exit 1
+      exit
+      ;;
+    *)    # unknown option
+      POSITIONAL+=("$1") # save it in an array for later                                                                                                       │   80 set -- "${POSITIONAL[@]}" # restore positional parameters
+      shift # past argument
       ;;
   esac
 done
 set -- "${POSITIONAL[@]}" # restore positional parameters
 
 if [[ -z $INPUT ]]; then
-  echo "Missing input"
   print_usage
   exit 1
 fi
@@ -99,6 +110,7 @@ filters="$filters,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] palet
 
 set -x
 ffmpeg \
+  ${POSITIONAL[*]} \
   -i "$INPUT" \
   -filter_complex "$filters" \
-  "$OUTPUT"
+  "$OUTPUT" "$@"
