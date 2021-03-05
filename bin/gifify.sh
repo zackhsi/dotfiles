@@ -94,7 +94,7 @@ fi
 filters="[0:v]"
 filters="$filters fps=$FPS"
 [ -n "$WIDTH" ] && filters="$filters,scale=w=$WIDTH:h=-1"
-filters="$filters,setpts=0.5*$PTS"
+filters="$filters,setpts=$PTS*PTS"
 filters="$filters,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1"
 
 set -x
