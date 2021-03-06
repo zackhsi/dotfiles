@@ -40,6 +40,10 @@ cmd = icdiff --line-numbers $LOCAL $REMOTE
 [hub]
 host = git.corp.stripe.com
 
+# Speed up git status.
+[feature]
+manyFiles = 1
+
 [fetch]
 prune = true
 
