@@ -1,63 +1,4 @@
 # vi: ft=dosini
-[user]
-email = zackhsi@gmail.com
-name = Zack Hsi
-
-[core]
-excludesfile = ~/.gitignore
-
-[push]
-default = simple
-
-[url "git@github.com:"]
-insteadOf = https://github.com/
-
-[pager]
-diff = delta
-show = delta
-
-[diff]
-algorithm = patience
-compactionHeuristic = true
-tool = vscode
-
-[difftool "vscode"]
-cmd = code --wait --diff $LOCAL $REMOTE
-
-[color "diff"]
-meta = yellow bold
-frag = magenta bold
-
-[credential]
-helper = osxkeychain
-
-[difftool]
-prompt = false
-
-[difftool "icdiff"]
-cmd = icdiff --line-numbers $LOCAL $REMOTE
-
-[hub]
-host = git.corp.stripe.com
-
-# Speed up git status.
-[feature]
-manyFiles = 1
-
-[fetch]
-prune = true
-
-[mergetool "fugitive"]
-cmd = NOTAGS=1 nvim -f -c \"Gdiff\" \"$MERGED\"
-keepBackup = false
-
-[merge]
-renameLimit = 999999
-tool = vscode
-
-[mergetool "vscode"]
-cmd = code --wait $MERGED
-
 [alias]
 showtool = "!f() { git difftool ${1:-HEAD}^ ${1:-HEAD}; }; f"
 
@@ -69,8 +10,63 @@ checkout-with-relative-age = !git branches-with-relative-age \
                              | fzf --reverse --nth=1 --preview 'git log --patch --color {1}...{1}~3' \
                              | awk '{print $1}' \
                              | xargs git checkout
+
+[color "diff"]
+meta = yellow bold
+frag = magenta bold
+
+[core]
+excludesfile = ~/.gitignore
+
+[credential]
+helper = osxkeychain
+
+[diff]
+algorithm = patience
+compactionHeuristic = true
+tool = vscode
+
+[difftool]
+prompt = false
+
+[difftool "icdiff"]
+cmd = icdiff --line-numbers $LOCAL $REMOTE
+
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
+
+[feature]
+manyFiles = 1
+
+[fetch]
+prune = true
+
+[hub]
+host = git.corp.stripe.com
+
+[merge]
+renameLimit = 999999
+tool = vscode
+
+[mergetool "vscode"]
+cmd = code --wait $MERGED
+
+[pager]
+diff = delta
+show = delta
+
 [pull]
-	ff = only
+ff = only
+
+[push]
+default = simple
+
+[url "git@github.com:"]
+insteadOf = https://github.com/
+
+[user]
+email = zackhsi@gmail.com
+name = Zack Hsi
 
 # Pin to end -- last write wins.
 [includeIf "gitdir:~/stripe/"]
