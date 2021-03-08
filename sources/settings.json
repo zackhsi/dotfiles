@@ -171,10 +171,11 @@
 
   // Search.
   "search.collapseResults": "auto",
+  "search.experimental.searchInOpenEditors": true,
   "search.followSymlinks": false,
   "search.maintainFileSearchCache": true,
+  "search.mode": "newEditor",
   "search.searchEditor.defaultNumberOfContextLines": 2,
-  "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
@@ -215,6 +216,7 @@
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Nord",
   "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.decorations.badges": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
