@@ -102,5 +102,14 @@
     "key": "ctrl+cmd+down",
     "command": "-workbench.action.terminal.resizePaneDown",
     "when": "terminalFocus && terminalProcessSupported"
+  },
+  // Close editor group.
+  {
+    "key": "shift+cmd+w",
+    "command": "workbench.action.closeEditorsAndGroup"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
   }
 ]
