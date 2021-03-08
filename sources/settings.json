@@ -153,8 +153,8 @@
   // Imports (Javascript).
   "sort-imports.on-save": false,
 
-  // Markdown.
-  "markdown.extension.preview.autoShowPreviewToSide": true,
+  // Markdoc.
+  "markdoc.enabled": true,
 
   // Pay.
   "run-pay.test.setFirstLineBreakpoint": false,
@@ -217,7 +217,6 @@
   "workbench.colorTheme": "Nord",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
-  "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
