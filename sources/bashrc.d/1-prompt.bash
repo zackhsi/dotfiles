@@ -55,7 +55,7 @@ __prompt() {
     # First line of prompt.
     "$BOLD"
     "$TIMESTAMP_PLACEHOLDER" "$DOUBLE_SPACE"
-    "$CYA" "$BOLD" "$DIRECTORY" "$DOUBLE_SPACE"
+    "$BLU" "$BOLD" "$DIRECTORY" "$DOUBLE_SPACE"
     "$GIT_BRANCH"
     "$NO_COLOR" "$NEWLINE"
     # Second line of prompt.
@@ -102,7 +102,7 @@ __compute_git_branch_fast() {
       ;;
   esac
   if [ -n "$branch" ]; then
-    GIT_BRANCH="${YEL}${ITALIC}(${GRE}${ITALIC}$branch${YEL}${ITALIC})${NO_COLOR}"
+    GIT_BRANCH="${YEL}${ITALIC}(${CYA}${ITALIC}$branch${YEL}${ITALIC})${NO_COLOR}"
   else
     GIT_BRANCH=""
   fi
