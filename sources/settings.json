@@ -17,6 +17,8 @@
 
   // Editor.
   "editor.autoIndent": "full",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
