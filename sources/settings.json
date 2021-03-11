@@ -221,7 +221,6 @@
   // Vim.
   "vim.hlsearch": true,
   "vim.leader": " ",
-  "vim.visualstar": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -242,6 +241,8 @@
       "after": ["g", "k"]
     }
   ],
+  "vim.visualstar": true,
+  "vim.textwidth": 99,
 
   // Window.
   "window.zoomLevel": 0,
