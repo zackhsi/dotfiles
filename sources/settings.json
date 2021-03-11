@@ -38,6 +38,12 @@
         }
       },
       {
+        "scope": "punctuation.definition.tag",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
         "scope": "constant.language.boolean.ruby",
         "settings": {
           "fontStyle": "italic bold"
