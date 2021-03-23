@@ -158,6 +158,9 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
+  // Git.
+  "git.path": "/usr/local/bin/git",
+
   // Gitlens.
   "gitlens.blame.separateLines": false,
   "gitlens.codeLens.authors.enabled": false,
@@ -189,6 +192,7 @@
   "search.followSymlinks": false,
   "search.maintainFileSearchCache": true,
   "search.mode": "newEditor",
+  "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": 2,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
@@ -201,14 +205,7 @@
   "cSpell.enabled": true,
   "cSpell.enableFiletypes": ["ruby"],
   "cSpell.language": "en,en-US,en-GB",
-  "cSpell.userWords": [
-    "ebat",
-    "idct",
-    "strftime",
-    "strptime",
-    "vban",
-    "vbans"
-  ],
+  "cSpell.userWords": ["ebat", "idct", "strftime", "strptime", "vban", "vbans"],
 
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
