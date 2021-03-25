@@ -17,5 +17,7 @@ alias runway="ssh-service runway"
 # Fix messages of "WARNING: Nokogiri was built against LibXML version 2.9.9, but has dynamically loaded 2.9.4".
 alias nokogiri-fix="gem install nokogiri -- --use-system-libraries"
 
+alias terraform=~/stripe/puppet-config/terraform/support/releases/terraform/0.12.7/darwin_amd64/terraform
+
 # Stripe git wrapper is slow and messes up IO (cannot pipe git log -G to tig).
 unalias git
