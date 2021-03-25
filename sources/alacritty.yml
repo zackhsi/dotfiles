@@ -182,8 +182,8 @@ colors_solarized_dark:
 colors_nord: &colors_dark
   # Default colors
   primary:
-    background: '0x2E3440'  # Terminal background.
-    foreground: '0xD8DEE9'  # Terminal text
+    background: '0x2E3440'  # Terminal and vim background.
+    foreground: '0xD8DEE9'  # Terminal and vim text.
 
   # Cursor colors
   #
@@ -195,25 +195,25 @@ colors_nord: &colors_dark
 
   # Normal colors
   normal:
-    black:   '0x2E3440'  # Vim background.
+    black:   '0x3B4252'  # Visual selection, airline background for inactive panes.
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x8FBCBB'  # Search match background.
+    white:   '0xD8DEE9'
+
+  # Bright colors
+  bright:
+    black:   '0x616E88'  # Vim line numbers, comments.
     red:     '0xBF616A'
     green:   '0xA3BE8C'
     yellow:  '0xEBCB8B'
     blue:    '0x81A1C1'
     magenta: '0xB48EAD'
     cyan:    '0x8FBCBB'
-    white:   '0xD8DEE9'  # Vim text.
-
-  # Bright colors
-  bright:
-    black:   '0x5c6370'  # Vim line numbers, comments.
-    red:     '0xD08770'
-    green:   '0x282c34'  # Current line, color column.
-    yellow:  '0x282c34'  # Vim pane borders, visual selection.
-    blue:    '0x61afef'  # FZF search term current line.
-    magenta: '0xc678dd'  # Unused.
-    cyan:    '0x56b6c2'  # Special chars (YAML escape).
-    white:   '0xD8DEE9'  # Vimscript bold asterisk.
+    white:   '0xD8DEE9'
 
 colors_onedark:
   # Default colors
@@ -255,7 +255,43 @@ colors_onedark:
   indexed_colors:
     - { index: 16, color: '#e5dc6c' }
 
-colors_ayu_light: &colors_light
+colors_ayu_light_nord: &colors_light
+  # Default colors
+  primary:
+    background: '0xfafafa'  # Terminal and vim background.
+    foreground: '0x6c7680'  # Terminal and vim text.
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  cursor:
+    text: '0xfafafa'
+    cursor: '0x6c7680'
+
+  # Normal colors
+  normal:
+    black:   '0xdee8f1'  # Visual selection, airline background for inactive panes.
+    red:     '0xf07171'
+    green:   '0x86b300'
+    yellow:  '0xfa8d3e'
+    blue:    '0x399ee6'
+    magenta: '0xa37acc'
+    cyan:    '0x55b4d4'  # Search match background.
+    white:   '0x6c7680'
+
+  # Bright colors
+  bright:
+    black:   '0xabb0b6'  # Vim line numbers, comments.
+    red:     '0xf07171'
+    green:   '0x86b300'
+    yellow:  '0xfa8d3e'
+    blue:    '0x399ee6'
+    magenta: '0xa37acc'
+    cyan:    '0x4cbf99'
+    white:   '0x6c7680'
+
+colors_ayu_light:
   # Default colors
   primary:
     background: '0xfafafa'  # Terminal background.

@@ -135,7 +135,7 @@ if $TERM_PROGRAM !=# 'vscode'
 endif
 
 " Theme.
-let g:airline_theme                    = 'base16'
+let g:airline_theme                    = 'nord'
 let g:airline_base16_improved_contrast = 1
 
 " Airline config.
@@ -459,6 +459,16 @@ let NERDTreeShowHidden=1
 let NERDTreeHighlightCursorline=0
 
 Plug '~/oss/nerdtree-rg.vim'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Nord.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'arcticicestudio/nord-vim'
+augroup nord-theme-overrides
+  autocmd!
+  autocmd ColorScheme nord highlight Comment cterm=italic
+  autocmd ColorScheme nord highlight Statement cterm=bold
+augroup END
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Onedark.
@@ -708,7 +718,7 @@ Plug 'saltstack/salt-vim'
 call plug#end()
 
 if $TERM_PROGRAM !=# 'vscode'
-  colorscheme base16-default-light
+  colorscheme nord
 endif
 
 " For some silly reason, :set ft=help leads to a positive conceallevel.
