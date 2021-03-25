@@ -93,10 +93,10 @@ augroup end
 noremap <c-z> :suspend<cr>:checktime<cr>:GitGutterAll<cr>
 
 " Window navigation.
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
+nmap <C-j> :<C-u>TmuxNavigateDown<CR>
+nmap <C-k> :<C-u>TmuxNavigateUp<CR>
 nmap <C-h> :<C-u>TmuxNavigateLeft<CR>
-nmap <C-l> <C-w>l
+nmap <C-l> :<C-u>TmuxNavigateRight<CR>
 
 " Move by screen lines.
 noremap j gj
