@@ -300,7 +300,7 @@ endfunction
 
 augroup on_change_colorschema
   autocmd!
-  autocmd ColorScheme * call s:base16_customize()
+  autocmd ColorScheme base16-default-light call s:base16_customize()
 augroup END
 
 " Print highlight group under cursor with leader + h.
