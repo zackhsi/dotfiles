@@ -258,38 +258,38 @@ colors_onedark:
 colors_ayu_light_nord: &colors_light
   # Default colors
   primary:
-    background: '0xfafafa'  # Terminal and vim background.
-    foreground: '0x6c7680'  # Terminal and vim text.
+    background: '0xECEFF4'  # Terminal and vim background.
+    foreground: '0x4C566A'  # Terminal and vim text.
 
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: '0xfafafa'
-    cursor: '0x6c7680'
+    text: '0xECEFF4'
+    cursor: '0x4C566A'
 
   # Normal colors
   normal:
-    black:   '0xdee8f1'  # Visual selection, airline background for inactive panes.
+    black:   '0xD8DEE9'  # Visual selection, airline background for inactive panes.
     red:     '0xf07171'
-    green:   '0x86b300'
-    yellow:  '0xfa8d3e'
-    blue:    '0x399ee6'
+    green:   '0x7ca857'
+    yellow:  '0xd99d26'
+    blue:    '0x5E81AC'
     magenta: '0xa37acc'
-    cyan:    '0x55b4d4'  # Search match background.
-    white:   '0x6c7680'
+    cyan:    '0x418ea5'  # Search match background.
+    white:   '0x4C566A'
 
   # Bright colors
   bright:
-    black:   '0xabb0b6'  # Vim line numbers, comments.
+    black:   '0x7b88a1'  # Vim line numbers, comments.
     red:     '0xf07171'
-    green:   '0x86b300'
-    yellow:  '0xfa8d3e'
-    blue:    '0x399ee6'
+    green:   '0x7ca857'
+    yellow:  '0xd99d26'
+    blue:    '0x5E81AC'
     magenta: '0xa37acc'
-    cyan:    '0x4cbf99'
-    white:   '0x6c7680'
+    cyan:    '0x418ea5'
+    white:   '0x4C566A'
 
 colors_ayu_light:
   # Default colors
