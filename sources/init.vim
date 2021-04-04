@@ -422,6 +422,23 @@ noremap <silent> <leader>g :Goyo<CR>
 Plug 'jparise/vim-graphql'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gutentags.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if fnamemodify(getcwd(), ':p') !~ $HOME.'/stripe/'
+  Plug 'ludovicchabant/vim-gutentags'
+end
+noremap <Leader>c :GutentagsUpdate!<CR>
+let g:gutentags_define_advanced_commands = 1
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
+let g:gutentags_generate_on_empty_buffer = 1
+let g:gutentags_ctags_exclude = [
+  \ 'tags',
+  \ 'tags.temp',
+\ ]
+let g:gutentags_ctags_extra_args = ['--recurse=yes', '--exclude=node_modules']
+" let g:gutentags_ctags_extra_args = ['--ignore-unsupported-options', '--recursive']
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Javascript.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mxw/vim-jsx'

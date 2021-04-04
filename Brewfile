@@ -9,6 +9,9 @@ brew 'shellcheck'
 # Bat.
 brew 'bat'
 
+# Ctags.
+brew 'ctags-exuberant'
+
 # Git.
 brew 'diff-so-fancy'
 brew 'gh'
