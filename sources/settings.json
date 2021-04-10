@@ -23,6 +23,7 @@
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.rename.enablePreview": false,
   "editor.renderIndentGuides": false,
@@ -139,7 +140,9 @@
   },
 
   // Editor formatters.
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -167,6 +170,11 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
 
+  // Html.
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   // Imports (Javascript).
   "sort-imports.on-save": false,
 
@@ -179,6 +187,9 @@
   // Python.
   "python.defaultInterpreterPath": "/Users/zackhsi/.pyenv/shims/python",
   "python.formatting.provider": "black",
+  "python.showStartPage": false,
+  "python.sortImports.path": "isort",
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
 
   // Ruby.
   "ruby.format": false,
@@ -202,8 +213,9 @@
   "sorbet.enabled": true,
 
   // Spelling.
-  "cSpell.enabled": true,
+  "cSpell.diagnosticLevel": "Hint",
   "cSpell.enableFiletypes": ["ruby"],
+  "cSpell.enabled": true,
   "cSpell.language": "en,en-US,en-GB",
   "cSpell.userWords": ["ebat", "idct", "strftime", "strptime", "vban", "vbans"],
 
