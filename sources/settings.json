@@ -217,7 +217,17 @@
   "cSpell.enableFiletypes": ["ruby"],
   "cSpell.enabled": true,
   "cSpell.language": "en,en-US,en-GB",
-  "cSpell.userWords": ["ebat", "idct", "strftime", "strptime", "vban", "vbans"],
+  "cSpell.userWords": [
+    "ebat",
+    "idct",
+    "jsonify",
+    "noqa",
+    "strftime",
+    "strptime",
+    "vban",
+    "vbans",
+    "warung"
+  ],
 
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
