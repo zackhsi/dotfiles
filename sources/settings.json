@@ -185,11 +185,11 @@
   "run-pay.test.setFirstLineBreakpoint": false,
 
   // Python.
-  "python.defaultInterpreterPath": "/Users/zackhsi/.pyenv/shims/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
   "python.showStartPage": false,
-  "python.sortImports.path": "isort",
-  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
 
   // Ruby.
   "ruby.format": false,

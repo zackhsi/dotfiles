@@ -153,6 +153,7 @@ export PATH=~/dotfiles/node_modules/.bin:$PATH
 ###############################################################################
 # Python                                                                      #
 ###############################################################################
+export PATH=~/.local/bin:$PATH
 export PYTHONDONTWRITEBYTECODE=1
 venv() {
   virtualenv venv
