@@ -141,7 +141,7 @@
 
   // Editor formatters.
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -187,6 +187,7 @@
   // Python.
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
   "python.showStartPage": false,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
