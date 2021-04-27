@@ -77,7 +77,9 @@ alias gds='git diff --staged'
 alias gdt='git difftool'
 __git_complete gdt _git_diff
 alias gl='git pull'
-alias glg='git log --stat'
+glg() {
+  git log "$@"
+}
 __git_complete glg _git_log
 gp() {
   if [[ $# -gt 0 ]]; then
