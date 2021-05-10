@@ -157,24 +157,5 @@
     "key": "alt+cmd+c",
     "command": "-toggleSearchCaseSensitive",
     "when": "searchViewletFocus && !fileMatchOrFolderMatchFocus"
-  },
-  // Fugitive / Unimpaired.
-  {
-    "key": "alt+f5",
-    "command": "-workbench.action.editor.nextChange",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+f5",
-    "command": "-workbench.action.editor.previousChange",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "] c",
-    "command": "workbench.action.editor.nextChange"
-  },
-  {
-    "key": "[ c",
-    "command": "workbench.action.editor.previousChange"
   }
 ]
