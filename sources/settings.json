@@ -247,7 +247,15 @@
     {
       "before": ["k"],
       "after": ["g", "k"]
-    }
+    },
+    {
+      "before": [ "]", "c" ],
+      "commands": [ "workbench.action.editor.nextChange" ]
+    },
+    {
+      "before": [ "[", "c" ],
+      "commands": [ "workbench.action.editor.previousChange" ]
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
