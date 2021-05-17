@@ -47,16 +47,21 @@
     "key": "alt+f",
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
-  // Go to references.
+  // Find all references.
   {
     "key": "shift+cmd+u",
-    "command": "editor.action.goToReferences",
-    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
   },
   {
-    "key": "shift+f12",
-    "command": "-editor.action.goToReferences",
-    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
   },
   // Search Editor.
   {
