@@ -193,7 +193,8 @@
   // Ruby.
   "ruby.format": false,
   "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
+    "editor.defaultFormatter": "misogi.ruby-rubocop",
+    "editor.tabSize": 2
   },
 
   // Search.
