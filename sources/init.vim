@@ -93,10 +93,37 @@ augroup end
 noremap <c-z> :suspend<cr>:checktime<cr>:GitGutterAll<cr>
 
 " Window navigation.
-nmap <C-j> :<C-u>TmuxNavigateDown<CR>
-nmap <C-k> :<C-u>TmuxNavigateUp<CR>
-nmap <C-h> :<C-u>TmuxNavigateLeft<CR>
-nmap <C-l> :<C-u>TmuxNavigateRight<CR>
+function Navigate(direction)
+  " Is there a vim pane in this direction? If so, navigate!
+  if winnr() !=# winnr(a:direction)
+    return execute('wincmd ' . a:direction)
+  endif
+
+  " Is there a tmux pane in this direction? If so, navigate!
+  if a:direction == 'h'
+    if system('tmux display-message -p ''#{pane_at_left}''') !=# 1
+      return system('tmux select-pane -L')
+    endif
+  elseif a:direction == 'j'
+    if system('tmux display-message -p ''#{pane_at_bottom}''') !=# 1
+      return system('tmux select-pane -D')
+    endif
+  elseif a:direction == 'k'
+    if system('tmux display-message -p ''#{pane_at_top}''') !=# 1
+      return system('tmux select-pane -U')
+    endif
+  elseif a:direction == 'l'
+    if system('tmux display-message -p ''#{pane_at_right}''') !=# 1
+      return system('tmux select-pane -R')
+    endif
+  else
+    echom 'Invalid direction: ' . a:direction
+  endif
+endfunction
+nnoremap <silent> <C-h> :call Navigate('h')<CR>
+nnoremap <silent> <C-j> :call Navigate('j')<CR>
+nnoremap <silent> <C-k> :call Navigate('k')<CR>
+nnoremap <silent> <C-l> :call Navigate('l')<CR>
 
 " Move by screen lines.
 noremap j gj
@@ -695,7 +722,6 @@ Plug 'solarnz/thrift.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tmux.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'sjl/vitality.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
