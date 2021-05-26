@@ -4,6 +4,7 @@ scriptencoding utf-8
 let mapleader = "\<Space>"         " Use space as leader
 
 set colorcolumn=+1                 " line length matters
+set expandtab                      " use spaces instead of tabs
 set foldmethod=manual              " set a foldmethod
 set hidden
 set list
@@ -21,10 +22,6 @@ set ignorecase                     " case insensitive search
 set incsearch                      " type-ahead-find
 set smartcase                      " smart case search
 set inccommand=nosplit             " in-place substitution preview
-
-set expandtab                      " use spaces instead of tabs
-set shiftwidth=4                   " 1 tab == 2 spaces
-set tabstop=4                      " 1 tab == 2 spaces
 
 set splitbelow                     " all horizontal splits open to the bottom
 set splitright                     " all vertical splits open to the right
@@ -51,6 +48,7 @@ vnorem // y/<c-r>"<cr>
 filetype plugin indent on
 augroup Indentation
   autocmd!
+  autocmd Filetype *          setlocal tabstop=4 softtabstop=4 shiftwidth=4
   autocmd Filetype Dockerfile setlocal tabstop=4 softtabstop=4 shiftwidth=0
   autocmd Filetype bash       setlocal tabstop=2 softtabstop=2 shiftwidth=2
   autocmd Filetype bzl        setlocal tabstop=4 softtabstop=4 shiftwidth=4
