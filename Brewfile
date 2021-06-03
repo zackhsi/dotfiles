@@ -1,6 +1,3 @@
-# Aerial.
-cask 'aerial'
-
 # Bash.
 brew 'bash'
 brew 'bash-completion'
