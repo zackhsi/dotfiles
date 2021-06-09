@@ -1,12 +1,9 @@
 {
   // BracketPairColorizer.
-  "bracketPairColorizer.consecutivePairColors": [
-    "()",
-    "[]",
-    "{}",
-    /* ["#f66a0a", "#ea4aaa", "#dbab09"], // Bright. */
-    ["#EBCB8B", "#B48EAD", "#D08770"], // Nord.
-    "Red"
+  "bracket-pair-colorizer-2.colors": [
+      "colorizer.color-1",
+      "colorizer.color-2",
+      "colorizer.color-3"
   ],
 
   // Debug.
@@ -75,68 +72,6 @@
         }
       }
     ],
-    "[GitHub Light]": {
-      "textMateRules": [
-        {
-          "scope": "string.quoted.double.interpolated.ruby",
-          "settings": {
-            "foreground": "#22863a"
-          }
-        },
-        {
-          "scope": "constant.language.symbol.ruby",
-          "settings": {
-            "foreground": "#22863a",
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "constant.language.symbol.hashkey.ruby",
-          "settings": {
-            "foreground": "#22863a",
-            "fontStyle": "bold"
-          }
-        }
-      ]
-    },
-    "[Ayu Light]": {
-      "textMateRules": [
-        {
-          "scope": "constant.language.symbol.ruby",
-          "settings": {
-            "foreground": "#86B300",
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "variable.other.constant.ruby",
-          "settings": {
-            "foreground": "#FA8D3E",
-            "fontStyle": ""
-          }
-        },
-        {
-          "scope": "constant.language.symbol.hashkey.ruby",
-          "settings": {
-            "foreground": "#86B300",
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "constant.language.boolean.ruby",
-          "settings": {
-            "foreground": "#55B4D4",
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "entity.name.function.ruby",
-          "settings": {
-            "foreground": "#399EE6"
-          }
-        }
-      ]
-    }
   },
 
   // Editor formatters.
@@ -277,6 +212,21 @@
   // Workbench.
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Nord",
+  "workbench.colorCustomizations": {
+    "[GitHub Light Default]": {
+      "colorizer.color-1": "#ea4aaa",
+      "colorizer.color-2": "#28a745",
+      "colorizer.color-3": "#6f42c1"
+    },
+    "[Nord]": {
+      "colorizer.color-1": "#EBCB8B",
+      "colorizer.color-2": "#B48EAD",
+      "colorizer.color-3": "#D08770"
+    },
+    "colorizer.color-1": "#FF0000",
+    "colorizer.color-2": "#00FF00",
+    "colorizer.color-3": "#0000FF"
+  },
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
