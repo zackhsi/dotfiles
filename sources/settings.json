@@ -73,6 +73,7 @@
       }
     ],
   },
+  "editor.wordBasedSuggestionsMode": "currentDocument" | "matchingDocuments" | "allDocuments",
 
   // Editor formatters.
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
