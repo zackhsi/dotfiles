@@ -1,9 +1,9 @@
 {
   // BracketPairColorizer.
   "bracket-pair-colorizer-2.colors": [
-      "colorizer.color-1",
-      "colorizer.color-2",
-      "colorizer.color-3"
+    "colorizer.color-1",
+    "colorizer.color-2",
+    "colorizer.color-3"
   ],
 
   // Debug.
@@ -71,9 +71,10 @@
           "fontStyle": "italic"
         }
       }
-    ],
+    ]
   },
-  "editor.wordBasedSuggestionsMode": "currentDocument" | "matchingDocuments" | "allDocuments",
+  "editor.wordBasedSuggestions": true,
+  "editor.wordBasedSuggestionsMode": "allDocuments",
 
   // Editor formatters.
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -187,13 +188,13 @@
       "after": ["g", "k"]
     },
     {
-      "before": [ "]", "c" ],
-      "commands": [ "workbench.action.editor.nextChange" ]
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
     },
     {
-      "before": [ "[", "c" ],
-      "commands": [ "workbench.action.editor.previousChange" ]
-    },
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
