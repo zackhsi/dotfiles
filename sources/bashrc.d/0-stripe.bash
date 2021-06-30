@@ -1,7 +1,6 @@
 export PATH=$HOME/stripe/henson/bin:$PATH
 export PATH=$HOME/stripe/password-vault/bin:$PATH
 export PATH=$HOME/stripe/space-commander/bin:$PATH
-export PATH=$HOME/stripe/pay-server/manage/frontend/node_modules/.bin:$PATH
 export PATH=$HOME/stripe/puppet-config/terraform/support/releases/terraform/0.12.7/darwin_amd64:$PATH
 
 [ -f ~/stripe/password-vault/bash_completion ] && . ~/stripe/password-vault/bash_completion
