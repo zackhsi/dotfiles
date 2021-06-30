@@ -145,7 +145,6 @@
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "search.useIgnoreFiles": false,
 
   // Sorbet.
   "sorbet.enabled": true,
