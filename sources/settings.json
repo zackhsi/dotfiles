@@ -171,6 +171,10 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 1000000,
 
+  // TypeScript.
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
   // Update.
   "update.mode": "manual",
 
