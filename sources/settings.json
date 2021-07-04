@@ -173,7 +173,7 @@
 
   // TypeScript.
   "typescript.suggest.completeFunctionCalls": true,
-  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
   "update.mode": "manual",
