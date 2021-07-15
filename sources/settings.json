@@ -77,8 +77,10 @@
   "editor.wordBasedSuggestionsMode": "allDocuments",
 
   // Editor formatters.
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // Explorer.
   "explorer.confirmDelete": false,
@@ -126,6 +128,9 @@
   "python.linting.flake8Enabled": true,
   "python.showStartPage": false,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+
+  // Redhat.
+  "redhat.telemetry.enabled": false,
 
   // Ruby.
   "ruby.format": false,
@@ -240,12 +245,9 @@
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.limit.value": 30,
   "workbench.editor.showTabs": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.iconTheme": "ayu",
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
