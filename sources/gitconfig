@@ -16,7 +16,9 @@ meta = yellow bold
 frag = magenta bold
 
 [core]
+commitGraph = true
 excludesfile = ~/.gitignore
+fsmonitor = .git/hooks/fsmonitor-watchman
 
 [credential]
 helper = osxkeychain
@@ -40,6 +42,10 @@ manyFiles = 1
 
 [fetch]
 prune = true
+writeCommitGraph = true
+
+[gc]
+writeCommitGraph = true
 
 [hub]
 host = git.corp.stripe.com
