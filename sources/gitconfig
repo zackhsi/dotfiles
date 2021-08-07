@@ -18,7 +18,6 @@ frag = magenta bold
 [core]
 commitGraph = true
 excludesfile = ~/.gitignore
-fsmonitor = .git/hooks/fsmonitor-watchman
 
 [credential]
 helper = osxkeychain
@@ -77,3 +76,5 @@ name = Zack Hsi
 # Pin to end -- last write wins.
 [includeIf "gitdir:~/stripe/"]
 path = ~/.gitconfig-stripe
+[includeIf "gitdir:~/stripe/pay-server"]
+path = ~/.gitconfig-stripe-pay-server
