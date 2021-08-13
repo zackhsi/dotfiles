@@ -108,6 +108,25 @@
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.remotes": [
+    {
+      "domain": "git.corp.stripe.com",
+      "type": "Custom",
+      "name": "Stripe",
+      "protocol": "https",
+      "urls": {
+        "repository": "https://git.corp.stripe.com/${repo}",
+        "branches": "https://git.corp.stripe.com/${repo}/branches",
+        "branch": "https://git.corp.stripe.com/${repo}/commits/${branch}",
+        "commit": "https://git.corp.stripe.com/${repo}/commit/${id}",
+        "file": "https://git.corp.stripe.com/${repo}?path=${file}${line}",
+        "fileInBranch": "https://git.corp.stripe.com/${repo}/blob/${branch}/${file}${line}",
+        "fileInCommit": "https://git.corp.stripe.com/${repo}/blob/${id}/${file}${line}",
+        "fileLine": "#L${line}",
+        "fileRange": "#L${start}-L${end}"
+      }
+    }
+  ],
 
   // Html.
   "[html]": {
