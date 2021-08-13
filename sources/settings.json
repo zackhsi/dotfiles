@@ -95,6 +95,9 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
+  // Flow.
+  "flow.pathToFlow": "~/stripe/pay-server/manage/frontend/node_modules/.bin/flow",
+
   // Git.
   "git.path": "/usr/local/bin/git",
 
