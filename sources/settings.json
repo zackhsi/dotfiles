@@ -264,11 +264,14 @@
   },
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
+  "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.limit.value": 30,
+  "workbench.editor.sharedViewState": true,
   "workbench.editor.showTabs": false,
+  "workbench.editor.untitled.experimentalLanguageDetection": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
