@@ -246,7 +246,7 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "GitHub Light Default",
+  "workbench.colorTheme": "Nord",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "colorizer.color-1": "#ea4aaa",
