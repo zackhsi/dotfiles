@@ -104,6 +104,7 @@
   "git.path": "/usr/local/bin/git",
 
   // Gitlens.
+  "gitlens.blame.highlight.enabled": false,
   "gitlens.blame.separateLines": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
