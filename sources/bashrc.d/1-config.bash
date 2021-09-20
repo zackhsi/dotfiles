@@ -81,6 +81,10 @@ glg() {
   git log "$@"
 }
 __git_complete glg _git_log
+# Pull master while on non-master branch
+glm() {
+  git fetch origin master:master
+}
 gp() {
   if [[ $# -gt 0 ]]; then
     git push "$@"
