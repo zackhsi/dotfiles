@@ -19,6 +19,9 @@ set multiple-cursors
 
 set commentary
 
+nmap [c :action VcsShowPrevChangeMarker<CR>
+nmap ]c :action VcsShowNextChangeMarker<CR>
+
 " Git.
 nmap <space>a :action Annotate<CR>
 
