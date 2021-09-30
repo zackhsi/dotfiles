@@ -1,11 +1,4 @@
 {
-  // BracketPairColorizer.
-  "bracket-pair-colorizer-2.colors": [
-    "colorizer.color-1",
-    "colorizer.color-2",
-    "colorizer.color-3"
-  ],
-
   // Debug.
   "debug.console.fontFamily": "Operator Mono",
   "debug.console.fontSize": 14,
@@ -15,6 +8,7 @@
   // Editor.
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.autoIndent": "full",
+  "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Operator Mono",
@@ -249,18 +243,21 @@
   "workbench.colorTheme": "Nord",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
-      "colorizer.color-1": "#ea4aaa",
-      "colorizer.color-2": "#28a745",
-      "colorizer.color-3": "#6f42c1"
+      "editorBracketHighlight.foreground1": "#ea4aaa",
+      "editorBracketHighlight.foreground2": "#28a745",
+      "editorBracketHighlight.foreground3": "#6f42c1",
+      "editorBracketHighlight.foreground4": "#ea4aaa",
+      "editorBracketHighlight.foreground5": "#28a745",
+      "editorBracketHighlight.foreground6": "#6f42c1",
     },
     "[Nord]": {
-      "colorizer.color-1": "#EBCB8B",
-      "colorizer.color-2": "#B48EAD",
-      "colorizer.color-3": "#D08770"
+      "editorBracketHighlight.foreground1": "#EBCB8B",
+      "editorBracketHighlight.foreground2": "#D08770",
+      "editorBracketHighlight.foreground3": "#B48EAD",
+      "editorBracketHighlight.foreground4": "#EBCB8B",
+      "editorBracketHighlight.foreground5": "#D08770",
+      "editorBracketHighlight.foreground6": "#B48EAD",
     },
-    "colorizer.color-1": "#FF0000",
-    "colorizer.color-2": "#00FF00",
-    "colorizer.color-3": "#0000FF"
   },
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
