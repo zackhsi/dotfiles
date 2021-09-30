@@ -71,12 +71,6 @@
   "editor.wordBasedSuggestions": true,
   "editor.wordBasedSuggestionsMode": "allDocuments",
 
-  // Editor formatters.
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-
   // Explorer.
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -132,6 +126,10 @@
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // JSON.
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // Markdoc.
   "markdoc.enabled": true,
