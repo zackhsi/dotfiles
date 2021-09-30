@@ -14,7 +14,6 @@
 
   // Editor.
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
   "editor.autoIndent": "full",
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 5,
