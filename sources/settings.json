@@ -238,7 +238,7 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Nord Light",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "editorBracketHighlight.foreground1": "#ea4aaa",
@@ -255,6 +255,14 @@
       "editorBracketHighlight.foreground4": "#EBCB8B",
       "editorBracketHighlight.foreground5": "#D08770",
       "editorBracketHighlight.foreground6": "#B48EAD",
+    },
+    "[Nord Light]": {
+      "editorBracketHighlight.foreground1": "#d69c29",
+      "editorBracketHighlight.foreground2": "#cb5c69",
+      "editorBracketHighlight.foreground3": "#996690",
+      "editorBracketHighlight.foreground4": "#d69c29",
+      "editorBracketHighlight.foreground5": "#cb5c69",
+      "editorBracketHighlight.foreground6": "#996690",
     },
   },
   "workbench.editor.closeOnFileDelete": true,
