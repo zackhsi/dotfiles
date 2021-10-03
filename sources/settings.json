@@ -78,6 +78,12 @@
   "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "mixed",
 
+  // Everforest.
+  "everforest.italicKeywords": true,
+  "everforest.lightContrast": "hard",
+  "everforest.lightSelection": "blue",
+  "everforest.lightWorkbench": "flat",
+
   // Files.
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
@@ -238,7 +244,7 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Nord Light",
+  "workbench.colorTheme": "Everforest Light",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "editorBracketHighlight.foreground1": "#ea4aaa",
