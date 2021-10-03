@@ -79,6 +79,8 @@
   "explorer.sortOrder": "mixed",
 
   // Everforest.
+  "everforest.darkContrast": "soft",
+  "everforest.darkCursor": "blue",
   "everforest.italicKeywords": true,
   "everforest.lightContrast": "hard",
   "everforest.lightCursor": "blue",
