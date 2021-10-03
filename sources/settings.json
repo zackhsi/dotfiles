@@ -1,7 +1,5 @@
 {
   // Debug.
-  "debug.console.fontFamily": "Operator Mono",
-  "debug.console.fontSize": 14,
   "debug.inlineValues": true,
   "debug.toolBarLocation": "docked",
 
@@ -11,7 +9,8 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 5,
-  "editor.fontFamily": "Operator Mono",
+  "editor.fontFamily": "Iosevka",
+  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
