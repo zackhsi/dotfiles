@@ -42,6 +42,16 @@
     "key": "cmd+e",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
+  // Maximize editor group.
+  {
+    "key": "shift+cmd+m",
+    "command": "workbench.action.minimizeOtherEditors"
+  },
+  {
+    "key": "shift+cmd+m",
+    "command": "-workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
   // Show active file.
   {
     "key": "alt+f",
