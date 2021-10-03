@@ -16,6 +16,7 @@
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
   "editor.rename.enablePreview": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
