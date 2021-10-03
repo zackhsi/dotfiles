@@ -81,8 +81,8 @@
   // Everforest.
   "everforest.italicKeywords": true,
   "everforest.lightContrast": "hard",
+  "everforest.lightCursor": "blue",
   "everforest.lightSelection": "blue",
-  "everforest.lightWorkbench": "flat",
 
   // Files.
   "files.autoSave": "afterDelay",
