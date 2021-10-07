@@ -1,5 +1,6 @@
 {
   // Debug.
+  "debug.console.fontFamily": "Iosevka",
   "debug.inlineValues": true,
   "debug.toolBarLocation": "docked",
 
