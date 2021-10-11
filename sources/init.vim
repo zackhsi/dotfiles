@@ -160,8 +160,7 @@ if $TERM_PROGRAM !=# 'vscode'
 endif
 
 " Theme.
-let g:airline_theme                    = 'nord'
-let g:airline_base16_improved_contrast = 1
+let g:airline_theme                    = 'everforest'
 
 " Airline config.
 let g:airline_left_sep  = ''
@@ -348,6 +347,15 @@ Plug 'tpope/vim-endwise'
 Plug 'ekalinin/Dockerfile.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Everforest.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'sainnhe/everforest'
+let g:everforest_background = 'hard'
+let g:everforest_better_performance = 1
+let g:everforest_enable_italic = 1
+let g:everforest_enable_italic = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'tpope/vim-fugitive'
@@ -498,12 +506,6 @@ Plug '~/oss/nerdtree-rg.vim'
 " Nord.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'arcticicestudio/nord-vim'
-augroup nord-theme-overrides
-  autocmd!
-  autocmd ColorScheme nord highlight Comment cterm=italic
-  autocmd ColorScheme nord highlight Statement cterm=bold
-augroup END
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Onedark.
@@ -751,8 +753,17 @@ Plug 'saltstack/salt-vim'
 
 call plug#end()
 
-if $TERM_PROGRAM !=# 'vscode'
-  colorscheme nord
+augroup set-text-decorations
+  autocmd!
+  autocmd ColorScheme * highlight Comment cterm=italic
+  autocmd ColorScheme * highlight Statement cterm=bold
+augroup END
+
+colorscheme everforest
+set background=light
+
+if has('termguicolors')
+  set termguicolors
 endif
 
 " For some silly reason, :set ft=help leads to a positive conceallevel.
