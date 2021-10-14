@@ -282,14 +282,14 @@ colors_everforest_light: &colors_light
 
   # Bright colors
   bright:
-    black:   '0xff0000'
-    red:     '0xff0000'
-    green:   '0xff0000'
-    yellow:  '0xff0000'
-    blue:    '0xff0000'
-    magenta: '0xff0000'
-    cyan:    '0xff0000'
-    white:   '0xff0000'
+    black:   '0xeaf2eb'
+    red:     '0xf85552'
+    green:   '0x8da101'
+    yellow:  '0xdfa000'
+    blue:    '0x3a94c5'
+    magenta: '0xdf69ba'
+    cyan:    '0x35a77c'
+    white:   '0x5c6a72'
 
 colors_ayu_light_nord:
   # Default colors
