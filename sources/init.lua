@@ -15,6 +15,7 @@ vim
   :disableForApp('iTerm')
   :disableForApp('iTerm2')
   :disableForApp('Terminal')
+  :disableForApp('Alacritty')
 
 -- If you want the screen to dim (a la Flux) when you enter normal mode
 -- flip this to true.
