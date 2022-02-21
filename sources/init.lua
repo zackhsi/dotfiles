@@ -28,17 +28,8 @@ vim:shouldShowAlertInNormalMode(true)
 -- You can configure your on-screen alert font
 vim:setAlertFont("Courier New")
 
--- Enter normal mode by typing a key sequence
-vim:enterWithSequence('jk')
-
--- if you want to bind a single key to entering vim, remove the
--- :enterWithSequence('jk') line above and uncomment the bindHotKeys line
--- below:
---
--- To customize the hot key you want, see the mods and key parameters at:
---   https://www.hammerspoon.org/docs/hs.hotkey.html#bind
---
--- vim:bindHotKeys({ enter = { {'ctrl'}, ';' } })
+-- Enter normal mode by typing ctrl+[
+vim:bindHotKeys({ enter = { {'ctrl'}, '[' } })
 
 --------------------------------
 -- END VIM CONFIG
