@@ -14,6 +14,7 @@
   '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
   '~/.config/bat/config': 'bat.conf',
   '~/.config/nvim/init.vim': 'init.vim',
+  '~/.hammerspoon/init.lua': 'init.lua',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
   '~/.gitconfig-stripe': 'gitconfig-stripe',
