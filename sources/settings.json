@@ -97,7 +97,7 @@
   "flow.pathToFlow": "~/stripe/pay-server/manage/frontend/node_modules/.bin/flow",
 
   // Git.
-  "git.path": "/usr/local/bin/git",
+  "git.path": "/opt/homebrew/bin/git",
 
   // Gitlens.
   "gitlens.blame.highlight.enabled": false,

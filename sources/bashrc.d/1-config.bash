@@ -1,8 +1,8 @@
 ###############################################################################
 # Coreutils                                                                   #
 ###############################################################################
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+export PATH=$HOMEBREW_PATH/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=$HOMEBREW_PATH/opt/coreutils/libexec/gnuman:$MANPATH
 
 ###############################################################################
 # Directories                                                                 #
@@ -176,7 +176,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 ###############################################################################
 # Scala                                                                       #
 ###############################################################################
-export PATH=/usr/local/opt/scala@2.11/bin:$PATH
+export PATH=$HOMEBREW_PATH/opt/scala@2.11/bin:$PATH
 
 ###############################################################################
 # Shellcheck                                                                  #
