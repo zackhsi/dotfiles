@@ -9,6 +9,9 @@ brew 'bat'
 # Ctags.
 brew 'ctags-exuberant'
 
+# FZF.
+brew 'fzf'
+
 # Git.
 brew 'diff-so-fancy'
 brew 'gh'
@@ -34,17 +37,16 @@ brew 'pstree'
 brew 'tree'
 
 # Neovim.
-tap 'neovim/homebrew-neovim'
-brew 'neovim', args: ['HEAD']
-
-# PDF.
-cask 'wkhtmltopdf'
+brew 'neovim'
 
 # Rbenv.
 brew 'rbenv'
 
 # Ripgrep.
 brew 'ripgrep'
+
+# Rust.
+brew 'rust'
 
 # Tmux.
 brew 'tmux'

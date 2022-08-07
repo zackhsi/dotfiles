@@ -5,4 +5,5 @@ if [ "$(background)" == "dark" ]; then
 else
   theme="OneHalfLight"
 fi
-exec /usr/local/bin/delta --theme "$theme" "$@"
+set -x
+exec "$HOMEBREW_PREFIX/bin/delta" --syntax-theme "$theme" "$@"

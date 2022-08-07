@@ -55,9 +55,12 @@ if ((BASH_VERSINFO[0] >= 4)) ; then
     ((BASH_VERSINFO[1] >= 3)) && shopt -s direxpand
 fi
 
-# Bash completion.
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+# Homebrew & bash completion.
+export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+export HOMEBREW_PREFIX=/opt/homebrew
+if [ -f $(brew --prefix)/etc/profile.d/bash_completion.sh ]; then
+  . $(brew --prefix)/etc/profile.d/bash_completion.sh
 fi
 export BASH_COMPLETION_DIR # Give salt access
 bind "set completion-ignore-case on"

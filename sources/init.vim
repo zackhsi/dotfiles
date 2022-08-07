@@ -366,7 +366,7 @@ let g:github_enterprise_urls = ['git.corp.stripe.com']
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FZF.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug '/usr/local/opt/fzf'
+Plug $HOMEBREW_PREFIX . '/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Configure g:fzf_colors sparingly! Prefer FZF_DEFAULT_OPTS.

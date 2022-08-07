@@ -1,9 +1,9 @@
-Ensure /usr/local/bin/bash is an allowed shell:
+Ensure /opt/homebrew/bin/bash is an allowed shell:
   cmd.run:
-    - name: echo /usr/local/bin/bash | sudo tee -a /etc/shells
-    - unless: grep /usr/local/bin/bash /etc/shells
+    - name: echo /opt/homebrew/bin/bash | sudo tee -a /etc/shells
+    - unless: grep /opt/homebrew/bin/bash /etc/shells
 
-Ensure /usr/local/bin/bash is the default shell:
+Ensure /opt/homebrew/bin/bash is the default shell:
   cmd.run:
-    - name: chsh -s /usr/local/bin/bash
-    - unless: '[ "$SHELL" == "/usr/local/bin/bash" ]'
+    - name: chsh -s /opt/homebrew/bin/bash
+    - unless: '[ "$SHELL" == "/opt/homebrew/bin/bash" ]'
