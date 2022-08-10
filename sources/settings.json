@@ -2,6 +2,7 @@
   // Debug.
   "debug.console.fontFamily": "Iosevka",
   "debug.inlineValues": true,
+  "debug.javascript.automaticallyTunnelRemoteServer": false,
   "debug.toolBarLocation": "docked",
 
   // Editor.
@@ -15,11 +16,11 @@
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.guides.indentation": false,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
   "editor.rename.enablePreview": false,
-  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
   "editor.suggest.localityBonus": true,
@@ -157,6 +158,13 @@
   // Redhat.
   "redhat.telemetry.enabled": false,
 
+  // Remote.
+  "remote.autoForwardPorts": false,
+  "remote.restoreForwardedPorts": false,
+  "remote.SSH.enableAgentForwarding": false,
+  "remote.SSH.path": "sc-ssh-wrapper",
+  "remote.SSH.useLocalServer": true,
+
   // Ruby.
   "ruby.format": false,
   "[ruby]": {
@@ -175,6 +183,9 @@
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
+
+  // Security.
+  "security.workspace.trust.enabled": false,
 
   // Sorbet.
   "sorbet.enabled": true,
@@ -196,6 +207,9 @@
     "warung"
   ],
 
+  // Telemetry.
+  "telemetry.enableTelemetry": false,
+
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
@@ -206,7 +220,8 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
-  "update.mode": "manual",
+  "update.channel": "none",
+  "update.mode": "none",
 
   // Vim.
   "vim.hlsearch": true,
