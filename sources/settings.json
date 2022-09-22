@@ -213,6 +213,7 @@
 
   // Telemetry.
   "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
 
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
