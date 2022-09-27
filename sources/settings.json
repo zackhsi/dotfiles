@@ -163,11 +163,12 @@
   "redhat.telemetry.enabled": false,
 
   // Remote.
-  "remote.autoForwardPorts": false,
-  "remote.restoreForwardedPorts": false,
+  "remote.SSH.connectTimeout": 60,
   "remote.SSH.enableAgentForwarding": false,
   "remote.SSH.path": "sc-ssh-wrapper",
   "remote.SSH.useLocalServer": true,
+  "remote.autoForwardPorts": false,
+  "remote.restoreForwardedPorts": false,
 
   // Ruby.
   "ruby.format": false,
@@ -222,6 +223,7 @@
 
   // TypeScript.
   "typescript.suggest.completeFunctionCalls": true,
+  "typescript.tsdk": "/Users/zackhsi/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib",
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
@@ -267,7 +269,7 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Everforest Light",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "editorBracketHighlight.foreground1": "#ea4aaa",
