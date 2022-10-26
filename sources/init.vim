@@ -10,7 +10,6 @@ set hidden
 set list
 set listchars=tab:\ \ ,extends:⟩
 set mouse=a                        " enable mouse
-set nowrap
 set number                         " line numbers
 set scrolloff=2                    " Always shows two lines of vertical context around the cursor
 set showcmd                        " show incomplete commands
@@ -733,6 +732,15 @@ Plug 'tpope/vim-unimpaired'
 " Vader.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'junegunn/vader.vim'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Wrap.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup Wrap
+  autocmd!
+  autocmd Filetype * set nowrap
+  autocmd Filetype markdown set wrap linebreak
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Zoom.
