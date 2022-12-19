@@ -223,7 +223,7 @@
 
   // TypeScript.
   "typescript.suggest.completeFunctionCalls": true,
-  "typescript.tsdk": "/Users/zackhsi/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib",
+  "typescript.tsdk": "frontend/js-scripts/node_modules/typescript/lib",
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
