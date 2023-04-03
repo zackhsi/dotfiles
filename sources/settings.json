@@ -100,6 +100,21 @@
   // Git.
   "git.path": "/opt/homebrew/bin/git",
 
+  // GitHub.
+  "github.copilot.enable": {
+    "*": false,
+    "erb": true,
+    "go": true,
+    "java": true,
+    "javascript": true,
+    "python": true,
+    "ruby": true,
+    "scala": true,
+    "shellscript": true,
+    "typescript": true,
+    "typescriptreact": true
+  },
+
   // Gitlens.
   "gitlens.blame.highlight.enabled": false,
   "gitlens.blame.separateLines": false,
@@ -163,6 +178,7 @@
   "redhat.telemetry.enabled": false,
 
   // Remote.
+  "remote.SSH.configFile": "~/.ssh/devboxes",
   "remote.SSH.connectTimeout": 60,
   "remote.SSH.enableAgentForwarding": false,
   "remote.SSH.path": "sc-ssh-wrapper",
@@ -265,6 +281,7 @@
   "vim.textwidth": 99,
 
   // Window.
+  "window.title": "${appName}${separator}${rootPath}${separator}${activeEditorMedium}",
   "window.zoomLevel": 0,
 
   // Workbench.

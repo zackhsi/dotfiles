@@ -5,5 +5,5 @@ Ensure /opt/homebrew/bin/bash is an allowed shell:
 
 Ensure /opt/homebrew/bin/bash is the default shell:
   cmd.run:
-    - name: chsh -s /opt/homebrew/bin/bash
+    - name: sudo chsh -s /opt/homebrew/bin/bash $(whoami)
     - unless: '[ "$SHELL" == "/opt/homebrew/bin/bash" ]'

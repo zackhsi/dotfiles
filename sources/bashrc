@@ -4,8 +4,6 @@ case $- in
     *) return ;;
 esac
 
-# Change directory with cd
-shopt -s autocd
 # Autocorrect fudged paths in cd calls
 shopt -s cdspell
 # Update the hash table properly
