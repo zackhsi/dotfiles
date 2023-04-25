@@ -1,7 +1,7 @@
 {
   // Debug.
   "debug.console.fontFamily": "Iosevka",
-  "debug.inlineValues": true,
+  "debug.inlineValues": "on",
   "debug.javascript.automaticallyTunnelRemoteServer": false,
   "debug.toolBarLocation": "docked",
 
@@ -124,20 +124,7 @@
   "gitlens.remotes": [
     {
       "domain": "git.corp.stripe.com",
-      "type": "Custom",
-      "name": "Stripe",
-      "protocol": "https",
-      "urls": {
-        "repository": "https://git.corp.stripe.com/${repo}",
-        "branches": "https://git.corp.stripe.com/${repo}/branches",
-        "branch": "https://git.corp.stripe.com/${repo}/commits/${branch}",
-        "commit": "https://git.corp.stripe.com/${repo}/commit/${id}",
-        "file": "https://git.corp.stripe.com/${repo}?path=${file}${line}",
-        "fileInBranch": "https://git.corp.stripe.com/${repo}/blob/${branch}/${file}${line}",
-        "fileInCommit": "https://git.corp.stripe.com/${repo}/blob/${id}/${file}${line}",
-        "fileLine": "#L${line}",
-        "fileRange": "#L${start}-L${end}"
-      }
+      "type": "GitHub"
     }
   ],
 
@@ -195,9 +182,7 @@
 
   // Search.
   "search.collapseResults": "auto",
-  "search.experimental.searchInOpenEditors": true,
   "search.followSymlinks": false,
-  "search.maintainFileSearchCache": true,
   "search.mode": "newEditor",
   "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": 2,
@@ -229,7 +214,6 @@
   ],
 
   // Telemetry.
-  "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
 
   // Terminal.
@@ -243,7 +227,6 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
-  "update.channel": "none",
   "update.mode": "none",
 
   // Vim.
@@ -286,7 +269,6 @@
 
   // Workbench.
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Everforest Light",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "editorBracketHighlight.foreground1": "#ea4aaa",
@@ -305,6 +287,7 @@
       "editorBracketHighlight.foreground6": "#B48EAD"
     }
   },
+  "workbench.colorTheme": "Nord",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.enablePreview": false,
@@ -314,10 +297,6 @@
   "workbench.editor.limit.value": 30,
   "workbench.editor.sharedViewState": true,
   "workbench.editor.showTabs": false,
-  "workbench.editor.untitled.experimentalLanguageDetection": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
   "workbench.statusBar.visible": true,
