@@ -11,12 +11,13 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 5,
-  "editor.fontFamily": "Iosevka",
+  "editor.fontFamily": "Operator Mono SSm",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
+  "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": false,
@@ -111,6 +112,7 @@
     "ruby": true,
     "scala": true,
     "shellscript": true,
+    "starlark": true,
     "typescript": true,
     "typescriptreact": true
   },
@@ -214,6 +216,7 @@
   ],
 
   // Telemetry.
+  "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
 
   // Terminal.
@@ -227,6 +230,7 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
+  "update.channel": "none",
   "update.mode": "none",
 
   // Vim.
