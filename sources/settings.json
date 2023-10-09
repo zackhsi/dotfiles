@@ -104,15 +104,18 @@
   // GitHub.
   "github.copilot.enable": {
     "*": false,
+    "apex": true,
     "erb": true,
     "go": true,
     "java": true,
     "javascript": true,
     "python": true,
     "ruby": true,
+    "rust": true,
     "scala": true,
     "shellscript": true,
     "starlark": true,
+    "terraform": true,
     "typescript": true,
     "typescriptreact": true
   },
@@ -162,6 +165,10 @@
   "python.linting.flake8Enabled": true,
   "python.showStartPage": false,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "[python]": {
+    "editor.autoSurround": "always",
+    "editor.tabSize": 4
+  }
 
   // Redhat.
   "redhat.telemetry.enabled": false,
@@ -170,6 +177,7 @@
   "remote.SSH.configFile": "~/.ssh/devboxes",
   "remote.SSH.connectTimeout": 60,
   "remote.SSH.enableAgentForwarding": false,
+  "remote.SSH.enableRemoteCommand": true,
   "remote.SSH.path": "sc-ssh-wrapper",
   "remote.SSH.useLocalServer": true,
   "remote.autoForwardPorts": false,
@@ -177,6 +185,7 @@
 
   // Ruby.
   "ruby.format": false,
+  "ruby.rubocop.hideDisableSuggestions": true,
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop",
     "editor.tabSize": 2
@@ -226,7 +235,7 @@
 
   // TypeScript.
   "typescript.suggest.completeFunctionCalls": true,
-  "typescript.tsdk": "frontend/js-scripts/node_modules/typescript/lib",
+  "typescript.tsdk": "~/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib",
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
 
   // Update.
@@ -291,7 +300,7 @@
       "editorBracketHighlight.foreground6": "#B48EAD"
     }
   },
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Everforest Light",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.enablePreview": false,
