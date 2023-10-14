@@ -486,6 +486,14 @@ augroup END
 Plug 'neoclide/jsonc.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup spell
+  autocmd!
+  autocmd Filetype markdown set spell spelllang=en_us
+augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Multiple cursors.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mg979/vim-visual-multi'
@@ -592,23 +600,6 @@ augroup SQL
   autocmd Filetype sql command! SQLFMT :%!sqlfmt --align --print-width 200 --no-simplify --tab-width 2 --use-spaces
   autocmd Filetype sql nnoremap <leader>s :SQLFMT<CR>
 augroup END
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Startify.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'mhinz/vim-startify'
-let g:startify_change_to_vcs_root = 1
-let g:startify_files_number = 15
-" Omit movement keys and keys from h:startify-mappings.
-let g:startify_custom_indices = [
-      \ 'a', 'c', 'd', 'f', 'g', 'm', 'n', 'o',
-      \ 'p', 'r', 'u', 'w', 'x', 'y', 'z'
-      \ ]
-let g:startify_lists = [
-      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
-      \ { 'type': 'sessions',  'header': ['   Sessions']       },
-      \ ]
-noremap <silent> <leader>s :Startify<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stripe.

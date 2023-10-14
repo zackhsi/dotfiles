@@ -1,0 +1,1 @@
+nvim -c "startinsert" -c "set ft=markdown"
