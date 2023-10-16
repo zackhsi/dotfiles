@@ -1,1 +1,3 @@
-nvim -c "startinsert" -c "set ft=markdown"
+#!/usr/bin/env bash
+set -e
+nvim -c "startinsert" -c "set ft=markdown" "$@"
