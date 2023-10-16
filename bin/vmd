@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 set -e
-nvim -c "startinsert" -c "set ft=markdown" "$@"
+nvim \
+  -c "set ft=markdown" \
+  -c "Goyo" \
+  -c "startinsert" \
+  "$@"
