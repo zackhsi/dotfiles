@@ -760,8 +760,13 @@ augroup set-text-decorations
   autocmd ColorScheme * highlight Statement cterm=bold
 augroup END
 
-colorscheme everforest
-set background=light
+if trim(system('background')) ==# 'light'
+  colorscheme everforest
+  set background=light
+else
+  colorscheme nord
+  set background=dark
+endif
 
 if has('termguicolors')
   set termguicolors
