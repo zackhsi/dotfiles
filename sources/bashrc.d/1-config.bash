@@ -26,6 +26,11 @@ export PATH=~/dotfiles/bin:$PATH
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --glob "!.git/*" --glob "!bazel-bin/*" --glob "!.ijwb/*"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+if [[ $(background) == 'light' ]]; then
+  export BAT_THEME="ansi"
+else
+  export BAT_THEME="base16"
+fi
 export FZF_DEFAULT_OPTS='
   --color=16
   --color=fg:-1

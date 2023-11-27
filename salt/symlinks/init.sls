@@ -12,7 +12,6 @@
   '~/.bashrc': 'bashrc',
   '~/.bashrc.d': 'bashrc.d',
   '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
-  '~/.config/bat/config': 'bat.conf',
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.config/nvim/init-vscode.vim': 'init-vscode.vim',
   '~/.hammerspoon/init.lua': 'init.lua',
