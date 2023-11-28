@@ -12,6 +12,9 @@ defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 defaults write -globalDomain KeyRepeat -int 1
 defaults write -globalDomain InitialKeyRepeat -int 15
 
+# No more accent characters in Obsidian
+defaults write md.obsidian ApplePressAndHoldEnabled -bool false
+
 # Allow key repeat for VSCode and IntelliJ.
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
