@@ -158,9 +158,6 @@ if $TERM_PROGRAM !=# 'vscode'
   Plug 'vim-airline/vim-airline-themes'
 endif
 
-" Theme.
-let g:airline_theme                    = 'everforest'
-
 " Airline config.
 let g:airline_left_sep  = ''
 let g:airline_right_sep = ''
@@ -763,9 +760,11 @@ augroup END
 if trim(system('background')) ==# 'light'
   colorscheme everforest
   set background=light
+  let g:airline_theme = 'everforest'
 else
   colorscheme nord
   set background=dark
+  let g:airline_theme = 'nord'
 endif
 
 if has('termguicolors')
