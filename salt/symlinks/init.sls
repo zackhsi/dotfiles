@@ -11,7 +11,7 @@
   '~/.bash_profile': 'bash_profile',
   '~/.bashrc': 'bashrc',
   '~/.bashrc.d': 'bashrc.d',
-  '~/.config/alacritty/alacritty.yml': 'alacritty.yml',
+  '~/.config/alacritty/alacritty.toml': 'alacritty.toml',
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.config/nvim/init-vscode.vim': 'init-vscode.vim',
   '~/.hammerspoon/init.lua': 'init.lua',
