@@ -121,6 +121,7 @@
   },
 
   // Gitlens.
+  "gitlens.ai.experimental.generateCommitMessage.enabled": false,
   "gitlens.blame.highlight.enabled": false,
   "gitlens.blame.separateLines": false,
   "gitlens.codeLens.authors.enabled": false,
