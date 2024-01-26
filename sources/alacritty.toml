@@ -4,210 +4,59 @@ working_directory = "None"
 [colors]
 draw_bold_text_with_bright_colors = false
 
-[colors.bright]
-black = "0xeaf2eb"
-blue = "0x3a94c5"
-cyan = "0x35a77c"
-green = "0x8da101"
-magenta = "0xdf69ba"
-red = "0xf85552"
-white = "0x5c6a72"
-yellow = "0xdfa000"
+# Colors: everforest_light
+[colors.primary]        # TOGGLE_LIGHT
+background = "0xfff9e8" # TOGGLE_LIGHT
+foreground = "0x5c6a72" # TOGGLE_LIGHT
+[colors.normal]         # TOGGLE_LIGHT
+black      = "0xeaf2eb" # TOGGLE_LIGHT
+blue       = "0x3a94c5" # TOGGLE_LIGHT
+cyan       = "0x35a77c" # TOGGLE_LIGHT
+green      = "0x8da101" # TOGGLE_LIGHT
+magenta    = "0xdf69ba" # TOGGLE_LIGHT
+red        = "0xf85552" # TOGGLE_LIGHT
+white      = "0x5c6a72" # TOGGLE_LIGHT
+yellow     = "0xdfa000" # TOGGLE_LIGHT
+[colors.bright]         # TOGGLE_LIGHT
+black      = "0xeaf2eb" # TOGGLE_LIGHT
+blue       = "0x3a94c5" # TOGGLE_LIGHT
+cyan       = "0x35a77c" # TOGGLE_LIGHT
+green      = "0x8da101" # TOGGLE_LIGHT
+magenta    = "0xdf69ba" # TOGGLE_LIGHT
+red        = "0xf85552" # TOGGLE_LIGHT
+white      = "0x5c6a72" # TOGGLE_LIGHT
+yellow     = "0xdfa000" # TOGGLE_LIGHT
+[colors.cursor]         # TOGGLE_LIGHT
+cursor     = "0x5c6a72" # TOGGLE_LIGHT
+text       = "0xfff9e8" # TOGGLE_LIGHT
 
-[colors.cursor]
-cursor = "0x5c6a72"
-text = "0xfff9e8"
+# Colors: nord
+# [colors.primary]        # TOGGLE_DARK
+# background = "0x2E3440" # TOGGLE_DARK
+# foreground = "0xD8DEE9" # TOGGLE_DARK
+# [colors.normal]         # TOGGLE_DARK
+# black      = "0x3B4252" # TOGGLE_DARK
+# blue       = "0x81A1C1" # TOGGLE_DARK
+# cyan       = "0x8FBCBB" # TOGGLE_DARK
+# green      = "0xA3BE8C" # TOGGLE_DARK
+# magenta    = "0xB48EAD" # TOGGLE_DARK
+# red        = "0xBF616A" # TOGGLE_DARK
+# white      = "0xD8DEE9" # TOGGLE_DARK
+# yellow     = "0xEBCB8B" # TOGGLE_DARK
+# [colors.bright]         # TOGGLE_DARK
+# black      = "0x616E88" # TOGGLE_DARK
+# blue       = "0x81A1C1" # TOGGLE_DARK
+# cyan       = "0x8FBCBB" # TOGGLE_DARK
+# green      = "0xA3BE8C" # TOGGLE_DARK
+# magenta    = "0xB48EAD" # TOGGLE_DARK
+# red        = "0xBF616A" # TOGGLE_DARK
+# white      = "0xD8DEE9" # TOGGLE_DARK
+# yellow     = "0xEBCB8B" # TOGGLE_DARK
+# [colors.cursor]         # TOGGLE_DARK
+# cursor     = "0xD8DEE9" # TOGGLE_DARK
+# text       = "0x2E3440" # TOGGLE_DARK
 
-[colors.normal]
-black = "0xeaf2eb"
-blue = "0x3a94c5"
-cyan = "0x35a77c"
-green = "0x8da101"
-magenta = "0xdf69ba"
-red = "0xf85552"
-white = "0x5c6a72"
-yellow = "0xdfa000"
-
-[colors.primary]
-background = "0xfff9e8"
-foreground = "0x5c6a72"
-
-[[colors_ayu_light.indexed_colors]]
-color = "#f8e71c"
-index = 16
-
-[colors_ayu_light.bright]
-black = "0xabb0b6"
-blue = "0x399ee6"
-cyan = "0x4cbf99"
-green = "0xdee8f1"
-magenta = "0xa37acc"
-red = "0xc18401"
-white = "0xe6ba7e"
-yellow = "0xdee8f1"
-
-[colors_ayu_light.cursor]
-cursor = "0x6c7680"
-text = "0xfafafa"
-
-[colors_ayu_light.normal]
-black = "0xfafafa"
-blue = "0x399ee6"
-cyan = "0x55b4d4"
-green = "0x86b300"
-magenta = "0xa37acc"
-red = "0xf07171"
-white = "0x6c7680"
-yellow = "0xfa8d3e"
-
-[colors_ayu_light.primary]
-background = "0xfafafa"
-foreground = "0x6c7680"
-
-[colors_ayu_light_nord.bright]
-black = "0x7b88a1"
-blue = "0x5E81AC"
-cyan = "0x2aa198"
-green = "0x7ca857"
-magenta = "0xa37acc"
-red = "0xf07171"
-white = "0x4C566A"
-yellow = "0xd99d26"
-
-[colors_ayu_light_nord.cursor]
-cursor = "0x4C566A"
-text = "0xECEFF4"
-
-[colors_ayu_light_nord.normal]
-black = "0xD8DEE9"
-blue = "0x5E81AC"
-cyan = "0x2aa198"
-green = "0x7ca857"
-magenta = "0xa37acc"
-red = "0xf07171"
-white = "0x4C566A"
-yellow = "0xd99d26"
-
-[colors_ayu_light_nord.primary]
-background = "0xECEFF4"
-foreground = "0x4C566A"
-
-[colors_everforest_light.bright]
-black = "0xeaf2eb"
-blue = "0x3a94c5"
-cyan = "0x35a77c"
-green = "0x8da101"
-magenta = "0xdf69ba"
-red = "0xf85552"
-white = "0x5c6a72"
-yellow = "0xdfa000"
-
-[colors_everforest_light.cursor]
-cursor = "0x5c6a72"
-text = "0xfff9e8"
-
-[colors_everforest_light.normal]
-black = "0xeaf2eb"
-blue = "0x3a94c5"
-cyan = "0x35a77c"
-green = "0x8da101"
-magenta = "0xdf69ba"
-red = "0xf85552"
-white = "0x5c6a72"
-yellow = "0xdfa000"
-
-[colors_everforest_light.primary]
-background = "0xfff9e8"
-foreground = "0x5c6a72"
-
-[colors_nord.bright]
-black = "0x616E88"
-blue = "0x81A1C1"
-cyan = "0x8FBCBB"
-green = "0xA3BE8C"
-magenta = "0xB48EAD"
-red = "0xBF616A"
-white = "0xD8DEE9"
-yellow = "0xEBCB8B"
-
-[colors_nord.cursor]
-cursor = "0xD8DEE9"
-text = "0x2E3440"
-
-[colors_nord.normal]
-black = "0x3B4252"
-blue = "0x81A1C1"
-cyan = "0x8FBCBB"
-green = "0xA3BE8C"
-magenta = "0xB48EAD"
-red = "0xBF616A"
-white = "0xD8DEE9"
-yellow = "0xEBCB8B"
-
-[colors_nord.primary]
-background = "0x2E3440"
-foreground = "0xD8DEE9"
-
-[[colors_onedark.indexed_colors]]
-color = "#e5dc6c"
-index = 16
-
-[colors_onedark.bright]
-black = "0x5c6370"
-blue = "0x61afef"
-cyan = "0x56b6c2"
-green = "0x282c34"
-magenta = "0xc678dd"
-red = "0xd19a66"
-white = "0xabb2bf"
-yellow = "0x282c34"
-
-[colors_onedark.cursor]
-cursor = "0xabb2bf"
-text = "0x303845"
-
-[colors_onedark.normal]
-black = "0x303845"
-blue = "0x61aeef"
-cyan = "0x56b6c2"
-green = "0x92d69e"
-magenta = "0xc792ea"
-red = "0xde7c84"
-white = "0xabb2bf"
-yellow = "0xdbb979"
-
-[colors_onedark.primary]
-background = "0x303845"
-foreground = "0xabb2bf"
-
-[colors_solarized_dark.bright]
-black = "0x586e75"
-blue = "0x268bd2"
-cyan = "0x2aa198"
-green = "0x00252e"
-magenta = "0x6c71c4"
-red = "0xcb4b16"
-white = "0xeee8d5"
-yellow = "0x00252e"
-
-[colors_solarized_dark.cursor]
-cursor = "0x93a1a1"
-text = "0x073642"
-
-[colors_solarized_dark.normal]
-black = "0x073642"
-blue = "0x268bd2"
-cyan = "0x2aa198"
-green = "0x859900"
-magenta = "0xd33682"
-red = "0xdc322f"
-white = "0x93a1a1"
-yellow = "0xb58900"
-
-[colors_solarized_dark.primary]
-background = "0x073642"
-foreground = "0x93a1a1"
-
+# Cursor
 [cursor]
 style = "Block"
 unfocused_hollow = true
@@ -216,7 +65,6 @@ unfocused_hollow = true
 log_level = "Warn"
 persistent_logging = false
 print_events = false
-ref_test = false
 render_timer = false
 
 [font]
@@ -225,10 +73,6 @@ size = 13
 [font.bold]
 family = "Operator Mono SSm"
 style = "Bold"
-
-[font.glyph_offset]
-x = 0
-y = 0
 
 [font.italic]
 family = "Operator Mono SSm"
@@ -242,6 +86,11 @@ style = "Book"
 x = 0
 y = 10
 
+[font.glyph_offset]
+x = 0
+y = 0
+
+# Keyboard bindings
 [[keyboard.bindings]]
 action = "ResetFontSize"
 key = "Key0"
@@ -359,6 +208,7 @@ chars = "\u0015"
 key = "Back"
 mods = "Command"
 
+# Mouse
 [mouse]
 hide_when_typing = true
 
@@ -366,23 +216,21 @@ hide_when_typing = true
 action = "PasteSelection"
 mouse = "Middle"
 
-[mouse.double_click]
-threshold = 300
-
-[mouse.triple_click]
-threshold = 300
-
+# Scrolling
 [scrolling]
 history = 10000
 
+# Selection
 [selection]
 save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>-/."
 
+# Shell
 [shell]
 args = ["--login"]
 program = "/opt/homebrew/bin/bash"
 
+# Window
 [window]
 decorations = "buttonless"
 dynamic_padding = false
