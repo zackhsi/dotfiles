@@ -327,5 +327,6 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false
+  "zenMode.silentNotifications": false,
+  "remote.SSH.enableDynamicForwarding": false
 }

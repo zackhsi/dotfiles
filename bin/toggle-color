@@ -1,11 +1,42 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env python
+import os
+import subprocess
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-if grep '^colors: ' "$DIR/../sources/alacritty.yml" | grep -q colors_light; then
-  # light -> dark
-  /usr/bin/sed -i '' -e 's/\*colors_light/\*colors_dark/g' "$DIR/../sources/alacritty.yml"
-else
-  # dark -> light
-  /usr/bin/sed -i '' -e 's/\*colors_dark/\*colors_light/g' "$DIR/../sources/alacritty.yml"
-fi
+
+def main():
+    output = subprocess.run(['background'], capture_output=True)
+
+    # TODO: Write new value to background.
+
+    alacritty_config_file = (
+        f'{os.path.dirname(os.path.realpath(__file__))}'
+        '/../sources/alacritty.toml'
+    )
+    with open(alacritty_config_file) as f:
+        old_lines = f.readlines()
+    new_lines = []
+
+    if 'dark' in str(output.stdout):
+        print('dark -> light')
+        for old_line in old_lines:
+            if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
+                new_lines.append(old_line[2:])
+            elif 'TOGGLE_DARK' in old_line and not old_line.startswith('# '):
+                new_lines.append(f'# {old_line}')
+            else:
+                new_lines.append(old_line)
+        print(new_lines)
+    else:
+        print('light -> dark')
+        for old_line in old_lines:
+            if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
+                new_lines.append(f'# {old_line}')
+            elif 'TOGGLE_DARK' in old_line and not old_line.startswith('# '):
+                new_lines.append(old_line[2:])
+            else:
+                new_lines.append(old_line)
+        print(new_lines)
+
+
+if __name__ == '__main__':
+    main()
