@@ -6,9 +6,6 @@ from pathlib import Path
 
 def main():
     output = subprocess.run(['background'], capture_output=True)
-
-    # TODO: Write new value to background.
-
     alacritty_config_file = Path.home() / 'dotfiles' / 'sources' / 'alacritty.toml'
     with open(alacritty_config_file) as f1:
         old_lines = f1.readlines()
@@ -19,8 +16,10 @@ def main():
 
         for old_line in old_lines:
             if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
+                # Uncomment TOGGLE_LIGHT lines.
                 new_lines.append(old_line[2:])
             elif 'TOGGLE_DARK' in old_line and not old_line.startswith('# '):
+                # Comment out TOGGLE_DARK lines.
                 new_lines.append(f'# {old_line}')
             else:
                 new_lines.append(old_line)
@@ -28,10 +27,12 @@ def main():
         set_background('dark')
 
         for old_line in old_lines:
-            if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
-                new_lines.append(f'# {old_line}')
-            elif 'TOGGLE_DARK' in old_line and not old_line.startswith('# '):
+            if 'TOGGLE_DARK' in old_line and old_line.startswith('# '):
+                # Uncomment TOGGLE_DARK lines.
                 new_lines.append(old_line[2:])
+            elif 'TOGGLE_LIGHT' in old_line and not old_line.startswith('# '):
+                # Comment out TOGGLE_LIGHT lines.
+                new_lines.append(f'# {old_line}')
             else:
                 new_lines.append(old_line)
 
