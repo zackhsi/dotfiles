@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-import os
 import subprocess
+
+from pathlib import Path
 
 
 def main():
@@ -8,16 +9,14 @@ def main():
 
     # TODO: Write new value to background.
 
-    alacritty_config_file = (
-        f'{os.path.dirname(os.path.realpath(__file__))}'
-        '/../sources/alacritty.toml'
-    )
-    with open(alacritty_config_file) as f:
-        old_lines = f.readlines()
+    alacritty_config_file = Path.home() / 'dotfiles' / 'sources' / 'alacritty.toml'
+    with open(alacritty_config_file) as f1:
+        old_lines = f1.readlines()
     new_lines = []
 
     if 'dark' in str(output.stdout):
-        print('dark -> light')
+        set_background('light')
+
         for old_line in old_lines:
             if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
                 new_lines.append(old_line[2:])
@@ -25,9 +24,9 @@ def main():
                 new_lines.append(f'# {old_line}')
             else:
                 new_lines.append(old_line)
-        print(new_lines)
     else:
-        print('light -> dark')
+        set_background('dark')
+
         for old_line in old_lines:
             if 'TOGGLE_LIGHT' in old_line and old_line.startswith('# '):
                 new_lines.append(f'# {old_line}')
@@ -35,7 +34,19 @@ def main():
                 new_lines.append(old_line[2:])
             else:
                 new_lines.append(old_line)
-        print(new_lines)
+
+    with open(alacritty_config_file, 'w') as f2:
+        f2.writelines(new_lines)
+
+
+def set_background(light_or_dark):
+    if light_or_dark not in ['light', 'dark']:
+        raise Exception(f'light_or_dark={light_or_dark}; must be \'light\' or \'dark\'')
+
+    with open(Path.home() / '.background', 'w') as f:
+        f.write(light_or_dark)
+
+    print(f'Set background to {light_or_dark}')
 
 
 if __name__ == '__main__':
