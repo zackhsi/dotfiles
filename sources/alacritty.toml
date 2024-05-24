@@ -68,7 +68,7 @@ print_events = false
 render_timer = false
 
 [font]
-size = 13
+size = 15
 
 [font.bold]
 family = "Operator Mono SSm"
