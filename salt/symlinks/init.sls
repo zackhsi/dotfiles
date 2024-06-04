@@ -14,7 +14,6 @@
   '~/.config/alacritty/alacritty.toml': 'alacritty.toml',
   '~/.config/nvim/init.vim': 'init.vim',
   '~/.config/nvim/init-vscode.vim': 'init-vscode.vim',
-  '~/.hammerspoon/init.lua': 'init.lua',
   '~/.ctags': 'ctags',
   '~/.gitconfig': 'gitconfig',
   '~/.gitconfig-stripe': 'gitconfig-stripe',
