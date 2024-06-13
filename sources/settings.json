@@ -13,14 +13,14 @@
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "Operator Mono SSm",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "multiFile",
   "editor.rename.enablePreview": false,
   "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
@@ -71,8 +71,7 @@
       }
     ]
   },
-  "editor.wordBasedSuggestions": true,
-  "editor.wordBasedSuggestionsMode": "allDocuments",
+  "editor.wordBasedSuggestions": "currentDocument",
 
   // Explorer.
   "explorer.confirmDelete": false,
@@ -169,7 +168,7 @@
   "[python]": {
     "editor.autoSurround": "always",
     "editor.tabSize": 4
-  }
+  },
 
   // Redhat.
   "redhat.telemetry.enabled": false,
