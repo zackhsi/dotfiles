@@ -1,4 +1,9 @@
 {
+  // Cody.
+  "cody.override.serverEndpoint": "http://sourcegraph.corp.stripe.com",
+  "cody.override.authToken": "sgp_unused_but_must_be_nonempty",
+  "cody.net.proxy.endpoint": "unix://~/.stripeproxy",
+
   // Debug.
   "debug.console.fontFamily": "Iosevka",
   "debug.inlineValues": "on",
@@ -174,6 +179,7 @@
   "redhat.telemetry.enabled": false,
 
   // Remote.
+  "remote.autoForwardPortsSource": "output",
   "remote.forwardOnOpen": false,
   "remote.otherPortsAttributes": {
     "onAutoForward": "ignore"
@@ -181,6 +187,7 @@
   "remote.SSH.configFile": "~/.ssh/devboxes",
   "remote.SSH.connectTimeout": 60,
   "remote.SSH.enableAgentForwarding": false,
+  "remote.SSH.enableDynamicForwarding": false,
   "remote.SSH.enableRemoteCommand": true,
   "remote.SSH.path": "sc-ssh-wrapper",
   "remote.SSH.useLocalServer": true,
@@ -326,6 +333,5 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false,
-  "zenMode.silentNotifications": false,
-  "remote.SSH.enableDynamicForwarding": false
+  "zenMode.silentNotifications": false
 }
