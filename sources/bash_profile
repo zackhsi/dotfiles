@@ -11,6 +11,8 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+export SHELL=/opt/homebrew/bin/bash
+
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 

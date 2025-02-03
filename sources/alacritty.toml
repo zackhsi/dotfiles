@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 working_directory = "None"
 
@@ -225,10 +226,9 @@ history = 10000
 save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>-/."
 
-# Shell
-[shell]
-args = ["--login"]
-program = "/opt/homebrew/bin/bash"
+# Terminal
+[terminal]
+shell = { program = "/opt/homebrew/bin/bash", args = ["--login"] }
 
 # Window
 [window]
