@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+# Set fps and scale to a factor of the original video settings.
+ffmpeg -i "$1" \
+  -loop 0 \
+  -filter_complex "fps=15, scale=480:-1[s]; [s]split[a][b]; [a]palettegen[palette]; [b][palette]paletteuse" \
+  "$2"
