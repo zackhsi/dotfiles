@@ -22,3 +22,5 @@ npm_freeze                     Freeze node packages into Nodefile
 1. `make brew` to install bash4.4, pyenv.
 1. `make files` (will install Salt into Python3 installation).
 1. `./bin/configure-macos-defaults`
+1. Install apps
+    1. [MonitorControl](https://github.com/MonitorControl/MonitorControl/releases)
