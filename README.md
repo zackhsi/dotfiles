@@ -24,3 +24,4 @@ npm_freeze                     Freeze node packages into Nodefile
 1. `./bin/configure-macos-defaults`
 1. Install apps
     1. [MonitorControl](https://github.com/MonitorControl/MonitorControl/releases)
+    1. Logi Options+
