@@ -292,7 +292,7 @@
   "window.zoomLevel": 0,
 
   // Workbench.
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "[GitHub Light Default]": {
       "editorBracketHighlight.foreground1": "#ea4aaa",
@@ -320,7 +320,7 @@
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.limit.value": 30,
   "workbench.editor.sharedViewState": true,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.list.multiSelectModifier": "alt",
   "workbench.list.openMode": "doubleClick",
   "workbench.statusBar.visible": true,
@@ -332,6 +332,5 @@
   // Zen Mode.
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false,
   "zenMode.silentNotifications": false
 }
