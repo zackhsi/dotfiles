@@ -6,56 +6,56 @@ working_directory = "None"
 draw_bold_text_with_bright_colors = false
 
 # Colors: everforest_light
-# [colors.primary]        # TOGGLE_LIGHT
-# background = "0xfff9e8" # TOGGLE_LIGHT
-# foreground = "0x5c6a72" # TOGGLE_LIGHT
-# [colors.normal]         # TOGGLE_LIGHT
-# black      = "0xeaf2eb" # TOGGLE_LIGHT
-# blue       = "0x3a94c5" # TOGGLE_LIGHT
-# cyan       = "0x35a77c" # TOGGLE_LIGHT
-# green      = "0x8da101" # TOGGLE_LIGHT
-# magenta    = "0xdf69ba" # TOGGLE_LIGHT
-# red        = "0xf85552" # TOGGLE_LIGHT
-# white      = "0x5c6a72" # TOGGLE_LIGHT
-# yellow     = "0xdfa000" # TOGGLE_LIGHT
-# [colors.bright]         # TOGGLE_LIGHT
-# black      = "0xeaf2eb" # TOGGLE_LIGHT
-# blue       = "0x3a94c5" # TOGGLE_LIGHT
-# cyan       = "0x35a77c" # TOGGLE_LIGHT
-# green      = "0x8da101" # TOGGLE_LIGHT
-# magenta    = "0xdf69ba" # TOGGLE_LIGHT
-# red        = "0xf85552" # TOGGLE_LIGHT
-# white      = "0x5c6a72" # TOGGLE_LIGHT
-# yellow     = "0xdfa000" # TOGGLE_LIGHT
-# [colors.cursor]         # TOGGLE_LIGHT
-# cursor     = "0x5c6a72" # TOGGLE_LIGHT
-# text       = "0xfff9e8" # TOGGLE_LIGHT
+[colors.primary]        # TOGGLE_LIGHT
+background = "0xfff9e8" # TOGGLE_LIGHT
+foreground = "0x5c6a72" # TOGGLE_LIGHT
+[colors.normal]         # TOGGLE_LIGHT
+black      = "0xeaf2eb" # TOGGLE_LIGHT
+blue       = "0x3a94c5" # TOGGLE_LIGHT
+cyan       = "0x35a77c" # TOGGLE_LIGHT
+green      = "0x8da101" # TOGGLE_LIGHT
+magenta    = "0xdf69ba" # TOGGLE_LIGHT
+red        = "0xf85552" # TOGGLE_LIGHT
+white      = "0x5c6a72" # TOGGLE_LIGHT
+yellow     = "0xdfa000" # TOGGLE_LIGHT
+[colors.bright]         # TOGGLE_LIGHT
+black      = "0xeaf2eb" # TOGGLE_LIGHT
+blue       = "0x3a94c5" # TOGGLE_LIGHT
+cyan       = "0x35a77c" # TOGGLE_LIGHT
+green      = "0x8da101" # TOGGLE_LIGHT
+magenta    = "0xdf69ba" # TOGGLE_LIGHT
+red        = "0xf85552" # TOGGLE_LIGHT
+white      = "0x5c6a72" # TOGGLE_LIGHT
+yellow     = "0xdfa000" # TOGGLE_LIGHT
+[colors.cursor]         # TOGGLE_LIGHT
+cursor     = "0x5c6a72" # TOGGLE_LIGHT
+text       = "0xfff9e8" # TOGGLE_LIGHT
 
 # Colors: nord
-[colors.primary]        # TOGGLE_DARK
-background = "0x2E3440" # TOGGLE_DARK
-foreground = "0xD8DEE9" # TOGGLE_DARK
-[colors.normal]         # TOGGLE_DARK
-black      = "0x3B4252" # TOGGLE_DARK
-blue       = "0x81A1C1" # TOGGLE_DARK
-cyan       = "0x8FBCBB" # TOGGLE_DARK
-green      = "0xA3BE8C" # TOGGLE_DARK
-magenta    = "0xB48EAD" # TOGGLE_DARK
-red        = "0xBF616A" # TOGGLE_DARK
-white      = "0xD8DEE9" # TOGGLE_DARK
-yellow     = "0xEBCB8B" # TOGGLE_DARK
-[colors.bright]         # TOGGLE_DARK
-black      = "0x616E88" # TOGGLE_DARK
-blue       = "0x81A1C1" # TOGGLE_DARK
-cyan       = "0x8FBCBB" # TOGGLE_DARK
-green      = "0xA3BE8C" # TOGGLE_DARK
-magenta    = "0xB48EAD" # TOGGLE_DARK
-red        = "0xBF616A" # TOGGLE_DARK
-white      = "0xD8DEE9" # TOGGLE_DARK
-yellow     = "0xEBCB8B" # TOGGLE_DARK
-[colors.cursor]         # TOGGLE_DARK
-cursor     = "0xD8DEE9" # TOGGLE_DARK
-text       = "0x2E3440" # TOGGLE_DARK
+# [colors.primary]        # TOGGLE_DARK
+# background = "0x2E3440" # TOGGLE_DARK
+# foreground = "0xD8DEE9" # TOGGLE_DARK
+# [colors.normal]         # TOGGLE_DARK
+# black      = "0x3B4252" # TOGGLE_DARK
+# blue       = "0x81A1C1" # TOGGLE_DARK
+# cyan       = "0x8FBCBB" # TOGGLE_DARK
+# green      = "0xA3BE8C" # TOGGLE_DARK
+# magenta    = "0xB48EAD" # TOGGLE_DARK
+# red        = "0xBF616A" # TOGGLE_DARK
+# white      = "0xD8DEE9" # TOGGLE_DARK
+# yellow     = "0xEBCB8B" # TOGGLE_DARK
+# [colors.bright]         # TOGGLE_DARK
+# black      = "0x616E88" # TOGGLE_DARK
+# blue       = "0x81A1C1" # TOGGLE_DARK
+# cyan       = "0x8FBCBB" # TOGGLE_DARK
+# green      = "0xA3BE8C" # TOGGLE_DARK
+# magenta    = "0xB48EAD" # TOGGLE_DARK
+# red        = "0xBF616A" # TOGGLE_DARK
+# white      = "0xD8DEE9" # TOGGLE_DARK
+# yellow     = "0xEBCB8B" # TOGGLE_DARK
+# [colors.cursor]         # TOGGLE_DARK
+# cursor     = "0xD8DEE9" # TOGGLE_DARK
+# text       = "0x2E3440" # TOGGLE_DARK
 
 # Cursor
 [cursor]
