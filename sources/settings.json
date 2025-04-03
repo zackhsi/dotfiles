@@ -82,8 +82,13 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.incrementalNaming": "smart",
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "explorer.sortOrder": "mixed",
+
+  // Extensions.
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
 
   // Everforest.
   "everforest.darkContrast": "soft",
@@ -103,6 +108,7 @@
   "flow.pathToFlow": "~/stripe/pay-server/manage/frontend/node_modules/.bin/flow",
 
   // Git.
+  "git.blame.editorDecoration.enabled": true,
   "git.path": "/opt/homebrew/bin/git",
 
   // GitHub.
