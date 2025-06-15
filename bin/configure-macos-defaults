@@ -15,9 +15,10 @@ defaults write -globalDomain InitialKeyRepeat -int 15
 # No more accent characters in Obsidian
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 
-# Allow key repeat for VSCode and IntelliJ.
+# Allow key repeat for VSCode, IntelliJ, and Cursor.
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
 
 # Show app switcher on all displays.
 defaults write com.apple.dock appswitcher-all-displays -bool true
