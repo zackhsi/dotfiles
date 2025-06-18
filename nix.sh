@@ -37,13 +37,22 @@ if ! command -v nix >/dev/null 2>&1; then
     error "`nix` is not installed"
 fi
 
-# Check if nix-darwin is installed
-if ! command -v darwin-rebuild >/dev/null 2>&1; then
-    log "Installing nix-darwin..."
-    darwin-rebuild switch --flake .#Mac
-else
-    log "nix-darwin is already installed"
-fi
+nix build ./nix#homeConfigurations.zackhsi.activationPackage
+./result/activate
+
+# sudo nix run nix-darwin \
+#   --extra-experimental-features nix-command \
+#   --extra-experimental-features flakes \
+#   -- \
+#   switch --flake ~/dotfiles/nix
+
+# # Check if nix-darwin is installed
+# if ! command -v darwin-rebuild >/dev/null 2>&1; then
+#     log "Installing nix-darwin..."
+#     darwin-rebuild switch --flake .#Mac
+# else
+#     log "nix-darwin is already installed"
+# fi
 
 # # Check if home-manager is installed
 # if ! command -v home-manager >/dev/null 2>&1; then
