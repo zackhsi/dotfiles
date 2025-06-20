@@ -1,5 +1,8 @@
 # Editor.
 export EDITOR=nvim
 
+# Emacs keybindings.
+bindkey -e
+
 # Starship.
 eval "$(starship init zsh)"
