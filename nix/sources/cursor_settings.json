@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 14.5,
+    "editor.fontSize": 16,
     "explorer.confirmDelete": false,
     "window.commandCenter": true,
     "workbench.colorTheme": "Tokyo Night"
