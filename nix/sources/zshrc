@@ -1,8 +1,17 @@
+# Auto-suggestions.
+export NIX_DIR=~/dotfiles/nix
+source $NIX_DIR/result/home-path/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Editor.
 export EDITOR=nvim
 
 # Emacs keybindings.
 bindkey -e
+
+# History.
+bindkey '\t' end-of-line
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
 
 # Starship.
 eval "$(starship init zsh)"

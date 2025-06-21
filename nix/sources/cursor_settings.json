@@ -2,6 +2,9 @@
     "editor.fontFamily": "Operator Mono",
     "editor.fontSize": 16,
     "explorer.confirmDelete": false,
+    "files.associations": {
+        "ghostty_config": "ini"
+    },
     "window.commandCenter": true,
     "workbench.colorTheme": "Tokyo Night"
 }

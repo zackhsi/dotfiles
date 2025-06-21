@@ -9,6 +9,7 @@
     pkgs.starship
     pkgs.tmux
     pkgs.tree
+    pkgs.zsh-autosuggestions
   ];
   home.file = {
     ".gitconfig" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/gitconfig"; };
