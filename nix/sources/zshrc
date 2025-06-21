@@ -1,6 +1,8 @@
 # Auto-suggestions.
 export NIX_DIR=~/dotfiles/nix
 source $NIX_DIR/result/home-path/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+autoload compinit && compinit
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # Editor.
 export EDITOR=nvim

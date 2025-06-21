@@ -16,6 +16,7 @@
     ".gitignore" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/gitignore"; };
     ".tmux.conf" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/tmux.conf"; };
     ".zshrc" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/zshrc"; };
+    "Library/Application Support/Cursor/User/keybindings.json" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/cursor_keybindings.json"; };
     "Library/Application Support/Cursor/User/settings.json" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/cursor_settings.json"; };
     "Library/Application Support/com.mitchellh.ghostty/config" = { source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/ghostty_config"; };
   };
