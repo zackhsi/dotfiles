@@ -4,6 +4,9 @@ source $NIX_DIR/result/home-path/share/zsh-autosuggestions/zsh-autosuggestions.z
 autoload compinit && compinit
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
+# Directories.
+alias dot="cd ~/dotfiles"
+
 # Editor.
 export EDITOR=nvim
 

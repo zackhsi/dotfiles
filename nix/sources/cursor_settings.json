@@ -1,10 +1,16 @@
 {
-    "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 16,
-    "explorer.confirmDelete": false,
-    "files.associations": {
-        "ghostty_config": "ini"
-    },
-    "window.commandCenter": true,
-    "workbench.colorTheme": "Tokyo Night"
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    "ghostty_config": "ini"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveWhenNoErrors": true,
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true
 }
