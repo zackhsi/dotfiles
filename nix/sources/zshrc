@@ -18,5 +18,8 @@ bindkey '\t' end-of-line
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
 
+# Ls.
+alias ls="ls --color=auto"
+
 # Starship.
 eval "$(starship init zsh)"
