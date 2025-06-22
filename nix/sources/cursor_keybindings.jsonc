@@ -21,5 +21,42 @@
     {
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
+    },
+    // Back/forward navigation.
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward"
+    },
+    // Editor tab navigation.
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    // Show active file.
+    {
+        "key": "alt+f",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    // Close editor group.
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeEditorsAndGroup"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    // Close other editors.
+    {
+        "key": "alt+cmd+m",
+        "command": "workbench.action.closeEditorsInOtherGroups"
     }
 ]
