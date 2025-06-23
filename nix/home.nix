@@ -12,6 +12,9 @@
     pkgs.zsh-autosuggestions
   ];
   home.file = {
+    ".config/nvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/nvim";
+    };
     ".gitconfig" = {
       source = config.lib.file.mkOutOfStoreSymlink "/Users/zackhsi/dotfiles/nix/sources/gitconfig";
     };
