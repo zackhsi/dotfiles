@@ -1,0 +1,17 @@
+{
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "ghostty_config": "ini"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveWhenNoErrors": true,
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true
+}

@@ -1,0 +1,6 @@
+[core]
+excludesfile = ~/.gitignore
+
+[user]
+email = zackhsi@gmail.com
+name = Zack Hsi
