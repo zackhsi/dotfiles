@@ -11,7 +11,7 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveWhenNoErrors": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true
 }

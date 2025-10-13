@@ -4,6 +4,8 @@
   home.homeDirectory = /Users/zackhsi;
   home.stateVersion = "25.05";
   home.packages = [
+    pkgs.arduino-cli
+    pkgs.gh
     pkgs.neovim
     pkgs.nixfmt-rfc-style
     pkgs.starship

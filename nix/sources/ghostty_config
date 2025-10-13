@@ -47,4 +47,4 @@ font-style = Book
 font-style-bold = Bold
 font-style-italic = Book Italic
 
-theme = dark:tokyonight_night,light:catppuccin-latte
+theme = "TokyoNight Storm"

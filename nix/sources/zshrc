@@ -13,6 +13,20 @@ export EDITOR=nvim
 # Emacs keybindings.
 bindkey -e
 
+# Git.
+alias gca='git commit -v -a'
+alias gd='git diff'
+alias gst='git status'
+alias gl='git pull'
+alias glg='git log'
+gp() {
+  if [[ $# -gt 0 ]]; then
+    git push "$@"
+  else
+    git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"
+  fi
+}
+
 # History.
 bindkey '\t' end-of-line
 bindkey "^P" history-beginning-search-backward
@@ -20,6 +34,15 @@ bindkey "^N" history-beginning-search-forward
 
 # Ls.
 alias ls="ls --color=auto"
+alias la="ls -lAh"
+alias ll="ls -lh"
 
 # Starship.
 eval "$(starship init zsh)"
+
+# Tmux.
+alias ta='tmux -u attach -t'
+alias ts='tmux -u new-session -s'
+alias tl='tmux -u list-sessions'
+alias tksv='tmux -u kill-server'
+alias tkss='tmux -u kill-session -t'
