@@ -1,6 +1,13 @@
 # Auto-suggestions.
 export NIX_DIR=~/dotfiles/nix
-source $NIX_DIR/result/home-path/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ $(hostname) == st* ]]; then
+  # Work laptop uses homebrew.
+  export PATH=/opt/homebrew/bin:$PATH
+  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+else
+  # Personal laptop uses nix.
+  source $NIX_DIR/result/home-path/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 autoload compinit && compinit
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
