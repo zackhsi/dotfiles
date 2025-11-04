@@ -21,6 +21,7 @@ export EDITOR=nvim
 bindkey -e
 
 # Git.
+alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gd='git diff'
 alias gst='git status'
