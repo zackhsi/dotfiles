@@ -1,15 +1,21 @@
 {
+  // Claude.
+  "claude-code.claudeProcessWrapper": "/usr/local/bin/claude",
+  "claude-code.environmentVariables": [
+    {
+      "name": "CLAUDE_CODE_SKIP_AUTH_LOGIN",
+      "value": "true"
+    }
+  ],
   // Cody.
   "cody.override.serverEndpoint": "http://sourcegraph.corp.stripe.com",
   "cody.override.authToken": "sgp_unused_but_must_be_nonempty",
   "cody.net.proxy.endpoint": "unix://~/.stripeproxy",
-
   // Debug.
   "debug.console.fontFamily": "Iosevka",
   "debug.inlineValues": "on",
   "debug.javascript.automaticallyTunnelRemoteServer": false,
   "debug.toolBarLocation": "docked",
-
   // Editor.
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.autoIndent": "full",
@@ -77,19 +83,16 @@
     ]
   },
   "editor.wordBasedSuggestions": "currentDocument",
-
   // Explorer.
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 1,
   "explorer.sortOrder": "mixed",
-
   // Extensions.
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-
   // Everforest.
   "everforest.darkContrast": "soft",
   "everforest.darkCursor": "blue",
@@ -97,20 +100,16 @@
   "everforest.lightContrast": "hard",
   "everforest.lightCursor": "blue",
   "everforest.lightSelection": "blue",
-
   // Files.
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-
   // Flow.
   "flow.pathToFlow": "~/stripe/pay-server/manage/frontend/node_modules/.bin/flow",
-
   // Git.
   "git.blame.editorDecoration.enabled": true,
   "git.path": "/opt/homebrew/bin/git",
-
   // GitHub.
   "github.copilot.enable": {
     "*": false,
@@ -129,8 +128,8 @@
     "typescript": true,
     "typescriptreact": true
   },
-
   // Gitlens.
+  "gitlens.ai.enabled": false,
   "gitlens.ai.experimental.generateCommitMessage.enabled": false,
   "gitlens.blame.highlight.enabled": false,
   "gitlens.blame.separateLines": false,
@@ -143,32 +142,35 @@
       "type": "GitHub"
     }
   ],
-
   // Html.
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // Javascript.
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
-
   // JSON.
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // Markdoc.
   "markdoc.enabled": true,
-
   // Neovim.
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init-vscode.vim",
-
   // Pay.
   "run-pay.test.setFirstLineBreakpoint": false,
-
   // Python.
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   "python.formatting.provider": "black",
@@ -180,10 +182,8 @@
     "editor.autoSurround": "always",
     "editor.tabSize": 4
   },
-
   // Redhat.
   "redhat.telemetry.enabled": false,
-
   // Remote.
   "remote.autoForwardPortsSource": "output",
   "remote.forwardOnOpen": false,
@@ -199,7 +199,6 @@
   "remote.SSH.useLocalServer": true,
   "remote.autoForwardPorts": false,
   "remote.restoreForwardedPorts": false,
-
   // Ruby.
   "ruby.format": false,
   "ruby.rubocop.hideDisableSuggestions": true,
@@ -207,7 +206,6 @@
     "editor.defaultFormatter": "misogi.ruby-rubocop",
     "editor.tabSize": 2
   },
-
   // Search.
   "search.collapseResults": "auto",
   "search.followSymlinks": false,
@@ -217,16 +215,15 @@
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
-
   // Security.
   "security.workspace.trust.enabled": false,
-
   // Sorbet.
   "sorbet.enabled": true,
-
   // Spelling.
   "cSpell.diagnosticLevel": "Hint",
-  "cSpell.enableFiletypes": ["ruby"],
+  "cSpell.enableFiletypes": [
+    "ruby"
+  ],
   "cSpell.enabled": true,
   "cSpell.language": "en,en-US,en-GB",
   "cSpell.userWords": [
@@ -240,63 +237,86 @@
     "vbans",
     "warung"
   ],
-
   // Telemetry.
   "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
-
   // Terminal.
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 1000000,
-
   // TypeScript.
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.tsdk": "~/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib",
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-
   // Update.
   "update.channel": "none",
   "update.mode": "none",
-
   // Vim.
   "vim.hlsearch": true,
   "vim.leader": " ",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     },
     {
-      "before": ["]", "c"],
-      "commands": ["workbench.action.editor.nextChange"]
+      "before": [
+        "]",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.editor.nextChange"
+      ]
     },
     {
-      "before": ["[", "c"],
-      "commands": ["workbench.action.editor.previousChange"]
+      "before": [
+        "[",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.editor.previousChange"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     }
   ],
   "vim.visualstar": true,
   "vim.textwidth": 99,
-
   // Window.
   "window.title": "${appName}${separator}${rootPath}${separator}${activeEditorMedium}",
   "window.zoomLevel": 0,
-
   // Workbench.
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
@@ -331,12 +351,11 @@
   "workbench.list.openMode": "doubleClick",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 16,
-
   // Screencast.
   "screencastMode.onlyKeyboardShortcuts": true,
-
   // Zen Mode.
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.silentNotifications": false
+  "zenMode.silentNotifications": false,
+  "typescript.native-preview.tsdk": "~/stripe/pay-server/frontend/js-scripts/scripts"
 }
