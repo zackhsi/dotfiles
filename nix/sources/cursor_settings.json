@@ -1,17 +1,105 @@
 {
-  "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 16,
-  "editor.formatOnSave": true,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "files.associations": {
-    "ghostty_config": "ini"
+  "claude-code": {
+    "claudeProcessWrapper": "/usr/local/bin/claude",
+    "environmentVariables": [
+      {
+        "name": "CLAUDE_CODE_SKIP_AUTH_LOGIN",
+        "value": "true"
+      }
+    ]
   },
-  "files.autoSave": "afterDelay",
-  "files.autoSaveWhenNoErrors": true,
-  "window.commandCenter": true,
-  "workbench.colorTheme": "Tokyo Night Storm",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.highlightModifiedTabs": true
+  "cody": {
+    "net.proxy.endpoint": "unix://~/.stripeproxy",
+    "override": {
+      "authToken": "sgp_unused_but_must_be_nonempty",
+      "serverEndpoint": "http://sourcegraph.corp.stripe.com"
+    }
+  },
+  "debug.javascript.automaticallyTunnelRemoteServer": false,
+  "editor": {
+    "cursorBlinking": "solid",
+    "fontFamily": "Operator Mono",
+    "fontSize": 16,
+    "formatOnSave": true
+  },
+  "explorer": {
+    "confirmDelete": false,
+    "confirmDragAndDrop": false
+  },
+  "files": {
+    "associations": {
+      "ghostty_config": "ini"
+    },
+    "autoSave": "afterDelay",
+    "autoSaveWhenNoErrors": true
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "apex": true,
+    "erb": true,
+    "go": true,
+    "java": true,
+    "javascript": true,
+    "python": true,
+    "ruby": true,
+    "rust": true,
+    "scala": true,
+    "shellscript": true,
+    "starlark": true,
+    "terraform": true,
+    "typescript": true,
+    "typescriptreact": true
+  },
+  "gitlens": {
+    "ai": {
+      "enabled": false,
+      "experimental": {
+        "generateCommitMessage": {
+          "enabled": false
+        }
+      }
+    },
+    "remotes": [
+      {
+        "domain": "git.corp.stripe.com",
+        "type": "GitHub"
+      }
+    ]
+  },
+  "remote": {
+    "SSH": {
+      "configFile": "~/.ssh/devboxes",
+      "connectTimeout": 60,
+      "enableAgentForwarding": false,
+      "enableDynamicForwarding": false,
+      "enableRemoteCommand": true,
+      "path": "sc-ssh-wrapper",
+      "useLocalServer": true
+    },
+    "autoForwardPorts": false,
+    "autoForwardPortsSource": "output",
+    "forwardOnOpen": false,
+    "otherPortsAttributes.onAutoForward": "ignore",
+    "restoreForwardedPorts": false
+  },
+  "ruby.rubocop.hideDisableSuggestions": true,
+  "search.followSymlinks": false,
+  "security.workspace.trust.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "typescript": {
+    "native-preview.tsdk": "~/stripe/pay-server/frontend/js-scripts/scripts",
+    "tsdk": "~/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib"
+  },
+  "update.mode": "none",
+  "window": {
+    "commandCenter": true,
+    "title": "${rootPath}${separator}${activeEditorMedium}"
+  },
+  "workbench": {
+    "colorTheme": "Tokyo Night Storm",
+    "editor": {
+      "closeOnFileDelete": true,
+      "highlightModifiedTabs": true
+    }
+  }
 }
