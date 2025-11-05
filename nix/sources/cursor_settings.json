@@ -1,13 +1,11 @@
 {
-  "claude-code": {
-    "claudeProcessWrapper": "/usr/local/bin/claude",
-    "environmentVariables": [
-      {
-        "name": "CLAUDE_CODE_SKIP_AUTH_LOGIN",
-        "value": "true"
-      }
-    ]
-  },
+  "claude-code.claudeProcessWrapper": "/usr/local/bin/claude",
+  "claude-code.environmentVariables": [
+    {
+      "name": "CLAUDE_CODE_SKIP_AUTH_LOGIN",
+      "value": "true"
+    }
+  ],
   "cody.override.serverEndpoint": "http://sourcegraph.corp.stripe.com",
   "cody.override.authToken": "sgp_unused_but_must_be_nonempty",
   "cody.net.proxy.endpoint": "unix://~/.stripeproxy",
@@ -64,7 +62,9 @@
   "remote.autoForwardPorts": false,
   "remote.autoForwardPortsSource": "output",
   "remote.forwardOnOpen": false,
-  "remote.otherPortsAttributes.onAutoForward": "ignore",
+  "remote.otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
   "remote.restoreForwardedPorts": false,
   "ruby.rubocop.hideDisableSuggestions": true,
   "search.followSymlinks": false,
