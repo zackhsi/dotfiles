@@ -6,6 +6,7 @@
   home.packages = [
     pkgs.arduino-cli
     pkgs.gh
+    pkgs.lazygit
     pkgs.neovim
     pkgs.nixfmt-rfc-style
     pkgs.starship
