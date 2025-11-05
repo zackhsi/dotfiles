@@ -8,13 +8,9 @@
       }
     ]
   },
-  "cody": {
-    "net.proxy.endpoint": "unix://~/.stripeproxy",
-    "override": {
-      "authToken": "sgp_unused_but_must_be_nonempty",
-      "serverEndpoint": "http://sourcegraph.corp.stripe.com"
-    }
-  },
+  "cody.override.serverEndpoint": "http://sourcegraph.corp.stripe.com",
+  "cody.override.authToken": "sgp_unused_but_must_be_nonempty",
+  "cody.net.proxy.endpoint": "unix://~/.stripeproxy",
   "debug.javascript.automaticallyTunnelRemoteServer": false,
   "editor": {
     "cursorBlinking": "solid",
@@ -50,51 +46,35 @@
     "typescript": true,
     "typescriptreact": true
   },
-  "gitlens": {
-    "ai": {
-      "enabled": false,
-      "experimental": {
-        "generateCommitMessage": {
-          "enabled": false
-        }
-      }
-    },
-    "remotes": [
-      {
-        "domain": "git.corp.stripe.com",
-        "type": "GitHub"
-      }
-    ]
-  },
-  "remote": {
-    "SSH": {
-      "configFile": "~/.ssh/devboxes",
-      "connectTimeout": 60,
-      "enableAgentForwarding": false,
-      "enableDynamicForwarding": false,
-      "enableRemoteCommand": true,
-      "path": "sc-ssh-wrapper",
-      "useLocalServer": true
-    },
-    "autoForwardPorts": false,
-    "autoForwardPortsSource": "output",
-    "forwardOnOpen": false,
-    "otherPortsAttributes.onAutoForward": "ignore",
-    "restoreForwardedPorts": false
-  },
+  "gitlens.remotes": [
+    {
+      "domain": "git.corp.stripe.com",
+      "type": "GitHub"
+    }
+  ],
+  "gitlens.ai.experimental.generateCommitMessage.enabled": false,
+  "gitlens.ai.enabled": false,
+  "remote.SSH.configFile": "~/.ssh/devboxes",
+  "remote.SSH.connectTimeout": 60,
+  "remote.SSH.enableAgentForwarding": false,
+  "remote.SSH.enableDynamicForwarding": false,
+  "remote.SSH.enableRemoteCommand": true,
+  "remote.SSH.path": "sc-ssh-wrapper",
+  "remote.SSH.useLocalServer": true,
+  "remote.autoForwardPorts": false,
+  "remote.autoForwardPortsSource": "output",
+  "remote.forwardOnOpen": false,
+  "remote.otherPortsAttributes.onAutoForward": "ignore",
+  "remote.restoreForwardedPorts": false,
   "ruby.rubocop.hideDisableSuggestions": true,
   "search.followSymlinks": false,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
-  "typescript": {
-    "native-preview.tsdk": "~/stripe/pay-server/frontend/js-scripts/scripts",
-    "tsdk": "~/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib"
-  },
+  "typescript.tsdk": "~/stripe/pay-server/frontend/js-scripts/node_modules/typescript/lib",
+  "typescript.native-preview.tsdk": "~/stripe/pay-server/frontend/js-scripts/scripts",
   "update.mode": "none",
-  "window": {
-    "commandCenter": true,
-    "title": "${rootPath}${separator}${activeEditorMedium}"
-  },
+  "window.commandCenter": true,
+  "window.title": "${rootPath}${separator}${activeEditorMedium}",
   "workbench": {
     "colorTheme": "Tokyo Night Storm",
     "editor": {
