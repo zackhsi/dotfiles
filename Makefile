@@ -14,6 +14,9 @@ intellij_backup: ## Back up IntelliJ settings.
 	@rm -rf ~/dotfiles/intellij-settings
 	@mv -v /tmp/intellij-settings/ ~/dotfiles/intellij-settings
 
+nix: ## Nix home manager
+	@bash nix.sh
+
 rust: ## Install rust ecosystem
 	@command -v rustc &> /dev/null || (echo "Installing rust..." && curl https://sh.rustup.rs -sSf | sh)
 
@@ -24,6 +27,6 @@ node: ## Install local npm packages
 	npm install
 
 .DEFAULT_GOAL := help
-.PHONY: help
+.PHONY: help nix
 help:
 	@perl -nle'print $& if m{^[a-zA-Z0-9_-]+:.*?## .*$$}' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
