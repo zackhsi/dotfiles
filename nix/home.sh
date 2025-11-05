@@ -7,8 +7,9 @@ if [[ $(hostname) != st* ]]; then
 fi
 
 ln -sf ~/dotfiles/nix/sources/ghostty_config ~/Library/Application\ Support/com.mitchellh.ghostty/config
-ln -sf ~/dotfiles/nix/sources/zshrc ~/.zshrc
+ln -sfn ~/dotfiles/nix/sources/nvim ~/.config/nvim
 ln -sf ~/dotfiles/nix/sources/tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/nix/sources/zshrc ~/.zshrc
 
 command -v starship > /dev/null || brew install starship
 [[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] || brew install zsh-autosuggestions
