@@ -5,6 +5,7 @@
   home.stateVersion = "25.05";
   home.packages = [
     pkgs.arduino-cli
+    pkgs.fd
     pkgs.gh
     pkgs.lazygit
     pkgs.neovim
