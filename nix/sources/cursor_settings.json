@@ -12,7 +12,7 @@
   "debug.javascript.automaticallyTunnelRemoteServer": false,
   "editor": {
     "cursorBlinking": "solid",
-    "fontFamily": "Operator Mono",
+    "fontFamily": "Operator Mono SSm",
     "fontSize": 16,
     "formatOnSave": true
   },
