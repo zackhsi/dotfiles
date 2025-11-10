@@ -57,6 +57,7 @@ eval "$(starship init zsh)"
 
 # Tmux.
 alias ta='tmux -u attach -t'
+alias tad='tmux -u attach -d -t'
 alias ts='tmux -u new-session -s'
 alias tl='tmux -u list-sessions'
 alias tksv='tmux -u kill-server'
