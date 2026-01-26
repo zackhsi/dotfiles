@@ -56,6 +56,11 @@ alias v="nvim"
 # Starship.
 eval "$(starship init zsh)"
 
+# Stripe.
+if [[ -f ~/.stripe/shellinit/zshrc ]]; then
+  source ~/.stripe/shellinit/zshrc
+fi
+
 # Tmux.
 alias ta='tmux -u attach -t'
 alias tad='tmux -u attach -d -t'
