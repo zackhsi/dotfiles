@@ -12,6 +12,7 @@ autoload compinit && compinit
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # Directories.
+alias d="cd ~/Desktop"
 alias dot="cd ~/dotfiles"
 alias oss="cd ~/oss"
 alias s="cd ~/stripe"
