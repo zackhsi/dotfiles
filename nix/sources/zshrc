@@ -29,6 +29,7 @@ alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gco='git checkout'
 alias gd='git diff'
+alias gds='git diff --staged'
 alias gst='git status'
 alias gl='git pull'
 alias glg='git log'
@@ -52,6 +53,7 @@ alias ll="ls -lh"
 
 # Neovim.
 alias v="nvim"
+alias vi="nvim"
 
 # Starship.
 eval "$(starship init zsh)"
