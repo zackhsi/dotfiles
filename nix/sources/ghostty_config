@@ -42,7 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 font-family = Iosevka
-font-size = 17
+font-size = 18
 adjust-cell-height = 10
 
 theme = "TokyoNight Storm"
