@@ -60,6 +60,7 @@ eval "$(starship init zsh)"
 
 # Stripe.
 if [[ -f ~/.stripe/shellinit/zshrc ]]; then
+  export __STRIPE_SHELLINIT_ZSH_SKIP_COMPINIT=1
   source ~/.stripe/shellinit/zshrc
 fi
 
